@@ -29,6 +29,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+. (Join-Path $PSScriptRoot 'RsaXml.ps1')
 
 $repoRoot      = Split-Path -Parent $PSScriptRoot
 $catalogPath   = Join-Path $repoRoot 'catalog.xml'
@@ -93,9 +94,9 @@ else {
         $signatureBytes = [System.IO.File]::ReadAllBytes($signaturePath)
 
         foreach ($keyFile in $publicKeys) {
-            $rsa = New-Object System.Security.Cryptography.RSACng
+            $rsa = $null
             try {
-                $rsa.FromXmlString((Get-Content -LiteralPath $keyFile.FullName -Raw))
+                $rsa = ConvertFrom-RsaXml -Xml (Get-Content -LiteralPath $keyFile.FullName -Raw)
                 $ok = $rsa.VerifyData($catalogBytes, $signatureBytes,
                     [System.Security.Cryptography.HashAlgorithmName]::SHA256,
                     [System.Security.Cryptography.RSASignaturePadding]::Pkcs1)
@@ -104,7 +105,7 @@ else {
             catch {
                 $warnings.Add("$($keyFile.Name) could not be loaded as a public key: $($_.Exception.Message)")
             }
-            finally { $rsa.Dispose() }
+            finally { if ($null -ne $rsa) { $rsa.Dispose() } }
         }
 
         if ($signedBy -like '*development*') {

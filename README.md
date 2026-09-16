@@ -54,6 +54,16 @@ git add firmwares notes catalog.xml catalog.sig
 git commit -m "Add NEW-MODEL 01.20.00"
 ```
 
+## Working on macOS or Linux
+
+The tooling is PowerShell and runs anywhere [PowerShell 7](https://github.com/PowerShell/PowerShell)
+does - `brew install --cask powershell` on a Mac, then `pwsh`.
+
+Keys are stored in the XML format .NET Framework uses, because iDM3 reads them with
+`RSA.FromXmlString` on Windows. That API and `RSACng` are Windows-only, so `tools/RsaXml.ps1`
+reads and writes the format by hand using `RSA.Create()`. The files are byte-identical
+either way, so a catalogue signed on a Mac verifies in iDM3 on Windows and vice versa.
+
 ## The catalogue
 
 `catalog.xml` is the only file iDM3 has to trust: it carries a SHA-256 for every archive,

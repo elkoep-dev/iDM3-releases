@@ -45,6 +45,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.IO.Compression.FileSystem
+. (Join-Path $PSScriptRoot 'RsaXml.ps1')
 
 $repoRoot      = Split-Path -Parent $PSScriptRoot
 $firmwareDir   = Join-Path $repoRoot 'firmwares'
@@ -212,9 +213,8 @@ if (-not [string]::IsNullOrWhiteSpace($PrivateKeyPath)) {
         throw "Private key not found: $PrivateKeyPath"
     }
 
-    $rsa = New-Object System.Security.Cryptography.RSACng
+    $rsa = ConvertFrom-RsaXml -Xml (Get-Content -LiteralPath $PrivateKeyPath -Raw)
     try {
-        $rsa.FromXmlString((Get-Content -LiteralPath $PrivateKeyPath -Raw))
         $bytes = [System.IO.File]::ReadAllBytes($catalogPath)
         $sig = $rsa.SignData($bytes,
             [System.Security.Cryptography.HashAlgorithmName]::SHA256,

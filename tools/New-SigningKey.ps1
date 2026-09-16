@@ -12,9 +12,10 @@
     in iDM3. Without a standby key already deployed in the field, a lost or compromised
     active key cannot be replaced on installations that are offline or unattended.
 
-    RSA-3072 with SHA-256 via RSACng: both this tool and iDM3 run on .NET Framework, where
-    RSACng handles SHA-256 signatures without the legacy CSP provider problems that
-    RSACryptoServiceProvider has.
+    RSA-3072 with SHA-256. Keys are stored in the .NET XML format because iDM3 reads
+    them with RSA.FromXmlString on .NET Framework 4.8. That format is read and written
+    here by RsaXml.ps1 rather than by ToXmlString, so this script also runs on macOS and
+    Linux - RSACng and the XML helpers are Windows-only.
 
 .PARAMETER PrivateKeyPath
     Where to write the private key. Must be outside this repository. Move it to offline
@@ -44,6 +45,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+. (Join-Path $PSScriptRoot 'RsaXml.ps1')
 
 $repoRoot = Split-Path -Parent $PSScriptRoot
 $keysDir  = Join-Path $repoRoot 'keys'
@@ -68,11 +70,11 @@ if (-not (Test-Path -LiteralPath $parent)) {
 
 # --- Generate -------------------------------------------------------------------------
 Write-Output "Generating RSA-$KeySize key pair ($Role)..."
-$rsa = New-Object System.Security.Cryptography.RSACng($KeySize)
+$rsa = New-RsaKey -KeySize $KeySize
 
 try {
-    $privateXml = $rsa.ToXmlString($true)
-    $publicXml  = $rsa.ToXmlString($false)
+    $privateXml = ConvertTo-RsaXml -Rsa $rsa -IncludePrivateParameters
+    $publicXml  = ConvertTo-RsaXml -Rsa $rsa
 
     $parameters = $rsa.ExportParameters($false)
     $sha256     = [System.Security.Cryptography.SHA256]::Create()
