@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="SA3-02B" Source="SA3-02B - Firmware history.txt">
+  <Release Version="02.A4.00">
+    <Note Lang="en">fix bug with setup RE1 and RE2</Note>
+  </Release>
+  <Release Version="02.A2.00">
+    <Note Lang="en">fix bug with signalization LED RE1 and RE2</Note>
+  </Release>
+  <Release Version="01.84.00">
+    <Note Lang="en">Function quick pulse has been optimized</Note>
+  </Release>
+  <Release Version="01.82.00">
+    <Note Lang="en">Interference immunity has been improved</Note>
+    <Note Lang="en">Integration quick pulse on outputs</Note>
+  </Release>
+  <Release Version="01.3C.00">
+    <Note Lang="en">Interference immunity has been improved</Note>
+    <Note Lang="en">Without integration quick pulse on outputs</Note>
+  </Release>
+  <Release Version="01.80.00">
+    <Note Lang="en">integration quick pulse on outputs</Note>
+  </Release>
+  <Release Version="01.3A.00">
+    <Note Lang="en">increased resistance to external interference</Note>
+  </Release>
+  <Release Version="01.34.00">
+    <Note Lang="en">optimized temperature input range by sensor types</Note>
+    <Note Lang="en">integration negative outputs</Note>
+  </Release>
+  <Release Version="01.32.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

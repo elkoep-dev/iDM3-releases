@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="MI3-02M-INELS2" Source="MI3-02M-INELS2 - Firmware history.txt">
+  <Release Version="01.3C.00">
+    <Note Lang="en">Added support entrance system in central unit</Note>
+  </Release>
+  <Release Version="01.3A.00">
+    <Note Lang="en">optimized ADC2-40M view value to IDM3</Note>
+  </Release>
+  <Release Version="01.38.00">
+    <Note Lang="en">integrated negation</Note>
+    <Note Lang="en">integrated sopport for ADC2-40M, WMR2-11</Note>
+  </Release>
+  <Release Version="01.36.00">
+    <Note Lang="en">integrated information about firmware version</Note>
+  </Release>
+  <Release Version="01.34.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

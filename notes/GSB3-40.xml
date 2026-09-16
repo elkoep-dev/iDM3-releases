@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="GSB3-40" Source="GSB3-40 - Firmware history.txt">
+  <Release Version="02.86.00">
+    <Note Lang="en">added Long State filter and True state filter in configuration</Note>
+  </Release>
+  <Release Version="02.84.00">
+    <Note Lang="en">added suppotr for hardware version without Light sensor</Note>
+  </Release>
+  <Release Version="01.38.00">
+    <Note Lang="en">added suppotr for new hardware version</Note>
+  </Release>
+  <Release Version="01.38.00">
+    <Note Lang="en">added suppotr for new hardware version</Note>
+  </Release>
+  <Release Version="01.36.00">
+    <Note Lang="en">added setup backlight</Note>
+  </Release>
+  <Release Version="01.34.00">
+    <Note Lang="en">optimized temperature input range by sensor types</Note>
+    <Note Lang="en">integration negative inputs</Note>
+  </Release>
+  <Release Version="01.32.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

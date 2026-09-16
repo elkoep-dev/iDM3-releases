@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="GRT3-70" Source="GRT3-70 - Firmware history.txt">
+  <Release Version="01.00.04">
+    <Note Lang="en">fix bug in reading inputs.</Note>
+  </Release>
+  <Release Version="01.00.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="IM3-40B" Source="IM3-40B - Firmware history.txt">
+  <Release Version="02.02.00">
+    <Note Lang="en">add true state and long state filters</Note>
+  </Release>
+  <Release Version="02.00.00">
+    <Note Lang="en">optimized for noise immunity</Note>
+  </Release>
+  <Release Version="01.38.00">
+    <Note Lang="en">optimized for noise immunity</Note>
+  </Release>
+  <Release Version="01.36.00">
+    <Note Lang="en">optimized for elektronic security system</Note>
+  </Release>
+  <Release Version="01.34.00">
+    <Note Lang="en">optimized temperature input range by sensor types</Note>
+    <Note Lang="en">integration negative inputs</Note>
+  </Release>
+  <Release Version="01.32.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

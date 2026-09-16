@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="DMD3-1" Source="DMD3-1 - Firmware history.txt">
+  <Release Version="02.0C.00">
+    <Note Lang="en">Added setup sensitivity and mode</Note>
+  </Release>
+  <Release Version="02.0A.00">
+    <Note Lang="en">First release</Note>
+  </Release>
+</ReleaseNotes>

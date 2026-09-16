@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FirmwareCatalog Schema="1" Sequence="1" Generated="2026-09-16T13:31:59Z" ValidUntil="2027-03-15T13:31:59Z">
+  <Item Component="Firmwares" Kind="Firmware" Model="ADC3-60M" Version="01.3A.00" Target="Firmwares\ADC3-60M_01.3A.00.zip" Source="firmwares/ADC3-60M_01.3A.00.zip" Size="81044" Sha256="20373441e2f568c7d96eeedbf4f59e6015f70ed2eca51ddf21d299d62b065a05" Channel="Stable">
+    <Note Lang="en">first version</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="ADC3-60M" Version="01.3C.00" Target="Firmwares\ADC3-60M_01.3C.00.zip" Source="firmwares/ADC3-60M_01.3C.00.zip" Size="58478" Sha256="f350c7cca1cab597ed74365763a12c2a7aa58ef92e6aeb0b2120371d4c9e0649" Channel="Stable">
+    <Note Lang="en">Add support SKS-202 sensors</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="A-IBUS-SLAVE" Version="02.08.00" Target="Firmwares\A-IBUS-SLAVE_02.08.00.zip" Source="firmwares/A-IBUS-SLAVE_02.08.00.zip" Size="23017" Sha256="67e27e62eaa67f26bd9e84bfd5935e34f0b708a50915f5e8ccaf5c49706928b6" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="ASTRONOMICAL-MODULE" Version="00.00.02" Target="Firmwares\ASTRONOMICAL-MODULE_00.00.02.zip" Source="firmwares/ASTRONOMICAL-MODULE_00.00.02.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Definition" Model="ASTRONOMICAL-UNIT" Version="00.00.02" Target="Firmwares\ASTRONOMICAL-UNIT_00.00.02.zip" Source="firmwares/ASTRONOMICAL-UNIT_00.00.02.zip" Size="1464" Sha256="cb4f235a775278ad74792686cf9056635db373b3d1c4b982ad545db7788fee5a" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="BIN3-66B" Version="01.00.00" Target="Firmwares\BIN3-66B_01.00.00.zip" Source="firmwares/BIN3-66B_01.00.00.zip" Size="21478" Sha256="d55f5d6fc385384cc4db72f1ddae1195676d07390c96446ff1cf931ab11201d3" Channel="Stable">
+    <Note Lang="en">First release</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Placeholder" Model="CONTROLLER" Version="00.00.01" Target="Firmwares\CONTROLLER_00.00.01.zip" Source="firmwares/CONTROLLER_00.00.01.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="COOL-REGULATOR" Version="00.00.01" Target="Firmwares\COOL-REGULATOR_00.00.01.zip" Source="firmwares/COOL-REGULATOR_00.00.01.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="COOL-REGULATOR" Version="00.00.02" Target="Firmwares\COOL-REGULATOR_00.00.02.zip" Source="firmwares/COOL-REGULATOR_00.00.02.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-07M" Version="02.97.56" Target="Firmwares\CU3-07M_02.97.56.zip" Source="firmwares/CU3-07M_02.97.56.zip" Size="165293" Sha256="0cda4876889155399397a70a4d5797913fa0daf2dad8e14fa8f43c229d3906b7" Channel="Stable">
+    <Note Lang="en">add status page to web configuration</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-08M" Version="02.97.56" Target="Firmwares\CU3-08M_02.97.56.zip" Source="firmwares/CU3-08M_02.97.56.zip" Size="189933" Sha256="4592ec63a604b3d3b8eb3bf512412f9d3103ee1dfe7804d20f3e65d82c602c0f" Channel="Stable">
+    <Note Lang="en">add status page to web configuration</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-09M" Version="02.97.56" Target="Firmwares\CU3-09M_02.97.56.zip" Source="firmwares/CU3-09M_02.97.56.zip" Size="165294" Sha256="724c0f8acd6530588269e1dee0a9abf7ea5d1e67c4f8c1c486816a8e439e2c54" Channel="Stable">
+    <Note Lang="en">add status page to web configuration</Note>
+    <Note Lang="en">DALI control light with percent</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-09M" Version="02.97.57" Target="Firmwares\CU3-09M_02.97.57.zip" Source="firmwares/CU3-09M_02.97.57.zip" Size="165267" Sha256="991ff057d98007aa79af0296024f3cd2781c8834a478de7b6c335beb7051a203" Channel="Stable">
+    <Note Lang="en">add status page to web configuration</Note>
+    <Note Lang="en">DALI control light with OFF function</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-09M" Version="02.97.58" Target="Firmwares\CU3-09M_02.97.58.zip" Source="firmwares/CU3-09M_02.97.58.zip" Size="169227" Sha256="47a93e39a1acca65c8525a2b1aae43aa9e20af840094f7ef316978f3be2cd3da" Channel="Stable">
+    <Note Lang="en">repaired DALI dimming</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-10M" Version="02.97.56" Target="Firmwares\CU3-10M_02.97.56.zip" Source="firmwares/CU3-10M_02.97.56.zip" Size="165297" Sha256="192928c39d8349ecde7e5dbd258cdf94881a3e33402be99acc0fbe43352f9e17" Channel="Stable">
+    <Note Lang="en">add status page to web configuration</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="DA3-03M-RGBW" Version="02.00.00" Target="Firmwares\DA3-03M-RGBW_02.00.00.zip" Source="firmwares/DA3-03M-RGBW_02.00.00.zip" Size="22451" Sha256="9a0f3c387f84e318309927d777377ce12064545eedf1636d920cd55554925a24" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="DA3-03M-RGBW" Version="02.86.00" Target="Firmwares\DA3-03M-RGBW_02.86.00.zip" Source="firmwares/DA3-03M-RGBW_02.86.00.zip" Size="22446" Sha256="8223e3800f51dcf471e891d53e015af5cf590d30e1e9eb41bbbacaf8d5cfd7c7" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="DA3-22M" Version="01.36.00" Target="Firmwares\DA3-22M_01.36.00.zip" Source="firmwares/DA3-22M_01.36.00.zip" Size="21973" Sha256="6bc1e623a4fe6ef87443e702c5a729472c9d77c20cf916677e9483c9764ad444" Channel="Stable">
+    <Note Lang="en">optimized setup offset TIN</Note>
+    <Note Lang="en">added setup minimum and maximum level for OUT1 - OUT2.</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="DA3-66M" Version="01.3A.00" Target="Firmwares\DA3-66M_01.3A.00.zip" Source="firmwares/DA3-66M_01.3A.00.zip" Size="43264" Sha256="2c0afc51a365ec160f4e458ff30c09b9191c95978b2c021f36bca4913b8b180b" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="DAC3-04B" Version="02.A0.00" Target="Firmwares\DAC3-04B_02.A0.00.zip" Source="firmwares/DAC3-04B_02.A0.00.zip" Size="22141" Sha256="23d92f939b8e7081f01d191fff6a5ba93ff07d1ee3187c67d0dd080e34400bdb" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="DAC3-04M" Version="02.A0.00" Target="Firmwares\DAC3-04M_02.A0.00.zip" Source="firmwares/DAC3-04M_02.A0.00.zip" Size="22301" Sha256="2824332156edea3a202224042af479e2f49d569d7c984024d0706cdf447e6ff0" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Definition" Model="DALI-DMX-UNIT" Version="00.00.01" Target="Firmwares\DALI-DMX-UNIT_00.00.01.zip" Source="firmwares/DALI-DMX-UNIT_00.00.01.zip" Size="913" Sha256="c9ab7e7a3069679a926479a0483e23a28dbaaa2d9e9ca6911e035eef69f3daeb" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Definition" Model="DALI-DMX-UNIT-02" Version="00.00.01" Target="Firmwares\DALI-DMX-UNIT-02_00.00.01.zip" Source="firmwares/DALI-DMX-UNIT-02_00.00.01.zip" Size="920" Sha256="1cb79e20a6e7b7e191c6f006fd4c7751e4aaf87a5e519d11199b308a379b545a" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Definition" Model="DATE-TIME-UNIT" Version="00.00.01" Target="Firmwares\DATE-TIME-UNIT_00.00.01.zip" Source="firmwares/DATE-TIME-UNIT_00.00.01.zip" Size="724" Sha256="4a4ccffdb6d32d1531fde3117bf0de4290bd4f1eb19a5debb93f86a586f41d79" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="DCDA-33M" Version="01.4E.00" Target="Firmwares\DCDA-33M_01.4E.00.zip" Source="firmwares/DCDA-33M_01.4E.00.zip" Size="58532" Sha256="b08854fc6c87dd15a90107a9b25e85d7a25d2e2503323576df1db69c64817d90" Channel="Stable">
+    <Note Lang="en">Optimized overload channel detection</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Placeholder" Model="DIFFERENTIAL-REGULATOR" Version="00.00.01" Target="Firmwares\DIFFERENTIAL-REGULATOR_00.00.01.zip" Source="firmwares/DIFFERENTIAL-REGULATOR_00.00.01.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Definition" Model="DLS3-1" Version="01.34.00" Target="Firmwares\DLS3-1_01.34.00.zip" Source="firmwares/DLS3-1_01.34.00.zip" Size="936" Sha256="daacf9a471bb417996855d61b3b331871349a023358580ce2c9fefc3a3027227" Channel="Stable">
+    <Note Lang="en">First release</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="DLS3-1" Version="02.08.00" Target="Firmwares\DLS3-1_02.08.00.zip" Source="firmwares/DLS3-1_02.08.00.zip" Size="20767" Sha256="078758df3e799f763d01b3be53ed39cea08544b217b9c4785215923f4717f31f" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Definition" Model="DLS3-1-DALI" Version="01.34.00" Target="Firmwares\DLS3-1-DALI_01.34.00.zip" Source="firmwares/DLS3-1-DALI_01.34.00.zip" Size="942" Sha256="e36efeda186726e322f471f44ca388de606e4c9b6fd6766757cb9124928b69db" Channel="Stable">
+    <Note Lang="en">First release</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Definition" Model="DLS3-1-DALI" Version="02.08.00" Target="Firmwares\DLS3-1-DALI_02.08.00.zip" Source="firmwares/DLS3-1-DALI_02.08.00.zip" Size="942" Sha256="13123d4c7a23de5dc0caaa88ea14bf4a590b4fe27a7c48ee4f4400a6bb94e000" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="DMD3-1" Version="02.0C.00" Target="Firmwares\DMD3-1_02.0C.00.zip" Source="firmwares/DMD3-1_02.0C.00.zip" Size="21361" Sha256="486323d1dd7c053bec2152e1870c280afe982b7fa080ae848752e154aef301f3" Channel="Stable">
+    <Note Lang="en">Added setup sensitivity and mode</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Definition" Model="DMD3-1-DALI" Version="02.0C.00" Target="Firmwares\DMD3-1-DALI_02.0C.00.zip" Source="firmwares/DMD3-1-DALI_02.0C.00.zip" Size="1512" Sha256="ec7ab006e7eb8367876a6d46565ffe4d373aee19ad48a9f7d89ae464aa0d5b27" Channel="Stable">
+    <Note Lang="en">Added setup sensitivity and mode</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="EA3-022M-RELAY" Version="02.A0.00" Target="Firmwares\EA3-022M-RELAY_02.A0.00.zip" Source="firmwares/EA3-022M-RELAY_02.A0.00.zip" Size="88872" Sha256="4b5029992e99cc16a54d30f4fc05c8fde70ec7f2ae3a503266ad386920da22c2" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="EMDC-64M" Version="01.4C.00" Target="Firmwares\EMDC-64M_01.4C.00.zip" Source="firmwares/EMDC-64M_01.4C.00.zip" Size="129548" Sha256="b32eefad033abbc2f825914fb0508283a07f59f55077f2530e39f9edad7d44f6" Channel="Stable">
+    <Note Lang="en">Support setup sensitivity and mode in DMD3-1 on DALI</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="EST3" Version="02.11.00" Target="Firmwares\EST3_02.11.00.zip" Source="firmwares/EST3_02.11.00.zip" Size="59261" Sha256="a9240aeb550950e4045de875e0315a9e17b4f827e44cce7ec8bd2dca832739fc" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="EST3" Version="02.14.00" Target="Firmwares\EST3_02.14.00.zip" Source="firmwares/EST3_02.14.00.zip" Size="570134" Sha256="ad9eb8d9334c310fb5226e08513d482dacb0791364af820b42ac7455d607a5e5" Channel="Stable">
+    <Note Lang="en">Support for wiev under zerro number in required temperature</Note>
+    <Note Lang="en">Support for view errors code in temperature</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="EST3-HOTEL" Version="02.11.00" Target="Firmwares\EST3-HOTEL_02.11.00.zip" Source="firmwares/EST3-HOTEL_02.11.00.zip" Size="59295" Sha256="43dc21d70e4255964fb8e387d8d57371cb8977905479bfc7d5d6203136132985" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="EST3-HOTEL" Version="02.14.00" Target="Firmwares\EST3-HOTEL_02.14.00.zip" Source="firmwares/EST3-HOTEL_02.14.00.zip" Size="110641" Sha256="fa41438d56adc903af04e30dd1d18e986f3df40e956a0e0ef1ee30f611ae3d2a" Channel="Stable">
+    <Note Lang="en">Support for wiev under zerro number in required temperature</Note>
+    <Note Lang="en">Support for view errors code in temperature</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Definition" Model="FA3-612M-RELAY" Version="02.83.00" Target="Firmwares\FA3-612M-RELAY_02.83.00.zip" Source="firmwares/FA3-612M-RELAY_02.83.00.zip" Size="3608" Sha256="4cec4c8e2cc6b59a626d12f8bb348c9fa114cdc57c3f86ec5aa3523b9b74f798" Channel="Stable">
+    <Note Lang="en">First release</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Definition" Model="FA3-612M-RELAY" Version="02.86.00" Target="Firmwares\FA3-612M-RELAY_02.86.00.zip" Source="firmwares/FA3-612M-RELAY_02.86.00.zip" Size="3608" Sha256="b15f010008cd0103907f3e204774bee56dadee9aa2abb18a248efd20df0a8b03" Channel="Stable">
+    <Note Lang="en">Optimized bus communication</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Placeholder" Model="FAN-COIL-REGULATOR" Version="00.00.01" Target="Firmwares\FAN-COIL-REGULATOR_00.00.01.zip" Source="firmwares/FAN-COIL-REGULATOR_00.00.01.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GBP3-60" Version="01.40.00" Target="Firmwares\GBP3-60_01.40.00.zip" Source="firmwares/GBP3-60_01.40.00.zip" Size="59394" Sha256="2feba99b649cc00955dcde50b489db747e770ef002c360a55654030acfbfb789" Channel="Stable">
+    <Note Lang="en">optimization of touch detection</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GBP3-60" Version="02.9C.00" Target="Firmwares\GBP3-60_02.9C.00.zip" Source="firmwares/GBP3-60_02.9C.00.zip" Size="59477" Sha256="4c3ea577e2349edec2b5951e29c2a80b7da9d4479e804fe4ce3fb3e4c6f2a677" Channel="Stable">
+    <Note Lang="en">optimization of touch detection</Note>
+    <Note Lang="en">increased bus interference immunity</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GBP3-60" Version="02.9E.00" Target="Firmwares\GBP3-60_02.9E.00.zip" Source="firmwares/GBP3-60_02.9E.00.zip" Size="59395" Sha256="1e8f122c48ae2680e3908ab00467f4c9b9704e4818e401287e33b29cda6b6638" Channel="Stable">
+    <Note Lang="en">support for hardware with out ligth sensor</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GCH3-31" Version="01.36.00" Target="Firmwares\GCH3-31_01.36.00.zip" Source="firmwares/GCH3-31_01.36.00.zip" Size="59342" Sha256="73e6b02685303767b1d02c77679ed6f8ba31f7e0b28c5e556f1ee8eddfb6b522" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GCH3-31" Version="02.9C.00" Target="Firmwares\GCH3-31_02.9C.00.zip" Source="firmwares/GCH3-31_02.9C.00.zip" Size="59547" Sha256="4f550de698d5291374f0215bb6525d18f8ff63d8873e7f008b9108ad5fea1c3c" Channel="Stable">
+    <Note Lang="en">optimization of touch detection</Note>
+    <Note Lang="en">increased bus interference immunity</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GCH3-31" Version="02.9E.00" Target="Firmwares\GCH3-31_02.9E.00.zip" Source="firmwares/GCH3-31_02.9E.00.zip" Size="59520" Sha256="3c722a41567ddafee3f7c06649737b36642159935f06d3b3e20fc21d8985eb32" Channel="Stable">
+    <Note Lang="en">support for hardware with out ligth sensor</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GCH3-31" Version="02.A0.00" Target="Firmwares\GCH3-31_02.A0.00.zip" Source="firmwares/GCH3-31_02.A0.00.zip" Size="59406" Sha256="c0c8f299429f28a1e203ee9eebb63fe2bae7770d1883119cb3f031e3be4e80c0" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GCR3-11" Version="01.34.00" Target="Firmwares\GCR3-11_01.34.00.zip" Source="firmwares/GCR3-11_01.34.00.zip" Size="59260" Sha256="d26e1df58330dcc29a62b31498fa30a203764721a966799af569824fa56888dc" Channel="Stable">
+    <Note Lang="en">first version</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GCR3-11" Version="02.9C.00" Target="Firmwares\GCR3-11_02.9C.00.zip" Source="firmwares/GCR3-11_02.9C.00.zip" Size="59559" Sha256="82355453c2caf629b0f4136a8662d61f9e52ac17511614b7ca39403fa8db8b4e" Channel="Stable">
+    <Note Lang="en">optimization of touch detection</Note>
+    <Note Lang="en">increased bus interference immunity</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GCR3-11" Version="02.9E.00" Target="Firmwares\GCR3-11_02.9E.00.zip" Source="firmwares/GCR3-11_02.9E.00.zip" Size="59525" Sha256="4560a9b2dc405b349b73936f4fca25ee9e716681a168c789252c2530e5ac5b09" Channel="Stable">
+    <Note Lang="en">support for hardware with out ligth sensor</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GCR3-11" Version="02.A0.00" Target="Firmwares\GCR3-11_02.A0.00.zip" Source="firmwares/GCR3-11_02.A0.00.zip" Size="59410" Sha256="f22e02b0bd728ec83fca0b41f53a9e8677b5fa077bc66293850e76c903f2fd62" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GCR3-30" Version="01.00.00" Target="Firmwares\GCR3-30_01.00.00.zip" Source="firmwares/GCR3-30_01.00.00.zip" Size="42768" Sha256="0dd0f897fcceedc3e6f03128df3bee1198349bfd79d812b789aca8f953c130a6" Channel="Stable">
+    <Note Lang="en">first version</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GCR3-30" Version="01.04.00" Target="Firmwares\GCR3-30_01.04.00.zip" Source="firmwares/GCR3-30_01.04.00.zip" Size="42901" Sha256="ea6c63d4345d1ff2bc1518c8579f5f3b4754d4e58c6d0845c26fba260c9f8d22" Channel="Stable">
+    <Note Lang="en">add read and write card data</Note>
+    <Note Lang="en">add RGB control for all backlights</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GDB3-10" Version="01.40.00" Target="Firmwares\GDB3-10_01.40.00.zip" Source="firmwares/GDB3-10_01.40.00.zip" Size="59150" Sha256="99aadadf5253a9a7c6e1f157c1de2d64feb15056c47ed1a98674c0b61e19d61b" Channel="Stable">
+    <Note Lang="en">optimisation of the sensitivity of the buttons.</Note>
+    <Note Lang="en">added colour correction</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GDB3-10" Version="02.9C.00" Target="Firmwares\GDB3-10_02.9C.00.zip" Source="firmwares/GDB3-10_02.9C.00.zip" Size="59376" Sha256="00c2ee987418429fdb2689b8584bab31baaf05641bdb840073013e1ace08b29e" Channel="Stable">
+    <Note Lang="en">optimization of touch detection</Note>
+    <Note Lang="en">increased bus interference immunity</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GDB3-30" Version="01.00.00" Target="Firmwares\GDB3-30_01.00.00.zip" Source="firmwares/GDB3-30_01.00.00.zip" Size="42403" Sha256="3611be2708f43e551ce607d97ac964fe39e735d2d8c09fac8b90206501cd05e0" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GMR3-61" Version="01.38.00" Target="Firmwares\GMR3-61_01.38.00.zip" Source="firmwares/GMR3-61_01.38.00.zip" Size="59406" Sha256="b5c7bd24e7bc8e9de4bc5c64d8f35b0a00f0832228445e144e6d61f1a2b09254" Channel="Stable">
+    <Note Lang="en">Added support entrance system in central unit</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GMR3-61-VS" Version="02.00.00" Target="Firmwares\GMR3-61-VS_02.00.00.zip" Source="firmwares/GMR3-61-VS_02.00.00.zip" Size="59340" Sha256="329341f8a85788c214b6fc647fe613b45b558a4a03d1af38fa52f82b59213384" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GMR3-61-VS" Version="02.A2.00" Target="Firmwares\GMR3-61-VS_02.A2.00.zip" Source="firmwares/GMR3-61-VS_02.A2.00.zip" Size="59459" Sha256="00524d15eb19c09b68d267c86d8670021ffffee7270bee145ccd28a0506a6f4b" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GRT3-100" Version="01.00.11" Target="Firmwares\GRT3-100_01.00.11.zip" Source="firmwares/GRT3-100_01.00.11.zip" Size="61856" Sha256="90c40cd0a513a9e858f25450914fc416d61e7c3e379bc08cf7e752a6d932058a" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Definition" Model="GRT3-100-MODBUS-MASTER" Version="01.00.11" Target="Firmwares\GRT3-100-MODBUS-MASTER_01.00.11.zip" Source="firmwares/GRT3-100-MODBUS-MASTER_01.00.11.zip" Size="2115" Sha256="ff0477ff4ed185e5410e60c9287fd5e6479231475ffd31f2e407f1a352949cd9" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GRT3-50" Version="02.7F.F9" Target="Firmwares\GRT3-50_02.7F.F9.zip" Source="firmwares/GRT3-50_02.7F.F9.zip" Size="57525" Sha256="0562310fa49b7110d3991a84884ed17e7ee500010f587be032eddcdebf635b71" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GRT3-50-V3" Version="03.02.00" Target="Firmwares\GRT3-50-V3_03.02.00.zip" Source="firmwares/GRT3-50-V3_03.02.00.zip" Size="57596" Sha256="dd37810c7fbf00037283ee5218f3679c99e63c65741c5b6904253948bfa910c4" Channel="Stable">
+    <Note Lang="en">fix bug with beep if display backlight is ON.</Note>
+    <Note Lang="en">optilized buttons filtering</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GRT3-70" Version="01.00.04" Target="Firmwares\GRT3-70_01.00.04.zip" Source="firmwares/GRT3-70_01.00.04.zip" Size="57804" Sha256="81c8d7849ab4a6b9889db66048d353c487292d285f70b599aca9b2018685adef" Channel="Stable">
+    <Note Lang="en">fix bug in reading inputs.</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-20SX" Version="01.40.00" Target="Firmwares\GSB3-20SX_01.40.00.zip" Source="firmwares/GSB3-20SX_01.40.00.zip" Size="58893" Sha256="8ee97d7393fe2b6372b0ca70999d31827a8f885d5215613bbc3c47f598460b2e" Channel="Stable">
+    <Note Lang="en">optimization of touch detection</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-20SX" Version="02.9C.00" Target="Firmwares\GSB3-20SX_02.9C.00.zip" Source="firmwares/GSB3-20SX_02.9C.00.zip" Size="59167" Sha256="20cc9a2127c32317958961a5ac90191173aa8e42a6c435260448885f8aa1d105" Channel="Stable">
+    <Note Lang="en">optimization of touch detection</Note>
+    <Note Lang="en">increased bus interference immunity</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-20SX" Version="02.9E.00" Target="Firmwares\GSB3-20SX_02.9E.00.zip" Source="firmwares/GSB3-20SX_02.9E.00.zip" Size="59161" Sha256="b8f346f98877af7a8e9f00c0287bd7605b5e4a897d0e2de2dc0ac40cf5449319" Channel="Stable">
+    <Note Lang="en">support for hardware with out ligth sensor</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-40" Version="01.38.00" Target="Firmwares\GSB3-40_01.38.00.zip" Source="firmwares/GSB3-40_01.38.00.zip" Size="22083" Sha256="d9f4011ce103da8605cfeaa9a55bfb3f9e0c24f738b5703807d79504047d2e7f" Channel="Stable">
+    <Note Lang="en">added suppotr for new hardware version</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-40" Version="02.86.00" Target="Firmwares\GSB3-40_02.86.00.zip" Source="firmwares/GSB3-40_02.86.00.zip" Size="22408" Sha256="5325ad4a32cd535099d8deb1162afe146f66ce20efd735c7e95c5bb9e7e873b8" Channel="Stable">
+    <Note Lang="en">added Long State filter and True state filter in configuration</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-40SX" Version="01.40.00" Target="Firmwares\GSB3-40SX_01.40.00.zip" Source="firmwares/GSB3-40SX_01.40.00.zip" Size="59170" Sha256="c874ec912958d325c786163f5a89126aa3a7f2ed755c347473fc7a6522871d11" Channel="Stable">
+    <Note Lang="en">optimization of touch detection</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-40SX" Version="02.9C.00" Target="Firmwares\GSB3-40SX_02.9C.00.zip" Source="firmwares/GSB3-40SX_02.9C.00.zip" Size="59421" Sha256="43ca818545b52dd2d27f27756861d47871936b8990fb6720a7850d9bd8ce8b2d" Channel="Stable">
+    <Note Lang="en">optimization of touch detection</Note>
+    <Note Lang="en">increased bus interference immunity</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-40SX" Version="02.9E.00" Target="Firmwares\GSB3-40SX_02.9E.00.zip" Source="firmwares/GSB3-40SX_02.9E.00.zip" Size="59285" Sha256="f01a4d5748ce202cf01ecd1b1336095b0c2e0dd934777619f56f7181aa5f1750" Channel="Stable">
+    <Note Lang="en">support for hardware with out ligth sensor</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-40SX-V2" Version="02.9C.00" Target="Firmwares\GSB3-40SX-V2_02.9C.00.zip" Source="firmwares/GSB3-40SX-V2_02.9C.00.zip" Size="43560" Sha256="46a51505f6b73d38cd782912f69fae49249c457b27f5d790d987a7a95537bebc" Channel="Stable">
+    <Note Lang="en">optimization of touch detection</Note>
+    <Note Lang="en">increased bus interference immunity</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-40SX-V2" Version="02.9E.04" Target="Firmwares\GSB3-40SX-V2_02.9E.04.zip" Source="firmwares/GSB3-40SX-V2_02.9E.04.zip" Size="43441" Sha256="1c90065c9947e49d696986ffdeb93d516f70494892f85137f51f2c5bf4c04560" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-40-V2" Version="02.9C.00" Target="Firmwares\GSB3-40-V2_02.9C.00.zip" Source="firmwares/GSB3-40-V2_02.9C.00.zip" Size="43000" Sha256="81a5f4becc746e2dfdbef5fa52abc49bab1ff74f2f3c931a263cd7639f4d0523" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-60" Version="01.36.00" Target="Firmwares\GSB3-60_01.36.00.zip" Source="firmwares/GSB3-60_01.36.00.zip" Size="22082" Sha256="d1e2e9cddd3935cbe57d2b8adfae9447ac3c80458e48369781cfa41773c6a2c3" Channel="Stable">
+    <Note Lang="en">added setup backlight</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-60" Version="02.86.00" Target="Firmwares\GSB3-60_02.86.00.zip" Source="firmwares/GSB3-60_02.86.00.zip" Size="22505" Sha256="f67b0d05654088676e09a6d2d7dd23e60350dccc3a3592fa9b3fe2554d3ecb9a" Channel="Stable">
+    <Note Lang="en">added Long State filter and True state filter in configuration</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-60SX" Version="01.40.00" Target="Firmwares\GSB3-60SX_01.40.00.zip" Source="firmwares/GSB3-60SX_01.40.00.zip" Size="59447" Sha256="001ad4a578ed5eeb3418588375eb0760e503fec87fe853a8a3a85f037bc51ce8" Channel="Stable">
+    <Note Lang="en">optimization of touch detection</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-60SX" Version="02.9C.00" Target="Firmwares\GSB3-60SX_02.9C.00.zip" Source="firmwares/GSB3-60SX_02.9C.00.zip" Size="59471" Sha256="4cffa600518bed8409dfd0398d2bb78f386531967ce0f78c7359be3820b596e3" Channel="Stable">
+    <Note Lang="en">optimization of touch detection</Note>
+    <Note Lang="en">increased bus interference immunity</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-60SX" Version="02.9E.00" Target="Firmwares\GSB3-60SX_02.9E.00.zip" Source="firmwares/GSB3-60SX_02.9E.00.zip" Size="59472" Sha256="402dd98fb35a86d7322dda61b90abfc3356384ad6c5652c1fc6f2ccbe64454d6" Channel="Stable">
+    <Note Lang="en">support for hardware with out ligth sensor</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-60SX-V2" Version="02.9C.00" Target="Firmwares\GSB3-60SX-V2_02.9C.00.zip" Source="firmwares/GSB3-60SX-V2_02.9C.00.zip" Size="43767" Sha256="ce7897b53a97cfa74ad7731d4f3b4b796b4302bc8ac0ad9457f6510f7ef3a013" Channel="Stable">
+    <Note Lang="en">optimization of touch detection</Note>
+    <Note Lang="en">increased bus interference immunity</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-60SX-V2" Version="02.9E.04" Target="Firmwares\GSB3-60SX-V2_02.9E.04.zip" Source="firmwares/GSB3-60SX-V2_02.9E.04.zip" Size="43617" Sha256="bc307e559c0908f7cee8388958b04e6440e19de055c62a1efcf1567c3cba0466" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-60-V2" Version="02.9C.00" Target="Firmwares\GSB3-60-V2_02.9C.00.zip" Source="firmwares/GSB3-60-V2_02.9C.00.zip" Size="43059" Sha256="259326111db055b17e2ffcb6bace1892d0f80233b04382db8cafc82b9c65dbad" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-80" Version="01.3A.00" Target="Firmwares\GSB3-80_01.3A.00.zip" Source="firmwares/GSB3-80_01.3A.00.zip" Size="22186" Sha256="45af95de2e101fe522339d9436f4d92a94cae22b35639b4ccf0c7d037e490bfe" Channel="Stable">
+    <Note Lang="en">optimisation of the sensitivity of the buttons</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-80" Version="02.86.00" Target="Firmwares\GSB3-80_02.86.00.zip" Source="firmwares/GSB3-80_02.86.00.zip" Size="22629" Sha256="574f1eb2d15c849eab41f8713b77c68f60bdc7b81b897ee912a144ea44824e94" Channel="Stable">
+    <Note Lang="en">added Long State filter and True state filter in configuration</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-90SX" Version="02.9C.00" Target="Firmwares\GSB3-90SX_02.9C.00.zip" Source="firmwares/GSB3-90SX_02.9C.00.zip" Size="72529" Sha256="1a04e1e47b8ccce41a7e1724aafe74833bd1069c45443b556d5ba31dfdd9e8ad" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-90SX-V2" Version="02.9C.00" Target="Firmwares\GSB3-90SX-V2_02.9C.00.zip" Source="firmwares/GSB3-90SX-V2_02.9C.00.zip" Size="43994" Sha256="1994402b691752b1a94d35c6da8d2cc750ffb86f63b5bbb6af85db9812527e6d" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-90SX-V2" Version="02.9E.04" Target="Firmwares\GSB3-90SX-V2_02.9E.04.zip" Source="firmwares/GSB3-90SX-V2_02.9E.04.zip" Size="43886" Sha256="14d07cb55c0c3763aac85cbc52483fd94d27b383b7528495adf08ca87b1d0ad0" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-90-V2" Version="02.9C.00" Target="Firmwares\GSB3-90-V2_02.9C.00.zip" Source="firmwares/GSB3-90-V2_02.9C.00.zip" Size="43232" Sha256="9780231c653578af23894d79f87f920b75e24ff5678fce5e5b5a882b3af9b656" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="GSP3-100" Version="01.40.00" Target="Firmwares\GSP3-100_01.40.00.zip" Source="firmwares/GSP3-100_01.40.00.zip" Size="59848" Sha256="01111c1499d18bdeed844c1c6eea664b2b4b7bc892ad179559ee92da72f5a6e8" Channel="Stable">
+    <Note Lang="en">optimisation of the sensitivity of the buttons.</Note>
+    <Note Lang="en">added colour correction</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSP3-100" Version="02.9C.00" Target="Firmwares\GSP3-100_02.9C.00.zip" Source="firmwares/GSP3-100_02.9C.00.zip" Size="59706" Sha256="9ec8ceac4236cdfc4970521f7f07f81a59f58a06a549a451974d9c04517ab564" Channel="Stable">
+    <Note Lang="en">optimization of touch detection</Note>
+    <Note Lang="en">increased bus interference immunity</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Placeholder" Model="HC-CIRCUIT-MODULE" Version="00.00.01" Target="Firmwares\HC-CIRCUIT-MODULE_00.00.01.zip" Source="firmwares/HC-CIRCUIT-MODULE_00.00.01.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="HEAT-REGULATOR" Version="00.00.01" Target="Firmwares\HEAT-REGULATOR_00.00.01.zip" Source="firmwares/HEAT-REGULATOR_00.00.01.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="HOTEL-ROOM" Version="01.00.00" Target="Firmwares\HOTEL-ROOM_01.00.00.zip" Source="firmwares/HOTEL-ROOM_01.00.00.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="HOTEL-ROOM-MODUL" Version="01.00.00" Target="Firmwares\HOTEL-ROOM-MODUL_01.00.00.zip" Source="firmwares/HOTEL-ROOM-MODUL_01.00.00.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="IBWL-02B" Version="02.86.00" Target="Firmwares\IBWL-02B_02.86.00.zip" Source="firmwares/IBWL-02B_02.86.00.zip" Size="59489" Sha256="d7f5a255f1ec9b7b6555d53d6ed7f547421b78c4c0976c2dee98f06253351bb7" Channel="Stable">
+    <Note Lang="en">first version</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="IBWL-20B" Version="02.86.00" Target="Firmwares\IBWL-20B_02.86.00.zip" Source="firmwares/IBWL-20B_02.86.00.zip" Size="59183" Sha256="eb7981e7faf75eb76c44b221c7da27937d653fb22fb3229b99cdceb0b6c2f013" Channel="Stable">
+    <Note Lang="en">first version</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="IDRT3-1" Version="04.00.00" Target="Firmwares\IDRT3-1_04.00.00.zip" Source="firmwares/IDRT3-1_04.00.00.zip" Size="22426" Sha256="6343055b6b4bf5e9375b572f7658341a7cd1e26a052b47364553ce9904adac2c" Channel="Stable">
+    <Note Lang="en">Optimized for CU3-07M, CU3-08M.</Note>
+    <Note Lang="en">change digital device for LED control to analog device.</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="IDRT3-1" Version="04.02.00" Target="Firmwares\IDRT3-1_04.02.00.zip" Source="firmwares/IDRT3-1_04.02.00.zip" Size="22423" Sha256="0fc628f14a38133565d322713101b5e5897b2fb54e701f71d0bbc4a3ed542416" Channel="Stable">
+    <Note Lang="en">Repaired searching unit.</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="IDRT3-1" Version="04.04.00" Target="Firmwares\IDRT3-1_04.04.00.zip" Source="firmwares/IDRT3-1_04.04.00.zip" Size="22424" Sha256="969d152a2bbd1b681a8c8346a22e91da910a4cb46bc66962928476a27d7c5679" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="IM3-140M" Version="02.00.00" Target="Firmwares\IM3-140M_02.00.00.zip" Source="firmwares/IM3-140M_02.00.00.zip" Size="21607" Sha256="f6f670c1cc55ebcc88ddf1ebbd27e51cf210a007a2fa76705350313e6f992566" Channel="Stable">
+    <Note Lang="en">optimized for noise immunity</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="IM3-140M" Version="02.02.00" Target="Firmwares\IM3-140M_02.02.00.zip" Source="firmwares/IM3-140M_02.02.00.zip" Size="21916" Sha256="cf63b875b896c6733a9f4b65ec49b87c8c0226f406726004d055b78476bf6972" Channel="Stable">
+    <Note Lang="en">add true state and long state filters</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="IM3-20B" Version="02.00.00" Target="Firmwares\IM3-20B_02.00.00.zip" Source="firmwares/IM3-20B_02.00.00.zip" Size="21250" Sha256="f68af71d73fda99ac99e4c2baf51a7da44d010ca7b0df0596dce8b15bbaaa606" Channel="Stable">
+    <Note Lang="en">optimized for noise immunity</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="IM3-20B" Version="02.02.00" Target="Firmwares\IM3-20B_02.02.00.zip" Source="firmwares/IM3-20B_02.02.00.zip" Size="21643" Sha256="f37dfb1d3eadf51913b545098ac0bd6221d938b015230177e1d859db7a08bf24" Channel="Stable">
+    <Note Lang="en">add true state and long state filters</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="IM3-40B" Version="02.00.00" Target="Firmwares\IM3-40B_02.00.00.zip" Source="firmwares/IM3-40B_02.00.00.zip" Size="21340" Sha256="d502ea9a8cbaa8526e4e6dedb3096c9a23c4f504c3c9615268e76316131e0801" Channel="Stable">
+    <Note Lang="en">optimized for noise immunity</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="IM3-40B" Version="02.02.00" Target="Firmwares\IM3-40B_02.02.00.zip" Source="firmwares/IM3-40B_02.02.00.zip" Size="21687" Sha256="eec5b7c5ea878ea949a8ce1e3c685b4cedbbddf768efd807e9d57fd8109a2c9b" Channel="Stable">
+    <Note Lang="en">add true state and long state filters</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="IM3-80B" Version="02.00.00" Target="Firmwares\IM3-80B_02.00.00.zip" Source="firmwares/IM3-80B_02.00.00.zip" Size="21528" Sha256="5e2157a9c3e9d32274be0edc971756b22bf2b819c5b65e89d8645b1b16e4d416" Channel="Stable">
+    <Note Lang="en">optimized for noise immunity</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="IM3-80B" Version="02.02.00" Target="Firmwares\IM3-80B_02.02.00.zip" Source="firmwares/IM3-80B_02.02.00.zip" Size="21936" Sha256="379e6156c210f48d713af3877b484c29c5452b35955a2ac089f4d2ecddcbbf57" Channel="Stable">
+    <Note Lang="en">add true state and long state filters</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Definition" Model="IN-OUT-CU3-01M-CU3-02M" Version="02.10.00" Target="Firmwares\IN-OUT-CU3-01M-CU3-02M_02.10.00.zip" Source="firmwares/IN-OUT-CU3-01M-CU3-02M_02.10.00.zip" Size="2440" Sha256="0d20874acae1bd2b90d4a6c286749d451cd51083b0f93feb3e9e12d38694df88" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="INTERNAL-DALI-MASTER" Version="02.96.98" Target="Firmwares\INTERNAL-DALI-MASTER_02.96.98.zip" Source="firmwares/INTERNAL-DALI-MASTER_02.96.98.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="INTERNAL-IN-OUT-MASTER-CU3-01M-CU3-02M" Version="02.10.00" Target="Firmwares\INTERNAL-IN-OUT-MASTER-CU3-01M-CU3-02M_02.10.00.zip" Source="firmwares/INTERNAL-IN-OUT-MASTER-CU3-01M-CU3-02M_02.10.00.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="INTERNAL-MASTER" Version="03.00.31" Target="Firmwares\INTERNAL-MASTER_03.00.31.zip" Source="firmwares/INTERNAL-MASTER_03.00.31.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="INTERNAL-MASTER" Version="03.00.33" Target="Firmwares\INTERNAL-MASTER_03.00.33.zip" Source="firmwares/INTERNAL-MASTER_03.00.33.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="INTERNAL-MASTER" Version="03.00.3E" Target="Firmwares\INTERNAL-MASTER_03.00.3E.zip" Source="firmwares/INTERNAL-MASTER_03.00.3E.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="INTERNAL-MASTER" Version="03.00.42" Target="Firmwares\INTERNAL-MASTER_03.00.42.zip" Source="firmwares/INTERNAL-MASTER_03.00.42.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="INTERNAL-MODBUS" Version="01.40.00" Target="Firmwares\INTERNAL-MODBUS_01.40.00.zip" Source="firmwares/INTERNAL-MODBUS_01.40.00.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="INTERNAL-MODBUS-MASTER" Version="02.00.00" Target="Firmwares\INTERNAL-MODBUS-MASTER_02.00.00.zip" Source="firmwares/INTERNAL-MODBUS-MASTER_02.00.00.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="INTERNAL-RF-MASTER" Version="02.10.00" Target="Firmwares\INTERNAL-RF-MASTER_02.10.00.zip" Source="firmwares/INTERNAL-RF-MASTER_02.10.00.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="IOU3-108M" Version="02.00.00" Target="Firmwares\IOU3-108M_02.00.00.zip" Source="firmwares/IOU3-108M_02.00.00.zip" Size="59928" Sha256="b0fc5fc973d3ed51a877ac1a6ad618756612b9909559d06b35a4bbfa9bb743d3" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="JA3-014M" Version="01.02.00" Target="Firmwares\JA3-014M_01.02.00.zip" Source="firmwares/JA3-014M_01.02.00.zip" Size="23154" Sha256="3c078d7cbc23af928aceb57eb2adab7fe73720734ed52318593b4c6b07281c83" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Definition" Model="JA3-018M" Version="02.A0.00" Target="Firmwares\JA3-018M_02.A0.00.zip" Source="firmwares/JA3-018M_02.A0.00.zip" Size="1861" Sha256="c536e4b4bbe3b16ecd6a0ee0faafd05572ab7b59ac218d5df811eb79838ec910" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="JA3-02B" Version="02.A0.00" Target="Firmwares\JA3-02B_02.A0.00.zip" Source="firmwares/JA3-02B_02.A0.00.zip" Size="21634" Sha256="c9016b513425bd8e35f883db58076e07bbf4cae655de5f148d03a3f114a7cd54" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="JA3-02BDC" Version="02.A0.00" Target="Firmwares\JA3-02BDC_02.A0.00.zip" Source="firmwares/JA3-02BDC_02.A0.00.zip" Size="21634" Sha256="755c9a9ccc9e9c6d0db15195ca56e7c29e50737c5c00542abf089eac744904a3" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="LBC3-02M" Version="01.36.00" Target="Firmwares\LBC3-02M_01.36.00.zip" Source="firmwares/LBC3-02M_01.36.00.zip" Size="21592" Sha256="455115f01077d342281a5c98b24a826b5cb335af7a09248f9545a222fa901e8a" Channel="Stable">
+    <Note Lang="en">added setup minimum and maximum level for OUT1 - OUT2.</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Placeholder" Model="MATHEMATIC-BASE-UNIT" Version="01.00.00" Target="Firmwares\MATHEMATIC-BASE-UNIT_01.00.00.zip" Source="firmwares/MATHEMATIC-BASE-UNIT_01.00.00.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="MATHEMATIC-MODUL" Version="01.00.00" Target="Firmwares\MATHEMATIC-MODUL_01.00.00.zip" Source="firmwares/MATHEMATIC-MODUL_01.00.00.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="MATHEMATIC-STANDARD-UNIT" Version="01.00.00" Target="Firmwares\MATHEMATIC-STANDARD-UNIT_01.00.00.zip" Source="firmwares/MATHEMATIC-STANDARD-UNIT_01.00.00.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="MCD3-01" Version="01.00.00" Target="Firmwares\MCD3-01_01.00.00.zip" Source="firmwares/MCD3-01_01.00.00.zip" Size="21032" Sha256="dd85d9f82774a4647fcacf3042e61f6227fc55a70df0642a37e803b0a73ab895" Channel="Stable">
+    <Note Lang="en">first version</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="MCD3-01" Version="01.00.02" Target="Firmwares\MCD3-01_01.00.02.zip" Source="firmwares/MCD3-01_01.00.02.zip" Size="21168" Sha256="addddf7d5ba8f9e9cb5822cd6f0234ffddacc5c3c3ec35747e17e0336571f582" Channel="Stable">
+    <Note Lang="en">repaired inversion input</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="MCD3-01" Version="01.08.00" Target="Firmwares\MCD3-01_01.08.00.zip" Source="firmwares/MCD3-01_01.08.00.zip" Size="21296" Sha256="abaa93a1dcfa363000cd417f6a5d6c18d7685649d75b3a1d98b20e0752879452" Channel="Stable">
+    <Note Lang="en">add automatic Reset every day</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="MI3-02M" Version="01.40.00" Target="Firmwares\MI3-02M_01.40.00.zip" Source="firmwares/MI3-02M_01.40.00.zip" Size="56352" Sha256="6cae7c4b15bb3e483204c823535e8bb4c7dae500f7b9634d892ca265fc150423" Channel="Stable">
+    <Note Lang="en">optimalization communication</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Placeholder" Model="MODBUS-IP-MASTER" Version="02.00.00" Target="Firmwares\MODBUS-IP-MASTER_02.00.00.zip" Source="firmwares/MODBUS-IP-MASTER_02.00.00.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Definition" Model="MODBUS-IP-MASTER-UNIT" Version="02.00.00" Target="Firmwares\MODBUS-IP-MASTER-UNIT_02.00.00.zip" Source="firmwares/MODBUS-IP-MASTER-UNIT_02.00.00.zip" Size="877" Sha256="05d895c6890e4deafc40def585b0d1b01172fe909b6adf2408a0fe7bbe66f030" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="MODBUS-IP-SLAVE" Version="02.00.00" Target="Firmwares\MODBUS-IP-SLAVE_02.00.00.zip" Source="firmwares/MODBUS-IP-SLAVE_02.00.00.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Definition" Model="MODBUS-IP-SLAVE-UNIT" Version="02.00.00" Target="Firmwares\MODBUS-IP-SLAVE-UNIT_02.00.00.zip" Source="firmwares/MODBUS-IP-SLAVE-UNIT_02.00.00.zip" Size="877" Sha256="05d895c6890e4deafc40def585b0d1b01172fe909b6adf2408a0fe7bbe66f030" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Definition" Model="MODBUS-UNIT" Version="02.00.00" Target="Firmwares\MODBUS-UNIT_02.00.00.zip" Source="firmwares/MODBUS-UNIT_02.00.00.zip" Size="877" Sha256="05d895c6890e4deafc40def585b0d1b01172fe909b6adf2408a0fe7bbe66f030" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="MSB3-40" Version="02.9C.00" Target="Firmwares\MSB3-40_02.9C.00.zip" Source="firmwares/MSB3-40_02.9C.00.zip" Size="43049" Sha256="a1e4a68d1548c4c2bd5962bbc5a8e64f2805c3ae9ee63085948f9cdd1ac5c2a5" Channel="Stable">
+    <Note Lang="en">first version</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="MSB3-60" Version="02.9C.00" Target="Firmwares\MSB3-60_02.9C.00.zip" Source="firmwares/MSB3-60_02.9C.00.zip" Size="43185" Sha256="07c8caa870f02ec45bf97a526508c0ee960921fc6ededf81ab850a150861643f" Channel="Stable">
+    <Note Lang="en">first version</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="MSB3-60" Version="02.9E.00" Target="Firmwares\MSB3-60_02.9E.00.zip" Source="firmwares/MSB3-60_02.9E.00.zip" Size="43187" Sha256="e00f3c97e17423bdf112f75c03cc06b2999606d8af91fafca34415df31bebb2b" Channel="Stable">
+    <Note Lang="en">repaired DIN function</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="MSB3-90" Version="02.9C.00" Target="Firmwares\MSB3-90_02.9C.00.zip" Source="firmwares/MSB3-90_02.9C.00.zip" Size="43354" Sha256="ce56b4e89952f5189da234ca27c85ca6b40bddcaeed418d72f8d7cedb097c103" Channel="Stable">
+    <Note Lang="en">first version</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="MSB3-90" Version="02.9E.00" Target="Firmwares\MSB3-90_02.9E.00.zip" Source="firmwares/MSB3-90_02.9E.00.zip" Size="43358" Sha256="28a56ef7d56bf2e44e63ca035259b7db6fcedad24d73760d8f8a4c976398c33d" Channel="Stable">
+    <Note Lang="en">repaired DIN function</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="PMS3-01" Version="01.00.00" Target="Firmwares\PMS3-01_01.00.00.zip" Source="firmwares/PMS3-01_01.00.00.zip" Size="21026" Sha256="c10c13ea7096a8c4f397e21ca5277edf0019ef0f8b2260e7f1da4afd7fb212ab" Channel="Stable">
+    <Note Lang="en">first version</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="PMS3-01" Version="01.00.02" Target="Firmwares\PMS3-01_01.00.02.zip" Source="firmwares/PMS3-01_01.00.02.zip" Size="21161" Sha256="820c8ae8eaebf0762e5f65838e8736021c454dd74565798701d3add95e315042" Channel="Stable">
+    <Note Lang="en">repaired inversion input</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="RC3-610M-DALI" Version="01.00.0C" Target="Firmwares\RC3-610M-DALI_01.00.0C.zip" Source="firmwares/RC3-610M-DALI_01.00.0C.zip" Size="24307" Sha256="9569b7931367eced2c1cbbc7d439396bce3c04a8ea9e0cde64d02c83305e61fe" Channel="Stable">
+    <Note Lang="en">repaired Dali control</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Placeholder" Model="REGULATORS-MODULE" Version="00.00.01" Target="Firmwares\REGULATORS-MODULE_00.00.01.zip" Source="firmwares/REGULATORS-MODULE_00.00.01.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="RPD3-01" Version="01.00.01" Target="Firmwares\RPD3-01_01.00.01.zip" Source="firmwares/RPD3-01_01.00.01.zip" Size="21854" Sha256="959130b8bf217be1388f9993b6f6818bfc80e0f7b73b70849a5af5106c7d78e9" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="RPD3-01" Version="01.02.00" Target="Firmwares\RPD3-01_01.02.00.zip" Source="firmwares/RPD3-01_01.02.00.zip" Size="22023" Sha256="8e7be8820cbcf6965e02ae5dfd758bb7b1fa3a313a423eeeec9c286f2298bd0c" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="SA3-012M" Version="01.3C.00" Target="Firmwares\SA3-012M_01.3C.00.zip" Source="firmwares/SA3-012M_01.3C.00.zip" Size="22170" Sha256="51b757c7880e9450057aa5a15454eea44b2ebc90db94a01f3d4858e12f25b7cf" Channel="Stable">
+    <Note Lang="en">Interference immunity has been improved</Note>
+    <Note Lang="en">Without integration quick pulse on outputs</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="SA3-012M" Version="01.84.00" Target="Firmwares\SA3-012M_01.84.00.zip" Source="firmwares/SA3-012M_01.84.00.zip" Size="22290" Sha256="1a0a584737fe6ff5db49fda9dee40c66af76a785e2cf5895292bac75f8331bdf" Channel="Stable">
+    <Note Lang="en">Function quick pulse has been optimized</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="SA3-012M" Version="02.A0.00" Target="Firmwares\SA3-012M_02.A0.00.zip" Source="firmwares/SA3-012M_02.A0.00.zip" Size="22770" Sha256="661bd2eb6fc4c03a2fb257dd694a12d8cb699af39fce8836329ea8535486574c" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="SA3-014M" Version="01.02.00" Target="Firmwares\SA3-014M_01.02.00.zip" Source="firmwares/SA3-014M_01.02.00.zip" Size="23408" Sha256="8db3be13ad57dc51dc9b55c0e8656904f1c1ac241dd12110b5dac678b7451fae" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="SA3-01B" Version="02.A0.00" Target="Firmwares\SA3-01B_02.A0.00.zip" Source="firmwares/SA3-01B_02.A0.00.zip" Size="21567" Sha256="0735e9ac7525613700962fdedff924e1ab68d1f21b29fd560c91dacd469cefc1" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="SA3-022M-RELAY" Version="02.A0.00" Target="Firmwares\SA3-022M-RELAY_02.A0.00.zip" Source="firmwares/SA3-022M-RELAY_02.A0.00.zip" Size="88827" Sha256="ab1b17f80a113c43f0b353b283e945f63163de5e560f1db2d76b5c9a69ea7dce" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="SA3-02B" Version="02.A4.00" Target="Firmwares\SA3-02B_02.A4.00.zip" Source="firmwares/SA3-02B_02.A4.00.zip" Size="21740" Sha256="834c08c2647c472dabe1f8de9d3a3135c5ad76d2f3ef7e89f67d19c8e4653d76" Channel="Stable">
+    <Note Lang="en">fix bug with setup RE1 and RE2</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="SA3-02M" Version="02.A0.00" Target="Firmwares\SA3-02M_02.A0.00.zip" Source="firmwares/SA3-02M_02.A0.00.zip" Size="21569" Sha256="40337a9c0f036b20922c7e30e53b8d7c242e9f4b2de5191a609a126563a75f67" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="SA3-04M" Version="02.A0.00" Target="Firmwares\SA3-04M_02.A0.00.zip" Source="firmwares/SA3-04M_02.A0.00.zip" Size="21839" Sha256="e791cc5448257ba9a260699d774785128649079154cd5a4291ad2e228f13a383" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="SA3-06M" Version="02.A0.00" Target="Firmwares\SA3-06M_02.A0.00.zip" Source="firmwares/SA3-06M_02.A0.00.zip" Size="22039" Sha256="193169554781f7eefd5852b011c6ab341677af133a5e59667d5e2c34c47a3d4d" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="TI3-10B" Version="01.38.00" Target="Firmwares\TI3-10B_01.38.00.zip" Source="firmwares/TI3-10B_01.38.00.zip" Size="42830" Sha256="f266123c21ca929ca32060cbcc4a5fb0d23268b3a6b1521677a783528300ee8d" Channel="Stable">
+    <Note Lang="en">optimized averaging temperatures after restrart unit</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="TI3-40B" Version="01.38.00" Target="Firmwares\TI3-40B_01.38.00.zip" Source="firmwares/TI3-40B_01.38.00.zip" Size="43047" Sha256="28254bdb055748d08ca644a6915828b547ba15d49281a4980245d99b89e61e80" Channel="Stable">
+    <Note Lang="en">optimized averaging temperatures after restrart unit</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="TI3-60M" Version="01.38.00" Target="Firmwares\TI3-60M_01.38.00.zip" Source="firmwares/TI3-60M_01.38.00.zip" Size="43173" Sha256="cf0d268245f48ea275154d98d662ea8f862e3141e37309ec1c069263c8bab252" Channel="Stable">
+    <Note Lang="en">optimized averaging temperatures after restrart unit</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Placeholder" Model="VALVE-REGULATOR" Version="00.00.01" Target="Firmwares\VALVE-REGULATOR_00.00.01.zip" Source="firmwares/VALVE-REGULATOR_00.00.01.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="WMR3-21" Version="04.04.00" Target="Firmwares\WMR3-21_04.04.00.zip" Source="firmwares/WMR3-21_04.04.00.zip" Size="58953" Sha256="c5678b0f5243dd236d717fcc003bd62c88b18b39922f184fca739301edd3d059" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="WSB3-20" Version="04.00.00" Target="Firmwares\WSB3-20_04.00.00.zip" Source="firmwares/WSB3-20_04.00.00.zip" Size="21759" Sha256="4a0363ebb8bb147f5138dd571fd943447ca7aaa1551c5bcfe06f30022d35c10d" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="WSB3-20-HUM" Version="01.3C.00" Target="Firmwares\WSB3-20-HUM_01.3C.00.zip" Source="firmwares/WSB3-20-HUM_01.3C.00.zip" Size="21763" Sha256="8bae5954c56aada3ff0f069b1701c0c101b151b2a9db49758fa20c8c81c051c9" Channel="Stable">
+    <Note Lang="en">optimized read humidity sensor</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="WSB3-20-HUM" Version="02.84.00" Target="Firmwares\WSB3-20-HUM_02.84.00.zip" Source="firmwares/WSB3-20-HUM_02.84.00.zip" Size="21913" Sha256="d8cfa1f8b6bd862496251531e340cdaf4dfc6adc7fe70f4191ea3d54996b44fa" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="WSB3-40" Version="04.00.00" Target="Firmwares\WSB3-40_04.00.00.zip" Source="firmwares/WSB3-40_04.00.00.zip" Size="21873" Sha256="1300212bd67040370dac255b6c738a11e726f4c44d2f947fea99c85150b2c454" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="WSB3-40-HUM" Version="01.3C.00" Target="Firmwares\WSB3-40-HUM_01.3C.00.zip" Source="firmwares/WSB3-40-HUM_01.3C.00.zip" Size="21877" Sha256="234b9a254318f6c9c1f53743b83a98c19330e79619ff0f6cdfd68ce9f649f470" Channel="Stable">
+    <Note Lang="en">optimized read humidity sensor</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="WSB3-40-HUM" Version="02.83.00" Target="Firmwares\WSB3-40-HUM_02.83.00.zip" Source="firmwares/WSB3-40-HUM_02.83.00.zip" Size="22028" Sha256="7847e19566fc5a19ce72b42d91e74fb90525e9da46c67ff9c1908311d8a76ccd" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="WSB3-40-HUM" Version="04.02.00" Target="Firmwares\WSB3-40-HUM_04.02.00.zip" Source="firmwares/WSB3-40-HUM_04.02.00.zip" Size="22118" Sha256="0a958fe4f34eeb07b51da3e8b5468c71b4f6cc100cefa3d62600f2f7e2582da1" Channel="Stable" />
+</FirmwareCatalog>

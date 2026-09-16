@@ -17,15 +17,43 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Validate firmware naming and contents
+      - name: Validate naming, duplicates and archive contents
         shell: pwsh
         run: .\tools\Test-FirmwareNames.ps1
 
-      # Added in phase 1, once the catalogue exists:
-      #   - catalogue lists exactly the files present on disk
-      #   - every SHA-256 in the catalogue matches its archive
-      #   - catalog.sig verifies against a pinned public key in keys/
-      #   - Sequence is greater than the previously published catalogue
+  catalogue:
+    name: Catalogue and signature
+    runs-on: windows-latest
+    steps:
+      # Two commits, so the published Sequence can be read from the previous state
+      # and a rollback caught before it merges.
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
+
+      - name: Read the currently published Sequence
+        id: published
+        shell: pwsh
+        run: |
+          $previous = 0
+          $ref = if ($env:GITHUB_EVENT_NAME -eq 'pull_request') { 'origin/' + $env:GITHUB_BASE_REF } else { 'HEAD^' }
+          $raw = git show "${ref}:catalog.xml" 2>$null
+          if ($LASTEXITCODE -eq 0 -and -not [string]::IsNullOrWhiteSpace($raw)) {
+            try {
+              $doc = New-Object System.Xml.XmlDocument
+              $doc.LoadXml(($raw -join "`n"))
+              $previous = [int]$doc.FirmwareCatalog.Sequence
+            }
+            catch {
+              Write-Output "::warning::The published catalogue could not be parsed; the rollback check is skipped."
+            }
+          }
+          Write-Output "Published sequence: $previous"
+          "sequence=$previous" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+
+      - name: Verify the catalogue, its signature and every digest
+        shell: pwsh
+        run: .\tools\Test-Catalog.ps1 -PreviousSequence ${{ steps.published.outputs.sequence }}
 
   secrets:
     name: No private key material

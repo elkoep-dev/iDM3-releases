@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="EMDC-64M" Source="EMDC-64M - Firmware history.txt">
+  <Release Version="01.4C.00">
+    <Note Lang="en">Support setup sensitivity and mode in DMD3-1 on DALI</Note>
+  </Release>
+  <Release Version="01.4A.00">
+    <Note Lang="en">Support DALI MASTER unit</Note>
+  </Release>
+  <Release Version="01.46.00">
+    <Note Lang="en">Support for the direct configuration of the DALI from the iDM3</Note>
+  </Release>
+  <Release Version="01.42.00">
+    <Note Lang="en">DALI8 for tunable white functionality has been implemented</Note>
+    <Note Lang="en">Group control of Correlated Color Temperature has been implemented</Note>
+  </Release>
+  <Release Version="01.30.00">
+    <Note Lang="en">First release</Note>
+  </Release>
+</ReleaseNotes>

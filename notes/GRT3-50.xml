@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="GRT3-50" Source="GRT3-50 - Firmware history.txt">
+  <Release Version="02.7F.FA">
+    <Note Lang="en">optimization of touch detection</Note>
+    <Note Lang="en">increased bus interference immunity</Note>
+  </Release>
+  <Release Version="02.7F.FF">
+    <Note Lang="en">Optimized control HC4.</Note>
+  </Release>
+  <Release Version="01.40.00">
+    <Note Lang="en">optimisation of the sensitivity of the buttons.</Note>
+    <Note Lang="en">added colour correction</Note>
+    <Note Lang="en">added setup backlight for PLUS and MINUS button.</Note>
+  </Release>
+  <Release Version="01.22.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

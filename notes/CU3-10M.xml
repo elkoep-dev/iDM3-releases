@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="CU3-10M" Source="CU3-10M - Firmware history.txt">
+  <Release Version="02.97.56">
+    <Note Lang="en">add status page to web configuration</Note>
+  </Release>
+  <Release Version="02.97.54">
+    <Note Lang="en">add Modbus-IP-Master and Modbus-IP-Slave</Note>
+  </Release>
+  <Release Version="02.97.50">
+    <Note Lang="en">add web state page</Note>
+    <Note Lang="en">DALI control light with OFF function</Note>
+  </Release>
+  <Release Version="02.97.49">
+    <Note Lang="en">add web configuration</Note>
+  </Release>
+  <Release Version="02.97.41">
+    <Note Lang="en">optimized MQTT driver</Note>
+  </Release>
+  <Release Version="02.97.38">
+    <Note Lang="en">optimized MQTT driver</Note>
+    <Note Lang="en">add support for Modbus Unit in MQTT JSON format</Note>
+    <Note Lang="en">add support for Hotel-Room Object in MQTT JSON format</Note>
+    <Note Lang="en">repaired send Cool required temperature for thermostats</Note>
+  </Release>
+  <Release Version="02.97.36">
+    <Note Lang="en">repaider MQTT connection.</Note>
+    <Note Lang="en">optimized memmory for events</Note>
+  </Release>
+  <Release Version="02.97.33">
+    <Note Lang="en">repaider network freezing.</Note>
+    <Note Lang="en">optimized MODBUS communication</Note>
+  </Release>
+  <Release Version="02.97.26">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

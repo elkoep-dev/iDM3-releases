@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Firmware archives and release-history files do not always use the same model name.
+  This maps a firmware model to the history file that documents it.
+
+  Confirmed="false" means the mapping was inferred from the naming pattern and has NOT
+  been checked by anyone at ELKO EP. Build-Catalog.ps1 applies it but reports it, and
+  validation warns while any remain unconfirmed. Confirm or delete each one - a wrong
+  mapping shows a technician the release notes of a different product.
+-->
+<ModelAliases>
+
+  <!-- Variant suffix on the firmware archive, base model in the history file -->
+  <Alias Firmware="FA3-612M-RELAY"  Notes="FA3-612M"  Confirmed="false" />
+  <Alias Firmware="EA3-022M-RELAY"  Notes="EA3-022M"  Confirmed="false" />
+  <Alias Firmware="SA3-022M-RELAY"  Notes="SA3-012M"  Confirmed="false" />
+  <Alias Firmware="DLS3-1-DALI"     Notes="DLS3-1"    Confirmed="false" />
+  <Alias Firmware="DMD3-1-DALI"     Notes="DMD3-1"    Confirmed="false" />
+  <Alias Firmware="RC3-610M-DALI"   Notes="RC3-610M"  Confirmed="false" />
+  <Alias Firmware="EST3-HOTEL"      Notes="EST3"      Confirmed="false" />
+  <Alias Firmware="GMR3-61-VS"      Notes="GMR3-61"   Confirmed="false" />
+
+  <!-- Hardware revision suffix -->
+  <Alias Firmware="GSB3-40-V2"      Notes="GSB3-40"    Confirmed="false" />
+  <Alias Firmware="GSB3-40SX-V2"    Notes="GSB3-40SX"  Confirmed="false" />
+  <Alias Firmware="GSB3-60-V2"      Notes="GSB3-60"    Confirmed="false" />
+  <Alias Firmware="GSB3-60SX-V2"    Notes="GSB3-60SX"  Confirmed="false" />
+
+  <!-- Naming drift between the two sources -->
+  <Alias Firmware="IBWL-02B"        Notes="IBWL3-02B" Confirmed="false" />
+  <Alias Firmware="IBWL-20B"        Notes="IBWL3-20B" Confirmed="false" />
+  <Alias Firmware="MCD3-01"         Notes="MCD3-1"    Confirmed="false" />
+  <Alias Firmware="PMS3-01"         Notes="PMS3-1"    Confirmed="false" />
+
+  <!--
+    Firmware with no history file at all, and no obvious alias. Either the device is
+    newer than its documentation, or the history was never written:
+
+      A-IBUS-SLAVE, DA3-03M-RGBW, DA3-66M, GDB3-30, GRT3-100, GRT3-100-MODBUS-MASTER,
+      GSB3-90SX, GSB3-90SX-V2, GSB3-90-V2, IOU3-108M, JA3-014M, JA3-018M, JA3-02BDC,
+      RPD3-01, SA3-014M
+
+    History files with no firmware present - legacy models, or PRO variants whose
+    firmware is not currently shipped:
+
+      CU3-01M, CU3-02M, GBP3-60PRO, GCR3-11PRO, GDB3-10PRO, GHR3-11, GSB3-20PROSX,
+      GSB3-40PROSX, GSB3-60PROSX, GSP3-100PRO, MI3-02M-INELS2
+
+    The virtual modules (INTERNAL-*, MATHEMATIC-*, MODBUS-IP-*, HOTEL-ROOM*, the
+    regulators, CONTROLLER, ASTRONOMICAL-*, DATE-TIME-UNIT, DALI-DMX-UNIT,
+    HC-CIRCUIT-MODULE) are expected to have no history - they are Placeholder or
+    Definition entries, not flashable firmware.
+  -->
+
+</ModelAliases>

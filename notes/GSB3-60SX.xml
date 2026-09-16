@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="GSB3-60SX" Source="GSB3-60SX - Firmware history.txt">
+  <Release Version="02.9E.00">
+    <Note Lang="en">support for hardware with out ligth sensor</Note>
+  </Release>
+  <Release Version="02.9C.00">
+    <Note Lang="en">optimization of touch detection</Note>
+    <Note Lang="en">increased bus interference immunity</Note>
+  </Release>
+  <Release Version="01.40.00">
+    <Note Lang="en">optimization of touch detection</Note>
+  </Release>
+  <Release Version="01.22.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

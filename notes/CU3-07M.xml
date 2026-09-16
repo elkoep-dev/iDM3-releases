@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="CU3-07M" Source="CU3-07M - Firmware history.txt">
+  <Release Version="02.97.56">
+    <Note Lang="en">add status page to web configuration</Note>
+  </Release>
+  <Release Version="02.97.54">
+    <Note Lang="en">add Modbus-IP-Master and Modbus-IP-Slave</Note>
+  </Release>
+  <Release Version="02.97.50">
+    <Note Lang="en">add web state page</Note>
+    <Note Lang="en">DALI control light with OFF function</Note>
+  </Release>
+  <Release Version="02.97.49">
+    <Note Lang="en">add web configuration</Note>
+  </Release>
+  <Release Version="02.97.41">
+    <Note Lang="en">optimized MQTT driver</Note>
+  </Release>
+  <Release Version="02.97.38">
+    <Note Lang="en">optimized MQTT driver</Note>
+    <Note Lang="en">add support for Modbus Unit in MQTT JSON format</Note>
+    <Note Lang="en">add support for Hotel-Room Object in MQTT JSON format</Note>
+    <Note Lang="en">repaired send Cool required temperature for thermostats</Note>
+  </Release>
+  <Release Version="02.97.36">
+    <Note Lang="en">repaider MQTT connection.</Note>
+    <Note Lang="en">optimized memmory for events</Note>
+  </Release>
+  <Release Version="02.97.33">
+    <Note Lang="en">repaider network freezing.</Note>
+  </Release>
+  <Release Version="02.97.18">
+    <Note Lang="en">repaired saving project error, if is MQTT communication</Note>
+  </Release>
+  <Release Version="02.97.03">
+    <Note Lang="en">repaired unit firmware update</Note>
+  </Release>
+  <Release Version="02.97.02">
+    <Note Lang="en">repaired MQTT for BITS and Integers</Note>
+  </Release>
+  <Release Version="02.97.01">
+    <Note Lang="en">repaired CU speed,  when MQTT acount is bad</Note>
+    <Note Lang="en">changed MQTT connected topics for Units to JSON format</Note>
+    <Note Lang="en">repaired sending MQTT connected topics for Units</Note>
+  </Release>
+  <Release Version="02.96.98">
+    <Note Lang="en">repaired send minus temperature to IDM3 and Cloud</Note>
+    <Note Lang="en">added gateway status into MQTT communication</Note>
+  </Release>
+  <Release Version="02.96.96">
+    <Note Lang="en">repaired send temperature to Cloud</Note>
+  </Release>
+  <Release Version="02.96.95">
+    <Note Lang="en">added system bits and integers into MQTT communication</Note>
+    <Note Lang="en">repaired Flash memmor driver</Note>
+  </Release>
+  <Release Version="02.96.93">
+    <Note Lang="en">optimized network speed</Note>
+    <Note Lang="en">added support for new memmory types</Note>
+  </Release>
+  <Release Version="02.96.91">
+    <Note Lang="en">MQTT add status CU</Note>
+    <Note Lang="en">MQTT add GRT3-70,PMS3-1, MCD3-1</Note>
+  </Release>
+  <Release Version="02.96.85">
+    <Note Lang="en">MQTT add unit MSB3-40, MSB3-60, MSB3-90, GSB3-40-V2, GSB3-60-V2, GSB3-90-V2, GSB3-40Sx-V2, GSB3-60Sx-V2, GSB3-90Sx-V2 SA3-014M, JA3-014M</Note>
+    <Note Lang="en">optimized IP communication speed</Note>
+  </Release>
+  <Release Version="02.96.74">
+    <Note Lang="en">fix bug with reconnect IP to Cloud</Note>
+  </Release>
+  <Release Version="02.96.72">
+    <Note Lang="en">optimalized send events to Cloud</Note>
+  </Release>
+  <Release Version="02.96.71">
+    <Note Lang="en">optimalized EBM communication with EMDC</Note>
+  </Release>
+  <Release Version="02.96.70">
+    <Note Lang="en">optimalized send events to Cloud</Note>
+  </Release>
+  <Release Version="02.96.68">
+    <Note Lang="en">optimalized send events to Cloud</Note>
+  </Release>
+  <Release Version="02.96.67">
+    <Note Lang="en">optimalized send events to Cloud</Note>
+  </Release>
+  <Release Version="02.96.66">
+    <Note Lang="en">optimalized send events to Cloud</Note>
+  </Release>
+  <Release Version="02.96.65">
+    <Note Lang="en">optimalized send events to Cloud</Note>
+  </Release>
+  <Release Version="02.96.63">
+    <Note Lang="en">fix bug with BUS communication</Note>
+  </Release>
+  <Release Version="02.96.62">
+    <Note Lang="en">fix bug with BUS communication</Note>
+  </Release>
+  <Release Version="02.96.58">
+    <Note Lang="en">fix bug with search bus unit</Note>
+  </Release>
+  <Release Version="02.96.53">
+    <Note Lang="en">fix bug with freez IP communication wiht IDM3</Note>
+  </Release>
+  <Release Version="02.96.50">
+    <Note Lang="en">fix bug with MQTT controling Heat/Cool</Note>
+  </Release>
+  <Release Version="02.96.50">
+    <Note Lang="en">fix bug with MQTT controling Heat/Cool</Note>
+  </Release>
+  <Release Version="02.96.49">
+    <Note Lang="en">fix bug with MQTT controling Heat/Cool</Note>
+  </Release>
+  <Release Version="02.96.48">
+    <Note Lang="en">optilized memmory for wires logic</Note>
+  </Release>
+  <Release Version="02.96.46">
+    <Note Lang="en">fix bug with bus communication</Note>
+  </Release>
+  <Release Version="02.96.45">
+    <Note Lang="en">add log bus communication</Note>
+  </Release>
+  <Release Version="02.96.42">
+    <Note Lang="en">add save export for aplication to CU</Note>
+    <Note Lang="en">repair bug with factory default setup CU</Note>
+  </Release>
+  <Release Version="02.96.36">
+    <Note Lang="en">add load project from CU3-07M and CU3-08M</Note>
+  </Release>
+  <Release Version="02.96.31">
+    <Note Lang="en">repair bug in BUS communication with GRT3 units</Note>
+  </Release>
+  <Release Version="02.96.28">
+    <Note Lang="en">repair bugs in Twostate program online setup via IDM3</Note>
+    <Note Lang="en">repair bug in BUS LED signalization</Note>
+  </Release>
+  <Release Version="02.96.27">
+    <Note Lang="en">repair bugs in Live modul unit information (EMDC-64M, MI3-02M)</Note>
+    <Note Lang="en">repair bugs in get CU third part communication settings (setup events)</Note>
+  </Release>
+  <Release Version="02.96.25">
+    <Note Lang="en">repair bugs with reset CU via IDM3</Note>
+  </Release>
+  <Release Version="02.96.23">
+    <Note Lang="en">repair bugs in Twostate program</Note>
+    <Note Lang="en">repair bugs in Live unit information</Note>
+    <Note Lang="en">repair bugs in HC - correction with GRT3-50 and IDRT3</Note>
+  </Release>
+  <Release Version="02.96.16">
+    <Note Lang="en">added BUS searching</Note>
+    <Note Lang="en">repair bugs in Twostate program</Note>
+    <Note Lang="en">repair bugs in HC - time plan</Note>
+    <Note Lang="en">repair bugs in HC - fovorite temperature and control correction with GRT3-50 and IDRT3</Note>
+  </Release>
+  <Release Version="02.96.10">
+    <Note Lang="en">added connection on Cloud</Note>
+    <Note Lang="en">added send event on Cloud</Note>
+  </Release>
+  <Release Version="02.93.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

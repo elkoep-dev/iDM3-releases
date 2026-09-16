@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="WSB3-40" Source="WSB3-40 - Firmware history.txt">
+  <Release Version="01.36.00">
+    <Note Lang="en">optimized switch detection</Note>
+  </Release>
+  <Release Version="01.34.00">
+    <Note Lang="en">optimized temperature input range by sensor types</Note>
+    <Note Lang="en">integration negative inputs</Note>
+  </Release>
+  <Release Version="01.32.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="ADC3-60M" Source="ADC3-60M - Firmware history.txt">
+  <Release Version="01.3C.00">
+    <Note Lang="en">Add support SKS-202 sensors</Note>
+  </Release>
+  <Release Version="01.3A.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

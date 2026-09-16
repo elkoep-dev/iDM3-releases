@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="CU3-09M" Source="CU3-09M - Firmware history.txt">
+  <Release Version="02.97.58">
+    <Note Lang="en">repaired DALI dimming</Note>
+  </Release>
+  <Release Version="02.97.57">
+    <Note Lang="en">add status page to web configuration</Note>
+    <Note Lang="en">DALI control light with OFF function</Note>
+  </Release>
+  <Release Version="02.97.56">
+    <Note Lang="en">add status page to web configuration</Note>
+    <Note Lang="en">DALI control light with percent</Note>
+  </Release>
+  <Release Version="02.97.55">
+    <Note Lang="en">add Modbus-IP-Master and Modbus-IP-Slave</Note>
+    <Note Lang="en">DALI control light with OFF function</Note>
+  </Release>
+  <Release Version="02.97.54">
+    <Note Lang="en">add Modbus-IP-Master and Modbus-IP-Slave</Note>
+    <Note Lang="en">DALI control light with percent</Note>
+  </Release>
+  <Release Version="02.97.51">
+    <Note Lang="en">add web state page</Note>
+    <Note Lang="en">DALI control light with percent</Note>
+  </Release>
+  <Release Version="02.97.50">
+    <Note Lang="en">add web state page</Note>
+    <Note Lang="en">DALI control light with OFF function</Note>
+  </Release>
+  <Release Version="02.97.41">
+    <Note Lang="en">optimized MQTT driver</Note>
+  </Release>
+  <Release Version="02.97.38">
+    <Note Lang="en">optimized MQTT driver</Note>
+    <Note Lang="en">add support for Modbus Unit in MQTT JSON format</Note>
+    <Note Lang="en">add support for Hotel-Room Object in MQTT JSON format</Note>
+    <Note Lang="en">repaired send Cool required temperature for thermostats</Note>
+  </Release>
+  <Release Version="02.97.36">
+    <Note Lang="en">repaider MQTT connection.</Note>
+    <Note Lang="en">optimized memmory for events</Note>
+  </Release>
+  <Release Version="02.97.33">
+    <Note Lang="en">repaider network freezing.</Note>
+    <Note Lang="en">repaired control DALI ballast.</Note>
+  </Release>
+  <Release Version="02.97.28">
+    <Note Lang="en">repaired control DALI ballast.</Note>
+  </Release>
+  <Release Version="02.97.18">
+    <Note Lang="en">repaired saving project error, if is MQTT communication</Note>
+  </Release>
+  <Release Version="02.97.16">
+    <Note Lang="en">repaired Dali communication (speed with BUS and DALI BUS together)</Note>
+  </Release>
+  <Release Version="02.97.11">
+    <Note Lang="en">repaired Dali communication (Dali speed with control 64 dallasts together, Dali speed when disconnect LAN cable, prioritization control, when dallast are changed)</Note>
+  </Release>
+  <Release Version="02.97.03">
+    <Note Lang="en">repaired unit firmware update</Note>
+  </Release>
+  <Release Version="02.97.02">
+    <Note Lang="en">repaired MQTT for BITS and Integers</Note>
+  </Release>
+  <Release Version="02.97.01">
+    <Note Lang="en">repaired CU speed,  when MQTT acount is bad</Note>
+    <Note Lang="en">changed MQTT connected topics for Units to JSON format</Note>
+    <Note Lang="en">repaired sending MQTT connected topics for Units</Note>
+  </Release>
+  <Release Version="02.96.98">
+    <Note Lang="en">repaired send minus temperature to IDM3 and Cloud</Note>
+    <Note Lang="en">added gateway status into MQTT communication</Note>
+  </Release>
+  <Release Version="02.96.96">
+    <Note Lang="en">repaired send temperature to Cloud</Note>
+  </Release>
+  <Release Version="02.96.95">
+    <Note Lang="en">added system bits and integers into MQTT communication</Note>
+    <Note Lang="en">repaired Flash memmor driver</Note>
+  </Release>
+  <Release Version="02.96.93">
+    <Note Lang="en">optimized network speed</Note>
+    <Note Lang="en">added support for new memmory types</Note>
+  </Release>
+  <Release Version="02.96.91">
+    <Note Lang="en">MQTT add status CU</Note>
+    <Note Lang="en">MQTT add GRT3-70,PMS3-1, MCD3-1</Note>
+    <Note Lang="en">repaired status for DALI bus</Note>
+  </Release>
+  <Release Version="02.96.85">
+    <Note Lang="en">MQTT add unit MSB3-40, MSB3-60, MSB3-90, GSB3-40-V2, GSB3-60-V2, GSB3-90-V2, GSB3-40Sx-V2, GSB3-60Sx-V2, GSB3-90Sx-V2 SA3-014M, JA3-014M</Note>
+    <Note Lang="en">optimized IP communication speed</Note>
+  </Release>
+  <Release Version="02.96.84">
+    <Note Lang="en">opdimized speed for full load DALI BUS</Note>
+  </Release>
+  <Release Version="02.96.82">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

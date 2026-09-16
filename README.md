@@ -1,4 +1,4 @@
-# iNELS Updates
+# iDM3 Releases
 
 Firmware, release metadata and documentation for the **iNELS BUS** system, published by
 ELKO EP. This repository is the source of truth that the **iDM3** configuration tool reads
@@ -39,13 +39,48 @@ is the firmware image (`.if3` for bus units, `.nf3` for central units), the devi
 # 1. Add the archive
 Copy-Item .\NEW-MODEL_01.20.00.zip .\firmwares\
 
-# 2. Regenerate and sign the catalogue (phase 1)
-.\tools\Build-Catalog.ps1 -PrivateKeyPath <path to the offline private key>
+# 2. Add its release notes to notes\NEW-MODEL.xml, or regenerate them all from the
+#    history files that ship with iDM3
+.\tools\Import-FirmwareHistory.ps1 -HistoryPath "...\Advance\Documentation\Firmware history"
 
-# 3. Commit and open a pull request
-git add firmwares catalog.xml catalog.sig
+# 3. Regenerate and sign the catalogue with the offline private key
+.\tools\Build-Catalog.ps1 -PrivateKeyPath E:\offline\idm3-catalog-active.private.xml
+
+# 4. Verify it exactly as iDM3 will
+.\tools\Test-Catalog.ps1
+
+# 5. Commit and open a pull request
+git add firmwares notes catalog.xml catalog.sig
 git commit -m "Add NEW-MODEL 01.20.00"
 ```
+
+## The catalogue
+
+`catalog.xml` is the only file iDM3 has to trust: it carries a SHA-256 for every archive,
+so the single signature in `catalog.sig` covers the whole repository. Entries are
+path-based, so components other than firmware can be added later without changing the
+schema or the client.
+
+```xml
+<Item Component="Firmwares" Kind="Firmware" Model="GCH3-31" Version="02.9E.00"
+      Target="Firmwares\GCH3-31_02.9E.00.zip" Source="firmwares/GCH3-31_02.9E.00.zip"
+      Size="59520" Sha256="3c722a41..." Channel="Stable">
+  <Note Lang="en">support for hardware with out ligth sensor</Note>
+</Item>
+```
+
+`Kind` matters. `Firmwares/` has always held three different things and only one of them
+can be flashed, so iDM3 offers `Kind="Firmware"` and nothing else:
+
+| Kind | Contents | Count |
+|---|---|---|
+| `Firmware` | a `.if3` / `.nf3` image | 128 |
+| `Definition` | only `unit.xml` - a device model, nothing to flash | 16 |
+| `Placeholder` | an empty archive - a virtual module inside the central unit | 26 |
+
+`Sequence` increases with every publication and `ValidUntil` bounds how long a catalogue
+stays acceptable. Together they stop an old, validly-signed catalogue being replayed to
+steer clients onto a withdrawn firmware.
 
 CI validates naming, duplicate versions, catalogue-matches-disk and the signature before
 the change can merge. Merging publishes it to every iDM3 installation on their next check.

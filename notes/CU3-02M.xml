@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="CU3-02M" Source="CU3-02M - Firmware history.txt">
+  <Release Version="02.C4.00">
+    <Note Lang="en">increased bus interference immunity</Note>
+    <Note Lang="en">optimized create backup project and return backup project.</Note>
+  </Release>
+  <Release Version="02.B0.00">
+    <Note Lang="en">Optimized entrance system</Note>
+    <Note Lang="en">Added support send card number to third part communication.</Note>
+    <Note Lang="en">Added support FA3-612M</Note>
+    <Note Lang="en">Deleted status Wait firmware after factory default.</Note>
+    <Note Lang="en">Added support for create backup project and return backup project.</Note>
+    <Note Lang="en">Optimized function Window detector in Controller.</Note>
+    <Note Lang="en">Added Athen city and added sunset and sunrise time devices into Astronomical unit.</Note>
+    <Note Lang="en">Added firmware version all unit and modul into project.</Note>
+    <Note Lang="en">Added error information if not download SMS into the GSM3.</Note>
+    <Note Lang="en">Added error information if not download card into card reader.</Note>
+  </Release>
+  <Release Version="02.9A.40">
+    <Note Lang="en">Added support GBP3-60/PRO, GCR3-11/PRO, GDB3-10/PRO, GSB3-20/PRO/Sx, GSB3-40/PRO/Sx, GSB3-60/PRO/Sx, GSP3-100/PRO.</Note>
+  </Release>
+  <Release Version="02.9A.20">
+    <Note Lang="en">Optimized control HC4 width GRT3-50, EST3-1, IDRT3-1.</Note>
+  </Release>
+  <Release Version="02.9A.00">
+    <Note Lang="en">Added support for RF units:</Note>
+    <Note Lang="en">RF-White-LED</Note>
+    <Note Lang="en">RFATV-1</Note>
+    <Note Lang="en">RFIM-20, RFIM-40</Note>
+    <Note Lang="en">RFKey</Note>
+    <Note Lang="en">RFMD-100</Note>
+    <Note Lang="en">RFSF-1B</Note>
+    <Note Lang="en">RFSOU-1</Note>
+    <Note Lang="en">RFSTI-11G, RFSTI-11B</Note>
+    <Note Lang="en">RFTI-11B</Note>
+    <Note Lang="en">RFTM-1</Note>
+    <Note Lang="en">RFWB-20, RFWB-40</Note>
+    <Note Lang="en">RFWD-100</Note>
+    <Note Lang="en">Added support Counter on CU3-01M-CU3-02M inputs.</Note>
+    <Note Lang="en">Added astronomical virtual unit.</Note>
+  </Release>
+  <Release Version="02.94.00">
+    <Note Lang="en">Add new virtual unit for Fan-Coil regulator.</Note>
+    <Note Lang="en">Added support for RGB backlight PLAS and MINUS device on GRT3-50 unit.</Note>
+    <Note Lang="en">Added new error "NotCommunication" in sensor inputs, temperature inputs, light inputs.</Note>
+  </Release>
+  <Release Version="02.8E.00">
+    <Note Lang="en">New Heat/Cool with online setup Heat and Cool plans for NORMAL, HOLIDAY and PUBLIC HOLIDAY automat control.</Note>
+    <Note Lang="en">Support virtual units for Two point regulator and Three point regulator.</Note>
+    <Note Lang="en">Support new actions for status device in virtual regulator units.</Note>
+    <Note Lang="en">Support new Controler and Regulator units.</Note>
+    <Note Lang="en">Added setup and get information about Heat/Cool over standard device in ACSII communication.</Note>
+    <Note Lang="en">Added support IDRT2-1, IART2-1 in new Heat/Cool circuit.</Note>
+    <Note Lang="en">Added support six thermodrivers on one Heat/Cool.</Note>
+    <Note Lang="en">Added support for user data.</Note>
+  </Release>
+  <Release Version="02.8C.00">
+    <Note Lang="en">Optimized EBM communication</Note>
+  </Release>
+  <Release Version="02.8A.00">
+    <Note Lang="en">Added support unit</Note>
+    <Note Lang="en">EST3_Hotel</Note>
+    <Note Lang="en">Optimized save project to central unit</Note>
+    <Note Lang="en">Added entrance system</Note>
+    <Note Lang="en">Optimized write card into card reader</Note>
+  </Release>
+  <Release Version="02.86.00">
+    <Note Lang="en">Added support unit</Note>
+    <Note Lang="en">GBP3-60R/B, GBP3-60R/W, GBP3-60L/B, GBP3-60L/W (Glass bedside panel - right black and white, left black and white)</Note>
+    <Note Lang="en">GCH3-31/B and GCH3-31/W (Glass card holder - black and white version)</Note>
+    <Note Lang="en">GCR3-11/B and GCR3-11/W (Glass card reader- black and white version)</Note>
+    <Note Lang="en">GDB3-10/B and GDB3-10/W (Glass info panel - black and white version)</Note>
+    <Note Lang="en">GRT3-50/B and GRT3-50/W (Glass root thermo-regulator - black and white version)</Note>
+    <Note Lang="en">GSB3-20/SB and GSB3-20/SW (Glass Switch Button With Symbols - black and white version)</Note>
+    <Note Lang="en">GSP3-100/B and GSP3-100/W (Glass touch panel - black and white version)</Note>
+    <Note Lang="en">Optimized starting heat/cool circuits</Note>
+    <Note Lang="en">Added "Permanent action" in all devices</Note>
+    <Note Lang="en">Added support for parameter "Write card into card reader"</Note>
+  </Release>
+  <Release Version="02.82.00">
+    <Note Lang="en">Added support unit GSB3-20Sx, GRT3-50</Note>
+    <Note Lang="en">Optimized starting heat/cool circuits</Note>
+    <Note Lang="en">Added "Permanent action" in all devices</Note>
+    <Note Lang="en">Added support for parameter "Write card into card reader"</Note>
+  </Release>
+  <Release Version="02.80.00">
+    <Note Lang="en">Support new heat/cool optimized</Note>
+    <Note Lang="en">Optimized starting continual programs</Note>
+    <Note Lang="en">!!!! Warning - Unsupported added IDRT2-1, IART2-1 in new heat/cool circuit optimized</Note>
+    <Note Lang="en">!!!! Warning - Unsupported older firmware in EST3 (02.06.00 and older), IDRT3-1 (01.38.00 and older) in new heat/cool circle optimized</Note>
+  </Release>
+  <Release Version="02.38.00">
+    <Note Lang="en">Support for the new EST3 firmware v02.00.00</Note>
+    <Note Lang="en">Support for the new units</Note>
+    <Note Lang="en">DMD3-1 (DALI/iNELS BUS Motion Detector)</Note>
+    <Note Lang="en">DLS3-1 (DALI/iNELS BUS Light Intensity Sensor)</Note>
+    <Note Lang="en">GSB3-40/SB and GSB3-40/SW (Glass Switch Button With Symbols - black and white version)</Note>
+    <Note Lang="en">GSB3-60/SB and GSB3-60/SW (Glass Switch Button With Symbols - black and white version)</Note>
+    <Note Lang="en">WMR3-21 (RFID Card Reader)</Note>
+    <Note Lang="en">GMR3-61 (Glass RFID Card Reader)</Note>
+    <Note Lang="en">GHR3-11 (Glass RFID Card Reader for hotels)</Note>
+    <Note Lang="en">Support for the direct configuration of the DALI from the iDM3</Note>
+    <Note Lang="en">Following functions have been optimized</Note>
+    <Note Lang="en">Heat/Cool - Set Heat Temperature</Note>
+    <Note Lang="en">Heat/Cool - Set Cool Temperature</Note>
+    <Note Lang="en">There's the new dialog window with information about RF communication</Note>
+  </Release>
+  <Release Version="02.30.00">
+    <Note Lang="en">Support for I/O module of central units CU3-01M and CU3-02M has been added</Note>
+    <Note Lang="en">Support for RF module of central unit CU3-02M has been added. This RF module supports communication with the following units:</Note>
+    <Note Lang="en">Switching</Note>
+    <Note Lang="en">RFSA-11B, RFSA-61B, RFSA-62B, RFSA-61M, RFSA-66M, RFSAI-61B, RFSC-11, RFSC-61, RFUS-11, RFUS-61</Note>
+    <Note Lang="en">Dimming</Note>
+    <Note Lang="en">RFDA-11B, RFDA-71B, RFDEL-71B, RFDEL-71M, RFDSC-11, RFDSC-71, RFDAC-71B, RFDA-73M/RGB, RF-RGB-LED-550</Note>
+    <Note Lang="en">New actions for RF analogue outputs have been added</Note>
+    <Note Lang="en">�Analog Error�</Note>
+    <Note Lang="en">�Analog Error Back�</Note>
+    <Note Lang="en">New functions for analogue inputs of I/O module have been added</Note>
+    <Note Lang="en">�Analog Error�</Note>
+    <Note Lang="en">�Analog Error Back�</Note>
+    <Note Lang="en">Now type of central unit and its HW address is being checked</Note>
+    <Note Lang="en">during saving the user project to the central unit</Note>
+    <Note Lang="en">during connecting to the central unit</Note>
+    <Note Lang="en">Now it is possible to use system bits in heating/cooling circuits</Note>
+    <Note Lang="en">New screens for display of central units have been added:</Note>
+    <Note Lang="en">displaying information about status of RF module, RF units and I/O module</Note>
+    <Note Lang="en">displaying information about current versions of HW and SW</Note>
+    <Note Lang="en">displaying information about progress of creating export</Note>
+    <Note Lang="en">displaying information about all addresses of central unit</Note>
+  </Release>
+  <Release Version="02.26.00">
+    <Note Lang="en">Optimized showing information on the display of the central unit</Note>
+  </Release>
+  <Release Version="02.24.00">
+    <Note Lang="en">Newly, the display of the central unit shows information about date, time and current state of the system</Note>
+  </Release>
+  <Release Version="02.22.00">
+    <Note Lang="en">Updating firmware of EST3 was optimized</Note>
+    <Note Lang="en">New functions were added</Note>
+    <Note Lang="en">ANALOG_OUT_ERROR</Note>
+    <Note Lang="en">ANALOG_OUT_ERROR_BACK</Note>
+    <Note Lang="en">Bug in settings of Timezone was fixed</Note>
+    <Note Lang="en">Support of command "GETDATETIME" in ASCII protocol for third-party systems was integrated</Note>
+    <Note Lang="en">Support of events "ANALOG_OUT_ERROR" and "ANALOG_OUT_ERROR_BACK" in ASCII protocol for third-party systems was integrated</Note>
+  </Release>
+  <Release Version="00.02.20">
+    <Note Lang="en">Optimized uploading the SMS settings to GSM3-01M</Note>
+    <Note Lang="en">New functions for groups were added</Note>
+    <Note Lang="en">Digital groups (Impulse ON, Impulse OFF, Copy)</Note>
+    <Note Lang="en">Analog groups (Copy)</Note>
+  </Release>
+  <Release Version="00.02.18">
+    <Note Lang="en">Optimized getting information about device statuses in window "Monitor"</Note>
+    <Note Lang="en">Bug fixed in NTP synchronization</Note>
+  </Release>
+  <Release Version="00.02.16">
+    <Note Lang="en">Support of NTP server was integrated</Note>
+    <Note Lang="en">GSM communicator GSM3-01M is now supported</Note>
+    <Note Lang="en">Support of events for GSM3-01M in ASCII protocol for third-party systems was integrated</Note>
+  </Release>
+  <Release Version="00.02.14">
+    <Note Lang="en">Integrated support of information about communication of peripheral units</Note>
+    <Note Lang="en">Integrated support for creating functions for digital outputs with impulses shorted than 1s</Note>
+    <Note Lang="en">Support for events for Timers, Counters, System program in ASCII protocol for third-party systems was integrated</Note>
+    <Note Lang="en">Optimized saving the project to central unit</Note>
+  </Release>
+  <Release Version="00.02.02">
+    <Note Lang="en">Integrated support of GSM3-01M (SMS)</Note>
+  </Release>
+  <Release Version="00.02.00">
+    <Note Lang="en">Now it is possible to set passwords for ADMIN and USER accounts</Note>
+    <Note Lang="en">Now it is possible to configure internal security alarm and fire security systems</Note>
+    <Note Lang="en">Support of ADC2-40M was added</Note>
+  </Release>
+  <Release Version="00.01.48">
+    <Note Lang="en">optimized update firmware in units</Note>
+  </Release>
+  <Release Version="00.01.46">
+    <Note Lang="en">optimized condition on wires.</Note>
+    <Note Lang="en">optimized saving project in CU3</Note>
+  </Release>
+  <Release Version="00.01.44">
+    <Note Lang="en">optimized Heat and Cool programs</Note>
+    <Note Lang="en">integration and support partition only Heat program, only Cool program, Head and Cool program</Note>
+  </Release>
+  <Release Version="00.01.42">
+    <Note Lang="en">integration and support control groups in IMM communication</Note>
+    <Note Lang="en">integration and support control system bits and system integers in IMM communication</Note>
+    <Note Lang="en">optimized saving project in CU3</Note>
+    <Note Lang="en">optimized Heat and Cool programs</Note>
+  </Release>
+  <Release Version="00.01.40">
+    <Note Lang="en">optimized long press action</Note>
+    <Note Lang="en">optimized function heat and cool area</Note>
+    <Note Lang="en">integration and support control groups in communication with the system of third-party</Note>
+    <Note Lang="en">integration and support control analog output for ramp in communication with the system of third-party</Note>
+  </Release>
+  <Release Version="00.01.3C">
+    <Note Lang="en">optimized of long down action</Note>
+    <Note Lang="en">optimized more wires on timer</Note>
+  </Release>
+  <Release Version="00.01.3A">
+    <Note Lang="en">optimizing of communication with the system of third-party</Note>
+  </Release>
+  <Release Version="00.01.38">
+    <Note Lang="en">integration and support of communication with the system of third-party</Note>
+  </Release>
+  <Release Version="00.01.36">
+    <Note Lang="en">optimizing communication in large projects</Note>
+    <Note Lang="en">optimizing search algorithm units on the bus</Note>
+  </Release>
+  <Release Version="00.01.34">
+    <Note Lang="en">integration and support units EMDC-64M</Note>
+  </Release>
+  <Release Version="00.01.33">
+    <Note Lang="en">integration system bits</Note>
+    <Note Lang="en">integration system integers</Note>
+    <Note Lang="en">integration action System START</Note>
+  </Release>
+  <Release Version="00.01.2E">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>
