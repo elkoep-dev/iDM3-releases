@@ -1,0 +1,10 @@
+# The catalogue reaches every iDM3 installation at once.
+# Any change to it, to the signing tooling, or to the pinned public keys
+# requires review from the firmware release owners.
+
+/catalog.xml          @elkoep-dev/firmware-release
+/catalog.sig          @elkoep-dev/firmware-release
+/compatibility.xml    @elkoep-dev/firmware-release
+/keys/                @elkoep-dev/firmware-release
+/tools/               @elkoep-dev/firmware-release
+/.github/             @elkoep-dev/firmware-release

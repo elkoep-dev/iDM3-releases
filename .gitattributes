@@ -1,0 +1,11 @@
+# Firmware archives and signatures are binary - never touch line endings.
+*.zip   binary
+*.sig   binary
+*.if3   binary
+*.nf3   binary
+
+# Catalogue and tooling stay LF so hashes are stable across machines.
+*.xml   text eol=lf
+*.ps1   text eol=lf
+*.yml   text eol=lf
+*.md    text eol=lf

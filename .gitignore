@@ -1,0 +1,17 @@
+# Signing material must never enter this repository.
+*.private.xml
+*.key
+*.pem
+*.pfx
+*.p12
+secrets/
+
+# Build output
+_site/
+artifacts/
+
+# OS / editor noise
+Thumbs.db
+desktop.ini
+.DS_Store
+.vs/

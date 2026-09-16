@@ -1,0 +1,46 @@
+name: Validate
+
+# The catalogue reaches every iDM3 installation at once, so nothing merges unvalidated.
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  firmware:
+    name: Firmware archives
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Validate firmware naming and contents
+        shell: pwsh
+        run: .\tools\Test-FirmwareNames.ps1
+
+      # Added in phase 1, once the catalogue exists:
+      #   - catalogue lists exactly the files present on disk
+      #   - every SHA-256 in the catalogue matches its archive
+      #   - catalog.sig verifies against a pinned public key in keys/
+      #   - Sequence is greater than the previously published catalogue
+
+  secrets:
+    name: No private key material
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Fail if a private key was committed
+        run: |
+          if git ls-files | grep -Ei '\.(private\.xml|key|pem|pfx|p12)$'; then
+            echo "::error::Private key material is present in the repository."
+            exit 1
+          fi
+          if git grep -lE 'BEGIN (RSA |EC )?PRIVATE KEY' -- . ; then
+            echo "::error::A PEM private key block is present in the repository."
+            exit 1
+          fi
+          echo "No private key material found."
