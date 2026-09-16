@@ -35,19 +35,50 @@ jobs:
         id: published
         shell: pwsh
         run: |
+          # git reports "no such ref" and "no difference" through the exit code, and both
+          # are expected answers here rather than failures.
+          $PSNativeCommandUseErrorActionPreference = $false
+
           $previous = 0
-          $ref = if ($env:GITHUB_EVENT_NAME -eq 'pull_request') { 'origin/' + $env:GITHUB_BASE_REF } else { 'HEAD^' }
-          $raw = git show "${ref}:catalog.xml" 2>$null
-          if ($LASTEXITCODE -eq 0 -and -not [string]::IsNullOrWhiteSpace($raw)) {
-            try {
-              $doc = New-Object System.Xml.XmlDocument
-              $doc.LoadXml(($raw -join "`n"))
-              $previous = [int]$doc.FirmwareCatalog.Sequence
+
+          if ($env:GITHUB_EVENT_NAME -eq 'pull_request') {
+            # The PR checkout is a merge commit whose first parent is the base tip, but the
+            # base is fetched by name rather than relying on that.
+            git fetch --no-tags --depth=1 origin $env:GITHUB_BASE_REF 2>&1 | Out-Null
+            $ref = 'FETCH_HEAD'
+          }
+          else {
+            $ref = 'HEAD^'
+          }
+
+          $resolved = git rev-parse --verify --quiet "${ref}^{commit}"
+
+          if ([string]::IsNullOrWhiteSpace($resolved)) {
+            Write-Output "::warning::$ref is unavailable, so the rollback check is skipped."
+          }
+          elseif ([string]::IsNullOrWhiteSpace((git diff --name-only $resolved HEAD -- catalog.xml))) {
+            # The catalogue itself did not change, so Sequence is meant to stay where it is
+            # and there is nothing to roll back to. Commits that touch only tooling, notes
+            # or documentation land here.
+            Write-Output "catalog.xml is unchanged; Sequence is expected to hold at its current value."
+          }
+          else {
+            $raw = git show "${resolved}:catalog.xml" 2>$null
+            if ($LASTEXITCODE -eq 0 -and -not [string]::IsNullOrWhiteSpace($raw)) {
+              try {
+                $doc = New-Object System.Xml.XmlDocument
+                $doc.LoadXml(($raw -join "`n"))
+                $previous = [int]$doc.FirmwareCatalog.Sequence
+              }
+              catch {
+                Write-Output "::warning::The published catalogue could not be parsed; the rollback check is skipped."
+              }
             }
-            catch {
-              Write-Output "::warning::The published catalogue could not be parsed; the rollback check is skipped."
+            else {
+              Write-Output "::warning::catalog.xml is new in this change; there is no previous Sequence to compare."
             }
           }
+
           Write-Output "Published sequence: $previous"
           "sequence=$previous" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
 
