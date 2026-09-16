@@ -239,7 +239,12 @@ foreach ($g in ($items | Group-Object Kind | Sort-Object Name)) {
     Write-Output ("                {0,-12} {1}" -f $g.Name, $g.Count)
 }
 if ($signed) {
-    Write-Output "Signed      : yes"
+    if ($PrivateKeyPath -like '*development*' -or $PrivateKeyPath -like '*dev*') {
+        Write-Output "Signed      : yes - WITH A DEVELOPMENT KEY, do not publish"
+    }
+    else {
+        Write-Output "Signed      : yes"
+    }
 }
 else {
     Write-Output "Signed      : NO - unsigned, do not publish"

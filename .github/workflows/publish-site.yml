@@ -1,0 +1,53 @@
+name: Publish site
+
+# The site is generated from catalog.xml, never hand-edited, so the page a partner reads
+# and the feed iDM3 reads cannot drift apart.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'catalog.xml'
+      - 'compatibility.txt'
+      - 'tools/Build-Site.ps1'
+      - '.github/workflows/publish-site.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never publish two versions of the site at once; let a newer run win.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      # Publishing a site built from a catalogue nobody verified would put unverified
+      # version numbers in front of customers.
+      - name: Verify the catalogue first
+        shell: pwsh
+        run: .\tools\Test-Catalog.ps1
+
+      - name: Generate
+        shell: pwsh
+        run: .\tools\Build-Site.ps1
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

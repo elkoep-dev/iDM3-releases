@@ -107,6 +107,10 @@ else {
             finally { $rsa.Dispose() }
         }
 
+        if ($signedBy -like '*development*') {
+            $warnings.Add("The catalogue is signed by a DEVELOPMENT key ($signedBy). This is for testing only - it must be re-signed with the Active production key, and the development key removed from keys/, before anything is published.")
+        }
+
         if ($null -eq $signedBy) {
             $errors.Add("catalog.sig does not verify against any pinned public key. Either the catalogue was modified after signing, or it was signed with a key iDM3 does not trust.")
         }

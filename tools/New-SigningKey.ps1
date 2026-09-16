@@ -31,7 +31,10 @@ param(
     [Parameter(Mandatory = $true)]
     [string]$PrivateKeyPath,
 
-    [ValidateSet('Active', 'Standby')]
+    # Development produces a key for testing the pipeline end to end. Build-Catalog and
+    # Test-Catalog both warn loudly when a development key is in play, because a
+    # catalogue signed by one must never be published.
+    [ValidateSet('Active', 'Standby', 'Development')]
     [string]$Role = 'Active',
 
     [ValidateRange(2048, 8192)]
