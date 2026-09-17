@@ -1,20 +1,48 @@
 # iDM3 Releases
 
-Firmware, release metadata and documentation for the **iNELS BUS** system, published by
-ELKO EP. This repository is the source of truth that the **iDM3** configuration tool reads
-to discover and download device firmware.
+Firmware and content for the **iNELS BUS** system, published by ELKO EP. The **iDM3**
+configuration tool reads this repository to discover and download what it needs.
 
-Before this repository existed, every firmware change required a full iDM3 release and a
-new installer sent to each customer by hand. Publishing a firmware is now a commit.
+Before it existed, every firmware change required a full iDM3 release and a new installer
+sent to each customer by hand.
+
+> ### This repository is generated — do not edit it by hand
+>
+> `firmwares/`, `content/` and `catalog.xml` are published from
+> [`elkoep-dev/iDM-3.5.xx`](https://github.com/elkoep-dev/iDM-3.5.xx) when a `v*` tag is
+> cut, from the files in its `Advance/` directory. **That is where firmware is added.**
+>
+> Anything committed here by hand is overwritten by the next release, and keeping two
+> copies in step manually is what let `Advance/Firmwares` reach 183 archives while the
+> published catalogue still listed 170.
+>
+> Withdrawing a firmware is the exception: removing an entry here is deliberate, and the
+> publishing workflow never deletes an archive it did not find upstream — it reports it.
 
 ## What is here
 
-| Path | Contents |
-|---|---|
-| `firmwares/` | Device firmware archives, one per model and version |
-| `catalog.xml` | Machine-readable index that iDM3 reads |
-| `notes/` | Per-model release notes, and `model-aliases.xml` |
-| `tools/` | Publishing and validation scripts |
+| Path | Contents | Source |
+|---|---|---|
+| `firmwares/` | Device firmware archives, one per model and version | `Advance/Firmwares/` |
+| `content/` | Languages, `IDM.config`, `firmDepends.xml` | `Advance/` |
+| `catalog.xml` | Machine-readable index that iDM3 reads | generated |
+| `notes/` | Per-model release notes, and `model-aliases.xml` | maintained here |
+| `tools/` | Publishing and validation scripts | maintained here |
+
+`notes/` and `tools/` are the two directories still edited directly.
+
+## Firmware and content
+
+Firmware is versioned per device and carries no version floor: it must reach installations
+older than the release that published it, which is the point of publishing it at all.
+
+Everything under `content/` is different. It is not versioned per device, so each entry
+carries a `MinAppVersion` and an older iDM3 skips what it cannot use. `Build-Catalog.ps1`
+refuses to publish content without one.
+
+The catalogue carries **content only** — files that are read, never executed. `cmp.exe` and
+everything iDM3 loads ship in the installer; `Test-Catalog.ps1` fails the build if an
+executable reaches the catalogue.
 
 ## Firmware naming
 
@@ -33,27 +61,33 @@ is the firmware image (`.if3` for bus units, `.nf3` for central units), the devi
 
 ## Publishing a firmware
 
-```powershell
-# 1. Add the archive
-Copy-Item .\NEW-MODEL_01.20.00.zip .\firmwares\
+Not here — in [`elkoep-dev/iDM-3.5.xx`](https://github.com/elkoep-dev/iDM-3.5.xx):
 
-# 2. Add its release notes to notes\NEW-MODEL.xml, or regenerate them all from the
-#    history files that ship with iDM3
-.\tools\Import-FirmwareHistory.ps1 -HistoryPath "...\Advance\Documentation\Firmware history"
+```bash
+# 1. Add the archive where iDM3 already keeps it
+cp NEW-MODEL_01.20.00.zip Advance/Firmwares/
 
-# 3. Regenerate the catalogue
-.\tools\Build-Catalog.ps1
-
-# 4. Verify it exactly as iDM3 will
-.\tools\Test-Catalog.ps1
-
-# 5. Commit and open a pull request
-git add firmwares notes catalog.xml
-git commit -m "Add NEW-MODEL 01.20.00"
+# 2. Merge that to dev as usual, then cut a release
+git tag v3.6.2 && git push origin v3.6.2
 ```
 
-Steps 3 and 4 are optional: pushing to `main` regenerates and validates the catalogue in
-CI. Running them locally just means you see the result before anyone else does.
+The tag builds the installer and publishes here in the same run: firmware and content are
+synced, the catalogue is regenerated with the release's version as the floor, and it is
+validated *before* it is pushed. A technician's iDM3 offers the firmware on its next launch.
+
+Release notes are still maintained here, in `notes/NEW-MODEL.xml` — or regenerate them all
+from the history files that ship with iDM3:
+
+```powershell
+.\tools\Import-FirmwareHistory.ps1 -HistoryPath "...\Advance\Documentation\Firmware history"
+```
+
+To check a catalogue by hand before a release, or after editing `notes/`:
+
+```powershell
+.\tools\Build-Catalog.ps1 -MinAppVersion 3.6.2
+.\tools\Test-Catalog.ps1
+```
 
 ## Working on macOS or Linux
 
