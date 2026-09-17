@@ -5,36 +5,36 @@
 .DESCRIPTION
     Checks, in the order the client performs them:
 
-      1. catalog.sig verifies against one of the pinned public keys in keys/.
-         Any key may sign - that is the point of holding an Active and a Standby key.
-      2. Every Item's archive exists and its SHA-256 matches the signed catalogue.
-      3. ValidUntil has not passed.
-      4. Sequence has not gone backwards relative to -PreviousSequence.
+      1. Every Item's archive exists and its SHA-256 matches the catalogue.
+      2. ValidUntil has not passed.
+      3. Sequence has not gone backwards relative to -PreviousSequence.
+      4. No Item carries executable content.
 
-    Run it before publishing, and in CI on every pull request. If this passes, a client
-    that trusts the pinned key can install anything the catalogue lists.
+    Run it before publishing, and in CI on every pull request.
 
-.PARAMETER AllowUnsigned
-    Skip the signature check. For local iteration only - CI must never pass this.
+    The catalogue is not signed, so this does not establish who produced it - only that
+    it is internally consistent and that every archive it lists is intact. Authenticity
+    rests on HTTPS to the repository host and on who can push to it. See README.md.
 
 .PARAMETER PreviousSequence
     The Sequence of the currently published catalogue. Supplying it catches a rollback,
-    where an older validly-signed catalogue is republished to steer clients onto a
-    withdrawn firmware.
+    where an older catalogue is republished to steer clients onto a withdrawn firmware.
 #>
 [CmdletBinding()]
 param(
-    [switch]$AllowUnsigned,
     [int]$PreviousSequence = 0
 )
 
 $ErrorActionPreference = 'Stop'
-. (Join-Path $PSScriptRoot 'RsaXml.ps1')
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+
+# Files iDM3 would load or launch rather than read. The catalogue is unsigned, so an
+# executable delivered through it turns a stolen repository token into code execution on
+# every engineer's machine. Anything on this list belongs in the installer instead.
+$executableExtensions = @('.exe', '.dll', '.com', '.bat', '.cmd', '.ps1', '.msi', '.scr', '.vbs', '.js')
 
 $repoRoot      = Split-Path -Parent $PSScriptRoot
 $catalogPath   = Join-Path $repoRoot 'catalog.xml'
-$signaturePath = Join-Path $repoRoot 'catalog.sig'
-$keysDir       = Join-Path $repoRoot 'keys'
 
 if (-not (Test-Path -LiteralPath $catalogPath)) {
     throw "catalog.xml not found. Run Build-Catalog.ps1 first."
@@ -42,8 +42,6 @@ if (-not (Test-Path -LiteralPath $catalogPath)) {
 
 $errors   = New-Object System.Collections.Generic.List[string]
 $warnings = New-Object System.Collections.Generic.List[string]
-
-$catalogBytes = [System.IO.File]::ReadAllBytes($catalogPath)
 
 # A corrupted catalogue is exactly what this tool exists to catch, so report it rather
 # than letting the parser throw a wall of the malformed document. XmlDocument.Load is
@@ -75,50 +73,7 @@ if ($null -eq $catalog.FirmwareCatalog) {
 
 $sequence = [int]$catalog.FirmwareCatalog.Sequence
 
-# --- 1. Signature -----------------------------------------------------------------------
-$signedBy = $null
-
-if ($AllowUnsigned) {
-    $warnings.Add("Signature check skipped (-AllowUnsigned). Never publish on this basis.")
-}
-elseif (-not (Test-Path -LiteralPath $signaturePath)) {
-    $errors.Add("catalog.sig is missing. An unsigned catalogue must not be published.")
-}
-else {
-    $publicKeys = @(Get-ChildItem -LiteralPath $keysDir -Filter '*.public.xml' -File -ErrorAction SilentlyContinue)
-
-    if ($publicKeys.Count -eq 0) {
-        $errors.Add("No public keys in keys/. Generate them with New-SigningKey.ps1 - an Active and a Standby.")
-    }
-    else {
-        $signatureBytes = [System.IO.File]::ReadAllBytes($signaturePath)
-
-        foreach ($keyFile in $publicKeys) {
-            $rsa = $null
-            try {
-                $rsa = ConvertFrom-RsaXml -Xml (Get-Content -LiteralPath $keyFile.FullName -Raw)
-                $ok = $rsa.VerifyData($catalogBytes, $signatureBytes,
-                    [System.Security.Cryptography.HashAlgorithmName]::SHA256,
-                    [System.Security.Cryptography.RSASignaturePadding]::Pkcs1)
-                if ($ok) { $signedBy = $keyFile.BaseName; break }
-            }
-            catch {
-                $warnings.Add("$($keyFile.Name) could not be loaded as a public key: $($_.Exception.Message)")
-            }
-            finally { if ($null -ne $rsa) { $rsa.Dispose() } }
-        }
-
-        if ($signedBy -like '*development*') {
-            $warnings.Add("The catalogue is signed by a DEVELOPMENT key ($signedBy). This is for testing only - it must be re-signed with the Active production key, and the development key removed from keys/, before anything is published.")
-        }
-
-        if ($null -eq $signedBy) {
-            $errors.Add("catalog.sig does not verify against any pinned public key. Either the catalogue was modified after signing, or it was signed with a key iDM3 does not trust.")
-        }
-    }
-}
-
-# --- 2. Artifact digests ------------------------------------------------------------------
+# --- 1. Artifact digests ------------------------------------------------------------------
 $checked = 0
 $sha = [System.Security.Cryptography.SHA256]::Create()
 try {
@@ -164,11 +119,47 @@ foreach ($onDisk in Get-ChildItem -LiteralPath (Join-Path $repoRoot 'firmwares')
     }
 }
 
+# --- 2. Executable content ------------------------------------------------------------------
+# The catalogue carries content only: files that are read, never executed. This is the one
+# check that cannot be recovered after the fact - by the time a bad archive has been fetched
+# and unpacked, the machine has already run it.
+foreach ($item in @($catalog.FirmwareCatalog.Item)) {
+    if ($null -eq $item) { continue }
+
+    foreach ($path in @($item.Target, $item.Source)) {
+        if ([string]::IsNullOrWhiteSpace($path)) { continue }
+        $extension = [System.IO.Path]::GetExtension($path).ToLowerInvariant()
+        if ($executableExtensions -contains $extension) {
+            $errors.Add("$($item.Source): the catalogue may not carry executable content ($extension). It belongs in the installer.")
+        }
+    }
+
+    $source = $item.Source -replace '/', [System.IO.Path]::DirectorySeparatorChar
+    $full   = Join-Path $repoRoot $source
+    if (-not (Test-Path -LiteralPath $full)) { continue }
+
+    # An archive is unpacked into the installation, so its entries matter as much as its name.
+    $archive = $null
+    try {
+        $archive = [System.IO.Compression.ZipFile]::OpenRead($full)
+        foreach ($entry in $archive.Entries) {
+            $extension = [System.IO.Path]::GetExtension($entry.FullName).ToLowerInvariant()
+            if ($executableExtensions -contains $extension) {
+                $errors.Add("$($item.Source): contains executable content ($($entry.FullName)). It belongs in the installer.")
+            }
+        }
+    }
+    catch {
+        $errors.Add("$($item.Source): could not be opened as a zip archive: $($_.Exception.Message)")
+    }
+    finally { if ($null -ne $archive) { $archive.Dispose() } }
+}
+
 # --- 3. Freshness -------------------------------------------------------------------------
 $validUntil = [DateTime]::MinValue
 if ([DateTime]::TryParse($catalog.FirmwareCatalog.ValidUntil, [ref]$validUntil)) {
     if ($validUntil.ToUniversalTime() -lt [DateTime]::UtcNow) {
-        $errors.Add("The catalogue expired on $($validUntil.ToString('yyyy-MM-dd')). Rebuild and re-sign it.")
+        $errors.Add("The catalogue expired on $($validUntil.ToString('yyyy-MM-dd')). Rebuild it.")
     }
 }
 else {
@@ -186,15 +177,7 @@ Write-Output "Catalogue        : $catalogPath"
 Write-Output "Sequence         : $sequence"
 Write-Output "Valid until      : $($catalog.FirmwareCatalog.ValidUntil)"
 Write-Output "Items verified   : $checked"
-if ($signedBy) {
-    Write-Output "Signature        : valid, signed by $signedBy"
-}
-elseif ($AllowUnsigned) {
-    Write-Output "Signature        : not checked"
-}
-else {
-    Write-Output "Signature        : INVALID"
-}
+Write-Output "Signature        : none - the catalogue is unsigned by design, see README.md"
 Write-Output ""
 
 foreach ($w in $warnings) { Write-Warning $w }

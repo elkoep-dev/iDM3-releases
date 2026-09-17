@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FirmwareCatalog Schema="1" Sequence="1" Generated="2026-09-16T13:43:15Z" ValidUntil="2027-03-15T13:43:15Z">
+<FirmwareCatalog Schema="1" Sequence="5" Generated="2026-09-17T12:01:03Z" ValidUntil="2027-03-16T12:01:03Z">
+  <Item Component="Firmwares" Kind="Firmware" Model="A-IBUS-SLAVE" Version="02.08.00" Target="Firmwares\A-IBUS-SLAVE_02.08.00.zip" Source="firmwares/A-IBUS-SLAVE_02.08.00.zip" Size="23017" Sha256="67e27e62eaa67f26bd9e84bfd5935e34f0b708a50915f5e8ccaf5c49706928b6" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="ADC3-60M" Version="01.3A.00" Target="Firmwares\ADC3-60M_01.3A.00.zip" Source="firmwares/ADC3-60M_01.3A.00.zip" Size="81044" Sha256="20373441e2f568c7d96eeedbf4f59e6015f70ed2eca51ddf21d299d62b065a05" Channel="Stable">
     <Note Lang="en">first version</Note>
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="ADC3-60M" Version="01.3C.00" Target="Firmwares\ADC3-60M_01.3C.00.zip" Source="firmwares/ADC3-60M_01.3C.00.zip" Size="58478" Sha256="f350c7cca1cab597ed74365763a12c2a7aa58ef92e6aeb0b2120371d4c9e0649" Channel="Stable">
     <Note Lang="en">Add support SKS-202 sensors</Note>
   </Item>
-  <Item Component="Firmwares" Kind="Firmware" Model="A-IBUS-SLAVE" Version="02.08.00" Target="Firmwares\A-IBUS-SLAVE_02.08.00.zip" Source="firmwares/A-IBUS-SLAVE_02.08.00.zip" Size="23017" Sha256="67e27e62eaa67f26bd9e84bfd5935e34f0b708a50915f5e8ccaf5c49706928b6" Channel="Stable" />
   <Item Component="Firmwares" Kind="Placeholder" Model="ASTRONOMICAL-MODULE" Version="00.00.02" Target="Firmwares\ASTRONOMICAL-MODULE_00.00.02.zip" Source="firmwares/ASTRONOMICAL-MODULE_00.00.02.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
   <Item Component="Firmwares" Kind="Definition" Model="ASTRONOMICAL-UNIT" Version="00.00.02" Target="Firmwares\ASTRONOMICAL-UNIT_00.00.02.zip" Source="firmwares/ASTRONOMICAL-UNIT_00.00.02.zip" Size="1464" Sha256="cb4f235a775278ad74792686cf9056635db373b3d1c4b982ad545db7788fee5a" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="BIN3-66B" Version="01.00.00" Target="Firmwares\BIN3-66B_01.00.00.zip" Source="firmwares/BIN3-66B_01.00.00.zip" Size="21478" Sha256="d55f5d6fc385384cc4db72f1ddae1195676d07390c96446ff1cf931ab11201d3" Channel="Stable">
@@ -163,6 +163,7 @@
   <Item Component="Firmwares" Kind="Firmware" Model="GSB3-40" Version="02.86.00" Target="Firmwares\GSB3-40_02.86.00.zip" Source="firmwares/GSB3-40_02.86.00.zip" Size="22408" Sha256="5325ad4a32cd535099d8deb1162afe146f66ce20efd735c7e95c5bb9e7e873b8" Channel="Stable">
     <Note Lang="en">added Long State filter and True state filter in configuration</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-40-V2" Version="02.9C.00" Target="Firmwares\GSB3-40-V2_02.9C.00.zip" Source="firmwares/GSB3-40-V2_02.9C.00.zip" Size="43000" Sha256="81a5f4becc746e2dfdbef5fa52abc49bab1ff74f2f3c931a263cd7639f4d0523" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="GSB3-40SX" Version="01.40.00" Target="Firmwares\GSB3-40SX_01.40.00.zip" Source="firmwares/GSB3-40SX_01.40.00.zip" Size="59170" Sha256="c874ec912958d325c786163f5a89126aa3a7f2ed755c347473fc7a6522871d11" Channel="Stable">
     <Note Lang="en">optimization of touch detection</Note>
   </Item>
@@ -178,13 +179,13 @@
     <Note Lang="en">increased bus interference immunity</Note>
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="GSB3-40SX-V2" Version="02.9E.04" Target="Firmwares\GSB3-40SX-V2_02.9E.04.zip" Source="firmwares/GSB3-40SX-V2_02.9E.04.zip" Size="43441" Sha256="1c90065c9947e49d696986ffdeb93d516f70494892f85137f51f2c5bf4c04560" Channel="Stable" />
-  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-40-V2" Version="02.9C.00" Target="Firmwares\GSB3-40-V2_02.9C.00.zip" Source="firmwares/GSB3-40-V2_02.9C.00.zip" Size="43000" Sha256="81a5f4becc746e2dfdbef5fa52abc49bab1ff74f2f3c931a263cd7639f4d0523" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="GSB3-60" Version="01.36.00" Target="Firmwares\GSB3-60_01.36.00.zip" Source="firmwares/GSB3-60_01.36.00.zip" Size="22082" Sha256="d1e2e9cddd3935cbe57d2b8adfae9447ac3c80458e48369781cfa41773c6a2c3" Channel="Stable">
     <Note Lang="en">added setup backlight</Note>
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="GSB3-60" Version="02.86.00" Target="Firmwares\GSB3-60_02.86.00.zip" Source="firmwares/GSB3-60_02.86.00.zip" Size="22505" Sha256="f67b0d05654088676e09a6d2d7dd23e60350dccc3a3592fa9b3fe2554d3ecb9a" Channel="Stable">
     <Note Lang="en">added Long State filter and True state filter in configuration</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-60-V2" Version="02.9C.00" Target="Firmwares\GSB3-60-V2_02.9C.00.zip" Source="firmwares/GSB3-60-V2_02.9C.00.zip" Size="43059" Sha256="259326111db055b17e2ffcb6bace1892d0f80233b04382db8cafc82b9c65dbad" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="GSB3-60SX" Version="01.40.00" Target="Firmwares\GSB3-60SX_01.40.00.zip" Source="firmwares/GSB3-60SX_01.40.00.zip" Size="59447" Sha256="001ad4a578ed5eeb3418588375eb0760e503fec87fe853a8a3a85f037bc51ce8" Channel="Stable">
     <Note Lang="en">optimization of touch detection</Note>
   </Item>
@@ -200,17 +201,16 @@
     <Note Lang="en">increased bus interference immunity</Note>
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="GSB3-60SX-V2" Version="02.9E.04" Target="Firmwares\GSB3-60SX-V2_02.9E.04.zip" Source="firmwares/GSB3-60SX-V2_02.9E.04.zip" Size="43617" Sha256="bc307e559c0908f7cee8388958b04e6440e19de055c62a1efcf1567c3cba0466" Channel="Stable" />
-  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-60-V2" Version="02.9C.00" Target="Firmwares\GSB3-60-V2_02.9C.00.zip" Source="firmwares/GSB3-60-V2_02.9C.00.zip" Size="43059" Sha256="259326111db055b17e2ffcb6bace1892d0f80233b04382db8cafc82b9c65dbad" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="GSB3-80" Version="01.3A.00" Target="Firmwares\GSB3-80_01.3A.00.zip" Source="firmwares/GSB3-80_01.3A.00.zip" Size="22186" Sha256="45af95de2e101fe522339d9436f4d92a94cae22b35639b4ccf0c7d037e490bfe" Channel="Stable">
     <Note Lang="en">optimisation of the sensitivity of the buttons</Note>
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="GSB3-80" Version="02.86.00" Target="Firmwares\GSB3-80_02.86.00.zip" Source="firmwares/GSB3-80_02.86.00.zip" Size="22629" Sha256="574f1eb2d15c849eab41f8713b77c68f60bdc7b81b897ee912a144ea44824e94" Channel="Stable">
     <Note Lang="en">added Long State filter and True state filter in configuration</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-90-V2" Version="02.9C.00" Target="Firmwares\GSB3-90-V2_02.9C.00.zip" Source="firmwares/GSB3-90-V2_02.9C.00.zip" Size="43232" Sha256="9780231c653578af23894d79f87f920b75e24ff5678fce5e5b5a882b3af9b656" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="GSB3-90SX" Version="02.9C.00" Target="Firmwares\GSB3-90SX_02.9C.00.zip" Source="firmwares/GSB3-90SX_02.9C.00.zip" Size="72529" Sha256="1a04e1e47b8ccce41a7e1724aafe74833bd1069c45443b556d5ba31dfdd9e8ad" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="GSB3-90SX-V2" Version="02.9C.00" Target="Firmwares\GSB3-90SX-V2_02.9C.00.zip" Source="firmwares/GSB3-90SX-V2_02.9C.00.zip" Size="43994" Sha256="1994402b691752b1a94d35c6da8d2cc750ffb86f63b5bbb6af85db9812527e6d" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="GSB3-90SX-V2" Version="02.9E.04" Target="Firmwares\GSB3-90SX-V2_02.9E.04.zip" Source="firmwares/GSB3-90SX-V2_02.9E.04.zip" Size="43886" Sha256="14d07cb55c0c3763aac85cbc52483fd94d27b383b7528495adf08ca87b1d0ad0" Channel="Stable" />
-  <Item Component="Firmwares" Kind="Firmware" Model="GSB3-90-V2" Version="02.9C.00" Target="Firmwares\GSB3-90-V2_02.9C.00.zip" Source="firmwares/GSB3-90-V2_02.9C.00.zip" Size="43232" Sha256="9780231c653578af23894d79f87f920b75e24ff5678fce5e5b5a882b3af9b656" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="GSP3-100" Version="01.40.00" Target="Firmwares\GSP3-100_01.40.00.zip" Source="firmwares/GSP3-100_01.40.00.zip" Size="59848" Sha256="01111c1499d18bdeed844c1c6eea664b2b4b7bc892ad179559ee92da72f5a6e8" Channel="Stable">
     <Note Lang="en">optimisation of the sensitivity of the buttons.</Note>
     <Note Lang="en">added colour correction</Note>

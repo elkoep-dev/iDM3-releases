@@ -12,10 +12,8 @@ new installer sent to each customer by hand. Publishing a firmware is now a comm
 | Path | Contents |
 |---|---|
 | `firmwares/` | Device firmware archives, one per model and version |
-| `catalog.xml` | Machine-readable index that iDM3 reads (added in phase 1) |
-| `catalog.sig` | Detached signature over `catalog.xml` (added in phase 1) |
-| `compatibility.xml` | Minimum recommended versions across the system (added in phase 1) |
-| `keys/` | Public signing keys, for reference. Private keys are never stored here |
+| `catalog.xml` | Machine-readable index that iDM3 reads |
+| `notes/` | Per-model release notes, and `model-aliases.xml` |
 | `tools/` | Publishing and validation scripts |
 
 ## Firmware naming
@@ -43,33 +41,34 @@ Copy-Item .\NEW-MODEL_01.20.00.zip .\firmwares\
 #    history files that ship with iDM3
 .\tools\Import-FirmwareHistory.ps1 -HistoryPath "...\Advance\Documentation\Firmware history"
 
-# 3. Regenerate and sign the catalogue with the offline private key
-.\tools\Build-Catalog.ps1 -PrivateKeyPath E:\offline\idm3-catalog-active.private.xml
+# 3. Regenerate the catalogue
+.\tools\Build-Catalog.ps1
 
 # 4. Verify it exactly as iDM3 will
 .\tools\Test-Catalog.ps1
 
 # 5. Commit and open a pull request
-git add firmwares notes catalog.xml catalog.sig
+git add firmwares notes catalog.xml
 git commit -m "Add NEW-MODEL 01.20.00"
 ```
+
+Steps 3 and 4 are optional: pushing to `main` regenerates and validates the catalogue in
+CI. Running them locally just means you see the result before anyone else does.
 
 ## Working on macOS or Linux
 
 The tooling is PowerShell and runs anywhere [PowerShell 7](https://github.com/PowerShell/PowerShell)
-does - `brew install --cask powershell` on a Mac, then `pwsh`.
+does - `brew install powershell` on a Mac, then `pwsh`.
 
-Keys are stored in the XML format .NET Framework uses, because iDM3 reads them with
-`RSA.FromXmlString` on Windows. That API and `RSACng` are Windows-only, so `tools/RsaXml.ps1`
-reads and writes the format by hand using `RSA.Create()`. The files are byte-identical
-either way, so a catalogue signed on a Mac verifies in iDM3 on Windows and vice versa.
+Nothing in the publishing path is Windows-only, and nothing needs to be installed at all if
+you let CI regenerate the catalogue.
 
 ## The catalogue
 
-`catalog.xml` is the only file iDM3 has to trust: it carries a SHA-256 for every archive,
-so the single signature in `catalog.sig` covers the whole repository. Entries are
-path-based, so components other than firmware can be added later without changing the
-schema or the client.
+`catalog.xml` is the index iDM3 reads. It carries a SHA-256 for every archive, so the
+catalogue alone determines whether a downloaded file is intact. Entries are path-based -
+each `Item` names the `Target` path it belongs at inside the installation - so components
+other than firmware can be added without changing the schema or the client.
 
 ```xml
 <Item Component="Firmwares" Kind="Firmware" Model="GCH3-31" Version="02.9E.00"
@@ -89,22 +88,47 @@ can be flashed, so iDM3 offers `Kind="Firmware"` and nothing else:
 | `Placeholder` | an empty archive - a virtual module inside the central unit | 26 |
 
 `Sequence` increases with every publication and `ValidUntil` bounds how long a catalogue
-stays acceptable. Together they stop an old, validly-signed catalogue being replayed to
-steer clients onto a withdrawn firmware.
+stays acceptable. Together they stop an old catalogue being replayed to steer clients onto
+a withdrawn firmware: iDM3 refuses a catalogue whose `Sequence` is below the one it has
+already cached.
 
-CI validates naming, duplicate versions, catalogue-matches-disk and the signature before
-the change can merge. Merging publishes it to every iDM3 installation on their next check.
+CI validates naming, duplicate versions, catalogue-matches-disk, and that no `Item` carries
+executable content, before the change can merge. Merging publishes it to every iDM3
+installation on their next check.
 
 ## Trust model
 
-Everything here is public, so **nothing trusts the host**. iDM3 verifies a detached
-signature over the catalogue using a public key compiled into the application, then checks
-the SHA-256 of every downloaded archive against the signed catalogue. A compromised
-repository, a hostile proxy or a corporate TLS interceptor cannot cause iDM3 to install
-firmware that ELKO EP did not sign.
+**The catalogue is not signed.** Authenticity rests on HTTPS to GitHub and on who can push
+here — the same boundary firmware always had, since the iDM3 installer is built by CI from
+the same GitHub organisation. Whoever can push has always decided what reaches a central
+unit. Signing would have been an improvement on that, not a precondition for matching it.
 
-See [`SECURITY.md`](SECURITY.md) for reporting, and [`keys/README.md`](keys/README.md) for
-key custody.
+Two things do the work:
+
+- **iDM3 validates the server certificate itself.** It does not inherit the process-wide
+  callback `UpdateManager` installs for the legacy server's self-signed certificate, which
+  accepts untrusted roots. Without that override there would be no transport protection at
+  all, and a hostile proxy or a corporate TLS interceptor would be enough.
+- **Every archive is checked against the SHA-256 in the catalogue** before it is offered,
+  so a corrupted or swapped archive is rejected.
+
+### What the catalogue may carry
+
+**Content only — files that are read, never executed.** Firmware, release notes, languages,
+device definitions, documentation.
+
+Executables stay in the installer. `cmp.exe` and everything iDM3 loads are delivered that
+way, and `Test-Catalog.ps1` fails the build if an executable reaches the catalogue, by
+extension or inside an archive. The reason is the absence of a signature: an executable
+delivered through an unsigned channel turns a stolen repository token into code execution
+on every engineer's machine, which is a different class of problem from a bad firmware
+image. A firmware image is read by a central unit that validates it; an `.exe` is run by
+Windows on a laptop.
+
+If that boundary ever needs to move, the answer is a code-signing certificate for the
+executables, not signing the catalogue.
+
+See [`SECURITY.md`](SECURITY.md) for reporting.
 
 ## Licence
 
