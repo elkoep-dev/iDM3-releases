@@ -37,6 +37,15 @@ param(
     [int]$ValidDays = 180,
     [string]$Channel = 'Stable',
 
+    # Version of iDM3 that produced this payload, e.g. 3.6.1. Stamped onto every entry
+    # except firmware, so an older installation skips content written for a newer tool
+    # rather than applying it and failing somewhere else entirely.
+    #
+    # Firmware is deliberately exempt: it is versioned per device and read by a central
+    # unit that validates it, and reaching older installations is the point of publishing
+    # it at all.
+    [string]$MinAppVersion = '',
+
     # Overrides the automatic increment. Only for recovering from an unreadable
     # catalog.xml - it must still be above whatever is published.
     [int]$Sequence = 0
@@ -178,8 +187,12 @@ try {
     $writer.WriteAttributeString('ValidUntil', $validUntil.ToString('yyyy-MM-ddTHH:mm:ssZ'))
 
     foreach ($item in $items) {
+        # Firmwares is the only component so far. It is read from the item rather than
+        # written literally, so adding Languages or Config later changes the scan, not this.
+        $component = if ($item.Component) { $item.Component } else { 'Firmwares' }
+
         $writer.WriteStartElement('Item')
-        $writer.WriteAttributeString('Component', 'Firmwares')
+        $writer.WriteAttributeString('Component', $component)
         $writer.WriteAttributeString('Kind', $item.Kind)
         $writer.WriteAttributeString('Model', $item.Model)
         $writer.WriteAttributeString('Version', $item.Version)
@@ -188,6 +201,12 @@ try {
         $writer.WriteAttributeString('Size', $item.Size.ToString())
         $writer.WriteAttributeString('Sha256', $item.Sha256)
         $writer.WriteAttributeString('Channel', $Channel)
+
+        # Firmware carries no floor: it must reach installations older than the release
+        # that published it. Everything else does, once other components are added here.
+        if (-not [string]::IsNullOrWhiteSpace($MinAppVersion) -and $component -ne 'Firmwares') {
+            $writer.WriteAttributeString('MinAppVersion', $MinAppVersion)
+        }
 
         if ($null -ne $item.Notes) {
             foreach ($n in $item.Notes) {

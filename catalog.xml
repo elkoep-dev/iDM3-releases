@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FirmwareCatalog Schema="1" Sequence="6" Generated="2026-09-17T12:02:39Z" ValidUntil="2027-03-16T12:02:39Z">
+<FirmwareCatalog Schema="1" Sequence="9" Generated="2026-09-17T12:28:02Z" ValidUntil="2027-03-16T12:28:02Z">
   <Item Component="Firmwares" Kind="Firmware" Model="A-IBUS-SLAVE" Version="02.08.00" Target="Firmwares\A-IBUS-SLAVE_02.08.00.zip" Source="firmwares/A-IBUS-SLAVE_02.08.00.zip" Size="23017" Sha256="67e27e62eaa67f26bd9e84bfd5935e34f0b708a50915f5e8ccaf5c49706928b6" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="ADC3-60M" Version="01.3A.00" Target="Firmwares\ADC3-60M_01.3A.00.zip" Source="firmwares/ADC3-60M_01.3A.00.zip" Size="81044" Sha256="20373441e2f568c7d96eeedbf4f59e6015f70ed2eca51ddf21d299d62b065a05" Channel="Stable">
     <Note Lang="en">first version</Note>
