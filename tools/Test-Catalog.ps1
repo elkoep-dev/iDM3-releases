@@ -149,17 +149,24 @@ foreach ($item in @($catalog.FirmwareCatalog.Item)) {
 foreach ($item in @($catalog.FirmwareCatalog.Item)) {
     if ($null -eq $item) { continue }
 
+    # Target and Source normally share an extension; reported once either way, because two
+    # lines about one file reads as two problems.
     foreach ($path in @($item.Target, $item.Source)) {
         if ([string]::IsNullOrWhiteSpace($path)) { continue }
         $extension = [System.IO.Path]::GetExtension($path).ToLowerInvariant()
         if ($executableExtensions -contains $extension) {
             $errors.Add("$($item.Source): the catalogue may not carry executable content ($extension). It belongs in the installer.")
+            break
         }
     }
 
     $source = $item.Source -replace '/', [System.IO.Path]::DirectorySeparatorChar
     $full   = Join-Path $repoRoot $source
     if (-not (Test-Path -LiteralPath $full)) { continue }
+
+    # Content under content/ is delivered as the file itself, so its own extension - checked
+    # above - is the whole story. Only archives have entries to look inside.
+    if ([System.IO.Path]::GetExtension($full).ToLowerInvariant() -ne '.zip') { continue }
 
     # An archive is unpacked into the installation, so its entries matter as much as its name.
     $archive = $null

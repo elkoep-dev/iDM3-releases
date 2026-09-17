@@ -57,6 +57,7 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 $repoRoot      = Split-Path -Parent $PSScriptRoot
 $firmwareDir   = Join-Path $repoRoot 'firmwares'
 $notesDir      = Join-Path $repoRoot 'notes'
+$contentDir    = Join-Path $repoRoot 'content'
 $catalogPath   = Join-Path $repoRoot 'catalog.xml'
 $aliasPath     = Join-Path $notesDir 'model-aliases.xml'
 
@@ -66,6 +67,11 @@ $aliasPath     = Join-Path $notesDir 'model-aliases.xml'
 # $nextSequence, not $sequence: PowerShell variable names are case-insensitive, so a
 # local named $sequence would BE the -Sequence parameter and silently overwrite it.
 $nextSequence = 1
+
+# Kept so a build that changes nothing can put the published number back, rather than
+# advancing it for a catalogue that turns out to be identical.
+$publishedSequence = 0
+
 if ($Sequence -gt 0) {
     $nextSequence = $Sequence
 }
@@ -73,7 +79,8 @@ elseif (Test-Path -LiteralPath $catalogPath) {
     $previous = New-Object System.Xml.XmlDocument
     try {
         $previous.Load($catalogPath)
-        $nextSequence = [int]$previous.FirmwareCatalog.Sequence + 1
+        $publishedSequence = [int]$previous.FirmwareCatalog.Sequence
+        $nextSequence = $publishedSequence + 1
     }
     catch {
         $reason = $_.Exception.Message
@@ -165,6 +172,53 @@ try {
             Notes   = $entryNotes
         })
     }
+
+    # --- Scan content/ ----------------------------------------------------------------
+    # Everything that is not firmware: languages, IDM.config, firmDepends.xml. The tree
+    # under content/ mirrors the layout inside an iDM3 installation, so the path a file
+    # sits at here is the path it belongs at there - content/Languages/x.lang becomes
+    # Languages\x.lang. Nothing has to be registered anywhere to add one.
+    #
+    # These files are not versioned per device the way firmware is, so they carry the
+    # MinAppVersion of the release that published them and an older installation skips
+    # them. Publishing content without -MinAppVersion is refused rather than guessed at.
+    if (Test-Path -LiteralPath $contentDir) {
+        $contentFiles = @(Get-ChildItem -LiteralPath $contentDir -File -Recurse | Sort-Object FullName)
+
+        if ($contentFiles.Count -gt 0 -and [string]::IsNullOrWhiteSpace($MinAppVersion)) {
+            throw "content/ holds $($contentFiles.Count) file(s) but -MinAppVersion was not supplied. Content that is not versioned per device needs a floor, or an older iDM3 will apply it and fail somewhere else."
+        }
+
+        $contentRoot = (Resolve-Path -LiteralPath $contentDir).Path.TrimEnd([System.IO.Path]::DirectorySeparatorChar)
+
+        foreach ($file in $contentFiles) {
+            $relative = $file.FullName.Substring($contentRoot.Length).TrimStart([System.IO.Path]::DirectorySeparatorChar)
+            $relative = $relative -replace '\\', '/'
+
+            $stream = [System.IO.File]::OpenRead($file.FullName)
+            try {
+                $digest = -join ($sha.ComputeHash($stream) | ForEach-Object { $_.ToString('x2') })
+            }
+            finally { $stream.Dispose() }
+
+            # The first path segment names the component, so Languages/ and Documentation/
+            # arrive as themselves. A file directly under content/ belongs to the root.
+            $segments  = $relative -split '/'
+            $component = if ($segments.Count -gt 1) { $segments[0] } else { 'Root' }
+
+            $items.Add([pscustomobject]@{
+                Kind      = 'Content'
+                Component = $component
+                Model     = $relative
+                Version   = $MinAppVersion
+                Target    = ($relative -replace '/', '\')
+                Source    = "content/$relative"
+                Size      = $file.Length
+                Sha256    = $digest
+                Notes     = $null
+            })
+        }
+    }
 }
 finally { $sha.Dispose() }
 
@@ -178,7 +232,13 @@ $settings.IndentChars  = '  '
 $settings.Encoding     = New-Object System.Text.UTF8Encoding($false)
 $settings.NewLineChars = "`n"
 
-$writer = [System.Xml.XmlWriter]::Create($catalogPath, $settings)
+# Written to a temporary file first so the result can be compared with what is already
+# published. Sequence and the timestamps move on every run by design, so a catalogue
+# regenerated from unchanged inputs still differs textually - and CI would commit that,
+# burning a sequence number and adding a commit that published nothing.
+$pendingPath = "$catalogPath.pending"
+
+$writer = [System.Xml.XmlWriter]::Create($pendingPath, $settings)
 try {
     $writer.WriteStartElement('FirmwareCatalog')
     $writer.WriteAttributeString('Schema', '1')
@@ -222,10 +282,32 @@ try {
 }
 finally { $writer.Close() }
 
+# --- Keep it only if something actually changed -------------------------------------------
+# Compared with the header stripped, because Sequence, Generated and ValidUntil move on
+# every run whatever the inputs were. If the items are identical the published catalogue
+# stays exactly as it is: the sequence number then counts publications rather than builds,
+# and CI stops committing regenerations that published nothing.
+function Get-CatalogBody {
+    param([string]$Path)
+    if (-not (Test-Path -LiteralPath $Path)) { return $null }
+    $text = [System.IO.File]::ReadAllText($Path)
+    return [regex]::Replace($text, '<FirmwareCatalog[^>]*>', '<FirmwareCatalog>')
+}
+
+$changed = (Get-CatalogBody $pendingPath) -ne (Get-CatalogBody $catalogPath)
+
+if ($changed) {
+    Move-Item -LiteralPath $pendingPath -Destination $catalogPath -Force
+}
+else {
+    Remove-Item -LiteralPath $pendingPath -Force
+    $nextSequence = $publishedSequence
+}
+
 # --- Report -----------------------------------------------------------------------------
 Write-Output ""
 Write-Output "Catalogue   : $catalogPath"
-Write-Output "Sequence    : $nextSequence"
+Write-Output "Sequence    : $nextSequence$(if (-not $changed) { ' (unchanged - nothing to publish)' })"
 Write-Output "Valid until : $($validUntil.ToString('yyyy-MM-dd'))"
 Write-Output "Items       : $($items.Count)"
 foreach ($g in ($items | Group-Object Kind | Sort-Object Name)) {
