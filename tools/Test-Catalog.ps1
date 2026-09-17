@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Verifies catalog.xml the way iDM3 will verify it.
 
@@ -6,9 +6,10 @@
     Checks, in the order the client performs them:
 
       1. Every Item's archive exists and its SHA-256 matches the catalogue.
-      2. ValidUntil has not passed.
-      3. Sequence has not gone backwards relative to -PreviousSequence.
-      4. No Item carries executable content.
+      2. Any MinAppVersion is a version iDM3 can compare.
+      3. No Item carries executable content.
+      4. ValidUntil has not passed.
+      5. Sequence has not gone backwards relative to -PreviousSequence.
 
     Run it before publishing, and in CI on every pull request.
 
@@ -119,7 +120,29 @@ foreach ($onDisk in Get-ChildItem -LiteralPath (Join-Path $repoRoot 'firmwares')
     }
 }
 
-# --- 2. Executable content ------------------------------------------------------------------
+# --- 2. Version floors ------------------------------------------------------------------------
+# An unparseable MinAppVersion is worse than none: iDM3 cannot compare it, so it either
+# skips content it should apply or applies content it should not.
+foreach ($item in @($catalog.FirmwareCatalog.Item)) {
+    if ($null -eq $item) { continue }
+
+    $floor = $item.GetAttribute('MinAppVersion')
+    if ([string]::IsNullOrWhiteSpace($floor)) {
+        # Firmware must reach installations older than the release that published it,
+        # so a missing floor is correct there and merely unremarkable elsewhere.
+        continue
+    }
+
+    $parsed = $null
+    if (-not [Version]::TryParse($floor, [ref]$parsed)) {
+        $errors.Add("$($item.Source): MinAppVersion '$floor' is not a version iDM3 can compare.")
+    }
+    elseif ($item.Component -eq 'Firmwares') {
+        $warnings.Add("$($item.Source): firmware carries MinAppVersion $floor, so installations older than that will not be offered it. Intended?")
+    }
+}
+
+# --- 3. Executable content ------------------------------------------------------------------
 # The catalogue carries content only: files that are read, never executed. This is the one
 # check that cannot be recovered after the fact - by the time a bad archive has been fetched
 # and unpacked, the machine has already run it.
@@ -155,7 +178,7 @@ foreach ($item in @($catalog.FirmwareCatalog.Item)) {
     finally { if ($null -ne $archive) { $archive.Dispose() } }
 }
 
-# --- 3. Freshness -------------------------------------------------------------------------
+# --- 4. Freshness -------------------------------------------------------------------------
 $validUntil = [DateTime]::MinValue
 if ([DateTime]::TryParse($catalog.FirmwareCatalog.ValidUntil, [ref]$validUntil)) {
     if ($validUntil.ToUniversalTime() -lt [DateTime]::UtcNow) {
@@ -166,7 +189,7 @@ else {
     $errors.Add("ValidUntil is missing or unparseable.")
 }
 
-# --- 4. Rollback ---------------------------------------------------------------------------
+# --- 5. Rollback ---------------------------------------------------------------------------
 if ($PreviousSequence -gt 0 -and $sequence -le $PreviousSequence) {
     $errors.Add("Sequence $sequence is not greater than the published $PreviousSequence. Clients reject a catalogue that moves backwards.")
 }
