@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FirmwareCatalog Schema="1" Sequence="10" Generated="2026-09-17T12:37:19Z" ValidUntil="2027-03-16T12:37:19Z">
+<FirmwareCatalog Schema="1" Sequence="11" Generated="2026-09-17T13:41:57Z" ValidUntil="2027-03-16T13:41:57Z">
   <Item Component="Firmwares" Kind="Firmware" Model="A-IBUS-SLAVE" Version="02.08.00" Target="Firmwares\A-IBUS-SLAVE_02.08.00.zip" Source="firmwares/A-IBUS-SLAVE_02.08.00.zip" Size="23017" Sha256="67e27e62eaa67f26bd9e84bfd5935e34f0b708a50915f5e8ccaf5c49706928b6" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="ADC3-60M" Version="01.3A.00" Target="Firmwares\ADC3-60M_01.3A.00.zip" Source="firmwares/ADC3-60M_01.3A.00.zip" Size="81044" Sha256="20373441e2f568c7d96eeedbf4f59e6015f70ed2eca51ddf21d299d62b065a05" Channel="Stable">
     <Note Lang="en">first version</Note>
@@ -18,9 +18,15 @@
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-07M" Version="02.97.56" Target="Firmwares\CU3-07M_02.97.56.zip" Source="firmwares/CU3-07M_02.97.56.zip" Size="165293" Sha256="0cda4876889155399397a70a4d5797913fa0daf2dad8e14fa8f43c229d3906b7" Channel="Stable">
     <Note Lang="en">add status page to web configuration</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-07M" Version="02.97.59" Target="Firmwares\CU3-07M_02.97.59.zip" Source="firmwares/CU3-07M_02.97.59.zip" Size="187041" Sha256="2bef2e40809960fc49c74de4e535fc7064232a31ce0b8cb8e2178e8736d014e9" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-07M" Version="02.97.60" Target="Firmwares\CU3-07M_02.97.60.zip" Source="firmwares/CU3-07M_02.97.60.zip" Size="192766" Sha256="7e89550835869f290fa531e70fedd06d2e7645804d99a58bd00b282032ec9a22" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-07M" Version="02.97.61" Target="Firmwares\CU3-07M_02.97.61.zip" Source="firmwares/CU3-07M_02.97.61.zip" Size="189647" Sha256="d4b5fe0367c0643ffd0408e32e5283878d0c8e9e4fb51e6e62149f10ab73405a" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-08M" Version="02.97.56" Target="Firmwares\CU3-08M_02.97.56.zip" Source="firmwares/CU3-08M_02.97.56.zip" Size="189933" Sha256="4592ec63a604b3d3b8eb3bf512412f9d3103ee1dfe7804d20f3e65d82c602c0f" Channel="Stable">
     <Note Lang="en">add status page to web configuration</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-08M" Version="02.97.59" Target="Firmwares\CU3-08M_02.97.59.zip" Source="firmwares/CU3-08M_02.97.59.zip" Size="187042" Sha256="4ce7bd92bb081fdbade52a9fa32b6234a2e5b58a5b87f77346073ba9ba6acdcc" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-08M" Version="02.97.60" Target="Firmwares\CU3-08M_02.97.60.zip" Source="firmwares/CU3-08M_02.97.60.zip" Size="192767" Sha256="237becc632d6cdfe73e0c386bebc84cdaae0eb1dd2c9fbae1e5b0a7441ef1552" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-08M" Version="02.97.61" Target="Firmwares\CU3-08M_02.97.61.zip" Source="firmwares/CU3-08M_02.97.61.zip" Size="189647" Sha256="d88c7e7fd55bedc0ce32460fc9c9360e87150eb8bee1d9baa002c4063f4a8733" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-09M" Version="02.97.56" Target="Firmwares\CU3-09M_02.97.56.zip" Source="firmwares/CU3-09M_02.97.56.zip" Size="165294" Sha256="724c0f8acd6530588269e1dee0a9abf7ea5d1e67c4f8c1c486816a8e439e2c54" Channel="Stable">
     <Note Lang="en">add status page to web configuration</Note>
     <Note Lang="en">DALI control light with percent</Note>
@@ -32,6 +38,9 @@
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-09M" Version="02.97.58" Target="Firmwares\CU3-09M_02.97.58.zip" Source="firmwares/CU3-09M_02.97.58.zip" Size="169227" Sha256="47a93e39a1acca65c8525a2b1aae43aa9e20af840094f7ef316978f3be2cd3da" Channel="Stable">
     <Note Lang="en">repaired DALI dimming</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-09M" Version="02.97.59" Target="Firmwares\CU3-09M_02.97.59.zip" Source="firmwares/CU3-09M_02.97.59.zip" Size="187042" Sha256="a2b6b80bcb98c90e46171d5712fc7a20cbeea007fd0466d5db321d49a1fdcb3e" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-09M" Version="02.97.60" Target="Firmwares\CU3-09M_02.97.60.zip" Source="firmwares/CU3-09M_02.97.60.zip" Size="192767" Sha256="3f3c475a5342f7f469b400292bd086985aeefed1bdb9d25c48bd3497dfedcf84" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-09M" Version="02.97.61" Target="Firmwares\CU3-09M_02.97.61.zip" Source="firmwares/CU3-09M_02.97.61.zip" Size="189647" Sha256="1cda0f6f8369e75f308c4c5a77c89fb6806000b7545d7c0352e184d20f978ce7" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-10M" Version="02.97.56" Target="Firmwares\CU3-10M_02.97.56.zip" Source="firmwares/CU3-10M_02.97.56.zip" Size="165297" Sha256="192928c39d8349ecde7e5dbd258cdf94881a3e33402be99acc0fbe43352f9e17" Channel="Stable">
     <Note Lang="en">add status page to web configuration</Note>
   </Item>
@@ -44,6 +53,7 @@
   <Item Component="Firmwares" Kind="Firmware" Model="DA3-66M" Version="01.3A.00" Target="Firmwares\DA3-66M_01.3A.00.zip" Source="firmwares/DA3-66M_01.3A.00.zip" Size="43264" Sha256="2c0afc51a365ec160f4e458ff30c09b9191c95978b2c021f36bca4913b8b180b" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="DAC3-04B" Version="02.A0.00" Target="Firmwares\DAC3-04B_02.A0.00.zip" Source="firmwares/DAC3-04B_02.A0.00.zip" Size="22141" Sha256="23d92f939b8e7081f01d191fff6a5ba93ff07d1ee3187c67d0dd080e34400bdb" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="DAC3-04M" Version="02.A0.00" Target="Firmwares\DAC3-04M_02.A0.00.zip" Source="firmwares/DAC3-04M_02.A0.00.zip" Size="22301" Sha256="2824332156edea3a202224042af479e2f49d569d7c984024d0706cdf447e6ff0" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Definition" Model="DALI-2-UNIT" Version="00.00.01" Target="Firmwares\DALI-2-UNIT_00.00.01.zip" Source="firmwares/DALI-2-UNIT_00.00.01.zip" Size="933" Sha256="a020d7cb90252f7a627c20f14493fd6a60a26ee6c580e64a3efbdea5e6d740d8" Channel="Stable" />
   <Item Component="Firmwares" Kind="Definition" Model="DALI-DMX-UNIT" Version="00.00.01" Target="Firmwares\DALI-DMX-UNIT_00.00.01.zip" Source="firmwares/DALI-DMX-UNIT_00.00.01.zip" Size="913" Sha256="c9ab7e7a3069679a926479a0483e23a28dbaaa2d9e9ca6911e035eef69f3daeb" Channel="Stable" />
   <Item Component="Firmwares" Kind="Definition" Model="DALI-DMX-UNIT-02" Version="00.00.01" Target="Firmwares\DALI-DMX-UNIT-02_00.00.01.zip" Source="firmwares/DALI-DMX-UNIT-02_00.00.01.zip" Size="920" Sha256="1cb79e20a6e7b7e191c6f006fd4c7751e4aaf87a5e519d11199b308a379b545a" Channel="Stable" />
   <Item Component="Firmwares" Kind="Definition" Model="DATE-TIME-UNIT" Version="00.00.01" Target="Firmwares\DATE-TIME-UNIT_00.00.01.zip" Source="firmwares/DATE-TIME-UNIT_00.00.01.zip" Size="724" Sha256="4a4ccffdb6d32d1531fde3117bf0de4290bd4f1eb19a5debb93f86a586f41d79" Channel="Stable" />
@@ -226,9 +236,11 @@
   <Item Component="Firmwares" Kind="Firmware" Model="IBWL-02B" Version="02.86.00" Target="Firmwares\IBWL-02B_02.86.00.zip" Source="firmwares/IBWL-02B_02.86.00.zip" Size="59489" Sha256="d7f5a255f1ec9b7b6555d53d6ed7f547421b78c4c0976c2dee98f06253351bb7" Channel="Stable">
     <Note Lang="en">first version</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="IBWL-02B-RELAY" Version="02.88.00" Target="Firmwares\IBWL-02B-RELAY_02.88.00.zip" Source="firmwares/IBWL-02B-RELAY_02.88.00.zip" Size="59203" Sha256="5af420a172311d6766ff1ddbf95c9363b6c207c097de6856180937913567f508" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="IBWL-20B" Version="02.86.00" Target="Firmwares\IBWL-20B_02.86.00.zip" Source="firmwares/IBWL-20B_02.86.00.zip" Size="59183" Sha256="eb7981e7faf75eb76c44b221c7da27937d653fb22fb3229b99cdceb0b6c2f013" Channel="Stable">
     <Note Lang="en">first version</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="IBWL-20B-RELAY" Version="02.88.00" Target="Firmwares\IBWL-20B-RELAY_02.88.00.zip" Source="firmwares/IBWL-20B-RELAY_02.88.00.zip" Size="59289" Sha256="ee3bed96e979189831e54febba7243f193107124333fac0c33d1731949eab636" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="IDRT3-1" Version="04.00.00" Target="Firmwares\IDRT3-1_04.00.00.zip" Source="firmwares/IDRT3-1_04.00.00.zip" Size="22426" Sha256="6343055b6b4bf5e9375b572f7658341a7cd1e26a052b47364553ce9904adac2c" Channel="Stable">
     <Note Lang="en">Optimized for CU3-07M, CU3-08M.</Note>
     <Note Lang="en">change digital device for LED control to analog device.</Note>
@@ -262,6 +274,7 @@
     <Note Lang="en">add true state and long state filters</Note>
   </Item>
   <Item Component="Firmwares" Kind="Definition" Model="IN-OUT-CU3-01M-CU3-02M" Version="02.10.00" Target="Firmwares\IN-OUT-CU3-01M-CU3-02M_02.10.00.zip" Source="firmwares/IN-OUT-CU3-01M-CU3-02M_02.10.00.zip" Size="2440" Sha256="0d20874acae1bd2b90d4a6c286749d451cd51083b0f93feb3e9e12d38694df88" Channel="Stable" />
+  <Item Component="Firmwares" Kind="Placeholder" Model="INTERNAL-DALI-2-MASTER" Version="02.96.98" Target="Firmwares\INTERNAL-DALI-2-MASTER_02.96.98.zip" Source="firmwares/INTERNAL-DALI-2-MASTER_02.96.98.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
   <Item Component="Firmwares" Kind="Placeholder" Model="INTERNAL-DALI-MASTER" Version="02.96.98" Target="Firmwares\INTERNAL-DALI-MASTER_02.96.98.zip" Source="firmwares/INTERNAL-DALI-MASTER_02.96.98.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
   <Item Component="Firmwares" Kind="Placeholder" Model="INTERNAL-IN-OUT-MASTER-CU3-01M-CU3-02M" Version="02.10.00" Target="Firmwares\INTERNAL-IN-OUT-MASTER-CU3-01M-CU3-02M_02.10.00.zip" Source="firmwares/INTERNAL-IN-OUT-MASTER-CU3-01M-CU3-02M_02.10.00.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
   <Item Component="Firmwares" Kind="Placeholder" Model="INTERNAL-MASTER" Version="03.00.31" Target="Firmwares\INTERNAL-MASTER_03.00.31.zip" Source="firmwares/INTERNAL-MASTER_03.00.31.zip" Size="22" Sha256="8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85" Channel="Stable" />
@@ -365,4 +378,15 @@
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="WSB3-40-HUM" Version="02.83.00" Target="Firmwares\WSB3-40-HUM_02.83.00.zip" Source="firmwares/WSB3-40-HUM_02.83.00.zip" Size="22028" Sha256="7847e19566fc5a19ce72b42d91e74fb90525e9da46c67ff9c1908311d8a76ccd" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="WSB3-40-HUM" Version="04.02.00" Target="Firmwares\WSB3-40-HUM_04.02.00.zip" Source="firmwares/WSB3-40-HUM_04.02.00.zip" Size="22118" Sha256="0a958fe4f34eeb07b51da3e8b5468c71b4f6cc100cefa3d62600f2f7e2582da1" Channel="Stable" />
+  <Item Component="Root" Kind="Content" Model="firmDepends.xml" Version="3.6.2" Target="firmDepends.xml" Source="content/firmDepends.xml" Size="157068" Sha256="ed623356a8ceca2615b865036cf5323361c68ce02d184cc9eb4f2f1752c9d4f0" Channel="Stable" MinAppVersion="3.6.2" />
+  <Item Component="Root" Kind="Content" Model="IDM.config" Version="3.6.2" Target="IDM.config" Source="content/IDM.config" Size="165903" Sha256="f346899f16c9d2f80e6d31d2c9af55fb3302cc74333ee6127e5783bebe713261" Channel="Stable" MinAppVersion="3.6.2" />
+  <Item Component="Languages" Kind="Content" Model="Languages/CUErrors.cs-CZ.lang" Version="3.6.2" Target="Languages\CUErrors.cs-CZ.lang" Source="content/Languages/CUErrors.cs-CZ.lang" Size="2168" Sha256="4b633cb8595322ef593a287d6568c81a3f37c1e48c4f37336f56c04986f4a29e" Channel="Stable" MinAppVersion="3.6.2" />
+  <Item Component="Languages" Kind="Content" Model="Languages/CUErrors.en-GB.lang" Version="3.6.2" Target="Languages\CUErrors.en-GB.lang" Source="content/Languages/CUErrors.en-GB.lang" Size="2041" Sha256="d0a90c6bcf3138f75e13870299b70f38b70ccc1f086309449df7dc9979931abf" Channel="Stable" MinAppVersion="3.6.2" />
+  <Item Component="Languages" Kind="Content" Model="Languages/CUErrors.lang" Version="3.6.2" Target="Languages\CUErrors.lang" Source="content/Languages/CUErrors.lang" Size="1956" Sha256="9ab7e1b3c3de0ff904dbd6f9d2be07990a2cc8bedec6979747328cbe310f5517" Channel="Stable" MinAppVersion="3.6.2" />
+  <Item Component="Languages" Kind="Content" Model="Languages/CUErrors.sk-SK.lang" Version="3.6.2" Target="Languages\CUErrors.sk-SK.lang" Source="content/Languages/CUErrors.sk-SK.lang" Size="2205" Sha256="cb319374ea2aa89a0728ec0bfdb1947e440b6ec5ad7b8e971eee218cad5db796" Channel="Stable" MinAppVersion="3.6.2" />
+  <Item Component="Languages" Kind="Content" Model="Languages/LocalizeX-EN-Original.lang" Version="3.6.2" Target="Languages\LocalizeX-EN-Original.lang" Source="content/Languages/LocalizeX-EN-Original.lang" Size="37131" Sha256="6015e7cc8ed3e7cb03f8e5fde4f899e690f13ed8350c65e5ab8a94ed82812526" Channel="Stable" MinAppVersion="3.6.2" />
+  <Item Component="Languages" Kind="Content" Model="Languages/LocalizeX.cs-CZ.lang" Version="3.6.2" Target="Languages\LocalizeX.cs-CZ.lang" Source="content/Languages/LocalizeX.cs-CZ.lang" Size="37170" Sha256="aa4c362b91721294110481d66ab36f48e2a6b2d77761106cdcce0b2d634b4120" Channel="Stable" MinAppVersion="3.6.2" />
+  <Item Component="Languages" Kind="Content" Model="Languages/LocalizeX.en-GB.lang" Version="3.6.2" Target="Languages\LocalizeX.en-GB.lang" Source="content/Languages/LocalizeX.en-GB.lang" Size="32563" Sha256="0e98982dc505eeb24394f1a6bd2a83db630266cd67a3ae9fd9feef9ac4ac5bc4" Channel="Stable" MinAppVersion="3.6.2" />
+  <Item Component="Languages" Kind="Content" Model="Languages/LocalizeX.es-ES.lang" Version="3.6.2" Target="Languages\LocalizeX.es-ES.lang" Source="content/Languages/LocalizeX.es-ES.lang" Size="14946" Sha256="37ca739f8ee62f36544f0baac2669fde41821439dddb382eac255b1f63ac7c6f" Channel="Stable" MinAppVersion="3.6.2" />
+  <Item Component="Languages" Kind="Content" Model="Languages/LocalizeX.sk-SK.lang" Version="3.6.2" Target="Languages\LocalizeX.sk-SK.lang" Source="content/Languages/LocalizeX.sk-SK.lang" Size="36968" Sha256="ea4c7bfdb4a0ee292fed3d21fb3b11e20286f6ad6c23e87022fbf11ea1651465" Channel="Stable" MinAppVersion="3.6.2" />
 </FirmwareCatalog>
