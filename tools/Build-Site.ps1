@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Generates the public site from the signed catalogue.
+    Generates the public site from the catalogue.
 
 .DESCRIPTION
     The site is derived, never hand-written. catalog.xml is the single source of truth,
@@ -112,7 +112,7 @@ $Body
 </main>
 <footer><div class="wrap">
 Generated from <code>catalog.xml</code> sequence $sequence on $generated.
-Every archive is covered by a SHA-256 digest in the signed catalogue.
+Every archive is covered by a SHA-256 digest in the catalogue.
 </div></footer>
 </body></html>
 "@
@@ -200,10 +200,13 @@ $overviewBody = @"
 check for updates, and the versions published here appear alongside the ones already
 installed. Downloading before going on site is recommended - connectivity in plant rooms
 is unreliable.</p>
-<p>Every archive is covered by a SHA-256 digest inside <code>catalog.xml</code>, and that
-catalogue carries a detached signature. iDM3 verifies the signature against a key built
-into the application and rejects anything that does not match, so firmware cannot be
-substituted in transit.</p>
+<p>Every archive is covered by a SHA-256 digest inside <code>catalog.xml</code>, and iDM3
+rejects an archive whose digest does not match, so a corrupted or substituted file is not
+installed. iDM3 validates the HTTPS certificate of this host itself rather than relying on
+whatever the machine happens to trust.</p>
+<p>The catalogue is not signed. Authenticity rests on HTTPS and on who can publish here -
+the same boundary firmware has always had, since the iDM3 installer is built from the same
+source. It carries data only: files iDM3 reads, never executables it runs.</p>
 
 <h2>Latest version per model</h2>
 <table><thead><tr><th>Model</th><th>Latest</th></tr></thead><tbody>$latestRows</tbody></table>

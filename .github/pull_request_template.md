@@ -1,17 +1,18 @@
 ## What changes
 
-<!-- Which firmware, which models, which versions. -->
+<!-- Firmware and content are NOT added here. They are published from
+     elkoep-dev/iDM-3.5.xx when a v* tag is cut, from the files in its Advance/ directory.
+     A pull request here changes release notes, model aliases, tooling or documentation. -->
 
 ## Checklist
 
-- [ ] Archive names follow `MODEL_MM.mm.pp.zip` with an uppercase hex version
-- [ ] Each archive contains its `.if3` / `.nf3` image and `unit.xml`
-- [ ] Release notes added for every new version
-- [ ] Compatibility recorded - minimum iDM3 configuration revision, and any CU firmware dependency
-- [ ] Catalogue regenerated and signed with the offline key (phase 1 onwards)
-- [ ] No private key material in the diff
+- [ ] `firmwares/`, `content/` and `catalog.xml` are untouched — a release regenerates them
+- [ ] Release notes use the model name the catalogue uses, or an alias maps it
+- [ ] Any new alias is `Confirmed="true"` only if it was actually verified against the product
+- [ ] `.\tools\Test-Catalog.ps1` passes, if the tooling changed
 
 ## Field impact
 
-<!-- Who gets offered this, and what happens if it is wrong on site?
-     Firmware flashing takes the central unit into bootloader and stops the installation. -->
+<!-- Who sees this, and what happens if it is wrong on site?
+     Release notes are read by a technician deciding whether to flash. A wrong model alias
+     shows them another product's notes, which is worse than showing none at all. -->

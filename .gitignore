@@ -1,4 +1,6 @@
-# Signing material must never enter this repository.
+# Nothing here is signed and no key is used, so any of these turning up would be a mistake
+# rather than part of a workflow. Kept as a backstop: this repository is public, and a
+# credential committed here is a credential published.
 *.private.xml
 *.key
 *.pem

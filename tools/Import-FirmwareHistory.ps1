@@ -8,8 +8,8 @@
     are not machine-readable, so iDM3 cannot show them and the website cannot render them.
 
     This converts each one into notes\<MODEL>.xml, which Build-Catalog.ps1 folds into the
-    signed catalogue. It is re-runnable: run it again after editing a source file and the
-    output is regenerated.
+    catalogue. It is re-runnable: run it again after editing a source file and the output
+    is regenerated.
 
     Source format, consistent across all 72 files:
 
