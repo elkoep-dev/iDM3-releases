@@ -1,10 +1,15 @@
 <#
 .SYNOPSIS
-    Builds catalog.xml from firmwares/ and notes/, and optionally signs it.
+    Builds catalog.xml from firmwares/ and notes/.
 
 .DESCRIPTION
-    catalog.xml is the only file iDM3 has to trust. It lists every published artifact with
-    its SHA-256, so one signature over this file covers every archive in the repository.
+    catalog.xml is the index iDM3 reads. It lists every published artifact with its
+    SHA-256, so the catalogue alone determines whether a downloaded archive is intact.
+
+    The catalogue is not signed. Authenticity rests on HTTPS to the repository host and on
+    who can push to it - the same trust boundary the installer-shipped firmware already
+    had. iDM3 validates the certificate itself rather than inheriting the application's
+    permissive global callback. See the trust model in README.md.
 
     The catalogue is path-based rather than firmware-specific: each Item carries the Target
     path it belongs at inside the iDM3 installation. Firmware is simply the first component
@@ -20,21 +25,15 @@
 
     iDM3 offers Kind="Firmware" and nothing else.
 
-.PARAMETER PrivateKeyPath
-    RSA private key in .NET XML form, produced by New-SigningKey.ps1. When omitted the
-    catalogue is written unsigned, which is useful while iterating but must never be what
-    gets published - Test-Catalog.ps1 and CI both reject an unsigned catalogue.
-
 .PARAMETER ValidDays
     How long clients should accept this catalogue before warning that it is stale. This
     bounds a rollback: an old catalogue cannot be replayed indefinitely.
 
 .EXAMPLE
-    .\tools\Build-Catalog.ps1 -PrivateKeyPath E:\offline\idm3-catalog-active.private.xml
+    .\tools\Build-Catalog.ps1
 #>
 [CmdletBinding()]
 param(
-    [string]$PrivateKeyPath,
     [int]$ValidDays = 180,
     [string]$Channel = 'Stable',
 
@@ -45,13 +44,11 @@ param(
 
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-. (Join-Path $PSScriptRoot 'RsaXml.ps1')
 
 $repoRoot      = Split-Path -Parent $PSScriptRoot
 $firmwareDir   = Join-Path $repoRoot 'firmwares'
 $notesDir      = Join-Path $repoRoot 'notes'
 $catalogPath   = Join-Path $repoRoot 'catalog.xml'
-$signaturePath = Join-Path $repoRoot 'catalog.sig'
 $aliasPath     = Join-Path $notesDir 'model-aliases.xml'
 
 # --- Sequence: strictly increasing, so a client can refuse to move backwards -----------
@@ -206,29 +203,6 @@ try {
 }
 finally { $writer.Close() }
 
-# --- Sign -------------------------------------------------------------------------------
-$signed = $false
-if (-not [string]::IsNullOrWhiteSpace($PrivateKeyPath)) {
-    if (-not (Test-Path -LiteralPath $PrivateKeyPath)) {
-        throw "Private key not found: $PrivateKeyPath"
-    }
-
-    $rsa = ConvertFrom-RsaXml -Xml (Get-Content -LiteralPath $PrivateKeyPath -Raw)
-    try {
-        $bytes = [System.IO.File]::ReadAllBytes($catalogPath)
-        $sig = $rsa.SignData($bytes,
-            [System.Security.Cryptography.HashAlgorithmName]::SHA256,
-            [System.Security.Cryptography.RSASignaturePadding]::Pkcs1)
-        [System.IO.File]::WriteAllBytes($signaturePath, $sig)
-        $signed = $true
-    }
-    finally { $rsa.Dispose() }
-}
-elseif (Test-Path -LiteralPath $signaturePath) {
-    # A stale signature is worse than none - it fails verification confusingly.
-    Remove-Item -LiteralPath $signaturePath -Force
-}
-
 # --- Report -----------------------------------------------------------------------------
 Write-Output ""
 Write-Output "Catalogue   : $catalogPath"
@@ -237,17 +211,6 @@ Write-Output "Valid until : $($validUntil.ToString('yyyy-MM-dd'))"
 Write-Output "Items       : $($items.Count)"
 foreach ($g in ($items | Group-Object Kind | Sort-Object Name)) {
     Write-Output ("                {0,-12} {1}" -f $g.Name, $g.Count)
-}
-if ($signed) {
-    if ($PrivateKeyPath -like '*development*' -or $PrivateKeyPath -like '*dev*') {
-        Write-Output "Signed      : yes - WITH A DEVELOPMENT KEY, do not publish"
-    }
-    else {
-        Write-Output "Signed      : yes"
-    }
-}
-else {
-    Write-Output "Signed      : NO - unsigned, do not publish"
 }
 
 if ($noNotes.Count -gt 0) {

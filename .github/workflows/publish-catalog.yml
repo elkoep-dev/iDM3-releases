@@ -1,0 +1,56 @@
+name: Publish catalogue
+
+# Publishing is meant to be "drop the archive in and push". Regenerating catalog.xml by
+# hand needs PowerShell on the publisher's machine and is easy to forget, and a catalogue
+# that disagrees with firmwares/ is invisible until a technician cannot find a firmware.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'firmwares/**'
+      - 'notes/**'
+      - 'tools/Build-Catalog.ps1'
+  workflow_dispatch:
+
+# Needed to push the regenerated catalogue back. A push made with GITHUB_TOKEN does not
+# start another workflow run, so this cannot loop.
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-catalog
+  cancel-in-progress: false
+
+jobs:
+  catalogue:
+    name: Regenerate and publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Regenerate catalog.xml
+        shell: pwsh
+        run: ./tools/Build-Catalog.ps1
+
+      # Before the commit, not after: a catalogue that fails here must never reach main,
+      # and this is the only thing standing between a bad push and every installation.
+      - name: Verify it exactly as iDM3 will
+        shell: pwsh
+        run: ./tools/Test-Catalog.ps1
+
+      - name: Commit if the catalogue changed
+        shell: bash
+        run: |
+          if git diff --quiet -- catalog.xml; then
+            echo "catalog.xml is already up to date; nothing to publish."
+            exit 0
+          fi
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog.xml
+          git commit -m "Regenerate the catalogue
+
+          Published automatically from the archives in firmwares/ and the notes in notes/.
+          Triggered by ${GITHUB_SHA}."
+          git push
