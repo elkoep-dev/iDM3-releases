@@ -7,7 +7,7 @@ on:
     branches: [main]
     paths:
       - 'catalog.xml'
-      - 'compatibility.txt'
+      - 'notes/**'
       - 'tools/Build-Site.ps1'
       - '.github/workflows/publish-site.yml'
   workflow_dispatch:
