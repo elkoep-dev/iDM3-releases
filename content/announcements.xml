@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Shown on the Overview page of every installed iDM3, newest first.
+
+     Edit this file on GitHub and the change reaches installations on their next launch.
+     No release, no reinstall, no version bump: committing to main republishes the
+     catalogue, and iDM3 picks it up.
+
+     English only. Unlike the firmware notes there is no Lang attribute, because an
+     announcement written in one language and shown to everyone is clearer than one that
+     silently falls back to a key.
+
+     Keep Content to two or three sentences. It is read on a laptop in a plant room, not
+     at a desk, and the panel scrolls rather than grows.
+
+     Published is used for ordering only; it is never shown. Use YYYY-MM-DD.
+     Link is optional. Omit the element entirely rather than leaving it empty. -->
+
+<Announcements>
+
+  <Announcement Published="2026-09-18">
+    <Title>Firmware now downloads itself</Title>
+    <Content>iDM3 checks for published device firmware on every launch and offers newer versions on the unit that needs them. Downloading before going on site is still worth doing - connectivity in plant rooms is unreliable.</Content>
+    <Link>https://wiki.inels.com/inels-bus/inels-design-manager-idm3/idm3-user-manual-contents</Link>
+  </Announcement>
+
+  <Announcement Published="2026-09-11">
+    <Title>RFPM-2M Energy brána s vylepšenou aplikací</Title>
+    <Content>The web interface of the RFPM-2M Energy gateway has a new and cleaner visualisation, which makes reading and evaluating energy consumption more comfortable.</Content>
+    <Link>https://www.elkoep.cz/</Link>
+  </Announcement>
+
+  <Announcement Published="2026-09-04">
+    <Title>Servisní klíč RFAF/USB</Title>
+    <Content>The RFAF/USB service key is a support tool for system partners and installation firms. It simplifies configuration and can analyse problems in wireless communication.</Content>
+    <Link>https://www.elkoep.cz/</Link>
+  </Announcement>
+
+</Announcements>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- iDM3 application release notes, shown on the Overview page under Documentation.
+
+     The same shape as the firmware notes in notes/, deliberately: one Release per
+     version, newest first, each with one Note per change. An installation shows the
+     entry matching its own version, so write for the person who has just installed it.
+
+     Versions here are decimal (3.6.4), not the hexadecimal used for firmware.
+
+     This file is edited by hand and published the same way announcements are: commit to
+     main and installations pick it up. Add the entry when you tag, so the notes and the
+     installer arrive together rather than the notes trailing behind. -->
+
+<ReleaseNotes Product="iDM3">
+
+  <Release Version="3.6.4" Published="2026-09-18">
+    <Note>Unit definitions, parameters and enumerations are published, so a new device type no longer needs a reinstall.</Note>
+  </Release>
+
+  <Release Version="3.6.3" Published="2026-09-17">
+    <Note>Fixed an update that reported itself as ready after every restart.</Note>
+    <Note>The Overview page replaces the dashboard: announcements, version and update status, and a link to the user manual.</Note>
+  </Release>
+
+  <Release Version="3.6.2" Published="2026-09-17">
+    <Note>Device firmware and language files are downloaded from the published catalogue instead of shipping inside the installer.</Note>
+  </Release>
+
+  <Release Version="3.6.1" Published="2026-09-15">
+    <Note>Added the IBWL3-02B and IBWL3-20B relays.</Note>
+    <Note>Added DALI-2 input device support.</Note>
+  </Release>
+
+</ReleaseNotes>
