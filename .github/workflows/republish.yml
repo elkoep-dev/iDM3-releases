@@ -1,0 +1,94 @@
+name: Republish
+
+# Announcements and the iDM3 release notes are written here, by hand, and must reach
+# installations without an application release - an announcement that waits for a tag is
+# an announcement nobody makes.
+#
+# Deliberately narrow. It copies only the two hand-maintained files into content/ and
+# regenerates the catalogue. It never touches firmwares/ or anything the application
+# repository syncs, so this and publish-content.yml cannot disagree about a file.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'announcements.xml'
+      - 'release-notes/**'
+      - 'notes/**'
+  workflow_dispatch:
+
+# A push made with GITHUB_TOKEN starts no further run, so this cannot loop.
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-catalogue
+  cancel-in-progress: false
+
+jobs:
+  republish:
+    name: Republish the catalogue
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      # Content needs a floor and this workflow has no tag to take one from, so it reuses
+      # whatever the published catalogue already carries. Republishing an announcement
+      # must not silently raise the floor and strand the installations reading it.
+      - name: Read the published version floor
+        id: floor
+        shell: pwsh
+        run: |
+          $doc = New-Object System.Xml.XmlDocument
+          $doc.Load('catalog.xml')
+
+          $floor = $null
+          foreach ($item in @($doc.FirmwareCatalog.Item)) {
+            $value = $item.GetAttribute('MinAppVersion')
+            if (-not [string]::IsNullOrWhiteSpace($value)) { $floor = $value; break }
+          }
+
+          if ([string]::IsNullOrWhiteSpace($floor)) {
+            Write-Output "::error::No MinAppVersion in the published catalogue. Cut a release first; this workflow only republishes what a release established."
+            exit 1
+          }
+
+          Write-Output "Republishing at floor $floor"
+          "value=$floor" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+
+      - name: Stage the hand-maintained files
+        shell: bash
+        run: |
+          mkdir -p content
+          cp announcements.xml content/ 2>/dev/null || true
+
+          if [ -d release-notes ]; then
+            mkdir -p content/release-notes
+            cp release-notes/*.xml content/release-notes/ 2>/dev/null || true
+          fi
+
+          echo "Staged:"
+          find content -maxdepth 2 -type f \( -name 'announcements.xml' -o -path 'content/release-notes/*' \) | sed 's|content/|  |'
+
+      - name: Regenerate the catalogue
+        shell: pwsh
+        run: ./tools/Build-Catalog.ps1 -MinAppVersion ${{ steps.floor.outputs.value }}
+
+      - name: Verify it exactly as iDM3 will
+        shell: pwsh
+        run: ./tools/Test-Catalog.ps1
+
+      - name: Publish
+        shell: bash
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Nothing changed; the published catalogue is already current."
+            exit 0
+          fi
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Republish announcements and release notes
+
+          Triggered by ${GITHUB_SHA}. Firmware and synced content are untouched."
+          git push
