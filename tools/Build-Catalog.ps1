@@ -266,9 +266,22 @@ try {
         $writer.WriteAttributeString('Sha256', $item.Sha256)
         $writer.WriteAttributeString('Channel', $Channel)
 
-        # Firmware carries no floor: it must reach installations older than the release
-        # that published it. Everything else does, once other components are added here.
-        if (-not [string]::IsNullOrWhiteSpace($MinAppVersion) -and $component -ne 'Firmwares') {
+        # A floor says "this needs code that shipped in that release". Two kinds of entry
+        # do not:
+        #
+        #   Firmware is versioned per device and read by a central unit that validates it.
+        #     Reaching installations older than the release that published it is the point.
+        #
+        #   Announcements and release notes are text. An older installation is exactly the
+        #     one that should still hear about a new firmware or be told what changed, and
+        #     a floor would silence it at the first release after it was installed.
+        #
+        # Definitions and languages keep theirs: those are read by code that has to
+        # understand them.
+        $informational = $item.Target -eq 'announcements.xml' -or $item.Target -like 'release-notes\*'
+
+        if (-not [string]::IsNullOrWhiteSpace($MinAppVersion) -and
+            $component -ne 'Firmwares' -and -not $informational) {
             $writer.WriteAttributeString('MinAppVersion', $MinAppVersion)
         }
 
