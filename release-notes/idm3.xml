@@ -23,6 +23,10 @@
 
 <ReleaseNotes Product="iDM3">
 
+  <Release Version="3.6.6" Published="2026-09-18">
+    <Note>The Overview page says when a newer version of iDM3 has been published.</Note>
+  </Release>
+
   <Release Version="3.6.5" Published="2026-09-18">
     <Note>Announcements and release notes are published, so they can be updated without a new version of iDM3.</Note>
     <Note>The Overview page shows release notes for iDM3 and for the published firmware.</Note>
