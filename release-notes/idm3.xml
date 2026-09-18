@@ -10,7 +10,16 @@
 
      This file is edited by hand and published the same way announcements are: commit to
      main and installations pick it up. Add the entry when you tag, so the notes and the
-     installer arrive together rather than the notes trailing behind. -->
+     installer arrive together rather than the notes trailing behind.
+
+     It doubles as the version feed. An installation compares its own version against the
+     highest listed here, and the Overview page says so when a newer one exists - iDM3
+     cannot install itself, so that is a statement rather than an offer.
+
+     Url is optional and names where to get that installer. Leave it out until there is
+     somewhere to send people: the installer lives in a private repository today, and a
+     link that 404s is worse than none. When it is present the Overview page shows a
+     "Where to get it" link beside the version. -->
 
 <ReleaseNotes Product="iDM3">
 
