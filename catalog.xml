@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FirmwareCatalog Schema="1" Sequence="17" Generated="2026-09-18T08:10:11Z" ValidUntil="2027-03-17T08:10:11Z">
+<FirmwareCatalog Schema="1" Sequence="18" Generated="2026-09-18T09:27:42Z" ValidUntil="2027-03-17T09:27:42Z">
   <Item Component="Firmwares" Kind="Firmware" Model="A-IBUS-SLAVE" Version="02.08.00" Target="Firmwares\A-IBUS-SLAVE_02.08.00.zip" Source="firmwares/A-IBUS-SLAVE_02.08.00.zip" Size="23017" Sha256="67e27e62eaa67f26bd9e84bfd5935e34f0b708a50915f5e8ccaf5c49706928b6" Channel="Stable" />
   <Item Component="Firmwares" Kind="Firmware" Model="ADC3-60M" Version="01.3A.00" Target="Firmwares\ADC3-60M_01.3A.00.zip" Source="firmwares/ADC3-60M_01.3A.00.zip" Size="81044" Sha256="20373441e2f568c7d96eeedbf4f59e6015f70ed2eca51ddf21d299d62b065a05" Channel="Stable">
     <Note Lang="en">first version</Note>
@@ -396,5 +396,5 @@
   <Item Component="Languages" Kind="Content" Model="Languages/LocalizeX.en-GB.lang" Version="3.6.5" Target="Languages\LocalizeX.en-GB.lang" Source="content/Languages/LocalizeX.en-GB.lang" Size="32563" Sha256="0e98982dc505eeb24394f1a6bd2a83db630266cd67a3ae9fd9feef9ac4ac5bc4" Channel="Stable" MinAppVersion="3.6.5" />
   <Item Component="Languages" Kind="Content" Model="Languages/LocalizeX.es-ES.lang" Version="3.6.5" Target="Languages\LocalizeX.es-ES.lang" Source="content/Languages/LocalizeX.es-ES.lang" Size="14946" Sha256="37ca739f8ee62f36544f0baac2669fde41821439dddb382eac255b1f63ac7c6f" Channel="Stable" MinAppVersion="3.6.5" />
   <Item Component="Languages" Kind="Content" Model="Languages/LocalizeX.sk-SK.lang" Version="3.6.5" Target="Languages\LocalizeX.sk-SK.lang" Source="content/Languages/LocalizeX.sk-SK.lang" Size="36968" Sha256="ea4c7bfdb4a0ee292fed3d21fb3b11e20286f6ad6c23e87022fbf11ea1651465" Channel="Stable" MinAppVersion="3.6.5" />
-  <Item Component="release-notes" Kind="Content" Model="release-notes/idm3.xml" Version="3.6.5" Target="release-notes\idm3.xml" Source="content/release-notes/idm3.xml" Size="1996" Sha256="15688637c672011e87b22b7409410b57396fa6e629d1f6dad4eec1bdcb6a39e4" Channel="Stable" />
+  <Item Component="release-notes" Kind="Content" Model="release-notes/idm3.xml" Version="3.6.5" Target="release-notes\idm3.xml" Source="content/release-notes/idm3.xml" Size="2557" Sha256="7ac20d7a479bd9c48a17fe66d043b1793a67f3e7ff56dac028931747a5aa1900" Channel="Stable" />
 </FirmwareCatalog>
