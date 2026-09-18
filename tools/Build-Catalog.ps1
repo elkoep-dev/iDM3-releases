@@ -183,7 +183,11 @@ try {
     # MinAppVersion of the release that published them and an older installation skips
     # them. Publishing content without -MinAppVersion is refused rather than guessed at.
     if (Test-Path -LiteralPath $contentDir) {
-        $contentFiles = @(Get-ChildItem -LiteralPath $contentDir -File -Recurse | Sort-Object FullName)
+        # -Force because the definition parts live in .config-overlay, and a leading dot
+        # makes a directory hidden on Linux - where this runs in CI. Without it the parts
+        # were committed to the repository and silently left out of the catalogue, so no
+        # installation ever fetched them.
+        $contentFiles = @(Get-ChildItem -LiteralPath $contentDir -File -Recurse -Force | Sort-Object FullName)
 
         if ($contentFiles.Count -gt 0 -and [string]::IsNullOrWhiteSpace($MinAppVersion)) {
             throw "content/ holds $($contentFiles.Count) file(s) but -MinAppVersion was not supplied. Content that is not versioned per device needs a floor, or an older iDM3 will apply it and fail somewhere else."

@@ -120,6 +120,29 @@ foreach ($onDisk in Get-ChildItem -LiteralPath (Join-Path $repoRoot 'firmwares')
     }
 }
 
+# An unlisted content file is an error rather than a warning: it was published
+# deliberately and does nothing, which is worse than not publishing it at all. This is
+# the check that would have caught .config-overlay being skipped because a leading dot
+# makes a directory hidden on Linux. -Force for the same reason.
+$contentDir = Join-Path $repoRoot 'content'
+if (Test-Path -LiteralPath $contentDir) {
+    $contentRoot = (Resolve-Path -LiteralPath $contentDir).Path.TrimEnd([System.IO.Path]::DirectorySeparatorChar)
+
+    $listedSources = @{}
+    foreach ($item in @($catalog.FirmwareCatalog.Item)) {
+        if ($null -ne $item) { $listedSources[$item.Source] = $true }
+    }
+
+    foreach ($onDisk in Get-ChildItem -LiteralPath $contentDir -File -Recurse -Force) {
+        $relative = $onDisk.FullName.Substring($contentRoot.Length).TrimStart([System.IO.Path]::DirectorySeparatorChar)
+        $source   = 'content/' + ($relative -replace '\\', '/')
+
+        if (-not $listedSources.ContainsKey($source)) {
+            $errors.Add("$source is in content/ but not in the catalogue - it was published and will never be fetched.")
+        }
+    }
+}
+
 # --- 2. Version floors ------------------------------------------------------------------------
 # An unparseable MinAppVersion is worse than none: iDM3 cannot compare it, so it either
 # skips content it should apply or applies content it should not.
