@@ -1,0 +1,836 @@
+﻿<?xml version="1.0"?>
+<DynamicEnumConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DynamicEnumerators>
+    <DynamicEnum Name="EnumAnalogInputType">
+      <Items>
+        <Item UnicateKey="2" Name="U_0-10V" />
+        <Item UnicateKey="3" Name="U_0-10V conversion" />
+        <Item UnicateKey="4" Name="U_0-5V" />
+        <Item UnicateKey="5" Name="U_0-5V conversion" />
+        <Item UnicateKey="6" Name="U_0-2,5V" />
+        <Item UnicateKey="7" Name="U_0-2,5V conversion" />
+        <Item UnicateKey="8" Name="I_0-20mA" />
+        <Item UnicateKey="9" Name="I_0-20mA conversion" />
+        <Item UnicateKey="10" Name="I_4-20mA" />
+        <Item UnicateKey="11" Name="I_4-20mA conversion" />
+        <Item UnicateKey="12" Name="T_TC" />
+        <Item UnicateKey="14" Name="T_TZ" />
+        <Item UnicateKey="16" Name="T_Ni1000" />
+        <Item UnicateKey="18" Name="T_Pt100" />
+        <Item UnicateKey="20" Name="T_Pt1000" />
+        <Item UnicateKey="22" Name="R_0-100Ohm" />
+        <Item UnicateKey="23" Name="R_0-100Ohm conversion" />
+        <Item UnicateKey="24" Name="R_0-1kOhm" />
+        <Item UnicateKey="25" Name="R_0-1kOhm conversion" />
+        <Item UnicateKey="26" Name="R_0-10kOhm" />
+        <Item UnicateKey="27" Name="R_0-10kOhm conversion" />
+        <Item UnicateKey="28" Name="R_0-50kOhm" />
+        <Item UnicateKey="29" Name="R_0-50kOhm conversion" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumAnalogInputType2">
+      <Items>
+        <Item UnicateKey="2" Name="U_0-10V" />
+        <Item UnicateKey="3" Name="U_0-10V conversion" />
+        <Item UnicateKey="4" Name="U_0-5V" />
+        <Item UnicateKey="5" Name="U_0-5V conversion" />
+        <Item UnicateKey="6" Name="U_0-2,5V" />
+        <Item UnicateKey="7" Name="U_0-2,5V conversion" />
+        <Item UnicateKey="8" Name="I_0-20mA" />
+        <Item UnicateKey="9" Name="I_0-20mA conversion" />
+        <Item UnicateKey="10" Name="I_4-20mA" />
+        <Item UnicateKey="11" Name="I_4-20mA conversion" />
+        <Item UnicateKey="12" Name="T_TC" />
+        <Item UnicateKey="14" Name="T_TZ" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumAnalogInputType3">
+      <Items>
+        <Item UnicateKey="2" Name="U_0-10V" />
+        <Item UnicateKey="3" Name="U_0-10V conversion" />
+        <Item UnicateKey="4" Name="U_0-5V" />
+        <Item UnicateKey="5" Name="U_0-5V conversion" />
+        <Item UnicateKey="6" Name="U_0-2,5V" />
+        <Item UnicateKey="7" Name="U_0-2,5V conversion" />
+        <Item UnicateKey="8" Name="I_0-20mA" />
+        <Item UnicateKey="9" Name="I_0-20mA conversion" />
+        <Item UnicateKey="10" Name="I_4-20mA" />
+        <Item UnicateKey="11" Name="I_4-20mA conversion" />
+        <Item UnicateKey="12" Name="T_TC" />
+        <Item UnicateKey="14" Name="T_TZ" />
+        <Item UnicateKey="16" Name="T_Ni1000" />
+        <Item UnicateKey="18" Name="T_Pt100" />
+        <Item UnicateKey="20" Name="T_Pt1000" />
+        <Item UnicateKey="22" Name="R_0-100Ohm" />
+        <Item UnicateKey="23" Name="R_0-100Ohm conversion" />
+        <Item UnicateKey="24" Name="R_0-1kOhm" />
+        <Item UnicateKey="25" Name="R_0-1kOhm conversion" />
+        <Item UnicateKey="26" Name="R_0-10kOhm" />
+        <Item UnicateKey="27" Name="R_0-10kOhm conversion" />
+        <Item UnicateKey="28" Name="R_0-50kOhm" />
+        <Item UnicateKey="29" Name="R_0-50kOhm conversion" />
+        <Item UnicateKey="30" Name="SKS-200" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumAnalogInputType4">
+      <Items>
+        <Item UnicateKey="2" Name="U_0-10V" />
+        <Item UnicateKey="4" Name="U_0-5V" />
+        <Item UnicateKey="6" Name="U_0-2,5V" />
+        <Item UnicateKey="8" Name="I_0-20mA" />
+        <Item UnicateKey="10" Name="I_4-20mA" />
+        <Item UnicateKey="12" Name="T_TC" />
+        <Item UnicateKey="14" Name="T_TZ" />
+        <Item UnicateKey="30" Name="SKS-200" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumAnalogInputTypeIOU">
+      <Items>
+        <Item UnicateKey="12" Name="T_TC" />
+        <Item UnicateKey="14" Name="T_TZ" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumOutputType">
+      <Items>
+        <Item UnicateKey="0" Name="U_0-10V" />
+        <Item UnicateKey="1" Name="U_1-10V" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumSensotTypeTC/TZ">
+      <Items>
+        <Item UnicateKey="0" Name="TC" />
+        <Item UnicateKey="1" Name="TZ" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumSensorTypeTherm">
+      <Items>
+        <Item UnicateKey="7" Name="T_NVC_12K" />
+        <Item UnicateKey="8" Name="T_NVC_20K" />
+        <Item UnicateKey="9" Name="T_Ni1000-5000" />
+        <Item UnicateKey="10" Name="T_Ni1000-6180" />
+        <Item UnicateKey="11" Name="T_Ni891" />
+        <Item UnicateKey="12" Name="T_Pt100" />
+        <Item UnicateKey="13" Name="T_Pt500" />
+        <Item UnicateKey="14" Name="T_Pt1000" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumAnalogInputTypeIn2">
+      <Items>
+        <Item UnicateKey="128" Name="U_0-10V" />
+        <Item UnicateKey="129" Name="U_0-5V" />
+        <Item UnicateKey="130" Name="U_0-2V" />
+        <Item UnicateKey="131" Name="U_0-1V" />
+        <Item UnicateKey="132" Name="U_0-0,5V" />
+        <Item UnicateKey="64" Name="I_0-20mA" />
+        <Item UnicateKey="65" Name="I_4-20mA" />
+        <Item UnicateKey="40" Name="T_NTC_12K" />
+        <Item UnicateKey="39" Name="T_OV1000" />
+        <Item UnicateKey="37" Name="T_Ni1000_W100=1,500" />
+        <Item UnicateKey="36" Name="T_Ni1000_W100=1,617" />
+        <Item UnicateKey="35" Name="T_Pt1000_W100=1,391" />
+        <Item UnicateKey="34" Name="T_Pt1000_W100=1,385" />
+        <Item UnicateKey="33" Name="T_Pt100_W100=1,391" />
+        <Item UnicateKey="32" Name="T_Pt100_W100=1,385" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumCorrectionRange">
+      <Items>
+        <Item UnicateKey="0" Name="+-3°C" />
+        <Item UnicateKey="1" Name="+-4°C" />
+        <Item UnicateKey="2" Name="+-5°C" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumViewTemperature">
+      <Items>
+        <Item UnicateKey="0" Name="Not view" />
+        <Item UnicateKey="1" Name="Intern temperature" />
+        <Item UnicateKey="2" Name="Extern temperature" />
+        <Item UnicateKey="3" Name="Both temperature" />
+        <Item UnicateKey="4" Name="H/C Current temperature" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumBPS3Types">
+      <Items>
+        <Item UnicateKey="3000" Name="BPS3-01M" />
+        <Item UnicateKey="1000" Name="BPS3-02M" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumBPS2Types">
+      <Items>
+        <Item UnicateKey="1000" Name="BPS2-01M" />
+        <Item UnicateKey="1001" Name="BPS2-02M" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumBeeper">
+      <Items>
+        <Item UnicateKey="0" Name="Not beep" />
+        <Item UnicateKey="1" Name="Short beep" />
+        <Item UnicateKey="2" Name="Long beep" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumBeeper2">
+      <Items>
+        <Item UnicateKey="0" Name="Not beep" />
+        <Item UnicateKey="1" Name="Short beep" />
+        <Item UnicateKey="2" Name="Long beep" />
+        <Item UnicateKey="3" Name="Tick" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumBeeper3">
+      <Items>
+        <Item UnicateKey="0" Name="Tick" />
+        <Item UnicateKey="1" Name="Short beep" />
+        <Item UnicateKey="2" Name="Long beep" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumAverageTime">
+      <Items>
+        <Item UnicateKey="1" Name="10s" />
+        <Item UnicateKey="2" Name="20s" />
+        <Item UnicateKey="3" Name="0,5 min" />
+        <Item UnicateKey="6" Name="1 min" />
+        <Item UnicateKey="9" Name="1,5 min" />
+        <Item UnicateKey="12" Name="2 min" />
+        <Item UnicateKey="15" Name="2,5 min" />
+        <Item UnicateKey="18" Name="3 min" />
+        <Item UnicateKey="21" Name="3,5 min" />
+        <Item UnicateKey="24" Name="4 min" />
+        <Item UnicateKey="27" Name="4,5 min" />
+        <Item UnicateKey="30" Name="5 min" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumSensorTypeMAR">
+      <Items>
+        <Item UnicateKey="0" Name="TC" />
+        <Item UnicateKey="1" Name="TZ" />
+        <Item UnicateKey="3" Name="T_Ni1000" />
+        <Item UnicateKey="5" Name="T_Pt100" />
+        <Item UnicateKey="7" Name="T_Pt1000" />
+        <Item UnicateKey="9" Name="Calibration" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumLigthSetup">
+      <Items>
+        <Item UnicateKey="0" Name="Use light limit" />
+        <Item UnicateKey="1" Name="Light all time" />
+        <Item UnicateKey="2" Name="Not light" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumZoneType">
+      <Items>
+        <Item UnicateKey="1" Name="24 Hour" />
+        <Item UnicateKey="2" Name="EZS" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumAnalogInputTypeCU">
+      <Items>
+        <Item UnicateKey="30" Name="U_0-30V" />
+        <Item UnicateKey="31" Name="U_0-30V conversion" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumSensitivity">
+      <Items>
+        <Item UnicateKey="0" Name="Off" />
+        <Item UnicateKey="1" Name="Low level" />
+        <Item UnicateKey="2" Name="Middle level" />
+        <Item UnicateKey="3" Name="High level" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumCloseTimeout">
+      <Items>
+        <Item UnicateKey="0" Name="Off" />
+        <Item UnicateKey="1" Name="10min" />
+        <Item UnicateKey="2" Name="20min" />
+        <Item UnicateKey="3" Name="30min" />
+        <Item UnicateKey="4" Name="40min" />
+        <Item UnicateKey="5" Name="50min" />
+        <Item UnicateKey="6" Name="60min" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumDefaultColor">
+      <Items>
+        <Item UnicateKey="1" Name="Red" />
+        <Item UnicateKey="2" Name="Green" />
+        <Item UnicateKey="4" Name="Blue" />
+        <Item UnicateKey="3" Name="Yellow" />
+        <Item UnicateKey="5" Name="Ping" />
+        <Item UnicateKey="6" Name="Turquoise" />
+        <Item UnicateKey="7" Name="White" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumBecklightLimit">
+      <Items>
+        <Item UnicateKey="3" Name="25%" />
+        <Item UnicateKey="7" Name="50%" />
+        <Item UnicateKey="11" Name="75%" />
+        <Item UnicateKey="15" Name="100%" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumBecklightLimit2">
+      <Items>
+        <Item UnicateKey="25" Name="25%" />
+        <Item UnicateKey="50" Name="50%" />
+        <Item UnicateKey="75" Name="75%" />
+        <Item UnicateKey="100" Name="100%" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumCardType">
+      <Items>
+        <Item UnicateKey="1" Name="Mifare Desfire 2k" />
+        <Item UnicateKey="2" Name="Mifare Desfire 4k" />
+        <Item UnicateKey="3" Name="Mifare Ultralight" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumCardType2">
+      <Items>
+        <Item UnicateKey="3" Name="Mifare Ultralight" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumDriveType">
+      <Items>
+        <Item UnicateKey="0" Name="RGBY" />
+        <Item UnicateKey="1" Name="RGB" />
+        <Item UnicateKey="2" Name="RGBW" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumButtonConf">
+      <Items>
+        <Item UnicateKey="1" Name="2x2" />
+        <Item UnicateKey="2" Name="2x3" />
+        <Item UnicateKey="3" Name="3x3" />
+        <Item UnicateKey="4" Name="3x4" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumFadeRate">
+      <Items>
+        <Item UnicateKey="0" Name="357 steps/s" />
+        <Item UnicateKey="1" Name="253 steps/s" />
+        <Item UnicateKey="2" Name="179 steps/s" />
+        <Item UnicateKey="3" Name="127 steps/s" />
+        <Item UnicateKey="4" Name="89 steps/s" />
+        <Item UnicateKey="5" Name="63 steps/s" />
+        <Item UnicateKey="6" Name="45 steps/s" />
+        <Item UnicateKey="7" Name="32 steps/s" />
+        <Item UnicateKey="8" Name="22 steps/s" />
+        <Item UnicateKey="9" Name="16 steps/s" />
+        <Item UnicateKey="10" Name="11 steps/s" />
+        <Item UnicateKey="11" Name="8 steps/s" />
+        <Item UnicateKey="12" Name="6 steps/s" />
+        <Item UnicateKey="13" Name="4 steps/s" />
+        <Item UnicateKey="14" Name="3 steps/s" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumFadeTime">
+      <Items>
+        <Item UnicateKey="0" Name="&lt; 0,7s" />
+        <Item UnicateKey="1" Name="0,7s" />
+        <Item UnicateKey="2" Name="1,0s" />
+        <Item UnicateKey="3" Name="1,4s" />
+        <Item UnicateKey="4" Name="2,0s" />
+        <Item UnicateKey="5" Name="2,8s" />
+        <Item UnicateKey="6" Name="4,0s" />
+        <Item UnicateKey="7" Name="5,6s" />
+        <Item UnicateKey="8" Name="8,0s" />
+        <Item UnicateKey="9" Name="11,3s" />
+        <Item UnicateKey="10" Name="16,0s" />
+        <Item UnicateKey="11" Name="22,6s" />
+        <Item UnicateKey="12" Name="32,0s" />
+        <Item UnicateKey="13" Name="45,2s" />
+        <Item UnicateKey="14" Name="64,0s" />
+        <Item UnicateKey="15" Name="90,5s" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumAverageTimeIO">
+      <Items>
+        <Item UnicateKey="0" Name="0s" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRegHStatusIn">
+      <Items>
+        <Item UnicateKey="0" Name="Off" />
+        <Item UnicateKey="1" Name="On" />
+        <Item UnicateKey="2" Name="ErrActual" />
+        <Item UnicateKey="4" Name="ErrRequired" />
+        <Item UnicateKey="8" Name="Interrupt" />
+        <Item UnicateKey="16" Name="ErrCritical" />
+        <Item UnicateKey="32" Name="ErrAntifreeze" />
+        <Item UnicateKey="64" Name="ErrHysteresis" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRegCStatusIn">
+      <Items>
+        <Item UnicateKey="0" Name="Off" />
+        <Item UnicateKey="1" Name="On" />
+        <Item UnicateKey="2" Name="ErrActual" />
+        <Item UnicateKey="4" Name="ErrRequired" />
+        <Item UnicateKey="8" Name="Interrupt" />
+        <Item UnicateKey="16" Name="ErrMaximal" />
+        <Item UnicateKey="64" Name="ErrHysteresis" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRegPIDStatusIn">
+      <Items>
+        <Item UnicateKey="0" Name="Off" />
+        <Item UnicateKey="1" Name="On" />
+        <Item UnicateKey="2" Name="ErrActual" />
+        <Item UnicateKey="4" Name="ErrRequired" />
+        <Item UnicateKey="8" Name="Interrupt" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRegTwoStatusIn">
+      <Items>
+        <Item UnicateKey="0" Name="Off" />
+        <Item UnicateKey="1" Name="On" />
+        <Item UnicateKey="2" Name="ErrActual" />
+        <Item UnicateKey="4" Name="ErrRequired" />
+        <Item UnicateKey="8" Name="Interrupt" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRegThreeStatusIn">
+      <Items>
+        <Item UnicateKey="0" Name="Off" />
+        <Item UnicateKey="1" Name="On" />
+        <Item UnicateKey="2" Name="ErrActual" />
+        <Item UnicateKey="4" Name="ErrRequired1" />
+        <Item UnicateKey="8" Name="Interrupt" />
+        <Item UnicateKey="16" Name="ErrRequired2" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumColorCorrection">
+      <Items>
+        <Item UnicateKey="0" Name="Not Calibration" />
+        <Item UnicateKey="1" Name="Variant A - colder white" />
+        <Item UnicateKey="2" Name="Variant B - colder white" />
+        <Item UnicateKey="3" Name="Variant A - warmer white" />
+        <Item UnicateKey="4" Name="Variant B - warmer white" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRegType">
+      <Items>
+        <Item UnicateKey="0" Name="Not used regulator" />
+        <Item UnicateKey="1" Name="P" />
+        <Item UnicateKey="3" Name="PI" />
+        <Item UnicateKey="5" Name="PD" />
+        <Item UnicateKey="7" Name="PID" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumTerTypeDriveHead">
+      <Items>
+        <Item UnicateKey="0" Name="Digital head" />
+        <Item UnicateKey="1" Name="Analog head" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRegTypeEndSensor">
+      <Items>
+        <Item UnicateKey="0" Name="Not used" />
+        <Item UnicateKey="1" Name="Only OPEN " />
+        <Item UnicateKey="2" Name="Only CLOSE" />
+        <Item UnicateKey="3" Name="Both sensors" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumSleepTime">
+      <Items>
+        <Item UnicateKey="0" Name="Not Sleep" />
+        <Item UnicateKey="1" Name="1" />
+        <Item UnicateKey="2" Name="2" />
+        <Item UnicateKey="3" Name="3" />
+        <Item UnicateKey="4" Name="4" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRegFanCoilStatusIn">
+      <Items>
+        <Item UnicateKey="0" Name="Off" />
+        <Item UnicateKey="1" Name="On" />
+        <Item UnicateKey="2" Name="ErrActual" />
+        <Item UnicateKey="4" Name="ErrRequired" />
+        <Item UnicateKey="8" Name="Interrupt" />
+        <Item UnicateKey="16" Name="Heat" />
+        <Item UnicateKey="32" Name="Cool" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumFanCoilType">
+      <Items>
+        <Item UnicateKey="16" Name="Only heat" />
+        <Item UnicateKey="32" Name="Only cool" />
+        <Item UnicateKey="48" Name="Hean and Cool" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumEhtIcon">
+      <Items>
+        <Item UnicateKey="0" Name="ICO1" />
+        <Item UnicateKey="1" Name="ICO2" />
+        <Item UnicateKey="2" Name="ICO3" />
+        <Item UnicateKey="3" Name="ICO4" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumLang">
+      <Items>
+        <Item UnicateKey="0" Name="English" />
+        <Item UnicateKey="1" Name="Český jazyk" />
+        <Item UnicateKey="2" Name="Slovenčina" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumSleep">
+      <Items>
+        <Item UnicateKey="0" Name="0 min" />
+        <Item UnicateKey="10" Name="10 min" />
+        <Item UnicateKey="15" Name="15 min" />
+        <Item UnicateKey="20" Name="20 min" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumScrBrightness">
+      <Items>
+        <Item UnicateKey="25" Name="25%" />
+        <Item UnicateKey="50" Name="50%" />
+        <Item UnicateKey="75" Name="75%" />
+        <Item UnicateKey="100" Name="100%" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumScrTime">
+      <Items>
+        <Item UnicateKey="0" Name="NO" />
+        <Item UnicateKey="15" Name="15 s" />
+        <Item UnicateKey="30" Name="30 s" />
+        <Item UnicateKey="60" Name="1 min" />
+        <Item UnicateKey="180" Name="3 min" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumCity">
+      <Items>
+        <Item UnicateKey="0" Name="Australia - Melbourne" />
+        <Item UnicateKey="1" Name="Australia - Sydney" />
+        <Item UnicateKey="2" Name="Austria - Innsbruck" />
+        <Item UnicateKey="3" Name="Austria - Wien" />
+        <Item UnicateKey="4" Name="Belarus - Minsk" />
+        <Item UnicateKey="5" Name="Canada - Ottawa" />
+        <Item UnicateKey="6" Name="Canada - Quebec" />
+        <Item UnicateKey="7" Name="Czech republic - Brno" />
+        <Item UnicateKey="8" Name="Czech republic - České Budějovice" />
+        <Item UnicateKey="9" Name="Czech republic - Hradec Králové" />
+        <Item UnicateKey="10" Name="Czech republic - Ostrava" />
+        <Item UnicateKey="11" Name="Czech republic - Praha" />
+        <Item UnicateKey="12" Name="Estonia - Tallinn" />
+        <Item UnicateKey="13" Name="France - Paris" />
+        <Item UnicateKey="14" Name="Germany - Berlin" />
+        <Item UnicateKey="15" Name="Germany - Munich" />
+        <Item UnicateKey="16" Name="Great Britain - Edinburgh" />
+        <Item UnicateKey="17" Name="Great Britain - London" />
+        <Item UnicateKey="50" Name="Greece - Athens" />
+        <Item UnicateKey="18" Name="Holland - Amsterdam" />
+        <Item UnicateKey="19" Name="Hungary - Budapest" />
+        <Item UnicateKey="20" Name="Hungary - Debrecen" />
+        <Item UnicateKey="21" Name="Hungary - Pecs" />
+        <Item UnicateKey="22" Name="Ireland - Dublin" />
+        <Item UnicateKey="23" Name="Italy - Rome" />
+        <Item UnicateKey="24" Name="Latvia - Riga" />
+        <Item UnicateKey="25" Name="Lithuania - Vilnius" />
+        <Item UnicateKey="26" Name="Norway - Oslo" />
+        <Item UnicateKey="27" Name="Poland - Gdansk" />
+        <Item UnicateKey="28" Name="Poland - Krakow" />
+        <Item UnicateKey="29" Name="Poland - Warsaw" />
+        <Item UnicateKey="30" Name="Romania - Arad" />
+        <Item UnicateKey="31" Name="Romania - Bucharest" />
+        <Item UnicateKey="32" Name="Russia - Magadan" />
+        <Item UnicateKey="33" Name="Russia - Moscow" />
+        <Item UnicateKey="34" Name="Russia - Novosibirsk" />
+        <Item UnicateKey="35" Name="Russia - St-Petersburg" />
+        <Item UnicateKey="36" Name="Russia - Sochi" />
+        <Item UnicateKey="37" Name="Slovakia - Banska Bystrica" />
+        <Item UnicateKey="38" Name="Slovakia - Bratislava" />
+        <Item UnicateKey="39" Name="Slovakia - Košice" />
+        <Item UnicateKey="40" Name="Spain - Madrid" />
+        <Item UnicateKey="41" Name="Sweden - Stockholm" />
+        <Item UnicateKey="42" Name="Switzerland - Zurich" />
+        <Item UnicateKey="43" Name="Ukraine - Donetsk" />
+        <Item UnicateKey="44" Name="Ukraine - Kiev" />
+        <Item UnicateKey="45" Name="Ukraine - Odessa" />
+        <Item UnicateKey="46" Name="USA - Chicago" />
+        <Item UnicateKey="47" Name="USA - Los Angeles" />
+        <Item UnicateKey="48" Name="USA - New York" />
+        <Item UnicateKey="49" Name="USA - Washington" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRegValveStatusIn">
+      <Items>
+        <Item UnicateKey="0" Name="Off" />
+        <Item UnicateKey="1" Name="On" />
+        <Item UnicateKey="2" Name="ErrActual" />
+        <Item UnicateKey="4" Name="ErrRequired" />
+        <Item UnicateKey="8" Name="Interrupt" />
+        <Item UnicateKey="16" Name="20%ToEndCalibration" />
+        <Item UnicateKey="32" Name="EndCalibration" />
+        <Item UnicateKey="64" Name="Calibration" />
+        <Item UnicateKey="128" Name="CalibrationOk" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumHCControlType">
+      <Items>
+        <Item UnicateKey="0" Name="User control heating / cooling" />
+        <Item UnicateKey="1" Name="Automat control H/C two temperature" />
+        <Item UnicateKey="2" Name="Automat control H/C one temperature" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumHCCritControlType">
+      <Items>
+        <Item UnicateKey="0" Name="On" />
+        <Item UnicateKey="1" Name="Off" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumDistinction1W">
+      <Items>
+        <Item UnicateKey="0" Name="0,5°C" />
+        <Item UnicateKey="1" Name="0,25°C" />
+        <Item UnicateKey="2" Name="0,125°C" />
+        <Item UnicateKey="3" Name="0,0625°C" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumFancoilType">
+      <Items>
+        <Item UnicateKey="0" Name="Heat and Cool" />
+        <Item UnicateKey="1" Name="Heat" />
+        <Item UnicateKey="2" Name="Cool" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumModbusDeviceDataType">
+      <Items>
+        <Item UnicateKey="2" Name="Read-Discrete-Input" />
+        <Item UnicateKey="1" Name="Read-Write-Coil" />
+        <Item UnicateKey="4" Name="Read-Input-Register-UInt16" />
+        <Item UnicateKey="5" Name="Read-Write-Holding-Register-UInt16" />
+        <Item UnicateKey="11" Name="Read-Input-Register-UInt32" />
+        <Item UnicateKey="13" Name="Read-Write-Holding-Register-UInt32" />
+        <Item UnicateKey="27" Name="Read-Input-Register-UInt32-Invert" />
+        <Item UnicateKey="29" Name="Read-Write-Holding-Register-UInt32-Invert" />
+        <Item UnicateKey="30" Name="Read-Input-Register-Float" />
+        <Item UnicateKey="32" Name="Read-Write-Holding-Register-Float" />
+        <Item UnicateKey="33" Name="Read-Input-Register-Float-Invert" />
+        <Item UnicateKey="35" Name="Read-Write-Holding-Register-Float-Invert" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumModbusDeviceDataType2">
+      <Items>
+        <Item UnicateKey="0" Name="Not-Use" />
+        <Item UnicateKey="2" Name="Read-Discrete-Input" />
+        <Item UnicateKey="1" Name="Read-Write-Coil" />
+        <Item UnicateKey="4" Name="Read-Input-Register-UInt16" />
+        <Item UnicateKey="5" Name="Read-Write-Holding-Register-UInt16" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumModbusDeviceValueSpecific">
+      <Items>
+        <Item UnicateKey="0" Name="Not-Used" />
+        <Item UnicateKey="1" Name="Multiplication 100x" />
+        <Item UnicateKey="2" Name="Multiplication 10x" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumModbusType">
+      <Items>
+        <Item UnicateKey="0" Name="RTU" />
+        <Item UnicateKey="1" Name="ASCII" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumModbusBaudrate">
+      <Items>
+        <Item UnicateKey="2400" Name="2400" />
+        <Item UnicateKey="4800" Name="4800" />
+        <Item UnicateKey="9600" Name="9600" />
+        <Item UnicateKey="19200" Name="19200" />
+        <Item UnicateKey="38400" Name="38400" />
+        <Item UnicateKey="57600" Name="57600" />
+        <Item UnicateKey="115200" Name="115200" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumModbusDataBits">
+      <Items>
+        <Item UnicateKey="8" Name="8" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumModbusParity">
+      <Items>
+        <Item UnicateKey="0" Name="NONE" />
+        <Item UnicateKey="1" Name="ODD" />
+        <Item UnicateKey="2" Name="EVEN" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumModbusStopBits">
+      <Items>
+        <Item UnicateKey="1" Name="1" />
+        <Item UnicateKey="2" Name="2" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumMathematicBase">
+      <Items>
+        <Item UnicateKey="1" Name="Add" />
+        <Item UnicateKey="2" Name="Sub" />
+        <Item UnicateKey="3" Name="Mul" />
+        <Item UnicateKey="4" Name="Div" />
+        <Item UnicateKey="5" Name="Modulo" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumMathematicStandard">
+      <Items>
+        <Item UnicateKey="1" Name="Add" />
+        <Item UnicateKey="2" Name="Min" />
+        <Item UnicateKey="3" Name="Max" />
+        <Item UnicateKey="4" Name="Average" />
+        <Item UnicateKey="5" Name="Average temperatures" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRegConFancoilStatusIn">
+      <Items>
+        <Item UnicateKey="0" Name="Off" />
+        <Item UnicateKey="1" Name="On" />
+        <Item UnicateKey="2" Name="Heat" />
+        <Item UnicateKey="4" Name="Cool" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRegControlFanSpeed">
+      <Items>
+        <Item UnicateKey="0" Name="Low" />
+        <Item UnicateKey="1" Name="Med" />
+        <Item UnicateKey="2" Name="Hi" />
+        <Item UnicateKey="3" Name="Auto" />
+        <Item UnicateKey="4" Name="Off" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRegControlOut2">
+      <Items>
+        <Item UnicateKey="0" Name="Cool" />
+        <Item UnicateKey="1" Name="Heat" />
+        <Item UnicateKey="2" Name="Off" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRegControlManualOut2">
+      <Items>
+        <Item UnicateKey="0" Name="Plan" />
+        <Item UnicateKey="1" Name="Favorite1" />
+        <Item UnicateKey="2" Name="Favorite2" />
+        <Item UnicateKey="3" Name="Favorite3" />
+        <Item UnicateKey="4" Name="Favorite4" />
+        <Item UnicateKey="5" Name="Fan" />
+        <Item UnicateKey="6" Name="Eco" />
+        <Item UnicateKey="7" Name="Manual" />
+        <Item UnicateKey="8" Name="Dry" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRegControlPlanOut">
+      <Items>
+        <Item UnicateKey="0" Name="Base" />
+        <Item UnicateKey="64" Name="Holiday" />
+        <Item UnicateKey="128" Name="Public Holiday" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumSegBig">
+      <Items>
+        <Item UnicateKey="0" Name="Actual Temperature" />
+        <Item UnicateKey="1" Name="Required Temperature" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumSegSmall">
+      <Items>
+        <Item UnicateKey="0" Name="Actual Temperature" />
+        <Item UnicateKey="1" Name="Required Temperature" />
+        <Item UnicateKey="2" Name="Humidity" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRPDSensitivity">
+      <Items>
+        <Item UnicateKey="0" Name="Low" />
+        <Item UnicateKey="1" Name="High" />
+        <Item UnicateKey="2" Name="In the Settings" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumDetectionArea">
+      <Items>
+        <Item UnicateKey="0" Name="0" />
+        <Item UnicateKey="13" Name="0,5" />
+        <Item UnicateKey="25" Name="1" />
+        <Item UnicateKey="38" Name="1,5" />
+        <Item UnicateKey="50" Name="2" />
+        <Item UnicateKey="63" Name="2,5" />
+        <Item UnicateKey="75" Name="3" />
+        <Item UnicateKey="88" Name="3,5" />
+        <Item UnicateKey="100" Name="4" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRPDStatusIn">
+      <Items>
+        <Item UnicateKey="0" Name="Off" />
+        <Item UnicateKey="1" Name="On" />
+        <Item UnicateKey="2" Name="Learning" />
+        <Item UnicateKey="4" Name="Default" />
+        <Item UnicateKey="8" Name="Disable Aproarching" />
+        <Item UnicateKey="16" Name="Disable Moving-Away" />
+        <Item UnicateKey="32" Name="Disable Still" /> 
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumDali2StatusIn">
+      <Items>
+        <Item UnicateKey="0" Name="Ok" />
+        <Item UnicateKey="1" Name="Err in device" />
+        <Item UnicateKey="2" Name="Quiescent mode" />
+        <Item UnicateKey="4" Name="Short address MASK" />
+        <Item UnicateKey="8" Name="App active" />
+        <Item UnicateKey="16" Name="Err app controller" />
+        <Item UnicateKey="32" Name="Power cycle seen" />
+        <Item UnicateKey="64" Name="Reset state" />
+      </Items>
+    </DynamicEnum>
+        <DynamicEnum Name="EnumRfMenu1">
+      <Items>
+        <Item UnicateKey="0" Name="Not-Used" />
+        <Item UnicateKey="43009" Name="RFSA-11B" />
+        <Item UnicateKey="43010" Name="RFSA-6x" />
+        <Item UnicateKey="43011" Name="RFSA-62B" />
+        <Item UnicateKey="43016" Name="RFSAI-11" />
+        <Item UnicateKey="43017" Name="RFSAI-6x" />
+        <Item UnicateKey="43777" Name="RFSC-11" />
+        <Item UnicateKey="43778" Name="RFSC-61" />
+        <Item UnicateKey="44545" Name="RFUS-11" />
+        <Item UnicateKey="44546" Name="RFUS-61" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRfMenu2">
+      <Items>
+        <Item UnicateKey="0" Name="Not-Used" />
+        <Item UnicateKey="42755" Name="RFJA-32B" />
+        <Item UnicateKey="42760" Name="RFJA-52B-SL-ISC" />
+        <Item UnicateKey="42761" Name="RFJA-52H-ISC" />
+        <Item UnicateKey="43009" Name="RFSA-11B" />
+        <Item UnicateKey="43010" Name="RFSA-6x" />
+        <Item UnicateKey="43011" Name="RFSA-62B" />
+        <Item UnicateKey="43016" Name="RFSAI-11" />
+        <Item UnicateKey="43017" Name="RFSAI-6x" />
+        <Item UnicateKey="43777" Name="RFSC-11" />
+        <Item UnicateKey="43778" Name="RFSC-61" />
+        <Item UnicateKey="44545" Name="RFUS-11" />
+        <Item UnicateKey="44546" Name="RFUS-61" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRfMenu3">
+      <Items>
+        <Item UnicateKey="0" Name="Not-Used" />
+        <Item UnicateKey="42755" Name="RFJA-32B" />
+        <Item UnicateKey="42760" Name="RFJA-52B-SL-ISC" />
+        <Item UnicateKey="42761" Name="RFJA-52H-ISC" />
+        <Item UnicateKey="43009" Name="RFSA-11B" />
+        <Item UnicateKey="43010" Name="RFSA-6x" />
+        <Item UnicateKey="43011" Name="RFSA-62B" />
+        <Item UnicateKey="43016" Name="RFSAI-11" />
+        <Item UnicateKey="43017" Name="RFSAI-6x" />
+        <Item UnicateKey="43265" Name="RFSA-66M" />
+        <Item UnicateKey="43777" Name="RFSC-11" />
+        <Item UnicateKey="43778" Name="RFSC-61" />
+        <Item UnicateKey="44545" Name="RFUS-11" />
+        <Item UnicateKey="44546" Name="RFUS-61" />
+      </Items>
+    </DynamicEnum>
+    <DynamicEnum Name="EnumRfMenu4">
+      <Items>
+        <Item UnicateKey="0" Name="Not-Used" />
+        <Item UnicateKey="44033" Name="RFSTI-11B" />
+        <Item UnicateKey="44034" Name="RFSTI-11G" />
+      </Items>
+    </DynamicEnum>
+  </DynamicEnumerators>
+</DynamicEnumConfiguration>

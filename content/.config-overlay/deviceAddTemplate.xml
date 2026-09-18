@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<DevicesAddTemplaceConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Units>
+    <Unit ObjectType="Unit" SubType="3" UnicateObjectKey="0" BitSetArray="0" Access="Editable" ExportForVisualization="false" ReadOnly="false" Inels="INELS3" BusNumber="1" AddDevice="true" MinDevice="1" MaxDevice="20" UnitType="53249" LSV="131072" AddressLength="0" AddressFormat="Decimal" InputCurrent="0" MemSizeIn="0" MemSizeOut="0" MemSizeConf="0">
+      <Name>Modbus-Unit</Name>
+      <Description>Modbus unit.</Description>
+      <Address>0</Address>
+      <Infos />
+      <Devices>
+        <Device ObjectType="Device" SubType="23" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="AnalogSensorModbusOut" DeviceType="ModbusSensorDevice" ExportForVisualization="false" ControlKey="" ReadOnly="false" MinDevice="1" MaxDevice="20">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name NumberBase="1" AddBase="1">Modbus-Device%d</Name>
+          <Description NumberBase="1" AddBase="1">Modbus-Device%d</Description>
+          <Params>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12289-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="65535" Type="UInt32" RealAddress="0" DynamicEnumName="">
+              <Name>RegisterAddress</Name>
+              <Description>Register address:</Description>
+              <Value xsi:type="xsd:int">0</Value>
+              <Condition />
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12288-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="1" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumModbusDeviceDataType">
+              <Name>DataType</Name>
+              <Description>Data type:</Description>
+              <Value xsi:type="xsd:unsignedByte">5</Value>
+              <Condition />
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12290-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="1" Type="Byte" RealAddress="0" DynamicEnumName="EnumModbusDeviceValueSpecific">
+              <Name>ValueSpecification</Name>
+              <Description>Value specification:</Description>
+              <Value xsi:type="xsd:unsignedByte">0</Value>
+              <Condition />
+            </Param>
+          </Params>
+          <AvailableActions />
+          <AvailableFunctions />
+          <Address NumberBase="8192" AddBase="1">%d</Address>
+          <DynamicEnumName />
+        </Device>
+      </Devices> 
+    </Unit>
+   <Unit ObjectType="Unit" SubType="3" UnicateObjectKey="0" BitSetArray="0" Access="Editable" ExportForVisualization="false" ReadOnly="false" Inels="INELS3" BusNumber="1" AddDevice="true" MinDevice="1" MaxDevice="20" UnitType="53250" LSV="131072" AddressLength="0" AddressFormat="Decimal" InputCurrent="0" MemSizeIn="0" MemSizeOut="0" MemSizeConf="0">
+      <Name>Modbus-IP-Master-Unit</Name>
+      <Description>Modbus unit.</Description>
+      <Address>0</Address>
+      <Infos />
+      <Devices>
+        <Device ObjectType="Device" SubType="23" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="AnalogSensorModbusOut" DeviceType="ModbusSensorDevice" ExportForVisualization="false" ControlKey="" ReadOnly="false" MinDevice="1" MaxDevice="20">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name NumberBase="1" AddBase="1">Modbus-Device%d</Name>
+          <Description NumberBase="1" AddBase="1">Modbus-Device%d</Description>
+          <Params>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12321-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="65535" Type="UInt32" RealAddress="0" DynamicEnumName="">
+              <Name>RegisterAddress</Name>
+              <Description>Register address:</Description>
+              <Value xsi:type="xsd:int">0</Value>
+              <Condition />
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12320-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="1" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumModbusDeviceDataType">
+              <Name>DataType</Name>
+              <Description>Data type:</Description>
+              <Value xsi:type="xsd:unsignedByte">5</Value>
+              <Condition />
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12322-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="1" Type="Byte" RealAddress="0" DynamicEnumName="EnumModbusDeviceValueSpecific">
+              <Name>ValueSpecification</Name>
+              <Description>Value specification:</Description>
+              <Value xsi:type="xsd:unsignedByte">0</Value>
+              <Condition />
+            </Param>
+          </Params>
+          <AvailableActions />
+          <AvailableFunctions />
+          <Address NumberBase="8192" AddBase="1">%d</Address>
+          <DynamicEnumName />
+        </Device>
+      </Devices> 
+    </Unit>
+   <Unit ObjectType="Unit" SubType="3" UnicateObjectKey="0" BitSetArray="0" Access="Editable" ExportForVisualization="false" ReadOnly="false" Inels="INELS3" BusNumber="1" AddDevice="true" MinDevice="1" MaxDevice="20" UnitType="53251" LSV="131072" AddressLength="0" AddressFormat="Decimal" InputCurrent="0" MemSizeIn="0" MemSizeOut="0" MemSizeConf="0">
+      <Name>Modbus-IP-Slave-Unit</Name>
+      <Description>Modbus unit.</Description>
+      <Address>0</Address>
+      <Infos />
+      <Devices>
+        <Device ObjectType="Device" SubType="23" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="AnalogSensorModbusOut" DeviceType="ModbusSensorDevice" ExportForVisualization="false" ControlKey="" ReadOnly="false" MinDevice="1" MaxDevice="20">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name NumberBase="1" AddBase="1">Modbus-Device%d</Name>
+          <Description NumberBase="1" AddBase="1">Modbus-Device%d</Description>
+          <Params>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12289-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="65535" Type="UInt32" RealAddress="0" DynamicEnumName="">
+              <Name>RegisterAddress</Name>
+              <Description>Register address:</Description>
+              <Value xsi:type="xsd:int">0</Value>
+              <Condition />
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12288-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="1" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumModbusDeviceDataType">
+              <Name>DataType</Name>
+              <Description>Data type:</Description>
+              <Value xsi:type="xsd:unsignedByte">5</Value>
+              <Condition />
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12290-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="1" Type="Byte" RealAddress="0" DynamicEnumName="EnumModbusDeviceValueSpecific">
+              <Name>ValueSpecification</Name>
+              <Description>Value specification:</Description>
+              <Value xsi:type="xsd:unsignedByte">0</Value>
+              <Condition />
+            </Param>
+          </Params>
+          <AvailableActions />
+          <AvailableFunctions />
+          <Address NumberBase="8192" AddBase="1">%d</Address>
+          <DynamicEnumName />
+        </Device>
+      </Devices> 
+    </Unit>
+    <Unit ObjectType="Unit" SubType="3" UnicateObjectKey="0" BitSetArray="0" Access="Editable" ExportForVisualization="false" ReadOnly="false" Inels="INELS3" BusNumber="1" AddDevice="true" MinDevice="3" MaxDevice="11" UnitType="57538" LSV="65536" AddressLength="0" InputCurrent="0" MemSizeIn="0" MemSizeOut="0" MemSizeConf="0">
+      <Name>Mathematic-Standard-Unit</Name>
+      <Description>Addition, Min, Max, Average</Description>
+      <Address>0</Address>
+      <Infos />
+      <Devices>
+        <Device ObjectType="Device" SubType="18" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="InspiniaIntegerOut" DeviceType="AnalogSensorOUT" FiltrType="Dec" ExportForVisualization="false" ControlKey="" ReadOnly="false" MinDevice="2" MaxDevice="10">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name NumberBase="1" AddBase="1">Value-IN%d</Name>
+          <Description NumberBase="1" AddBase="1">Value-IN%d</Description>
+          <Params />
+          <AvailableActions />
+          <AvailableFunctions />
+          <Address NumberBase="8192" AddBase="1">%d</Address>
+          <DynamicEnumName />
+        </Device>
+      </Devices> 
+    </Unit>
+    <Unit ObjectType="Unit" SubType="3" UnicateObjectKey="0" BitSetArray="0" Access="Editable" ExportForVisualization="false" ReadOnly="false" Inels="INELS3" BusNumber="1" UnitType="4355" AddressFormat="decimal" LSV="1" AddressLength="0" InputCurrent="0" ComponentModuleKey="" MemSizeIn="0" MemSizeOut="0" MemSizeConf="0">
+      <Name>DALI-2-Unit</Name>
+      <Description>DALI-2 unit.</Description>
+      <Address>0</Address>
+      <Infos />
+      <Devices>
+    	<Device ObjectType="Device" SubType="8" UnicateObjectKey="0" BitSetArray="1" Access="Editable" Type="LightSensor3" DeviceType="AnalogSensorIN" ExportForVisualization="false" ReadOnly="false">
+      	  <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name NumberBase="1" AddBase="1">Light-IN%d</Name>
+          <Description NumberBase="1" AddBase="1">Light-IN%d</Description>
+          <Params>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12289-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="31" Type="Byte" RealAddress="0" DynamicEnumName="">
+              <Name>Instance-Number</Name>
+              <Description>Instance number:</Description>
+              <Value xsi:type="xsd:int">0</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12290-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="31" Type="Byte" RealAddress="0"  Visible="false" DynamicEnumName="">
+              <Name>Instance-Type</Name>
+              <Description>Instance type:</Description>
+              <Value xsi:type="xsd:int">4</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12291-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+              <Name>Instance-Flags</Name>
+              <Description>Instance flags:</Description>
+              <Value xsi:type="xsd:int">1</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12292-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+              <Name>Event-Filter</Name>
+              <Description>Event filter:</Description>
+              <Value xsi:type="xsd:int">1</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12293-AddBase-16" ParamType="Device" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0" DynamicEnumName="">
+              <Name>Hysteresis</Name>
+              <Description>Hysteresis:</Description>
+              <Value xsi:type="xsd:int">5</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12294-AddBase-16" ParamType="Device" MeasureUnit="s" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+              <Name>Time-Report</Name>
+              <Description>Time report:</Description>
+              <Value xsi:type="xsd:int">20</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12295-AddBase-16" ParamType="Device" MeasureUnit="x50ms" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+              <Name>Time-Deadtime</Name>
+              <Description>Time deadtime:</Description>
+              <Value xsi:type="xsd:int">15</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12296-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+              <Name>Hysteresis-Min</Name>
+              <Description>Hysteresis minimal:</Description>
+              <Value xsi:type="xsd:int">0</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12297-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0" Visible="false" DynamicEnumName="">
+              <Name>Reserve</Name>
+              <Description>Reserve:</Description>
+              <Value xsi:type="xsd:int">0</Value>
+            </Param>
+          </Params>
+          <AvailableActions />
+          <AvailableFunctions />
+          <Address NumberBase="4097" AddBase="1">%d</Address>
+          <MeasureUnit />
+        </Device>
+    	<Device ObjectType="Device" SubType="3" UnicateObjectKey="0" BitSetArray="1" Access="Editable" Type="AnalogInputCOR" DeviceType="AnalogIN" ExportForVisualization="false" ReadOnly="false">
+      	  <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name NumberBase="1" AddBase="1">Ocupanci-IN%d</Name>
+          <Description NumberBase="1" AddBase="1">Ocupanci-IN%d</Description>
+          <Params>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12289-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="31" Type="Byte" RealAddress="0" DynamicEnumName="">
+              <Name>Instance-Number</Name>
+              <Description>Instance number:</Description>
+              <Value xsi:type="xsd:int">0</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12290-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="31" Type="Byte" RealAddress="0"  Visible="false" DynamicEnumName="">
+              <Name>Instance-Type</Name>
+              <Description>Instance type:</Description>
+              <Value xsi:type="xsd:int">3</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12291-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+              <Name>Instance-Flags</Name>
+              <Description>Instance flags:</Description>
+              <Value xsi:type="xsd:int">1</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12292-AddBase-16" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+              <Name>Event-Filter</Name>
+              <Description>Event filter:</Description>
+              <Value xsi:type="xsd:int">3</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12293-AddBase-16" ParamType="Device" MeasureUnit="x10s" MinValue="0" MaxValue="254" Type="Byte" RealAddress="0" DynamicEnumName="">
+              <Name>Time-Hold</Name>
+              <Description>Time hold:</Description>
+              <Value xsi:type="xsd:int">90</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12294-AddBase-16" ParamType="Device" MeasureUnit="s" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+              <Name>Time-Report</Name>
+              <Description>Time report:</Description>
+              <Value xsi:type="xsd:int">20</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12295-AddBase-16" ParamType="Device" MeasureUnit="x50ms" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+              <Name>Time-Deadtime</Name>
+              <Description>Time deadtime:</Description>
+              <Value xsi:type="xsd:int">15</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12296-AddBase-16" ParamType="Device" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0" DynamicEnumName="">
+              <Name>Detection-Range</Name>
+              <Description>Detection range:</Description>
+              <Value xsi:type="xsd:int">50</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="%d-NumberBase-12297-AddBase-16" ParamType="Device" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0" DynamicEnumName="">
+              <Name>Detection-Sensitivity</Name>
+              <Description>Detection sensitivity:</Description>
+              <Value xsi:type="xsd:int">50</Value>
+            </Param>
+          </Params>
+          <AvailableActions />
+          <AvailableFunctions />
+          <Address NumberBase="4097" AddBase="1">%d</Address>
+          <MeasureUnit />
+        </Device>
+      </Devices>
+    </Unit>
+  </Units>
+</DevicesAddTemplaceConfiguration>

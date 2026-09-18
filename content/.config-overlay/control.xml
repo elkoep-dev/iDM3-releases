@@ -1,0 +1,3053 @@
+<?xml version="1.0"?>
+<ControlsConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Items>
+    <Control BitSetArray="0">
+      <Id>Master</Id>
+      <Name>Central unit</Name>
+      <Description />
+      <GroupId>CU</GroupId>
+      <Type>MasterUnit</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="true" Key="Def" Image="Others/centralUnit.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount>1</MaxCount>
+      <DefaultWidth>90</DefaultWidth>
+      <DefaultHeight>90</DefaultHeight>
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+    </Control>
+    <MultipleControl BitSetArray="0">
+      <Id>SystemBase</Id>
+      <Name>System base</Name>
+      <GroupId>CU</GroupId>
+      <Type>Device</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="false" Key="def" Image="Groups/groupOther.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount xsi:nil="true" />
+      <DefaultWidth xsi:nil="true" />
+      <DefaultHeight xsi:nil="true" />
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+      <Items>
+        <Control BitSetArray="0">
+          <Id>SysBit</Id>
+          <Name>Bits</Name>
+          <GroupId>CU</GroupId>
+          <Type>System</Type>
+          <SubType>57344</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="Groups/groupBits.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>All</DevicesUnitsListType>
+          <Devices />
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>SysInteger</Id>
+          <Name>Integers</Name>
+          <GroupId>CU</GroupId>
+          <Type>System</Type>
+          <SubType>57360</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="Groups/groupIntegers.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>All</DevicesUnitsListType>
+          <Devices />
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>SysTimer</Id>
+          <Name>Timers</Name>
+          <GroupId>CU</GroupId>
+          <Type>System</Type>
+          <SubType>57376</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="Groups/groupTimers.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>All</DevicesUnitsListType>
+          <Devices />
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>SysCounter</Id>
+          <Name>Counters</Name>
+          <GroupId>CU</GroupId>
+          <Type>System</Type>
+          <SubType>57392</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="Groups/groupCounters.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>All</DevicesUnitsListType>
+          <Devices />
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>SysPerProg</Id>
+          <Name>Periodic Program</Name>
+          <GroupId>CU</GroupId>
+          <Type>System</Type>
+          <SubType>57424</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="Groups/groupPeriodicProg.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>All</DevicesUnitsListType>
+          <Devices />
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>SysContProg</Id>
+          <Name>Continual Program</Name>
+          <GroupId>CU</GroupId>
+          <Type>System</Type>
+          <SubType>57440</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="Groups/groupContinualProg.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>All</DevicesUnitsListType>
+          <Devices />
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>SysTwoStateProg</Id>
+          <Name>Two State Program</Name>
+          <GroupId>CU</GroupId>
+          <Type>System</Type>
+          <SubType>57456</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="Groups/groupTwoState.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>All</DevicesUnitsListType>
+          <Devices />
+          <Units />
+        </Control>
+      </Items>
+    </MultipleControl>
+    <MultipleControl BitSetArray="0">
+      <Id>SwitchBase</Id>
+      <Name>Switch control</Name>
+      <GroupId>Base</GroupId>
+      <Type>Device</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="false" Key="def" Image="IO/switchOn.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount xsi:nil="true" />
+      <DefaultWidth xsi:nil="true" />
+      <DefaultHeight xsi:nil="true" />
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+      <Items>
+        <Control BitSetArray="0">
+          <Id>Switch</Id>
+          <Name>Switch</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="IO/switchOff.png" />
+            <ControlImage Default="false" Key="on" Image="IO/switchOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalInputAC" />
+            <ControlDevice Type="DigitalInputDC" />
+            <ControlDevice Type="BalanceDigitalInputDC" />
+            <ControlDevice Type="DigitalInputK" />
+            <ControlDevice Type="AnalogInputAI" />
+            <ControlDevice Type="AnalogInputCOR" />
+            <ControlDevice Type="AnalogInputU" />
+            <ControlDevice Type="DeviceTL" />
+            <ControlDevice Type="WSBDeviceTL" />
+            <ControlDevice Type="InspiniaDeviceTL" />
+            <ControlDevice Type="TroubleInputOVT" />
+            <ControlDevice Type="TroubleInputOVLO" />
+            <ControlDevice Type="TroubleInputUNLO" />
+            <ControlDevice Type="TroubleInputFAN" />
+            <ControlDevice Type="TemperatureInputInt" />
+            <ControlDevice Type="TemperatureInputExt" />
+            <ControlDevice Type="Ins2TemperatureInputExt" />
+            <ControlDevice Type="Ins2AnalogInputAI" />
+            <ControlDevice Type="TroubleInputOUF" />
+            <ControlDevice Type="DigitalInputLight" />
+            <ControlDevice Type="AnalogSensorIn" />
+            <ControlDevice Type="CardAnalogIn" />
+            <ControlDevice Type="CardAnalogIn2" />
+            <ControlDevice Type="ZoneControlInput" />
+            <ControlDevice Type="DigitalInputSMS" />
+            <ControlDevice Type="GsmSmsIn" />
+            <ControlDevice Type="GmsCallIn" />
+            <ControlDevice Type="AnalogSensorInCu" />
+            <ControlDevice Type="TemperatureInputIO" />
+            <ControlDevice Type="ConterIn" />
+            <ControlDevice Type="RFInput" />
+            <ControlDevice Type="DigitalInputCU" />
+            <ControlDevice Type="LigthSensor" />
+            <ControlDevice Type="LightSensor2" />
+            <ControlDevice Type="RegAnalogOut" />
+            <ControlDevice Type="RegDigitalOut" />
+            <ControlDevice Type="TemperatureSensorOut" />
+            <ControlDevice Type="AnalogSensorOut" />
+            <ControlDevice Type="RegControlOut" />
+            <ControlDevice Type="RegControlModeOut" />
+            <ControlDevice Type="RegControlManualOut" />
+            <ControlDevice Type="RegControlPlanOut" />
+            <ControlDevice Type="CardIn" />
+            <ControlDevice Type="DigitalInputMove" />
+            <ControlDevice Type="RegHeadStatusIn" />
+            <ControlDevice Type="AnalogSensorIn2" />
+            <ControlDevice Type="Sunshine" />
+            <ControlDevice Type="Moon" />
+            <ControlDevice Type="TempDewPoint" />
+            <ControlDevice Type="AnalogSensorInRf" />
+            <ControlDevice Type="RFInput2" />
+            <ControlDevice Type="LightSensor3" />
+            <ControlDevice Type="RFInput3" />
+            <ControlDevice Type="HeadStatus" />
+            <ControlDevice Type="RCTemperatureInput" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="32">
+          <Id>WSBx-20</Id>
+          <Name>WSBx-20</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="GroupIcons/WSBx-20.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="WSB2-20" />
+            <ControlUnit Name="WSB3-20" />
+            <ControlUnit Name="WSB3-20-Hum" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>WSBx-40</Id>
+          <Name>WSBx-40</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="GroupIcons/WSBx-40.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="WSB2-40" />
+            <ControlUnit Name="WSB3-40" />
+            <ControlUnit Name="WSB3-40-Hum" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>GSB3-40</Id>
+          <Name>GSB3-40</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="GroupIcons/GSB3_40.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="GSB3-40" />
+            <ControlUnit Name="GSB3-40-V2" />
+            <ControlUnit Name="MSB3-40" />
+           </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>GSB3-60</Id>
+          <Name>GSB3-60</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="GroupIcons/GSB3_60.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="GSB3-60" />
+            <ControlUnit Name="GSB3-60-V2" />
+            <ControlUnit Name="MSB3-60" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>GSB3-80</Id>
+          <Name>GSB3-80</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="GroupIcons/GSB3_80.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="GSB3-80" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>EST-3</Id>
+          <Name>EST-3</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="GroupIcons/EST3.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="EST3" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>GDB3-10</Id>
+          <Name>GDB3-10</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="GroupIcons/GDB3-10.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="GDB3-10" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>GSB3-20SB</Id>
+          <Name>GSB3-20SB</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/GSB3_20SB.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="GSB3-20Sx" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>GSB3-40SB</Id>
+          <Name>GSB3-40SB</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/GSB3_40SB.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="GSB3-40Sx" />
+            <ControlUnit Name="GSB3-40Sx-V2" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>GSB3-60SB</Id>
+          <Name>GSB3-60SB GBP3-60</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/GSB3_60SB.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="GBP3-60" />
+            <ControlUnit Name="GSB3-60Sx" />
+            <ControlUnit Name="GSB3-60Sx-V2" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>GSP3-100</Id>
+          <Name>GSP3-100</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/GSP3_100.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>120</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="GSP3-100" />
+          </Units>
+        </Control>
+      </Items>
+    </MultipleControl>
+    <MultipleControl BitSetArray="0">
+      <Id>CardReaderBase</Id>
+      <Name>Card Readers</Name>
+      <GroupId>Base</GroupId>
+      <Type>Device</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="false" Key="def" Image="GroupIcons/GCR3-11.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount xsi:nil="true" />
+      <DefaultWidth xsi:nil="true" />
+      <DefaultHeight xsi:nil="true" />
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+      <Items>
+        <Control BitSetArray="36">
+          <Id>WMRx-x1</Id>
+          <Name>WMRx-x1</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/WMR3-21.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="WMR2-11" />
+            <ControlUnit Name="WMR3-21" />
+          </Units>
+        </Control>
+        <Control BitSetArray="36">
+          <Id>GCH3-31</Id>
+          <Name>GCH3-31</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/GCH3-31.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>120</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="GCH3-31" />
+          </Units>
+        </Control>
+        <Control BitSetArray="36">
+          <Id>GCR3-11</Id>
+          <Name>GCR3-11</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/GCR3-11.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="GCR3-11" />
+            <ControlUnit Name="GCR3-30" />
+          </Units>
+        </Control>
+        <Control BitSetArray="36">
+          <Id>GMR3-61</Id>
+          <Name>GMR3-61</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/GMR3_61.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="GMR3-61" />
+            <ControlUnit Name="GMR3-61-VS" />
+          </Units>
+        </Control>
+      </Items>
+    </MultipleControl>
+    <MultipleControl BitSetArray="0">
+      <Id>LightBase</Id>
+      <Name>Lights</Name>
+      <GroupId>Base</GroupId>
+      <Type>Device</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="false" Key="off" Image="Lights/bulbOn.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount xsi:nil="true" />
+      <DefaultWidth xsi:nil="true" />
+      <DefaultHeight xsi:nil="true" />
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+      <Items>
+        <Control BitSetArray="0">
+          <Id>Light</Id>
+          <Name>Light</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Lights/bulbOff.png" />
+            <ControlImage Default="false" Key="on" Image="Lights/bulbOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputLED" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="DigitalOutputLEDEZS" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="GsmSmsOut" />
+            <ControlDevice Type="GsmCallOut" />
+            <ControlDevice Type="DigitalOutputIO" />
+            <ControlDevice Type="AnalogOutLED" />
+            <ControlDevice Type="RegThermIn" />
+            <ControlDevice Type="RegDigitalIn" />
+            <ControlDevice Type="RegAnalogIn" />
+            <ControlDevice Type="EmailOut" />
+            <ControlDevice Type="RegDigOutRO" />
+            <ControlDevice Type="RegDigOutRO2" />
+            <ControlDevice Type="RegControlTypeControlOut" />
+            <ControlDevice Type="AnalogSensorOutRf" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutBlind" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="DigitalOutJaRO" />
+            <ControlDevice Type="WsbAnalogOutputAO" />
+            <ControlDevice Type="AnalogSensorModbusOut" />
+           </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>EnergySaveLamp</Id>
+          <Name>Energy save lamp</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Lights/esLampOff.png" />
+            <ControlImage Default="false" Key="on" Image="Lights/esLampOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="DigitalOutputLEDEZS" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputIO" />
+            <ControlDevice Type="AnalogOutLED" />
+            <ControlDevice Type="RegDigOutRO" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="DigitalOutJaRO" />
+            <ControlDevice Type="AnalogSensorModbusOut" />
+         </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>LEDLight</Id>
+          <Name>LED light</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Lights/LEDoff.png" />
+            <ControlImage Default="false" Key="on" Image="Lights/LEDon.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputLED" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="DigitalOutputLEDEZS" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputIO" />
+            <ControlDevice Type="AnalogOutLED" />
+            <ControlDevice Type="RegDigOutRO" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="DigitalOutJaRO" />
+            <ControlDevice Type="AnalogSensorModbusOut" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>FluorescentTube</Id>
+          <Name>Fluorescent tube</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Lights/tubeOff.png" />
+            <ControlImage Default="false" Key="on" Image="Lights/tubeOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="DigitalOutputLEDEZS" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputIO" />
+            <ControlDevice Type="AnalogOutLED" />
+            <ControlDevice Type="RegDigOutRO" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="DigitalOutJaRO" />
+            <ControlDevice Type="AnalogSensorModbusOut" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>Backlight</Id>
+          <Name>Backlight</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Lights/backlightOff.png" />
+            <ControlImage Default="false" Key="on" Image="Lights/backlightOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputLED" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="DigitalOutputLEDEZS" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputIO" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="AnalogSensorModbusOut" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>LEDString</Id>
+          <Name>LED string</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Lights/LEDstringOff.png" />
+            <ControlImage Default="false" Key="on" Image="Lights/LEDstringOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="DigitalOutputLEDEZS" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="RegDigOutRO" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="DigitalOutJaRO" />
+            <ControlDevice Type="AnalogSensorModbusOut" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>DimLight</Id>
+          <Name>Dim light</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Lights/twilightOff.png" />
+            <ControlImage Default="false" Key="on" Image="Lights/twilightOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="AnalogOutputAO" />
+            <ControlDevice Type="AnalogOutputRN" />
+            <ControlDevice Type="AnalogOutputTR" />
+            <ControlDevice Type="Ins2AnalogOutputAO" />
+            <ControlDevice Type="Ins2AnalogOutputTR" />
+            <ControlDevice Type="DaliAnalogOutputAO" />
+            <ControlDevice Type="RFAnalogOutputAO" />
+            <ControlDevice Type="DaliAnalogOutputAO2" />
+            <ControlDevice Type="WsbAnalogOutputAO" />
+            <ControlDevice Type="AnalogSensorModbusOut" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>DimEnergySaveLamp</Id>
+          <Name>Dim energy save lamp</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Lights/twilightEsLampOff.png" />
+            <ControlImage Default="false" Key="on" Image="Lights/twilightEsLampOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="AnalogOutputAO" />
+            <ControlDevice Type="AnalogOutputRN" />
+            <ControlDevice Type="AnalogOutputTR" />
+            <ControlDevice Type="Ins2AnalogOutputAO" />
+            <ControlDevice Type="Ins2AnalogOutputTR" />
+            <ControlDevice Type="DaliAnalogOutputAO" />
+            <ControlDevice Type="RFAnalogOutputAO" />
+            <ControlDevice Type="DaliAnalogOutputAO2" />
+            <ControlDevice Type="WsbAnalogOutputAO" />
+            <ControlDevice Type="AnalogSensorModbusOut" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>DimLEDLight</Id>
+          <Name>Dim LED lamp</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Lights/twilightLEDoff.png" />
+            <ControlImage Default="false" Key="on" Image="Lights/twilightLEDon.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="AnalogOutputAO" />
+            <ControlDevice Type="AnalogOutputRN" />
+            <ControlDevice Type="AnalogOutputTR" />
+            <ControlDevice Type="Ins2AnalogOutputAO" />
+            <ControlDevice Type="Ins2AnalogOutputTR" />
+            <ControlDevice Type="DaliAnalogOutputAO" />
+            <ControlDevice Type="RFAnalogOutputAO" />
+            <ControlDevice Type="DaliAnalogOutputAO2" />
+            <ControlDevice Type="WsbAnalogOutputAO" />
+            <ControlDevice Type="AnalogSensorModbusOut" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>DimFluorescentTube</Id>
+          <Name>Dim fluorescent tube</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Lights/twilightTubeOff.png" />
+            <ControlImage Default="false" Key="on" Image="Lights/twilightTubeOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="AnalogOutputAO" />
+            <ControlDevice Type="AnalogOutputRN" />
+            <ControlDevice Type="AnalogOutputTR" />
+            <ControlDevice Type="Ins2AnalogOutputAO" />
+            <ControlDevice Type="Ins2AnalogOutputTR" />
+            <ControlDevice Type="DaliAnalogOutputAO" />
+            <ControlDevice Type="RFAnalogOutputAO" />
+            <ControlDevice Type="DaliAnalogOutputAO2" />
+            <ControlDevice Type="WsbAnalogOutputAO" />
+            <ControlDevice Type="AnalogSensorModbusOut" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>DimLEDString</Id>
+          <Name>Dim LED string</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Lights/dimLEDstringOff.png" />
+            <ControlImage Default="false" Key="on" Image="Lights/dimLEDstringOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="AnalogOutputAO" />
+            <ControlDevice Type="AnalogOutputRN" />
+            <ControlDevice Type="AnalogOutputTR" />
+            <ControlDevice Type="Ins2AnalogOutputAO" />
+            <ControlDevice Type="Ins2AnalogOutputTR" />
+            <ControlDevice Type="DaliAnalogOutputAO" />
+            <ControlDevice Type="RFAnalogOutputAO" />
+            <ControlDevice Type="DaliAnalogOutputAO2" />
+            <ControlDevice Type="WsbAnalogOutputAO" />
+            <ControlDevice Type="AnalogSensorModbusOut" />
+          </Devices>
+          <Units />
+        </Control>
+      </Items>
+    </MultipleControl>
+    <MultipleControl BitSetArray="0">
+      <Id>LightsUnit</Id>
+      <Name>Light units</Name>
+      <GroupId>Base</GroupId>
+      <Type>Device</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="false" Key="def" Image="GroupIcons/DAx_22M.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount xsi:nil="true" />
+      <DefaultWidth xsi:nil="true" />
+      <DefaultHeight xsi:nil="true" />
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+      <Items>
+        <Control BitSetArray="32">
+          <Id>DAx-22M</Id>
+          <Name>DAx-22M</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="GroupIcons/DAx_22M.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>65</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="DA2-22M" />
+            <ControlUnit Name="DA3-22M" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>DACx-04M</Id>
+          <Name>DACx-04M</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="GroupIcons/DACx_04M.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>65</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="DAC2-04M" />
+            <ControlUnit Name="DAC3-04M" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>DACx-04B</Id>
+          <Name>DACx-04B</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="GroupIcons/DACx_04B.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="DAC2-04B" />
+            <ControlUnit Name="DAC3-04B" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>LBCx-02M</Id>
+          <Name>LBCx-02M</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="Def" Image="GroupIcons/LBCx_02M.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>65</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="LBC2-02M" />
+            <ControlUnit Name="LBC3-02M" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>DCDA-33M</Id>
+          <Name>DCDA-33M</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/DCDA_33M.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>65</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="DCDA-33M" />
+          </Units>
+        </Control>
+      </Items>
+    </MultipleControl>
+    <MultipleControl BitSetArray="0">
+      <Id>LouverBase</Id>
+      <Name>Louver and blind</Name>
+      <GroupId>Base</GroupId>
+      <Type>Device</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="false" Key="def" Image="Blinds/blindsOpen.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount xsi:nil="true" />
+      <DefaultWidth xsi:nil="true" />
+      <DefaultHeight xsi:nil="true" />
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+      <Items>
+        <Control BitSetArray="0">
+          <Id>Louver</Id>
+          <Name>Louver</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Blinds/blindsClose.png" />
+            <ControlImage Default="false" Key="on" Image="Blinds/blindsOpen.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputIO" />
+            <ControlDevice Type="RegDigOutRO" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutBlind" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="DigitalOutJaRO" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>Blind</Id>
+          <Name>Blind</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Blinds/roleteOff.png" />
+            <ControlImage Default="false" Key="on" Image="Blinds/roleteOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="DigitalOutputLEDEZS" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputIO" />
+            <ControlDevice Type="RegDigOutRO" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutBlind" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="DigitalOutJaRO" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>Marchioness</Id>
+          <Name>Marchioness</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Blinds/marchionessOff.png" />
+            <ControlImage Default="false" Key="on" Image="Blinds/marchionessOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="DigitalOutputLEDEZS" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputIO" />
+            <ControlDevice Type="RegDigOutRO" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutBlind" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="DigitalOutJaRO" />
+          </Devices>
+          <Units />
+        </Control>
+      </Items>
+    </MultipleControl>
+    <MultipleControl BitSetArray="0">
+      <Id>IOBase</Id>
+      <Name>Inputs and Outputs</Name>
+      <GroupId>Base</GroupId>
+      <Type>Device</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="false" Key="def" Image="IO/outputOff.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount xsi:nil="true" />
+      <DefaultWidth xsi:nil="true" />
+      <DefaultHeight xsi:nil="true" />
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+      <Items>
+        <Control BitSetArray="0">
+          <Id>UniversalUnit</Id>
+          <Name>Universal unit</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/UniversalUnit.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="A-IBUS-SLAVE" />
+            <ControlUnit Name="ADC2-40M" />
+            <ControlUnit Name="ADC3-60M" />
+            <ControlUnit Name="Astronomical-Unit" />
+            <ControlUnit Name="BIN3-66B" />
+            <ControlUnit Name="DA2-22M" />
+            <ControlUnit Name="DA3-03M-RGBW" />
+            <ControlUnit Name="DA3-06M-TEST1" />
+            <ControlUnit Name="DA3-22M" />
+            <ControlUnit Name="DA3-66M" />
+            <ControlUnit Name="DAC2-04B" />
+            <ControlUnit Name="DAC2-04M" />
+            <ControlUnit Name="DAC3-04B" />
+            <ControlUnit Name="DAC3-04M" />
+            <ControlUnit Name="DALI-DMX-Unit" />
+            <ControlUnit Name="DALI-2-Unit" />
+            <ControlUnit Name="DALI-DMX-Unit-02" />
+            <ControlUnit Name="DCDA-33M" />
+            <ControlUnit Name="DIM-6" />
+            <ControlUnit Name="DLS3-1" />
+            <ControlUnit Name="DLS3-1-DALI" />
+            <ControlUnit Name="DMD3-1" />
+            <ControlUnit Name="DMD3-1-DALI" />
+            <ControlUnit Name="EA3-022M-RELAY" />
+            <ControlUnit Name="EA3-022M-VALVES" />
+            <ControlUnit Name="EHT3" />
+            <ControlUnit Name="EST3" />
+            <ControlUnit Name="EST3-Hotel" />
+            <ControlUnit Name="FA3-612M-RELAY" />
+            <ControlUnit Name="GBP3-60" />
+            <ControlUnit Name="GBP3-60Pro" />
+            <ControlUnit Name="GCR3-11" />
+            <ControlUnit Name="GCR3-11Pro" />
+            <ControlUnit Name="GCR3-30" />
+            <ControlUnit Name="GDB3-10" />
+            <ControlUnit Name="GDB3-30" />
+            <ControlUnit Name="GDB3-10Pro" />
+            <ControlUnit Name="GHR3-100" />
+            <ControlUnit Name="GHR3-11" />
+            <ControlUnit Name="GCH3-31" />
+            <ControlUnit Name="GCH3-31Pro" />
+            <ControlUnit Name="GMR3-41" />
+            <ControlUnit Name="GMR3-61" />
+            <ControlUnit Name="GMR3-61-VS" />
+            <ControlUnit Name="GRT3-50" />
+            <ControlUnit Name="GRT3-50-V3" />
+            <ControlUnit Name="GRT3-50Pro" />
+            <ControlUnit Name="GRT3-70" />
+            <ControlUnit Name="GRT3-100" />
+            <ControlUnit Name="GRT3-100-MODBUS-MASTER" />
+            <ControlUnit Name="GSB3-20ProSx" />
+            <ControlUnit Name="GSB3-20Sx" />
+            <ControlUnit Name="GSB3-40" />
+            <ControlUnit Name="GSB3-40-V2" />
+            <ControlUnit Name="GSB3-40ProSx" />
+            <ControlUnit Name="GSB3-40Sx" />
+            <ControlUnit Name="GSB3-40Sx-V2" />
+            <ControlUnit Name="GSB3-60" />
+            <ControlUnit Name="GSB3-60-V2" />
+            <ControlUnit Name="GSB3-60Pro" />
+            <ControlUnit Name="GSB3-60Sx" />
+            <ControlUnit Name="GSB3-60Sx-V2" />
+            <ControlUnit Name="GSB3-80" />
+            <ControlUnit Name="GSB3-90-V2" />
+            <ControlUnit Name="GSB3-90Sx" />
+            <ControlUnit Name="GSB3-90Sx-V2" />
+            <ControlUnit Name="GSM-UNIT" />
+            <ControlUnit Name="GSM-UNIT-SMS" />
+            <ControlUnit Name="GSP3-100" />
+            <ControlUnit Name="GSP3-100Pro" />
+            <ControlUnit Name="HC2-01B/AC" />
+            <ControlUnit Name="HC2-01B/DC" />
+            <ControlUnit Name="Hotel-Room" />
+            <ControlUnit Name="IART2-1" />
+            <ControlUnit Name="IBWL3-02B" />
+            <ControlUnit Name="IBWL3-20B" />
+            <ControlUnit Name="IDRT2-1" />
+            <ControlUnit Name="IDRT3-1" />
+            <ControlUnit Name="IM2-140M" />
+            <ControlUnit Name="IM2-20B" />
+            <ControlUnit Name="IM2-40B" />
+            <ControlUnit Name="IM2-80B" />
+            <ControlUnit Name="IM3-140M" />
+            <ControlUnit Name="IM3-140M-COUNTERS" />
+            <ControlUnit Name="IM3-20B" />
+            <ControlUnit Name="IM3-20B-COUNTERS" />
+            <ControlUnit Name="IM3-40B" />
+            <ControlUnit Name="IM3-40B-COUNTERS" />
+            <ControlUnit Name="IM3-80B" />
+            <ControlUnit Name="IM3-80B-COUNTERS" />
+            <ControlUnit Name="In-Out-CU3-01M-CU3-02M " />
+            <ControlUnit Name="INPUTS-GSDIN-CU3-0xM" />
+            <ControlUnit Name="IOU3-108M" />
+            <ControlUnit Name="JA2-02B" />
+            <ControlUnit Name="JA2-02B/DC" />
+            <ControlUnit Name="JA3-014M" />
+            <ControlUnit Name="JA3-018M" />
+            <ControlUnit Name="JA3-02B/DC" />
+            <ControlUnit Name="LBC2-02M" />
+            <ControlUnit Name="LBC3-02M" />
+            <ControlUnit Name="LM2-11B" />
+            <ControlUnit Name="MCD3-01" />
+            <ControlUnit Name="Modbus-IP-Master-Unit" />
+            <ControlUnit Name="Modbus-IP-Slave-Unit" />
+            <ControlUnit Name="MSB3-40" />
+            <ControlUnit Name="MSB3-60" />
+            <ControlUnit Name="MSB3-90" />
+            <ControlUnit Name="PMS3-01" />
+            <ControlUnit Name="BIT-NEXT-CU" />
+            <ControlUnit Name="INT-NEXT-CU" />
+            <ControlUnit Name="RC3-610M-DALI" />
+            <ControlUnit Name="RFATV-1" />
+            <ControlUnit Name="RFDA-11B" />
+            <ControlUnit Name="RFDA-71B" />
+            <ControlUnit Name="RFDA-73M" />
+            <ControlUnit Name="RFDA-73MRGB" />
+            <ControlUnit Name="RFDAC-71B" />
+            <ControlUnit Name="RFDEL-71x" />
+            <ControlUnit Name="RFDSC-11" />
+            <ControlUnit Name="RFDSC-71" />
+            <ControlUnit Name="RFIM-20B" />
+            <ControlUnit Name="RFIM-40B" />
+            <ControlUnit Name="RFJA-12Bx" />
+            <ControlUnit Name="RFKEY" />
+            <ControlUnit Name="RFMD-100" />
+            <ControlUnit Name="RFSA-11B" />
+            <ControlUnit Name="RFSA-62B" />
+            <ControlUnit Name="RFSA-66M" />
+            <ControlUnit Name="RFSA-6x" />
+            <ControlUnit Name="RFSC-11" />
+            <ControlUnit Name="RFSC-61" />
+            <ControlUnit Name="RFSF-1B" />
+            <ControlUnit Name="RFSOU-1" />
+            <ControlUnit Name="RFSTI-11B" />
+            <ControlUnit Name="RFSTI-11G" />
+            <ControlUnit Name="RFTC-10G" />
+            <ControlUnit Name="RFTI-10B" />
+            <ControlUnit Name="RFTM-1" />
+            <ControlUnit Name="RFUS-11" />
+            <ControlUnit Name="RFUS-61" />
+            <ControlUnit Name="RFWB-20G" />
+            <ControlUnit Name="RFWB-40G" />
+            <ControlUnit Name="RFWD-100" />
+            <ControlUnit Name="RF-White-LED" />
+            <ControlUnit Name="SA2-012M" />
+            <ControlUnit Name="SA2-01B/Ni" />
+            <ControlUnit Name="SA2-01B/Sn" />
+            <ControlUnit Name="SA2-02B/Ni" />
+            <ControlUnit Name="SA2-02B/Sn" />
+            <ControlUnit Name="SA2-02M/Ni" />
+            <ControlUnit Name="SA2-02M/Sn" />
+            <ControlUnit Name="SA2-04M/Ni" />
+            <ControlUnit Name="SA2-04M/Sn" />
+            <ControlUnit Name="SA2-12M" />
+            <ControlUnit Name="SA3-012M" />
+            <ControlUnit Name="SA3-014M" />
+            <ControlUnit Name="SA3-01B" />
+            <ControlUnit Name="SA3-022M-RELAY" />
+            <ControlUnit Name="SA3-02B" />
+            <ControlUnit Name="SA3-02M" />
+            <ControlUnit Name="SA3-02M-TEST1" />
+            <ControlUnit Name="SA3-02M-TEST2" />
+            <ControlUnit Name="SA3-02M-TEST3" />
+            <ControlUnit Name="SA3-04M" />
+            <ControlUnit Name="SA3-06M" />
+            <ControlUnit Name="TI2-40B" />
+            <ControlUnit Name="TI3-10B" />
+            <ControlUnit Name="TI3-40B" />
+            <ControlUnit Name="TI3-60M" />
+            <ControlUnit Name="WMR2-11" />
+            <ControlUnit Name="WMR3-21" />
+            <ControlUnit Name="WSB2-20" />
+            <ControlUnit Name="WSB2-40" />
+            <ControlUnit Name="WSB2-80" />
+            <ControlUnit Name="WSB3-20" />
+            <ControlUnit Name="WSB3-20-Hum" />
+            <ControlUnit Name="WSB3-40" />
+            <ControlUnit Name="WSB3-40-Hum" />
+            <ControlUnit Name="WTC2-21" />
+            <ControlUnit Name="Differential-Regulator" />
+	        <ControlUnit Name="Modbus-Unit" />
+	        <ControlUnit Name="Mathematic-Base-Unit" />
+	        <ControlUnit Name="Mathematic-Standard-Unit" />
+	        <ControlUnit Name="Valve-Regulator" />
+	        <ControlUnit Name="Date-Time-Unit" />
+          </Units>
+        </Control>
+        <Control BitSetArray="0">
+          <Id>Input</Id>
+          <Name>Universal input</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="IO/universalInOff.png" />
+            <ControlImage Default="false" Key="on" Image="IO/universalInOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalInputAC" />
+            <ControlDevice Type="DigitalInputDC" />
+            <ControlDevice Type="BalanceDigitalInputDC" />
+            <ControlDevice Type="DigitalInputK" />
+            <ControlDevice Type="AnalogInputAI" />
+            <ControlDevice Type="AnalogInputCOR" />
+            <ControlDevice Type="AnalogInputU" />
+            <ControlDevice Type="DeviceTL" />
+            <ControlDevice Type="WSBDeviceTL" />
+            <ControlDevice Type="InspiniaDeviceTL" />
+            <ControlDevice Type="TroubleInputOVT" />
+            <ControlDevice Type="TroubleInputOVLO" />
+            <ControlDevice Type="TroubleInputUNLO" />
+            <ControlDevice Type="TroubleInputFAN" />
+            <ControlDevice Type="TemperatureInputInt" />
+            <ControlDevice Type="TemperatureInputExt" />
+            <ControlDevice Type="Ins2TemperatureInputExt" />
+            <ControlDevice Type="Ins2AnalogInputAI" />
+            <ControlDevice Type="TroubleInputOUF" />
+            <ControlDevice Type="DigitalInputLight" />
+            <ControlDevice Type="Ins2TemperatureInputInt" />
+            <ControlDevice Type="AnalogSensorIn" />
+            <ControlDevice Type="CardAnalogIn" />
+            <ControlDevice Type="CardAnalogIn2" />
+            <ControlDevice Type="ZoneControlInput" />
+            <ControlDevice Type="DigitalInputSMS" />
+            <ControlDevice Type="GsmSmsIn" />
+            <ControlDevice Type="GmsCallIn" />
+            <ControlDevice Type="AnalogSensorInCu" />
+            <ControlDevice Type="TemperatureInputIO" />
+            <ControlDevice Type="ConterIn" />
+            <ControlDevice Type="RFInput" />
+            <ControlDevice Type="DigitalInputCU" />
+            <ControlDevice Type="LigthSensor" />
+            <ControlDevice Type="LightSensor2" />
+            <ControlDevice Type="RegThermIn" />
+            <ControlDevice Type="RegAnalogOut" />
+            <ControlDevice Type="RegDigitalOut" />
+            <ControlDevice Type="TemperatureSensorOut" />
+            <ControlDevice Type="AnalogSensorOut" />
+            <ControlDevice Type="RegControlOut" />
+            <ControlDevice Type="RegControlModeOut" />
+            <ControlDevice Type="RegControlManualOut" />
+            <ControlDevice Type="RegControlPlanOut" />
+            <ControlDevice Type="CardIn" />
+            <ControlDevice Type="DigitalInputMove" />
+            <ControlDevice Type="DigitalInputTamper" />
+            <ControlDevice Type="RegHStatusIn" />
+            <ControlDevice Type="RegCStatusIn" />
+            <ControlDevice Type="RegTwoStatusIn" />
+            <ControlDevice Type="RegThreeStatusIn" />
+            <ControlDevice Type="RegHeadStatusIn" />
+            <ControlDevice Type="AnalogSensorIn2" />
+            <ControlDevice Type="Sunshine" />
+            <ControlDevice Type="Moon" />
+            <ControlDevice Type="TempDewPoint" />
+            <ControlDevice Type="AnalogSensorInRf" />
+            <ControlDevice Type="RFInput2" />
+            <ControlDevice Type="LightSensor3" />
+            <ControlDevice Type="RFInput3" />
+            <ControlDevice Type="HeadStatus" />
+            <ControlDevice Type="AnalogOutRF2" />
+            <ControlDevice Type="ProxiIn" />
+            <ControlDevice Type="RCTemperatureInput" />
+            <ControlDevice Type="AnalogSensorModbusOut" />
+            <ControlDevice Type="InspiniaIntegerOut" />
+            <ControlDevice Type="InspiniaIntegerInput" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>Socket</Id>
+          <Name>Socket</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="IO/outputOff.png" />
+            <ControlImage Default="false" Key="on" Image="IO/outputOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputLED" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="DigitalOutputLEDEZS" />
+            <ControlDevice Type="AnalogOutputAO" />
+            <ControlDevice Type="AnalogOutputRN" />
+            <ControlDevice Type="AnalogOutputTR" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="Ins2AnalogOutputAO" />
+            <ControlDevice Type="Ins2AnalogOutputTR" />
+            <ControlDevice Type="DaliAnalogOutputAO" />
+            <ControlDevice Type="DigitalOutputIO" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="RegDigOutRO" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>Fan</Id>
+          <Name>Fan</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Fans/fanOff.png" />
+            <ControlImage Default="false" Key="on" Image="Fans/rfanOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="AnalogOutputAO" />
+            <ControlDevice Type="AnalogOutputRN" />
+            <ControlDevice Type="AnalogOutputTR" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="Ins2AnalogOutputAO" />
+            <ControlDevice Type="Ins2AnalogOutputTR" />
+            <ControlDevice Type="DigitalOutputIO" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="RegDigOutRO" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>Valve</Id>
+          <Name>Valve</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="IO/ventilOff.png" />
+            <ControlImage Default="false" Key="on" Image="IO/ventilOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="AnalogOutputAO" />
+            <ControlDevice Type="AnalogOutputRN" />
+            <ControlDevice Type="AnalogOutputTR" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="Ins2AnalogOutputAO" />
+            <ControlDevice Type="Ins2AnalogOutputTR" />
+            <ControlDevice Type="DigitalOutputIO" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="RegDigOutRO" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>Siren</Id>
+          <Name>Siren</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Others/sirenOff.png" />
+            <ControlImage Default="false" Key="on" Image="Others/sirenOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="DigitalOutputLEDEZS" />
+            <ControlDevice Type="AnalogOutputAO" />
+            <ControlDevice Type="AnalogOutputRN" />
+            <ControlDevice Type="AnalogOutputTR" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="Ins2AnalogOutputAO" />
+            <ControlDevice Type="Ins2AnalogOutputTR" />
+            <ControlDevice Type="ZoneStatusOutput" />
+            <ControlDevice Type="TemperatureInputIO" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="RegDigOutRO" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>GateHorizontal</Id>
+          <Name>Gate horizontal</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Gate/gateClose.png" />
+            <ControlImage Default="false" Key="on" Image="Gate/gateOpen.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="AnalogOutputAO" />
+            <ControlDevice Type="AnalogOutputRN" />
+            <ControlDevice Type="AnalogOutputTR" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="Ins2AnalogOutputAO" />
+            <ControlDevice Type="Ins2AnalogOutputTR" />
+            <ControlDevice Type="DigitalOutputIO" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="RegDigOutRO" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>GateVertical</Id>
+          <Name>Gate vertical</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Gate/gateUp.png" />
+            <ControlImage Default="false" Key="on" Image="Gate/gateDown.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="AnalogOutputAO" />
+            <ControlDevice Type="AnalogOutputRN" />
+            <ControlDevice Type="AnalogOutputTR" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="Ins2AnalogOutputAO" />
+            <ControlDevice Type="Ins2AnalogOutputTR" />
+            <ControlDevice Type="DigitalOutputIO" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="RegDigOutRO" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>Garage</Id>
+          <Name>Garage</Name>
+          <GroupId>Base</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Gate/garageClose.png" />
+            <ControlImage Default="false" Key="on" Image="Gate/garageOpen.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="AnalogOutputAO" />
+            <ControlDevice Type="AnalogOutputRN" />
+            <ControlDevice Type="AnalogOutputTR" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="Ins2AnalogOutputAO" />
+            <ControlDevice Type="Ins2AnalogOutputTR" />
+            <ControlDevice Type="DigitalOutputIO" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="RegDigOutRO" />
+          </Devices>
+          <Units />
+        </Control>
+      </Items>
+    </MultipleControl>
+    <MultipleControl BitSetArray="0">
+      <Id>OutputUnits</Id>
+      <Name>Output units</Name>
+      <GroupId>Base</GroupId>
+      <Type>Device</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="false" Key="def" Image="GroupIcons/SAx_06M.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount xsi:nil="true" />
+      <DefaultWidth xsi:nil="true" />
+      <DefaultHeight xsi:nil="true" />
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+      <Items>
+        <Control BitSetArray="32">
+          <Id>SAx-01B</Id>
+          <Name>SAx-01B</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/SAx_01B.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="SA2-01B/Ni" />
+            <ControlUnit Name="SA2-01B/Sn" />
+            <ControlUnit Name="SA3-01B" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>SAx-02B</Id>
+          <Name>SAx-02B</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/SAx_02B.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="SA2-02B/Ni" />
+            <ControlUnit Name="SA2-02B/Sn" />
+            <ControlUnit Name="SA3-02B" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>SAx-02M</Id>
+          <Name>SAx-02M</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/SAx_02M.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>35</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="SA2-02M/Ni" />
+            <ControlUnit Name="SA2-02M/Sn" />
+            <ControlUnit Name="SA3-02M" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>SAx-04M</Id>
+          <Name>SAx-04M</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/SAx_04M.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>65</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="SA2-04M/Ni" />
+            <ControlUnit Name="SA2-04M/Sn" />
+            <ControlUnit Name="SA3-04M" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>SAx-06M</Id>
+          <Name>SAx-06M</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/SAx_06M.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>65</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="SA3-06M" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>SAx-012M</Id>
+          <Name>SAx-012M</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/SAx_012M.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>105</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="SA2-012M" />
+            <ControlUnit Name="SA2-12M" />
+            <ControlUnit Name="SA3-012M" />
+          </Units>
+        </Control>
+        <Control BitSetArray="0">
+          <Id>SA3-022M</Id>
+          <Name>SA3-022M</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/SA3_022M.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="SA3-022M-RELAY" />
+          </Units>
+        </Control>
+        <Control BitSetArray="0">
+          <Id>FA3-612M</Id>
+          <Name>FA3-612M</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/FA3_612M.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="FA3-612M-RELAY" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>JAx-02B</Id>
+          <Name>JAx-02B</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/JAx_02B.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="JA2-02B" />
+            <ControlUnit Name="JA2-02B/DC" />
+            <ControlUnit Name="JA3-02B/DC" />
+          </Units>
+        </Control>
+      </Items>
+    </MultipleControl>
+    <MultipleControl BitSetArray="0">
+      <Id>InputUnits</Id>
+      <Name>Input units</Name>
+      <GroupId>Base</GroupId>
+      <Type>Device</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="false" Key="def" Image="GroupIcons/IMx_140M.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount xsi:nil="true" />
+      <DefaultWidth xsi:nil="true" />
+      <DefaultHeight xsi:nil="true" />
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+      <Items>
+        <Control BitSetArray="32">
+          <Id>IMx-20B</Id>
+          <Name>IMx-20B</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/IMx_20B.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="IM2-20B" />
+            <ControlUnit Name="IM3-20B" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>IMx-40B</Id>
+          <Name>IMx-40B</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/IMx_40B.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="IM2-40B" />
+            <ControlUnit Name="IM3-40B" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>IMx-80B</Id>
+          <Name>IMx-80B</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/IMx_80B.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="IM2-80B" />
+            <ControlUnit Name="IM3-80B" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>IMx-140M</Id>
+          <Name>IMx-140M</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/IMx_140M.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>65</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="IM2-140M" />
+            <ControlUnit Name="IM3-140M" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>TI3-10B</Id>
+          <Name>TI3-10B</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/TI3_10B.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="TI3-10B" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>TIx-40B</Id>
+          <Name>TIx-40B</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/TIx_40B.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="TI2-40B" />
+            <ControlUnit Name="TI3-40B" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>TI3-60M</Id>
+          <Name>TI3-60M</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/TI3_60M.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>65</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="TI3-60M" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>ADC3-60M</Id>
+          <Name>ADC3-60M</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/ADC3_60M.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>65</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="ADC3-60M" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>ADC2-40M</Id>
+          <Name>ADC2-40M</Name>
+          <GroupId>Base</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/ADC2_40M.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>65</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="ADC2-40M" />
+          </Units>
+        </Control>
+      </Items>
+    </MultipleControl>
+    <MultipleControl BitSetArray="0">
+      <Id>HeatCoolBase</Id>
+      <Name>Heat and air condition</Name>
+      <GroupId>HeatCool</GroupId>
+      <Type>Device</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="false" Key="def" Image="Temperature/termostat.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount xsi:nil="true" />
+      <DefaultWidth xsi:nil="true" />
+      <DefaultHeight xsi:nil="true" />
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+      <Items>
+        <Control BitSetArray="32">
+          <Id>IDRT3-1</Id>
+          <Name>IDRT3-1</Name>
+          <GroupId>HeatCool</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="Temperature/termostat.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="IDRT2-1" />
+            <ControlUnit Name="IDRT3-1" />
+          </Units>
+        </Control>
+        <Control BitSetArray="32">
+          <Id>GRT3-50</Id>
+          <Name>GRT3-50</Name>
+          <GroupId>HeatCool</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="GroupIcons/GRT3_50.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="GRT3-50" />
+            <ControlUnit Name="GRT3-50-V3" />
+            <ControlUnit Name="GRT3-70" />
+          </Units>
+        </Control>
+        <Control BitSetArray="0">
+          <Id>ThermoHead</Id>
+          <Name>Thermo head</Name>
+          <GroupId>HeatCool</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Temperature/termoHeadOff.png" />
+            <ControlImage Default="false" Key="on" Image="Temperature/termoHeadOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="AnalogOutputAO" />
+            <ControlDevice Type="AnalogOutputRN" />
+            <ControlDevice Type="AnalogOutputTR" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="Ins2AnalogOutputAO" />
+            <ControlDevice Type="Ins2AnalogOutputTR" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutReRf2" />
+            <ControlDevice Type="RegDigOutRO" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>Clima</Id>
+          <Name>Air condition</Name>
+          <GroupId>HeatCool</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Temperature/climaOff.png" />
+            <ControlImage Default="false" Key="on" Image="Temperature/climaOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalOutputAC" />
+            <ControlDevice Type="DigitalOutputDC" />
+            <ControlDevice Type="DigitalOutputRO" />
+            <ControlDevice Type="DigitalOutputTR" />
+            <ControlDevice Type="AnalogOutputAO" />
+            <ControlDevice Type="AnalogOutputRN" />
+            <ControlDevice Type="AnalogOutputTR" />
+            <ControlDevice Type="Ins2DigitalOutputRO" />
+            <ControlDevice Type="Ins2AnalogOutputAO" />
+            <ControlDevice Type="Ins2AnalogOutputTR" />
+            <ControlDevice Type="DigitalOutputIO" />
+            <ControlDevice Type="DigitalOutReRf" />
+            <ControlDevice Type="DigitalOutReRf2" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="32">
+          <Id>HC2-01Bx</Id>
+          <Name>HC2-01Bx</Name>
+          <GroupId>HeatCool</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="false" Key="def" Image="GroupIcons/HC2_01Bx.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="HC2-01B/AC" />
+            <ControlUnit Name="HC2-01B/DC" />
+          </Units>
+        </Control>
+      </Items>
+    </MultipleControl>
+    <MultipleControl BitSetArray="0">
+      <Id>Regulators</Id>
+      <Name>Regulators</Name>
+      <GroupId>HeatCool</GroupId>
+      <Type>Device</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="true" Key="def" Image="Regulation/regulatorPI.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount xsi:nil="true" />
+      <DefaultWidth xsi:nil="true" />
+      <DefaultHeight xsi:nil="true" />
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+      <Items>
+        <Control BitSetArray="96">
+          <Id>Controler</Id>
+          <Name>Controller</Name>
+          <GroupId>HeatCool</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="Regulation/controler.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="Controller" />
+          </Units>
+        </Control>
+        <Control BitSetArray="224">
+          <Id>HeatRegulator</Id>
+          <Name>Heat Regulator</Name>
+          <GroupId>HeatCool</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="Regulation/heatRegulator.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="Heat-Regulator" />
+          </Units>
+        </Control>
+        <Control BitSetArray="224">
+          <Id>CoolRegulator</Id>
+          <Name>Cool Regulator</Name>
+          <GroupId>HeatCool</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="Regulation/coolRegulator.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="Cool-Regulator" />
+          </Units>
+        </Control>
+        <Control BitSetArray="160">
+          <Id>ThreePointRegulator</Id>
+          <Name>Three Point Regulator</Name>
+          <GroupId>HeatCool</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="Regulation/threePointRegulator.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="Three-Point-Regulator" />
+          </Units>
+        </Control>
+        <Control BitSetArray="160">
+          <Id>TwoPointRegulator</Id>
+          <Name>Two Point Regulator</Name>
+          <GroupId>HeatCool</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="Regulation/twoPointRegulator.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="Two-Point-Regulator" />
+          </Units>
+        </Control>
+        <Control BitSetArray="160">
+          <Id>FanCoilRegulator</Id>
+          <Name>Fan Coil Regulator</Name>
+          <GroupId>HeatCool</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="Regulation/fanCoilRegulator.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="Fan-Coil-Regulator" />
+            <ControlUnit Name="Differential-Regulator" />
+         </Units>
+        </Control>
+        <Control BitSetArray="160">
+          <Id>ValveRegulator</Id>
+          <Name>Valve Regulator</Name>
+          <GroupId>HeatCool</GroupId>
+          <Type>Unit</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="Regulation/valveControler.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices />
+          <Units>
+            <ControlUnit Name="Valve-Regulator" />
+          </Units>
+        </Control>
+      </Items>
+    </MultipleControl>
+    <MultipleControl BitSetArray="0">
+      <Id>SensorsBase</Id>
+      <Name>Sensors</Name>
+      <GroupId>Sensors</GroupId>
+      <Type>Device</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="false" Key="def" Image="Sensors/thermometer.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount xsi:nil="true" />
+      <DefaultWidth xsi:nil="true" />
+      <DefaultHeight xsi:nil="true" />
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+      <Items>
+        <Control BitSetArray="0">
+          <Id>ThermMeter</Id>
+          <Name>Thermometer</Name>
+          <GroupId>Sensors</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="Sensors/thermometer.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="TemperatureInputInt" />
+            <ControlDevice Type="TemperatureInputExt" />
+            <ControlDevice Type="Ins2TemperatureInputExt" />
+            <ControlDevice Type="Ins2TemperatureInputInt" />
+            <ControlDevice Type="TemperatureInputMar" />
+            <ControlDevice Type="TemperatureInputIO" />
+            <ControlDevice Type="TempDewPoint" />
+            <ControlDevice Type="RCTemperatureInput" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>HydroMeter</Id>
+          <Name>Humidity sensor</Name>
+          <GroupId>Sensors</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="Sensors/hydrometer.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalInputAC" />
+            <ControlDevice Type="DigitalInputDC" />
+            <ControlDevice Type="AnalogInputAI" />
+            <ControlDevice Type="AnalogInputCOR" />
+            <ControlDevice Type="AnalogInputU" />
+            <ControlDevice Type="Ins2AnalogInputAI" />
+            <ControlDevice Type="HumidityInputInt" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>LightSensor</Id>
+          <Name>Light sensor</Name>
+          <GroupId>Sensors</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Sensors/lightSensorOff.png" />
+            <ControlImage Default="false" Key="on" Image="Sensors/lightSensorOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalInputAC" />
+            <ControlDevice Type="DigitalInputDC" />
+            <ControlDevice Type="AnalogInputAI" />
+            <ControlDevice Type="AnalogInputCOR" />
+            <ControlDevice Type="AnalogInputU" />
+            <ControlDevice Type="Ins2AnalogInputAI" />
+            <ControlDevice Type="DigitalInputLight" />
+            <ControlDevice Type="LigthSensor" />
+            <ControlDevice Type="LightSensor2" />
+            <ControlDevice Type="LightSensor3" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>HydroSensor</Id>
+          <Name>Flooding sensor</Name>
+          <GroupId>Sensors</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Detectors/floodDetectorOff.png" />
+            <ControlImage Default="false" Key="on" Image="Detectors/floodDetectorOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalInputAC" />
+            <ControlDevice Type="DigitalInputDC" />
+            <ControlDevice Type="AnalogInputAI" />
+            <ControlDevice Type="AnalogInputCOR" />
+            <ControlDevice Type="AnalogInputU" />
+            <ControlDevice Type="Ins2AnalogInputAI" />
+            <ControlDevice Type="RFInput3" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>AnalogSensor</Id>
+          <Name>Analog sensor</Name>
+          <GroupId>Sensors</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Sensors/analogInOff.png" />
+            <ControlImage Default="false" Key="on" Image="Sensors/analogInOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="AnalogInputAI" />
+            <ControlDevice Type="AnalogInputCOR" />
+            <ControlDevice Type="AnalogInputU" />
+            <ControlDevice Type="Ins2AnalogInputAI" />
+            <ControlDevice Type="AnalogSensorIn" />
+            <ControlDevice Type="AnalogSensorInCu" />
+            <ControlDevice Type="LigthSensor" />
+            <ControlDevice Type="LightSensor2" />
+            <ControlDevice Type="LightSensor3" />
+            <ControlDevice Type="RFInput3" />
+            <ControlDevice Type="HeadStatus" />
+          </Devices>
+          <Units />
+        </Control>
+      </Items>
+    </MultipleControl>
+    <MultipleControl BitSetArray="0">
+      <Id>DetectorsBase</Id>
+      <Name>Detectors</Name>
+      <GroupId>Sensors</GroupId>
+      <Type>Device</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="false" Key="def" Image="Gate/rdoorClose.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount xsi:nil="true" />
+      <DefaultWidth xsi:nil="true" />
+      <DefaultHeight xsi:nil="true" />
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+      <Items>
+        <Control BitSetArray="0">
+          <Id>MotionDetector</Id>
+          <Name>Motion detector</Name>
+          <GroupId>Sensors</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Detectors/motionDetectorOff.png" />
+            <ControlImage Default="false" Key="on" Image="Detectors/motionDetectorOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalInputAC" />
+            <ControlDevice Type="DigitalInputDC" />
+            <ControlDevice Type="BalanceDigitalInputDC" />
+            <ControlDevice Type="DigitalInputK" />
+            <ControlDevice Type="RFInput" />
+            <ControlDevice Type="DigitalInputMove" />
+            <ControlDevice Type="RFInput2" />
+            <ControlDevice Type="RFInput3" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>WindowDetector</Id>
+          <Name>Window detector</Name>
+          <GroupId>Sensors</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Gate/winClose.png" />
+            <ControlImage Default="false" Key="on" Image="Gate/winOpen.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalInputAC" />
+            <ControlDevice Type="DigitalInputDC" />
+            <ControlDevice Type="BalanceDigitalInputDC" />
+            <ControlDevice Type="DigitalInputK" />
+            <ControlDevice Type="RFInput" />
+            <ControlDevice Type="RFInput2" />
+            <ControlDevice Type="RFInput3" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>DoorDetector</Id>
+          <Name>Door detector</Name>
+          <GroupId>Sensors</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Gate/doorClose.png" />
+            <ControlImage Default="false" Key="on" Image="Gate/doorOpen.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalInputAC" />
+            <ControlDevice Type="DigitalInputDC" />
+            <ControlDevice Type="BalanceDigitalInputDC" />
+            <ControlDevice Type="RFInput" />
+            <ControlDevice Type="RFInput2" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>FireDetector</Id>
+          <Name>Fire detector</Name>
+          <GroupId>Sensors</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Detectors/flameDetectorOff.png" />
+            <ControlImage Default="false" Key="on" Image="Detectors/flameDetectorOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalInputAC" />
+            <ControlDevice Type="DigitalInputDC" />
+            <ControlDevice Type="BalanceDigitalInputDC" />
+            <ControlDevice Type="DigitalInputK" />
+            <ControlDevice Type="RFInput" />
+            <ControlDevice Type="RFInput2" />
+          </Devices>
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>GlassBreakDetector</Id>
+          <Name>Glass break detector</Name>
+          <GroupId>Sensors</GroupId>
+          <Type>Device</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="off" Image="Detectors/glassBreakeDetectorOff.png" />
+            <ControlImage Default="false" Key="on" Image="Detectors/glassBreakeDetectorOn.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth xsi:nil="true" />
+          <DefaultHeight xsi:nil="true" />
+          <DevicesUnitsListType>Enabled</DevicesUnitsListType>
+          <Devices>
+            <ControlDevice Type="DigitalInputAC" />
+            <ControlDevice Type="DigitalInputDC" />
+            <ControlDevice Type="BalanceDigitalInputDC" />
+            <ControlDevice Type="DigitalInputK" />
+            <ControlDevice Type="RFInput" />
+            <ControlDevice Type="DigitalInputCU" />
+            <ControlDevice Type="RFInput2" />
+          </Devices>
+          <Units />
+        </Control>
+      </Items>
+    </MultipleControl>
+    <MultipleControl BitSetArray="0">
+      <Id>SpecialBase</Id>
+      <Name>Special</Name>
+      <GroupId>Special</GroupId>
+      <Type>Device</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="false" Key="def" Image="Specials/hotelRoom.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount xsi:nil="true" />
+      <DefaultWidth xsi:nil="true" />
+      <DefaultHeight xsi:nil="true" />
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+      <Items>
+        <Control BitSetArray="0">
+          <Id>HotelRoom</Id>
+          <Name>Old Hotel room</Name>
+          <GroupId>Special</GroupId>
+          <Type>Configurable</Type>
+          <SubType>0</SubType>
+          <ComponentModuleKey>Hotel-ROOM</ComponentModuleKey>
+          <ComponentInfo>
+            <Item Key="STATE" Property="ColorON" Type="Color">
+              <Value xsi:type="xsd:string">#FFFF0000</Value>
+            </Item>
+            <Item Key="STATE" Property="ColorOFF" Type="Color">
+              <Value xsi:type="xsd:string">#FFADFF2F</Value>
+            </Item>
+            <Item Key="STATE" Property="UserChangeable" Type="Boolean">
+              <Value xsi:type="xsd:boolean">true</Value>
+            </Item>
+            <Item Key="COOL_1" Property="ImageON" Type="Key">
+              <Value xsi:type="xsd:string">coolOn</Value>
+            </Item>
+            <Item Key="COOL_1" Property="ImageOFF" Type="Key">
+              <Value xsi:type="xsd:string">coolOff</Value>
+            </Item>
+            <Item Key="COOL_1" Property="UserChangeable" Type="Boolean">
+              <Value xsi:type="xsd:boolean">true</Value>
+            </Item>
+            <Item Key="HEAT_1" Property="ImageON" Type="Key">
+              <Value xsi:type="xsd:string">heatOn</Value>
+            </Item>
+            <Item Key="HEAT_1" Property="ImageOFF" Type="Key">
+              <Value xsi:type="xsd:string">heatOff</Value>
+            </Item>
+            <Item Key="HEAT_1" Property="UserChangeable" Type="Boolean">
+              <Value xsi:type="xsd:boolean">true</Value>
+            </Item>
+            <Item Key="DND_1" Property="ImageON" Type="Key">
+              <Value xsi:type="xsd:string">dndOn</Value>
+            </Item>
+            <Item Key="DND_1" Property="ImageOFF" Type="Key">
+              <Value xsi:type="xsd:string">dndOff</Value>
+            </Item>
+            <Item Key="DND_1" Property="UserChangeable" Type="Boolean">
+              <Value xsi:type="xsd:boolean">true</Value>
+            </Item>
+            <Item Key="CLEAN_1" Property="ImageON" Type="Key">
+              <Value xsi:type="xsd:string">murOn</Value>
+            </Item>
+            <Item Key="CLEAN_1" Property="ImageOFF" Type="Key">
+              <Value xsi:type="xsd:string">murOff</Value>
+            </Item>
+            <Item Key="CLEAN_1" Property="UserChangeable" Type="Boolean">
+              <Value xsi:type="xsd:boolean">true</Value>
+            </Item>
+            <Item Key="LOCK_1" Property="ImageON" Type="Key">
+              <Value xsi:type="xsd:string">lockOn</Value>
+            </Item>
+            <Item Key="LOCK_1" Property="ImageOFF" Type="Key">
+              <Value xsi:type="xsd:string">lockOff</Value>
+            </Item>
+            <Item Key="LOCK_1" Property="UserChangeable" Type="Boolean">
+              <Value xsi:type="xsd:boolean">true</Value>
+            </Item>
+          </ComponentInfo>
+          <Images>
+            <ControlImage Default="false" Key="dndOff" Image="Specials/dndOff.png" />
+            <ControlImage Default="false" Key="dndOn" Image="Specials/dndOn.png" />
+            <ControlImage Default="false" Key="lockOff" Image="Specials/lockOff.png" />
+            <ControlImage Default="false" Key="lockOn" Image="Specials/lockOn.png" />
+            <ControlImage Default="false" Key="murOff" Image="Specials/murOff.png" />
+            <ControlImage Default="false" Key="murOn" Image="Specials/murOn.png" />
+            <ControlImage Default="false" Key="heatOff" Image="Specials/heatOff.png" />
+            <ControlImage Default="false" Key="heatOn" Image="Specials/heatOn.png" />
+            <ControlImage Default="false" Key="coolOff" Image="Specials/coolOff.png" />
+            <ControlImage Default="false" Key="coolOn" Image="Specials/coolOn.png" />
+            <ControlImage Default="true" Key="hotelRoom" Image="Specials/hotelRoom.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>250</DefaultWidth>
+          <DefaultHeight>200</DefaultHeight>
+          <DevicesUnitsListType>All</DevicesUnitsListType>
+          <Devices />
+          <Units />
+        </Control>
+      </Items>
+    </MultipleControl>
+    <Control BitSetArray="0">
+      <Id>FuncBlock</Id>
+      <Name>Function block</Name>
+      <GroupId>Special</GroupId>
+      <Type>FunctionBlock</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="true" Key="def" Image="FunBlocks/funBlocks.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount xsi:nil="true" />
+      <DefaultWidth>90</DefaultWidth>
+      <DefaultHeight>90</DefaultHeight>
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+    </Control>
+    <MultipleControl BitSetArray="0">
+      <Id>GroupBase</Id>
+      <Name>Groups</Name>
+      <GroupId>Groups</GroupId>
+      <Type>Device</Type>
+      <SubType>0</SubType>
+      <ComponentInfo />
+      <Images>
+        <ControlImage Default="false" Key="def" Image="Groups/groupLights.png" />
+      </Images>
+      <Hidden>false</Hidden>
+      <MaxCount xsi:nil="true" />
+      <DefaultWidth xsi:nil="true" />
+      <DefaultHeight xsi:nil="true" />
+      <DevicesUnitsListType>All</DevicesUnitsListType>
+      <Devices />
+      <Units />
+      <Items>
+        <Control BitSetArray="0">
+          <Id>Group</Id>
+          <Name>Group</Name>
+          <GroupId>Groups</GroupId>
+          <Type>Group</Type>
+          <SubType>0</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="Groups/groupOther.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>All</DevicesUnitsListType>
+          <Devices />
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>GroupDigital</Id>
+          <Name>Group digital</Name>
+          <GroupId>Groups</GroupId>
+          <Type>Group</Type>
+          <SubType>4</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="Groups/groupLights.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>All</DevicesUnitsListType>
+          <Devices />
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>GroupAnalog</Id>
+          <Name>Group analog</Name>
+          <GroupId>Groups</GroupId>
+          <Type>Group</Type>
+          <SubType>9</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="Groups/groupAnalog.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>All</DevicesUnitsListType>
+          <Devices />
+          <Units />
+        </Control>
+        <Control BitSetArray="0">
+          <Id>GroupAlarm</Id>
+          <Name>Group alarm</Name>
+          <GroupId>Groups</GroupId>
+          <Type>Group</Type>
+          <SubType>10</SubType>
+          <ComponentInfo />
+          <Images>
+            <ControlImage Default="true" Key="def" Image="Groups/groupAlarm.png" />
+          </Images>
+          <Hidden>false</Hidden>
+          <MaxCount xsi:nil="true" />
+          <DefaultWidth>90</DefaultWidth>
+          <DefaultHeight>90</DefaultHeight>
+          <DevicesUnitsListType>All</DevicesUnitsListType>
+          <Devices />
+          <Units />
+        </Control>
+      </Items>
+    </MultipleControl>
+  </Items>
+  <Groups>
+    <ControlGroup>
+      <Id>CU</Id>
+      <Name>Central units</Name>
+      <Description />
+    </ControlGroup>
+    <ControlGroup>
+      <Id>Base</Id>
+      <Name>Base</Name>
+      <Description />
+    </ControlGroup>
+    <ControlGroup>
+      <Id>HeatCool</Id>
+      <Name>Heat and regulators</Name>
+    </ControlGroup>
+    <ControlGroup>
+      <Id>Sensors</Id>
+      <Name>Sensors and Detectors</Name>
+    </ControlGroup>
+    <ControlGroup>
+      <Id>Special</Id>
+      <Name>Special</Name>
+    </ControlGroup>
+    <ControlGroup>
+      <Id>Groups</Id>
+      <Name>Groups</Name>
+    </ControlGroup>
+  </Groups>
+</ControlsConfiguration>

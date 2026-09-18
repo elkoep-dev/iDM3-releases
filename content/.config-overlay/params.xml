@@ -1,0 +1,1542 @@
+<?xml version="1.0"?>
+<ParamsConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Params>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>StrictControl1</Name>
+      <Description>Strictly control</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>StrictResolute1</Name>
+      <Description>Strictly split long/short press:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>StrictResolute2</Name>
+      <Description>Strictly split long/short press:</Description>
+      <Condition>(StrictControl1~Equal~0)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>StrictResolute3</Name>
+      <Description>Strictly split long/short press:</Description>
+      <Condition>(InputBalanceOne1~Equal~0)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>InputBalanceOne1</Name>
+      <Description>Balanced input:</Description>
+      <Condition>(InvertInput2~Equal~0)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>InoutBalanceDouble1</Name>
+      <Description>Double balanced input:</Description>
+      <Condition>(InputBalanceOne1~Equal~1)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>InvertInput1</Name>
+      <Description>Invert input:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>InvertInput2</Name>
+      <Description>Invert input:</Description>
+      <Condition>(InputBalanceOne1~Equal~0)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>InvertOutput1</Name>
+      <Description>Invert output:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>DefaultSet1</Name>
+      <Description>Use default state:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>DigitalDefaultSetValue1</Name>
+      <Description>Default output state:</Description>
+      <Condition>(DefaultSet1~Equal~1)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0">
+      <Name>AnalogDefaultSetValue1</Name>
+      <Description>Default output state:</Description>
+      <Condition>(DefaultSet1~Equal~1)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0">
+      <Name>AnalogOutputMinValue1</Name>
+      <Description>Minimum level:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0">
+      <Name>AnalogOutputMaxValue1</Name>
+      <Description>Maximum level:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="" MinValue="-50" MaxValue="1000000" Type="Float32" RealAddress="0">
+      <Name>LightInputMin</Name>
+      <Description>Minimal level:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="" MinValue="-50" MaxValue="1000000" Type="Float32" RealAddress="0">
+      <Name>LightInputMax</Name>
+      <Description>Maximal level:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="1" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumAnalogInputType">
+      <Name>AnalogInputType1</Name>
+      <Description>Input type:</Description>
+      <Value xsi:type="xsd:int">1</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="1" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumAnalogInputType2">
+      <Name>AnalogInputType2</Name>
+      <Description>Input type:</Description>
+      <Value xsi:type="xsd:int">1</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Byte" RealAddress="0" DynamicEnumName="EnumOutputType">
+      <Name>OutputType1</Name>
+      <Description>Output type:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Byte" RealAddress="0" DynamicEnumName="EnumSensotTypeTC/TZ">
+      <Name>SensorTypeTCTZ1</Name>
+      <Description>Sensor typ:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumSensorTypeTherm">
+      <Name>SensorTypeTherm1</Name>
+      <Description>Sensor type:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="°C" MinValue="-20" MaxValue="40" Type="Float16" RealAddress="0">
+      <Name>TemperatureOffset1</Name>
+      <Description>Offset temperature:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>ThermUnit1</Name>
+      <Description>Thermo sensor:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>BlockParallelSwitchRE1-RE2</Name>
+      <Description>Blocking parallel switch RE1-RE2:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>BlockParallelSwitchRE3-RE4</Name>
+      <Description>Blocking parallel switch RE3-RE4:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>BlockParallelSwitchRE5-RE6</Name>
+      <Description>Blocking parallel switch RE5-RE6:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>BlockParallelSwitchRE7-RE8</Name>
+      <Description>Blocking parallel switch RE7-RE8:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>BlockParallelSwitchRE9-RE10</Name>
+      <Description>Blocking parallel switch RE9-RE10:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>BlockParallelSwitchRE11-RE12</Name>
+      <Description>Blocking parallel switch RE11-RE12:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceIN</Name>
+      <Description>Use device IN:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceIN1-IN2</Name>
+      <Description>Use device IN1-IN2:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceIN1-IN4</Name>
+      <Description>Use device IN1-IN4:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceIN1-IN8</Name>
+      <Description>Use device IN1-IN8:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceIN1-IN14</Name>
+      <Description>Use device IN1-IN14:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceOUT</Name>
+      <Description>Use device OUT:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceOUT1-OUT2</Name>
+      <Description>Use device OUT1-OUT2:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceOUT1-OUT4</Name>
+      <Description>Use device OUT1-OUT4:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceSW1-SW2</Name>
+      <Description>Use device SW1-SW2:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceSW1-SW4</Name>
+      <Description>Use device SW1-SW4:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceSW1-SW12-RE1-RE12</Name>
+      <Description>Use device SW1-SW12, RE1-RE12:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceRE</Name>
+      <Description>Use device RE:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceRE1-RE2</Name>
+      <Description>Use device RE1-RE2:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceRE1-RE4</Name>
+      <Description>Use device RE1-RE4:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceInter-Therm</Name>
+      <Description>Use device Inter-Therm:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceTHERM</Name>
+      <Description>Use device THERM:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceTHERM1</Name>
+      <Description>Use device THERM1:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseDeviceTHERM2</Name>
+      <Description>Use device THERM2:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceTHERM3</Name>
+      <Description>Use device THERM3:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceTHERM4</Name>
+      <Description>Use device THERM4:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceUp-Down</Name>
+      <Description>Use device Up-Down:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceUp1-Down2</Name>
+      <Description>Use device Up1-Down2:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceUp1-Down4</Name>
+      <Description>Use device Up1-Down4:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceGreen-Red</Name>
+      <Description>Use device Green-Red:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceGreen1-Red2</Name>
+      <Description>Use device Green1-Red2:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceGreen1-Red4</Name>
+      <Description>Use device Green1-Red4:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceALERTS</Name>
+      <Description>Use device ALERTS:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceGreen-Red-RE</Name>
+      <Description>Use device Green-Red-RE:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceOUF-ALERT1-OUF-ALERT4</Name>
+      <Description>Use device OUF-ALERT1-OUF-ALERT4:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceAIN1</Name>
+      <Description>Use device AIN1:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseDeviceAIN2</Name>
+      <Description>Use device AIN2:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseDeviceAIN3</Name>
+      <Description>Use device AIN3:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceAIN4</Name>
+      <Description>Use device AIN4:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumAnalogInputTypeIn2">
+      <Name>Ins2AnalogInputType</Name>
+      <Description>Input type:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="s" MinValue="0" MaxValue="255" Type="Float16" RealAddress="0">
+      <Name>FilterTimeConstant</Name>
+      <Description>Filter time constant:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseDeviceSTAT-MODE</Name>
+      <Description>Use device STAT-MODE:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceSTAT-Green-MODE-Red</Name>
+      <Description>Use device STAT-Green-MODE-Red:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseDeviceCorrection</Name>
+      <Description>Use device Correction:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceON-MAN</Name>
+      <Description>Use device ON-MAN:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="2" Type="Byte" RealAddress="0" DynamicEnumName="EnumCorrectionRange">
+      <Name>CorrectionRange</Name>
+      <Description>Correction range:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="3" Type="Byte" RealAddress="0" DynamicEnumName="EnumViewTemperature">
+      <Name>ViewTemperature</Name>
+      <Description>View temperature:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceRE-Green-Red-Beeper</Name>
+      <Description>Use device RE-Green-Red-Beeper:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseDeviceCardReader</Name>
+      <Description>Use device CardReader:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="°C" MinValue="-30" MaxValue="250" Type="Float16" RealAddress="0">
+      <Name>TemperatureMin</Name>
+      <Description>Minimal temperature:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="°C" MinValue="-30" MaxValue="250" Type="Float16" RealAddress="0">
+      <Name>TemperatureMax</Name>
+      <Description>Maximal temperature:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="64" Type="Byte" RealAddress="0">
+      <Name>DALI-DMXAddr</Name>
+      <Description>DALI and DMX address.</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>AverageTime</Name>
+      <Description>Average time:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="lx" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>LightLimit</Name>
+      <Description>Light limit:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="lx" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>HysteresisLight</Name>
+      <Description>Hysteresis:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="lx" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>BacklightLimit</Name>
+      <Description>Backlight limit:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseVibration</Name>
+      <Description>Use vibration:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumBeeper">
+      <Name>BeeperSequences</Name>
+      <Description>Beeper:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumSensorTypeMAR">
+      <Name>SensorTypeMAR</Name>
+      <Description>Sensor type:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="%" MinValue="-20" MaxValue="40" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>HumidityOffset</Name>
+      <Description>Offset humidity:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>HumidityMin</Name>
+      <Description>Minimal humidity: </Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>HumidityMax</Name>
+      <Description>Maximal humidity:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseRGBY-RGB</Name>
+      <Description>Use drive RGBY/RGB:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseMin-Max</Name>
+      <Description>Use Min and Max limit:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="-10000" MaxValue="10000" Type="Int16" RealAddress="0" DynamicEnumName="">
+      <Name>TransferMinValue</Name>
+      <Description>Transfer minimal value:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition>(AnalogInputType1~Equal~3)#OR#(AnalogInputType1~Equal~5)#OR#(AnalogInputType1~Equal~7)#OR#(AnalogInputType1~Equal~9)#OR#(AnalogInputType1~Equal~11)#OR#(AnalogInputType1~Equal~23)#OR#(AnalogInputType1~Equal~25)#OR#(AnalogInputType1~Equal~27)#OR#(AnalogInputType1~Equal~29)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="-10000" MaxValue="10000" Type="Int16" RealAddress="0" DynamicEnumName="">
+      <Name>TransferMaxValue</Name>
+      <Description>Transfer maximal value:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition>(AnalogInputType1~Equal~3)#OR#(AnalogInputType1~Equal~5)#OR#(AnalogInputType1~Equal~7)#OR#(AnalogInputType1~Equal~9)#OR#(AnalogInputType1~Equal~11)#OR#(AnalogInputType1~Equal~23)#OR#(AnalogInputType1~Equal~25)#OR#(AnalogInputType1~Equal~27)#OR#(AnalogInputType1~Equal~29)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="0" Type="String" RealAddress="0" DynamicEnumName="">
+      <Name>TransferDisplayUnit</Name>
+      <Description>Transfer Display Unit:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition>(AnalogInputType1~Equal~3)#OR#(AnalogInputType1~Equal~5)#OR#(AnalogInputType1~Equal~7)#OR#(AnalogInputType1~Equal~9)#OR#(AnalogInputType1~Equal~11)#OR#(AnalogInputType1~Equal~23)#OR#(AnalogInputType1~Equal~25)#OR#(AnalogInputType1~Equal~27)#OR#(AnalogInputType1~Equal~29)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumLigthSetup">
+      <Name>LightSetup</Name>
+      <Description>Ligth setup:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumZoneType">
+      <Name>ZoneType</Name>
+      <Description>Zone type:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="1" MaxValue="1200" Type="UInt16" RealAddress="0" DynamicEnumName="">
+      <Name>ZoneDelayTime1</Name>
+      <Description>Delay Time 1:</Description>
+      <Value xsi:type="xsd:int">1</Value>
+      <Condition>(ZoneType~Equal~2)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="1" MaxValue="1200" Type="UInt16" RealAddress="0" DynamicEnumName="">
+      <Name>ZoneDelayTime2</Name>
+      <Description>Delay Time 2:</Description>
+      <Value xsi:type="xsd:int">1</Value>
+      <Condition>(ZoneType~Equal~2)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="1" MaxValue="1200" Type="UInt16" RealAddress="0" DynamicEnumName="">
+      <Name>AlarmTime</Name>
+      <Description>Alarm Time:</Description>
+      <Value xsi:type="xsd:int">1</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="1" MaxValue="1200" Type="UInt16" RealAddress="0" DynamicEnumName="">
+      <Name>SecurDelayTime</Name>
+      <Description>Secur Delay Time:</Description>
+      <Value xsi:type="xsd:int">1</Value>
+      <Condition>(ZoneType~Equal~2)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="1" MaxValue="1200" Type="UInt16" RealAddress="0" DynamicEnumName="">
+      <Name>NextAlarmTime</Name>
+      <Description>Next Alarm Time:</Description>
+      <Value xsi:type="xsd:int">1</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="65535" Type="GroupSelect" RealAddress="0" DynamicEnumName="">
+      <Name>ImmediatelyInputs</Name>
+      <Description>Immediately inputs:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="65535" Type="GroupSelect" RealAddress="0" DynamicEnumName="">
+      <Name>Delay1Inputs</Name>
+      <Description>Delay 1 Inputs:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition>(ZoneType~Equal~2)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="65535" Type="GroupSelect" RealAddress="0" DynamicEnumName="">
+      <Name>Delay2Inputs</Name>
+      <Description>Delay 2 Inputs:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition>(ZoneType~Equal~2)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="65535" Type="GroupSelect" RealAddress="0" DynamicEnumName="">
+      <Name>InternalInputs</Name>
+      <Description>Internal Inputs:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition>(ZoneType~Equal~2)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="-50" MaxValue="1000000" Type="Int32" RealAddress="0" DynamicEnumName="">
+      <Name>AnalogInputMinValue</Name>
+      <Description>Minimum level:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="-50" MaxValue="1000000" Type="Int32" RealAddress="0" DynamicEnumName="">
+      <Name>AnalogInputMaxValue</Name>
+      <Description>Maximum level:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="number/min" MinValue="5" MaxValue="65" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>LimitSwitch</Name>
+      <Description />
+      <Value xsi:type="xsd:int">10</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="x 0,1s" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>AverageTimeAI</Name>
+      <Description>Average time:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseUref1</Name>
+      <Description>Use Uref1:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition>(UseUref2~Equal~0)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseUref2</Name>
+      <Description>Use Uref2:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition>(UseUref1~Equal~0)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="64" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>DALI-DMXAddrUnitI</Name>
+      <Description>DALI/DMX address unit I:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="64" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>DALI-DMXAddrUnitII</Name>
+      <Description>DALI/DMX address unit II:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>SampleRade</Name>
+      <Description>Sample rate:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="1" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumAnalogInputTypeCU">
+      <Name>AnalogInputType2</Name>
+      <Description>Input type:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="-10000" MaxValue="10000" Type="Int32" RealAddress="0" DynamicEnumName="">
+      <Name>AnalogInMinValue1</Name>
+      <Description>Minimum level:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="-10000" MaxValue="10000" Type="Int32" RealAddress="0" DynamicEnumName="">
+      <Name>AnalogInMaxValue1</Name>
+      <Description>Maximum level:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumSensitivity">
+      <Name>Sensitivity</Name>
+      <Description>Open window sensitivity:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumCloseTimeout">
+      <Name>CloseTimeout</Name>
+      <Description>Open window close timeout:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumCardType">
+      <Name>CardType</Name>
+      <Description>Card type:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="x100ms" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>ReOpenTime</Name>
+      <Description>Relay open time:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="-10000" MaxValue="10000" Type="Int16" RealAddress="0" DynamicEnumName="">
+      <Name>TransferMinValueIO</Name>
+      <Description>Transfer minimal value:</Description>
+      <Condition>(AnalogInputType2~Equal~31)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="-10000" MaxValue="10000" Type="Int16" RealAddress="0" DynamicEnumName="">
+      <Name>TransferMaxValueIO</Name>
+      <Description>Transfer maximal value:</Description>
+      <Condition>(AnalogInputType2~Equal~31)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="0" Type="String" RealAddress="0" DynamicEnumName="">
+      <Name>TransferDisplayUnitIO</Name>
+      <Description>Transfer Display Unit:</Description>
+      <Condition>(AnalogInputType2~Equal~31)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>LeadingEdge</Name>
+      <Description>Count leading edge:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>FallingEdge</Name>
+      <Description>Count falling edge:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="0" Type="CounterSelect" RealAddress="0" DynamicEnumName="">
+      <Name>DigitalInputSelCounter</Name>
+      <Description>Impulse Counter:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumDefaultColor">
+      <Name>DefaultColor</Name>
+      <Description>Default backlight color:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumBecklightLimit">
+      <Name>BacklightLevel</Name>
+      <Description>Backlight level:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>Beeper</Name>
+      <Description>Beeper:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>MoveLED</Name>
+      <Description>Move LED:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumDriveType">
+      <Name>DriveType</Name>
+      <Description>Drive type:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumButtonConf">
+      <Name>ButtonConf</Name>
+      <Description>Configure buttons:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>HomPageRGB</Name>
+      <Description>Home page RGB:</Description>
+      <Condition>(UsePageRGB~Equal~1)#AND#(HomPageTherm~Equal~0)#AND#(HomePageButton~Equal~0)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>HomPageTherm</Name>
+      <Description>Home page Thermo:</Description>
+      <Condition>(UsePageTherm~Equal~1)#AND#(HomPageRGB~Equal~0)#AND#(HomePageButton~Equal~0)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>HomePageButton</Name>
+      <Description>Home page Button:</Description>
+      <Condition>(UsePageButton~Equal~1)#AND#(HomPageRGB~Equal~0)#AND#(HomPageTherm~Equal~0)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UsePageRGB</Name>
+      <Description>Use page RGB:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UsePageTherm</Name>
+      <Description>Use page Thermo:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UsePageButton</Name>
+      <Description>Use page Button:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>HeatMode</Name>
+      <Description>If change HC mode set AUTO:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>WriteCard</Name>
+      <Description>Write card into a card reader:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>ButtonHeatMode</Name>
+      <Description>Use buttons for drive Thermo:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="4" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1022222222" Type="UnicateObjectPointer" RealAddress="0" DynamicEnumName="">
+      <Name>PlanHeat</Name>
+      <Description>Plan Heat:</Description>
+      <Selector Source="0" Path="0" Type="Programs" SubType="1" Value="1" IsHEX="true" BitSet="0x00000000" />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="4" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1022222222" Type="UnicateObjectPointer" RealAddress="0" DynamicEnumName="">
+      <Name>PlanCool</Name>
+      <Description>Plan Cool:</Description>
+      <Selector Source="0" Path="0" Type="Programs" SubType="1" Value="2" IsHEX="true" BitSet="0x00000000" />
+      <Condition>(HCControlType~NotEqual~2)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="4" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1022222222" Type="UnicateObjectPointer" RealAddress="0" DynamicEnumName="">
+      <Name>PlanHeatHoliday</Name>
+      <Description>Plan Heat Holiday:</Description>
+      <Selector Source="0" Path="0" Type="Programs" SubType="1" Value="4" IsHEX="true" BitSet="0x00000000" />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="4" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1022222222" Type="UnicateObjectPointer" RealAddress="0" DynamicEnumName="">
+      <Name>PlanCoolHoliday</Name>
+      <Description>Plan Cool Holiday:</Description>
+      <Selector Source="0" Path="0" Type="Programs" SubType="1" Value="8" IsHEX="true" BitSet="0x00000000" />
+      <Condition>(HCControlType~NotEqual~2)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="4" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1022222222" Type="UnicateObjectPointer" RealAddress="0" DynamicEnumName="">
+      <Name>PlanHeatSvatek</Name>
+      <Description>Plan Heat Svatek:</Description>
+      <Selector Source="0" Path="0" Type="Programs" SubType="5" Value="10" IsHEX="true" BitSet="0x00000000" />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="4" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1022222222" Type="UnicateObjectPointer" RealAddress="0" DynamicEnumName="">
+      <Name>PlanCoolSvatek</Name>
+      <Description>Plan Cool Svatek:</Description>
+      <Selector Source="0" Path="0" Type="Programs" SubType="5" Value="20" IsHEX="true" BitSet="0x00000000" />
+      <Condition>(HCControlType~NotEqual~2)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1022222222" Type="UInt32" RealAddress="0" DynamicEnumName="">
+      <Name>Controler</Name>
+      <Description>Controler:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1022222222" Type="UInt32" RealAddress="0" DynamicEnumName="">
+      <Name>FyzUnitAddr</Name>
+      <Description>Controler unit address:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="10" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>PageNumber</Name>
+      <Description>Page number:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="2" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="255" Type="UInt32" RealAddress="0" DynamicEnumName="">
+      <Name>CardIn</Name>
+      <Description>CardIn</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumAverageTimeIO">
+      <Name>AverageTimeIO</Name>
+      <Description>Average time:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="127" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>SensitivityPIR</Name>
+      <Description>Sensitivity:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>ModePIR</Name>
+      <Description>Single mode:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="4" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1022222222" Type="UnicateObjectPointer" RealAddress="0" DynamicEnumName="">
+      <Name>ThermoDriverUid</Name>
+      <Description>ThermoDriver1:</Description>
+      <Selector Source="0" Path="0" Type="Unit" SubType="3" Value="" IsHEX="false" BitSet="0x00000010" />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="4" Access="Editable" Address="0" ParamType="Unit" MinValue="1" MaxValue="5" Type="UnicateObjectPointer" RealAddress="0" DynamicEnumName="">
+      <Name>ThermoDriverPage</Name>
+      <Description>ThermoDriverPage1:</Description>
+      <RemoteObject Source="0" Path="0" Type="Unit" SubType="0" Value="" IsHEX="false" BitSet="0x00000000" />
+      <Selector Source="2" Path="3" Type="Param" SubType="0" Value="" IsHEX="false" BitSet="0x00000010" />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="24" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>Page</Name>
+      <Description />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumColorCorrection">
+      <Name>ColorCorrection</Name>
+      <Description>Color Correction:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumRegType">
+      <Name>HeatRegType</Name>
+      <Description>Valve1 - Regulator type:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumTerTypeDriveHead">
+      <Name>HeatHeadType</Name>
+      <Description>Valve1 - Head type:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>HeatSampling</Name>
+      <Description>Valve1 - Sampling:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>HeatKp</Name>
+      <Description>Valve1 - Kp:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>HeatKi</Name>
+      <Description>Valve1 - Ki:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>HeatKd</Name>
+      <Description>Valve1 - Kd:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>HeatMaxActual</Name>
+      <Description>Valve1-Actual-AIN Maximum:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>HeatMinActual</Name>
+      <Description>Valve1-Actual-AIN Minimum:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="65535" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>HeatMaxRequire</Name>
+      <Description>Valve1-Required-Value-AOUT Maximum:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="65535" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>HeatMinRequire</Name>
+      <Description>Valve1-Required-Value-AOUT Minimum:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="0" MaxValue="65535" Type="UInt32" RealAddress="0" DynamicEnumName="">
+      <Name>HeatHeadRunTime</Name>
+      <Description>Valve1 - Head run time:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="65535" Type="UInt32" RealAddress="0" DynamicEnumName="">
+      <Name>HeatCalibrationTime</Name>
+      <Description>Valve1 - Repeat calibration time:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumRegTypeEndSensor">
+      <Name>HeatEndSensor</Name>
+      <Description>Valve1 - Use end sensor:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>HeatErrorSetup</Name>
+      <Description>Valve1 - Error setup:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>HeatInvertOPEN</Name>
+      <Description>Valve1 - Invert OPEN/CLOSE:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>HeatInvertAIN</Name>
+      <Description>Valve1-Required-Value-AOUT Invert:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumRegType">
+      <Name>CoolRegType</Name>
+      <Description>Valve2 - Regulator type:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumTerTypeDriveHead">
+      <Name>CoolHeadType</Name>
+      <Description>Valve2 - Head type:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>CoolSampling</Name>
+      <Description>Valve2 - Sampling:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>CoolKp</Name>
+      <Description>Valve2 - Kp:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>CoolKi</Name>
+      <Description>Valve2 - Ki:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>CoolKd</Name>
+      <Description>Valve2 - Kd:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>CoolMaxActual</Name>
+      <Description>Valve2-Actual-AIN Maximum:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>CoolMinActual</Name>
+      <Description>Valve2-Actual-AIN Minimum:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="65535" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>CoolMaxRequire</Name>
+      <Description>Valve2-Required-Value-AOUT Maximum:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="65535" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>CoolMinRequire</Name>
+      <Description>Valve1-Required-Value-AOUT Minimum:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="0" MaxValue="65535" Type="UInt32" RealAddress="0" DynamicEnumName="">
+      <Name>CoolHeadRunTime</Name>
+      <Description>Valve2 - Head run time:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="0" MaxValue="65535" Type="UInt32" RealAddress="0" DynamicEnumName="">
+      <Name>CoolCalibrationTime</Name>
+      <Description>Valve2 - Repeat calibration time:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumRegTypeEndSensor">
+      <Name>CoolEndSensor</Name>
+      <Description>Valve2 - Use end sensor:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>CoolErrorSetup</Name>
+      <Description>Valve2 - Error setup:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>CoolInvertOPEN</Name>
+      <Description>Valve2 - Invert OPEN/CLOSE:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>CoolInvertAIN</Name>
+      <Description>Valve2-Required-Value-AOUT Invert:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>FancoolNotBlock</Name>
+      <Description>Not block fancool relay.</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>InvertOutput2</Name>
+      <Description />
+      <Condition>(FancoolNotBlock~Equal~1)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="°C" MinValue="0" MaxValue="200" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>HiFanValue</Name>
+      <Description>HI-Fan set value:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="°C" MinValue="0" MaxValue="200" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>MedFanValue</Name>
+      <Description>MED-Fan set value:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="°C" MinValue="0" MaxValue="200" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>LowFanValue</Name>
+      <Description>LOW-Fan set value:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="°C" MinValue="0" MaxValue="200" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>HysteresP</Name>
+      <Description>Hysteresis for Cool:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="°C" MinValue="0" MaxValue="200" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>HysteresN</Name>
+      <Description>Hysteresis for Heat:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="SystemDevice" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>SysReset</Name>
+      <Description>Reset:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="SystemDevice" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>SysStop</Name>
+      <Description>Stop:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="SystemDevice" MinValue="0" MaxValue="1200" Type="UInt32" RealAddress="0" DynamicEnumName="">
+      <Name>SysTimerBase</Name>
+      <Description>Timer base:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="SystemDevice" MinValue="0" MaxValue="1200" Type="UInt32" RealAddress="0" DynamicEnumName="">
+      <Name>SysTimerCountValue</Name>
+      <Description>Timer count value:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="SystemDevice" MinValue="0" MaxValue="1200" Type="UInt32" RealAddress="0" DynamicEnumName="">
+      <Name>SysCounterCountValue</Name>
+      <Description>Counter count value:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumLang">
+      <Name>Language</Name>
+      <Description>Language:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumSleep">
+      <Name>Sleep</Name>
+      <Description>Sleep mode:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumScrBrightness">
+      <Name>ScrSeverJas</Name>
+      <Description>Screen saver brightness: </Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="0" Type="Byte" RealAddress="0" DynamicEnumName="EnumScrTime">
+      <Name>ScrSaverTime</Name>
+      <Description>Screen saver time: </Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>ButtonConf22</Name>
+      <Description>Configure buttons 2x2:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>ButtonConf23</Name>
+      <Description>Configure buttons 2x3:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="0" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>ViewDimmer</Name>
+      <Description>View in menu:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumEhtIcon">
+      <Name>IconConf</Name>
+      <Description>Icon:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>SubMenuFan</Name>
+      <Description>Use sub menu Fan coil:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>SubMenuRadio</Name>
+      <Description>Use sub menu Radio:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>SubMenuDim</Name>
+      <Description>Use sub menu Dimming:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>ViewSubMenu</Name>
+      <Description>View sub menu on Long Down:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>Scen1AIN1</Name>
+      <Description>Scen1 setup AIN1:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>Scen1AIN2</Name>
+      <Description>Scen1 setup AIN2:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>Scen1AIN3</Name>
+      <Description>Scen1 setup AIN3:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>Scen2AIN1</Name>
+      <Description>Scen2 setup AIN1:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>Scen2AIN2</Name>
+      <Description>Scen2 setup AIN2:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>Scen2AIN3</Name>
+      <Description>Scen2 setup AIN3:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>Scen3AIN1</Name>
+      <Description>Scen3 setup AIN1:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>Scen3AIN2</Name>
+      <Description>Scen3 setup AIN2:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="%" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>Scen3AIN3</Name>
+      <Description>Scen3 setup AIN3:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumEhtIcon">
+      <Name>IconConfUnit1</Name>
+      <Description>Icon scen1:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumEhtIcon">
+      <Name>IconConfUnit2</Name>
+      <Description>Icon scen2:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumEhtIcon">
+      <Name>IconConfUnit3</Name>
+      <Description>Icon scen3:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="s" MinValue="-82801" MaxValue="82801" Type="Int32" RealAddress="0" DynamicEnumName="">
+      <Name>SunriseOffset</Name>
+      <Description>Sunrise Offset:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="s" MinValue="-82801" MaxValue="82801" Type="Int32" RealAddress="0" DynamicEnumName="">
+      <Name>SunsetOffset</Name>
+      <Description>Sunset Offset:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="°" MinValue="-180" MaxValue="180" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>Longitude</Name>
+      <Description>Longitude:</Description>
+      <Condition>(UseCity~Equal~0)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="°" MinValue="-90" MaxValue="90" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>Latitude</Name>
+      <Description>Latitude:</Description>
+      <Condition>(UseCity~Equal~0)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumCity">
+      <Name>City</Name>
+      <Description>City:</Description>
+      <Condition>(UseCity~Equal~1)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseCity</Name>
+      <Description>Use City:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="°C" MinValue="0" MaxValue="100" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>TempMinDevPoint</Name>
+      <Description>Minimal temperature:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="°C" MinValue="0" MaxValue="100" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>TempMaxDevPoint</Name>
+      <Description>Maximal temperature:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="10000000" Type="UInt32" RealAddress="0" DynamicEnumName="">
+      <Name>CountPerPulse</Name>
+      <Description>Count per pulse:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="65535" Type="UInt16" RealAddress="0" DynamicEnumName="">
+      <Name>Threshold</Name>
+      <Description>Threshold:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="min" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>SendTime</Name>
+      <Description>Send timeout:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="min" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RelayOffTimeout</Name>
+      <Description>Relay off timeout:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>MaxSwitchOnTime</Name>
+      <Description>Maximum switch on timeout:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="1" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseVC80</Name>
+      <Description>Use WC80:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="9" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>CounterTypeVirt</Name>
+      <Description>Counter Type Virt:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="s" MinValue="2" MaxValue="240" Type="UInt16" RealAddress="0" DynamicEnumName="">
+      <Name>MoveTimeout</Name>
+      <Description>Move timeout:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="1" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="min" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>MaxSwitchOnTime2</Name>
+      <Description>Maximum switch on timeout:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="1" Access="Editable" Address="0" ParamType="Device" MeasureUnit="min" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RelayOffTimeout2</Name>
+      <Description>Relay off timeout:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RE1BlockParalelSwitch</Name>
+      <Description>RE1 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RE2BlockParalelSwitch</Name>
+      <Description>RE2 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RE3BlockParalelSwitch</Name>
+      <Description>RE3 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RE4BlockParalelSwitch</Name>
+      <Description>RE4 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RE5BlockParalelSwitch</Name>
+      <Description>RE5 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RE6BlockParalelSwitch</Name>
+      <Description>RE6 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RE7BlockParalelSwitch</Name>
+      <Description>RE7 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RE8BlockParalelSwitch</Name>
+      <Description>RE8 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RE9BlockParalelSwitch</Name>
+      <Description>RE9 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RE10BlockParalelSwitch</Name>
+      <Description>RE10 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RE11BlockParalelSwitch</Name>
+      <Description>RE11 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RE12BlockParalelSwitch</Name>
+      <Description>RE12 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="0" MaxValue="65535" Type="UInt16" RealAddress="0" DynamicEnumName="">
+      <Name>MoveTimeoutJa1</Name>
+      <Description>Move timenout U/D1:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="0" MaxValue="65535" Type="UInt16" RealAddress="0" DynamicEnumName="">
+      <Name>MoveTimeoutJa2</Name>
+      <Description>Move timenout U/D2:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="0" MaxValue="65535" Type="UInt16" RealAddress="0" DynamicEnumName="">
+      <Name>MoveTimeoutJa3</Name>
+      <Description>Move timenout U/D3:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="0" MaxValue="65535" Type="UInt16" RealAddress="0" DynamicEnumName="">
+      <Name>MoveTimeoutJa4</Name>
+      <Description>Move timenout U/D4:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="0" MaxValue="65535" Type="UInt16" RealAddress="0" DynamicEnumName="">
+      <Name>MoveTimeoutJa5</Name>
+      <Description>Move timenout U/D5:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="0" MaxValue="65535" Type="UInt16" RealAddress="0" DynamicEnumName="">
+      <Name>MoveTimeoutJa6</Name>
+      <Description>Move timenout U/D6:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="0" MaxValue="65535" Type="UInt16" RealAddress="0" DynamicEnumName="">
+      <Name>MoveTimeoutJa7</Name>
+      <Description>Move timenout U/D7:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="0" MaxValue="65535" Type="UInt16" RealAddress="0" DynamicEnumName="">
+      <Name>MoveTimeoutJa8</Name>
+      <Description>Move timenout U/D8:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="0" MaxValue="65535" Type="UInt16" RealAddress="0" DynamicEnumName="">
+      <Name>MoveTimeoutJa9</Name>
+      <Description>Move timenout U/D9:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RE13BlockParalelSwitch</Name>
+      <Description>RE13 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RE14BlockParalelSwitch</Name>
+      <Description>RE14 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RE15BlockParalelSwitch</Name>
+      <Description>RE15 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RE16BlockParalelSwitch</Name>
+      <Description>RE16 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>BLINDBlockParalelSwitch</Name>
+      <Description>SHUTTER Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>VALVE1BlockParalelSwitch</Name>
+      <Description>VALVE1-OPEN Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>VALVE2BlockParalelSwitch</Name>
+      <Description>VALVE1-CLOSE Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>VALVE3BlockParalelSwitch</Name>
+      <Description>VALVE2-OPEN Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>VALVE4BlockParalelSwitch</Name>
+      <Description>VALVE2-CLOSE Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumHCControlType">
+      <Name>HCControlType</Name>
+      <Description>Control type:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="°C" MinValue="0" MaxValue="50" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>HCSwitchHyst</Name>
+      <Description>H/C enable hysteresis:</Description>
+      <Condition>(HCControlType~NotEqual~0)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumHCCritControlType">
+      <Name>HCCriticControlType</Name>
+      <Description>Check in different heating and cooling temperature:</Description>
+      <Condition>(HCControlType~Equal~1)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="1" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>AnalogInputType3</Name>
+      <Description>Input type:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="-10000" MaxValue="10000" Type="Int16" RealAddress="0" DynamicEnumName="">
+      <Name>TransferMinValueFa</Name>
+      <Description>Transfer minimal value:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="-10000" MaxValue="10000" Type="Int16" RealAddress="0" DynamicEnumName="">
+      <Name>TransferMaxValueFa</Name>
+      <Description>Transfer maximal value:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="0" Type="String" RealAddress="0" DynamicEnumName="">
+      <Name>TransferDisplayUnitFa</Name>
+      <Description>Transfer Display Unit:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>FAN1BlockParalelSwitch</Name>
+      <Description>FAN1 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>FAN2BlockParalelSwitch</Name>
+      <Description>FAN2 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>FAN3BlockParalelSwitch</Name>
+      <Description>FAN3 Blocking parallel switch group:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>REBlockParalelSwitch</Name>
+      <Description />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="x100ms" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>RECloseDelayTimeout</Name>
+      <Description>Relay close delay time:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseHolder</Name>
+      <Description>Use mode holder:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="°C" MinValue="-327" MaxValue="327" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>Calibration</Name>
+      <Description>Calibration:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseCalibration</Name>
+      <Description>Use calibration:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="3" Type="Byte" RealAddress="0" DynamicEnumName="EnumDistinction1W">
+      <Name>Distinction1WDS</Name>
+      <Description>Distinction:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>Address1W</Name>
+      <Description>Address:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="1" MaxValue="6" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>OUT1GroupControl</Name>
+      <Description>OUT1 Group control:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="1" MaxValue="6" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>OUT2GroupControl</Name>
+      <Description>OUT2 Group control:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="1" MaxValue="6" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>OUT3GroupControl</Name>
+      <Description>OUT3 Group control:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="1" MaxValue="6" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>OUT4GroupControl</Name>
+      <Description>OUT4 Group control:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="1" MaxValue="6" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>OUT5GroupControl</Name>
+      <Description>OUT5 Group control:</Description>
+    </Param>
+      <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="1" MaxValue="6" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>OUT6GroupControl</Name>
+      <Description>OUT6 Group control:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseBacklightAutomaticControl</Name>
+      <Description>Use backlight automatic control</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseProxiAutomaticControl</Name>
+      <Description>Use Proximity automatic control</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="lx" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>HysteresisBacklight</Name>
+      <Description>Backlight limit hysteresis:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>ProxiSensitivity</Name>
+      <Description>Proximity sensitivity:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="s" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>ProxiLightTimeout</Name>
+      <Description>Proximity light timeout:</Description>
+       <Condition>(UseProxiAutomaticControl~NotEqual~0)</Condition>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="0" Type="String" RealAddress="0" DynamicEnumName="">
+      <Name>UID</Name>
+      <Description>UID:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>UseBacklightEffect</Name>
+      <Description>Use Backlight effect</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="1" MaxValue="3600" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>ValveRegMoveTimeout</Name>
+      <Description>Move timeout</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>ValveRegInversionOpenClose</Name>
+      <Description>Inversion Open/Close:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>ValveRegInversionMode</Name>
+      <Description>Cool mode:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumFancoilType">
+      <Name>FancoilType</Name>
+      <Description>Fancoil type:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>CoolKd</Name>
+      <Description>Valve2 - Kd:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="x100ms" MinValue="1" MaxValue="3600" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>ValveHeatRegSamples</Name>
+      <Description>Valve-Heat Samples</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+      <Name>ValveInversionHeatOpenClose</Name>
+      <Description>Valve-Heat Inversion Open/Close:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>ValveHeatRegKp</Name>
+      <Description>Valve-Heat Kp</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>ValveHeatRegKi</Name>
+      <Description>Valve-Heat Ki</Description>
+      </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>ValveHeatRegKd</Name>
+      <Description>Valve-Heat Kd</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="-40" MaxValue="320" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>ValveHeatRegMinIn</Name>
+      <Description>Valve-Heat Min In</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="-40" MaxValue="320" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>ValveHeatRegMaxIn</Name>
+      <Description>Valve-Heat Max In</Description>
+    </Param>
+        <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="100" Type="Float16" RealAddress="0" DynamicEnumName="">
+          <Name>ValveHeatRegMinOut</Name>
+          <Description>Valve-Heat Min Out</Description>
+        </Param>
+        <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="100" Type="Float16" RealAddress="0" DynamicEnumName="">
+          <Name>ValveHeatRegMaxOut</Name>
+          <Description>Valve-Heat Max Out</Description>
+        </Param>
+        <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="x100ms" MinValue="1" MaxValue="3600" Type="Float32" RealAddress="0" DynamicEnumName="">
+          <Name>ValveCoolRegSamples</Name>
+          <Description>Valve Cool Samples</Description>
+        </Param>
+        <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0">
+          <Name>ValveInversionCoolOpenClose</Name>
+          <Description>Valve Cool Inversion Open/Close:</Description>
+        </Param>
+        <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+          <Name>ValveCoolRegKp</Name>
+          <Description>Valve-Cool Kp</Description>
+        </Param>
+        <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+          <Name>ValveCoolRegKi</Name>
+          <Description>Valve-Cool Ki</Description>
+        </Param>
+        <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+          <Name>ValveCoolRegKd</Name>
+          <Description>Valve-Cool Kd</Description>
+        </Param>
+        <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="-40" MaxValue="320" Type="Float16" RealAddress="0" DynamicEnumName="">
+          <Name>ValveCoolRegMinIn</Name>
+          <Description>Valve-Cool Min In</Description>
+        </Param>
+        <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="-40" MaxValue="320" Type="Float16" RealAddress="0" DynamicEnumName="">
+          <Name>ValveCoolRegMaxIn</Name>
+          <Description>Valve-Cool Max In</Description>
+        </Param>
+        <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="100" Type="Float16" RealAddress="0" DynamicEnumName="">
+          <Name>ValveCoolRegMinOut</Name>
+          <Description>Valve-Cool Min Out</Description>
+        </Param>
+        <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="100" Type="Float16" RealAddress="0" DynamicEnumName="">
+          <Name>ValveCoolRegMaxOut</Name>
+          <Description>Valve-Cool Max Out</Description>
+        </Param>
+        <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="x100ms" MinValue="1" MaxValue="3600" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>ValveRegSamples</Name>
+      <Description>Samples</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>ValveRegKp</Name>
+      <Description>Kp</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>ValveRegKi</Name>
+      <Description>Ki</Description>
+      </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="-1000000" MaxValue="1000000" Type="Float32" RealAddress="0" DynamicEnumName="">
+      <Name>ValveRegKd</Name>
+      <Description>Kd</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="-40" MaxValue="320" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>ValveRegMinIn</Name>
+      <Description>Min In</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="-40" MaxValue="320" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>ValveRegMaxIn</Name>
+      <Description>Max In</Description>
+    </Param>
+        <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="100" Type="Float16" RealAddress="0" DynamicEnumName="">
+          <Name>ValveRegMinOut</Name>
+          <Description>Min Out</Description>
+        </Param>
+        <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="100" Type="Float16" RealAddress="0" DynamicEnumName="">
+          <Name>ValveRegMaxOut</Name>
+          <Description>Max Out</Description>
+        </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="65535" Type="UInt32" RealAddress="0" DynamicEnumName="">
+      <Name>RegisterAddress</Name>
+      <Description>Register address:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="" MinValue="1" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumModbusDeviceDataType">
+      <Name>DataType</Name>
+      <Description>Data type:</Description>
+      <Value xsi:type="xsd:unsignedByte">2</Value>
+      <Condition />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="1" Type="Byte" RealAddress="0" DynamicEnumName="EnumModbusDeviceValueSpecific">
+      <Name>ValueSpecification</Name>
+      <Description>Value specification:</Description>
+      <Value xsi:type="xsd:unsignedByte">0</Value>
+      <Condition />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="1" Type="Byte" RealAddress="0" DynamicEnumName="EnumMathematicBase">
+      <Name>MathematicOperation</Name>
+      <Description>Mathematic operation:</Description>
+      <Value xsi:type="xsd:unsignedByte">0</Value>
+      <Condition />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="1" Type="Byte" RealAddress="0" DynamicEnumName="EnumMathematicStandard">
+      <Name>MathematicOperationStandard</Name>
+      <Description>Mathematic operation:</Description>
+      <Value xsi:type="xsd:unsignedByte">0</Value>
+      <Condition />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseDewPointControl</Name>
+      <Description>Use Dew-Point control:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="°C" MinValue="0" MaxValue="200" Type="Float16" RealAddress="0" DynamicEnumName="">
+      <Name>DewPointValue</Name>
+      <Description>Dew-Point set value:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="1000000" Type="UInt32" RealAddress="0" DynamicEnumName="">
+      <Name>RoomId</Name>
+      <Description>Room-Id</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumSegBig">
+      <Name>SegBig</Name>
+      <Description>Setup-Big-Number</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumSegSmall">
+      <Name>SegSmall</Name>
+      <Description>Setup-Small-Number</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MinValue="0" MaxValue="255" Type="Byte" RealAddress="0" DynamicEnumName="EnumBeeper3">
+      <Name>BeeperSequences3</Name>
+      <Description>Beeper:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Device" MeasureUnit="" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseModbus</Name>
+      <Description>Use MODBUS:</Description>
+      <Value xsi:type="xsd:int">1</Value>
+      <Condition />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="s" MinValue="3" MaxValue="7200" Type="UInt32" RealAddress="0" DynamicEnumName="">
+      <Name>HoldTime</Name>
+      <Description>Hold time:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="m" MinValue="0" MaxValue="100" Type="Byte" RealAddress="0" DynamicEnumName="EnumDetectionArea">
+      <Name>DetectionArea</Name>
+      <Description>Detection area:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="lx" MinValue="10" MaxValue="100" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>LightDifferenceThreshold</Name>
+      <Description>Light difference threshold:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="2" Type="Byte" RealAddress="0" DynamicEnumName="EnumRPDSensitivity">
+      <Name>RPDSensitivity</Name>
+      <Description>Sensitivity:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="1" MaxValue="10" Type="Byte" RealAddress="0" DynamicEnumName="">
+      <Name>LightCoefficient</Name>
+      <Description>Light coefficient:</Description>
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>UseLED</Name>
+      <Description>Use LED:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>PresenceDetectionSwitch</Name>
+      <Description>Presence detection switch:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>LightDetectionEnable</Name>
+      <Description>Light detection enable:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>ApproachingMovingAwayReporting</Name>
+      <Description>Approaching/moving away reporting:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>PairingAction</Name>
+      <Description>Pairing action:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>EnvironmentalLearning</Name>
+      <Description>Environmental learning:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition />
+    </Param>
+    <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="0" ParamType="Unit" MeasureUnit="" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+      <Name>FactoryReset</Name>
+      <Description>Factory reset:</Description>
+      <Value xsi:type="xsd:int">0</Value>
+      <Condition />
+    </Param>
+  </Params>
+</ParamsConfiguration>
