@@ -91,4 +91,23 @@ jobs:
           git commit -m "Republish announcements and release notes
 
           Triggered by ${GITHUB_SHA}. Firmware and synced content are untouched."
-          git push
+
+          # A release publishing from the application repository is the other writer here.
+          # If it lands between this checkout and this push the push is rejected, and an
+          # announcement would silently fail to go out. Rebasing is safe: the two never
+          # touch the same files.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Republished on attempt $attempt."
+              exit 0
+            fi
+
+            echo "Push rejected; rebasing on what landed meanwhile (attempt $attempt)."
+            git pull --rebase --no-edit origin main || {
+              echo "::error::Rebase failed. The two publishers have touched the same file, which they are not supposed to."
+              exit 1
+            }
+          done
+
+          echo "::error::Could not republish after three attempts."
+          exit 1
