@@ -9,3 +9,12 @@
 *.ps1   text eol=lf
 *.yml   text eol=lf
 *.md    text eol=lf
+
+# Everything under content/ is hashed in the catalogue and compared byte for byte by iDM3,
+# so git must not rewrite one of those bytes. The definition parts come out of IDM.config
+# with CRLF, and normalising them to LF on commit changed each file after its digest had
+# been taken - so every client rejected what it downloaded, correctly, and with no way to
+# recover from the client side.
+#
+# Must stay below the rules above: in .gitattributes the last matching rule wins.
+content/** -text
