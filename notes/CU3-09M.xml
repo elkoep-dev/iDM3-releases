@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Model="CU3-09M" Source="CU3-09M - Firmware history.txt">
+  <Release Version="02.97.65">
+    <Note Lang="en">stability improvements</Note>
+    <Note Lang="en">repaired the MQTT password being cleared when MQTT settings are saved in the web configuration</Note>
+  </Release>
+  <Release Version="02.97.64">
+    <Note Lang="en">repaired switching of bits and relays from iDM</Note>
+    <Note Lang="en">repaired heat/cool area status and a restart in projects with astronomical, mathematical or hotel room modules</Note>
+  </Release>
+  <Release Version="02.97.63">
+    <Note Lang="en">repaired Modbus-IP (UDP) master and slave data encoding</Note>
+    <Note Lang="en">repaired hang at start-up after a factory reset</Note>
+    <Note Lang="en">Modbus: slaves that reject 32-bit (two-register) reads or writes are handled by falling back to single-register requests</Note>
+    <Note Lang="en">network reliability fixes</Note>
+  </Release>
+  <Release Version="02.97.61">
+    <Note Lang="en">improved DALI-2 reliability (commissioning and bus collisions)</Note>
+    <Note Lang="en">add MQTT support for DALI-2 sensors</Note>
+  </Release>
+  <Release Version="02.97.60">
+    <Note Lang="en">DALI-2 input devices: first reliability fixes, completed in 02.97.61</Note>
+  </Release>
+  <Release Version="02.97.59">
+    <Note Lang="en">add DALI-2 multi-master support for input devices</Note>
+  </Release>
   <Release Version="02.97.58">
     <Note Lang="en">repaired DALI dimming</Note>
   </Release>

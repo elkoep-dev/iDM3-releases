@@ -1,54 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!-- iDM3 application release notes, shown on the Overview page under Documentation.
-
-     The same shape as the firmware notes in notes/, deliberately: one Release per
-     version, newest first, each with one Note per change. An installation shows the
-     entry matching its own version, so write for the person who has just installed it.
-
-     Versions here are decimal (3.6.4), not the hexadecimal used for firmware.
-
-     This file is edited by hand and published the same way announcements are: commit to
-     main and installations pick it up. Add the entry when you tag, so the notes and the
-     installer arrive together rather than the notes trailing behind.
-
-     It doubles as the version feed. An installation compares its own version against the
-     highest listed here, and the Overview page says so when a newer one exists - iDM3
-     cannot install itself, so that is a statement rather than an offer.
-
-     Url is optional and names where to get that installer. Leave it out until there is
-     somewhere to send people: the installer lives in a private repository today, and a
-     link that 404s is worse than none. When it is present the Overview page shows a
-     "Where to get it" link beside the version. -->
-
 <ReleaseNotes Product="iDM3">
-
+  <Release Version="3.7.0" Published="2026-09-28" Url="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.0-rev0/IDM3_3.7.0_Rev0_Setup.exe">
+    <Note>iDM3 now updates itself. The Overview page shows when a new version is available and what changed in every version since yours, and installs it with one click in a few seconds. Projects and settings are kept.</Note>
+    <Note>Updates can also be installed automatically whenever iDM3 is closed. The option is on the Overview page and is off by default.</Note>
+    <Note>An update keeps the functions and preferences the user created or changed; everything else comes from the new release.</Note>
+    <Note>Device firmware published by ELKO EP can be downloaded from the Overview page.</Note>
+    <Note>Firmware CU3-07M 02.97.65: stability improvements</Note>
+    <Note>Firmware CU3-07M 02.97.65: repaired the MQTT password being cleared when MQTT settings are saved in the web configuration</Note>
+    <Note>Firmware CU3-08M 02.97.65: stability improvements</Note>
+    <Note>Firmware CU3-08M 02.97.65: repaired the MQTT password being cleared when MQTT settings are saved in the web configuration</Note>
+    <Note>Firmware CU3-09M 02.97.65: stability improvements</Note>
+    <Note>Firmware CU3-09M 02.97.65: repaired the MQTT password being cleared when MQTT settings are saved in the web configuration</Note>
+    <Note>Firmware CU3-10M 02.97.65: stability improvements</Note>
+    <Note>Firmware CU3-10M 02.97.65: repaired the MQTT password being cleared when MQTT settings are saved in the web configuration</Note>
+    <Note>Firmware IBWL-20B-RELAY 02.88.00: bug fixes</Note>
+    <Note>Firmware SA3-014M 01.02.02: repaired zerocross</Note>
+    <Note>Firmware SA3-014M 01.02.02: add parameter for deactivation zerocross</Note>
+  </Release>
   <Release Version="3.6.6" Published="2026-09-18">
     <Note>The Overview page says when a newer version of iDM3 has been published.</Note>
   </Release>
-
   <Release Version="3.6.5" Published="2026-09-18">
     <Note>Announcements and release notes are published, so they can be updated without a new version of iDM3.</Note>
     <Note>The Overview page shows release notes for iDM3 and for the published firmware.</Note>
     <Note>The version is shown as 3.6.5 rather than with the generated build number after it.</Note>
   </Release>
-
   <Release Version="3.6.4" Published="2026-09-18">
     <Note>Unit definitions, parameters and enumerations are published, so a new device type no longer needs a reinstall.</Note>
   </Release>
-
   <Release Version="3.6.3" Published="2026-09-17">
     <Note>Fixed an update that reported itself as ready after every restart.</Note>
     <Note>The Overview page replaces the dashboard: announcements, version and update status, and a link to the user manual.</Note>
   </Release>
-
   <Release Version="3.6.2" Published="2026-09-17">
     <Note>Device firmware and language files are downloaded from the published catalogue instead of shipping inside the installer.</Note>
   </Release>
-
   <Release Version="3.6.1" Published="2026-09-15">
     <Note>Added the IBWL3-02B and IBWL3-20B relays.</Note>
     <Note>Added DALI-2 input device support.</Note>
   </Release>
-
 </ReleaseNotes>

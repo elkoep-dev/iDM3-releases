@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Model="GCR3-11" Source="GCR3-11 - Firmware history.txt">
+  <Release Version="02.A0.00">
+    <Note Lang="en">Bug fixes and improvements.</Note>
+  </Release>
   <Release Version="02.9E.00">
     <Note Lang="en">support for hardware with out ligth sensor</Note>
   </Release>

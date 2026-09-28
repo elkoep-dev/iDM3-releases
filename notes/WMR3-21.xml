@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Model="WMR3-21" Source="WMR3-21 - Firmware history.txt">
+  <Release Version="04.04.00">
+    <Note Lang="en">Bug fixes and improvements.</Note>
+  </Release>
   <Release Version="01.36.00">
     <Note Lang="en">Added support entrance system in central unit</Note>
   </Release>

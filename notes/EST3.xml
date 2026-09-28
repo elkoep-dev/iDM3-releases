@@ -10,6 +10,9 @@
   <Release Version="02.12.00">
     <Note Lang="en">Support new heat/cool circle optimized</Note>
   </Release>
+  <Release Version="02.11.00">
+    <Note Lang="en">Bug fixes and improvements.</Note>
+  </Release>
   <Release Version="02.08.00">
     <Note Lang="en">Support new heat/cool circle optimized</Note>
   </Release>

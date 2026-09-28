@@ -113,11 +113,11 @@
     <Note Lang="en">Dimming</Note>
     <Note Lang="en">RFDA-11B, RFDA-71B, RFDEL-71B, RFDEL-71M, RFDSC-11, RFDSC-71, RFDAC-71B, RFDA-73M/RGB, RF-RGB-LED-550</Note>
     <Note Lang="en">New actions for RF analogue outputs have been added</Note>
-    <Note Lang="en">�Analog Error�</Note>
-    <Note Lang="en">�Analog Error Back�</Note>
+    <Note Lang="en">„Analog Error“</Note>
+    <Note Lang="en">„Analog Error Back“</Note>
     <Note Lang="en">New functions for analogue inputs of I/O module have been added</Note>
-    <Note Lang="en">�Analog Error�</Note>
-    <Note Lang="en">�Analog Error Back�</Note>
+    <Note Lang="en">„Analog Error“</Note>
+    <Note Lang="en">„Analog Error Back“</Note>
     <Note Lang="en">Now type of central unit and its HW address is being checked</Note>
     <Note Lang="en">during saving the user project to the central unit</Note>
     <Note Lang="en">during connecting to the central unit</Note>

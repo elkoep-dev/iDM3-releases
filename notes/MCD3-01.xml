@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReleaseNotes Model="MCD3-1" Source="MCD3-1 - Firmware history.txt">
+<ReleaseNotes Model="MCD3-01" Source="MCD3-01 - Firmware history.txt">
   <Release Version="01.08.00">
     <Note Lang="en">add automatic Reset every day</Note>
   </Release>

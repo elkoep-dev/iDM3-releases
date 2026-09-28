@@ -94,8 +94,8 @@
   <Release Version="02.30.00">
     <Note Lang="en">Support for I/O module of central units CU3-01M and CU3-02M has been added</Note>
     <Note Lang="en">New functions for analogue inputs of I/O module have been added</Note>
-    <Note Lang="en">�Analog Error�</Note>
-    <Note Lang="en">�Analog Error Back�</Note>
+    <Note Lang="en">„Analog Error“</Note>
+    <Note Lang="en">„Analog Error Back“</Note>
     <Note Lang="en">Now type of central unit and its HW address is being checked</Note>
     <Note Lang="en">during saving the user project to the central unit</Note>
     <Note Lang="en">during connecting to the central unit</Note>

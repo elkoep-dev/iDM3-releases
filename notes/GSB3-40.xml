@@ -9,9 +9,6 @@
   <Release Version="01.38.00">
     <Note Lang="en">added suppotr for new hardware version</Note>
   </Release>
-  <Release Version="01.38.00">
-    <Note Lang="en">added suppotr for new hardware version</Note>
-  </Release>
   <Release Version="01.36.00">
     <Note Lang="en">added setup backlight</Note>
   </Release>

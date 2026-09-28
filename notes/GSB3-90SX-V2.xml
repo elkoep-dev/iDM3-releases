@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="GSB3-90SX-V2" Source="GSB3-90SX-V2 - Firmware history.txt">
+  <Release Version="02.9E.04">
+    <Note Lang="en">Bug fixes and improvements.</Note>
+  </Release>
+  <Release Version="02.9C.00">
+    <Note Lang="en">Bug fixes and improvements.</Note>
+  </Release>
+</ReleaseNotes>

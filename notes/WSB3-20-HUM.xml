@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Model="WSB3-20-HUM" Source="WSB3-20-HUM - Firmware history.txt">
+  <Release Version="02.84.00">
+    <Note Lang="en">Bug fixes and improvements.</Note>
+  </Release>
   <Release Version="01.3C.00">
     <Note Lang="en">optimized read humidity sensor</Note>
   </Release>

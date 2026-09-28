@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="SA3-014M" Source="SA3-014M - Firmware history.txt">
+  <Release Version="01.02.02">
+    <Note Lang="en">repaired zerocross</Note>
+    <Note Lang="en">add parameter for deactivation zerocross</Note>
+  </Release>
+  <Release Version="01.02.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Model="IDRT3-1" Source="IDRT3-1 - Firmware history.txt">
+  <Release Version="04.04.00">
+    <Note Lang="en">Bug fixes and improvements.</Note>
+  </Release>
   <Release Version="04.02.00">
     <Note Lang="en">Repaired searching unit.</Note>
   </Release>

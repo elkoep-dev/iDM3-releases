@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Model="CU3-08M" Source="CU3-08M - Firmware history.txt">
+  <Release Version="02.97.65">
+    <Note Lang="en">stability improvements</Note>
+    <Note Lang="en">repaired the MQTT password being cleared when MQTT settings are saved in the web configuration</Note>
+  </Release>
+  <Release Version="02.97.64">
+    <Note Lang="en">repaired switching of bits and relays from iDM</Note>
+    <Note Lang="en">repaired heat/cool area status and a restart in projects with astronomical, mathematical or hotel room modules</Note>
+  </Release>
+  <Release Version="02.97.63">
+    <Note Lang="en">repaired Modbus-IP (UDP) master and slave data encoding</Note>
+    <Note Lang="en">repaired hang at start-up after a factory reset</Note>
+    <Note Lang="en">Modbus: slaves that reject 32-bit (two-register) reads or writes are handled by falling back to single-register requests</Note>
+    <Note Lang="en">network reliability fixes</Note>
+  </Release>
+  <Release Version="02.97.61">
+    <Note Lang="en">stability improvements</Note>
+  </Release>
+  <Release Version="02.97.60">
+    <Note Lang="en">stability improvements</Note>
+  </Release>
+  <Release Version="02.97.59">
+    <Note Lang="en">stability improvements</Note>
+  </Release>
   <Release Version="02.97.56">
     <Note Lang="en">add status page to web configuration</Note>
   </Release>
@@ -8,7 +31,6 @@
   </Release>
   <Release Version="02.97.50">
     <Note Lang="en">add web state page</Note>
-    <Note Lang="en">DALI control light with OFF function</Note>
   </Release>
   <Release Version="02.97.49">
     <Note Lang="en">add web configuration</Note>
@@ -73,9 +95,6 @@
   <Release Version="02.96.72">
     <Note Lang="en">optimalized send events to Cloud</Note>
   </Release>
-  <Release Version="02.96.71">
-    <Note Lang="en">optimalized EBM communication with EMDC</Note>
-  </Release>
   <Release Version="02.96.70">
     <Note Lang="en">optimalized send events to Cloud</Note>
   </Release>
@@ -102,9 +121,6 @@
   </Release>
   <Release Version="02.96.53">
     <Note Lang="en">fix bug with freez IP communication wiht IDM3</Note>
-  </Release>
-  <Release Version="02.96.50">
-    <Note Lang="en">fix bug with MQTT controling Heat/Cool</Note>
   </Release>
   <Release Version="02.96.50">
     <Note Lang="en">fix bug with MQTT controling Heat/Cool</Note>
@@ -136,7 +152,6 @@
     <Note Lang="en">repair bug in BUS LED signalization</Note>
   </Release>
   <Release Version="02.96.27">
-    <Note Lang="en">repair bugs in Live modul unit information (EMDC-64M, MI3-02M)</Note>
     <Note Lang="en">repair bugs in get CU third part communication settings (setup events)</Note>
   </Release>
   <Release Version="02.96.25">

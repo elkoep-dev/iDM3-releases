@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="IBWL-20B-RELAY" Source="IBWL-20B-RELAY - Firmware history.txt">
+  <Release Version="02.88.00">
+    <Note Lang="en">bug fixes</Note>
+  </Release>
+  <Release Version="02.86.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

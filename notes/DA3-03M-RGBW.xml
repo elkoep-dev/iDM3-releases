@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="DA3-03M-RGBW" Source="DA3-03M-RGBW - Firmware history.txt">
+  <Release Version="02.86.00">
+    <Note Lang="en">Bug fixes and improvements.</Note>
+  </Release>
+  <Release Version="02.00.00">
+    <Note Lang="en">Bug fixes and improvements.</Note>
+  </Release>
+</ReleaseNotes>

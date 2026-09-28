@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Model="WSB3-20" Source="WSB3-20 - Firmware history.txt">
+  <Release Version="04.00.00">
+    <Note Lang="en">Bug fixes and improvements.</Note>
+  </Release>
   <Release Version="01.36.00">
     <Note Lang="en">optimized switch detection</Note>
   </Release>

@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- Shown on the Overview page of every installed iDM3, newest first.
+<!-- News on the Overview page, newest first. See "Announcements" in docs/RELEASING.md.
 
-     Edit this file on GitHub and the change reaches installations on their next launch.
-     No release, no reinstall, no version bump: committing to main republishes the
-     catalogue, and iDM3 picks it up.
-
-     English only. Unlike the firmware notes there is no Lang attribute, because an
-     announcement written in one language and shown to everyone is clearer than one that
-     silently falls back to a key.
-
-     Keep Content to two or three sentences. It is read on a laptop in a plant room, not
-     at a desk, and the panel scrolls rather than grows.
-
-     Published is used for ordering only; it is never shown. Use YYYY-MM-DD.
-     Link is optional. Omit the element entirely rather than leaving it empty. -->
+     English, two or three sentences each. Published (YYYY-MM-DD) is only used for
+     sorting. Link is optional; leave the element out rather than empty. -->
 
 <Announcements>
 

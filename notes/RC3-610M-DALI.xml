@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReleaseNotes Model="RC3-610M" Source="RC3-610M - Firmware history.txt">
+<ReleaseNotes Model="RC3-610M-DALI" Source="RC3-610M-DALI - Firmware history.txt">
   <Release Version="01.00.0C">
     <Note Lang="en">repaired Dali control</Note>
   </Release>
