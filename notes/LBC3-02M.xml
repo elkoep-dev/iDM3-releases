@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="LBC3-02M" Source="LBC3-02M - Firmware history.txt">
+  <Release Version="01.36.00">
+    <Note Lang="en">added setup minimum and maximum level for OUT1 - OUT2.</Note>
+  </Release>
+  <Release Version="01.34.00">
+    <Note Lang="en">optimalized error alert outputs</Note>
+  </Release>
+  <Release Version="01.32.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

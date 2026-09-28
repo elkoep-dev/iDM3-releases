@@ -1,0 +1,2625 @@
+<?xml version="1.0"?>
+<FuncBlockConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FBlocks>
+    <FuncBlock ObjectType="BuildInMacros" SubType="2" UnicateObjectKey="0" BitSetArray="1" Access="Editable" Height="0" Width="0">
+      <Name>fbControler</Name>
+      <Description>fbControler</Description>
+      <Key KEY="FB_0x00000001" />
+      <Guid Version="12" ID="daac5d5c-abce-4a63-9b22-ce6e91b4e2fa" />
+      <LeftSide Version="0" TempKey="LS_0" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Unit" SubType="3" Value="" IsHEX="false" BitSet="0x00000040" />
+        <Item Version="0" TempKey="LS_0_D_0" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+          <Available KEY="0x0000E081_Required-Heat-DOUT" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_1" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="8" Value="" IsHEX="false" BitSet="0x00000001" />
+          <Available KEY="0x0000E081_Actual-Therm-AOUT" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_2" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="8" Value="" IsHEX="false" BitSet="0x00000001" />
+          <Available KEY="0x0000E081_Required-Therm-AOUT" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_3" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="8" Value="" IsHEX="false" BitSet="0x00000001" />
+          <Available KEY="0x0000E081_Critical-Therm-AOUT" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_4" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="8" Value="" IsHEX="false" BitSet="0x00000001" />
+          <Available KEY="0x0000E081_Maximal-Therm-AOUT" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_5" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="8" Value="" IsHEX="false" BitSet="0x00000001" />
+          <Available KEY="0x0000E081_Antifreeze-Therm-AOUT" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_6" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+          <Available KEY="0x0000E081_Required-Cool-DOUT" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_7" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+          <Available KEY="0x0000E081_Disable-Regulator-DOUT" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_8" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E081_Actual-Therm-AIN" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_9" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E081_Critical-Therm-AIN" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_10" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="8" Value="" IsHEX="false" BitSet="0x00000001" />
+          <Available KEY="0x0000E081_Required-Cool-Therm-AOUT" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_11" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="17" Value="" IsHEX="false" BitSet="0x00000003" />
+          <Available KEY="0x0000E081_Control-IN" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_12" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="17" Value="" IsHEX="false" BitSet="0x00000003" />
+          <Available KEY="0x0000E081_Control-HC-IN" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_13" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="17" Value="" IsHEX="false" BitSet="0x00000003" />
+          <Available KEY="0x0000E081_Control-Plan-IN" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_14" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="17" Value="" IsHEX="false" BitSet="0x00000003" />
+          <Available KEY="0x0000E081_Control-Manual-IN" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_15" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000003" />
+          <Available KEY="0x0000E081_Correction" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_16" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E081_Manual-Therm-AIN" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_17" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E081_Manual-Cool-Therm-AIN" />
+        </Item>
+        <Item Version="0" TempKey="LS_0_D_18" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E081_Status-DOUT" />
+        </Item>
+      </LeftSide>
+      <RightSide Version="0" TempKey="RS_0" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Unit" SubType="3" Value="" IsHEX="false" BitSet="0x00000080" />
+        <Item Version="0" TempKey="RS_0_D_0" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E083_Enable-DIN" />
+        </Item>
+        <Item Version="0" TempKey="RS_0_D_1" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E083_Actual-Therm-AIN" />
+        </Item>
+        <Item Version="0" TempKey="RS_0_D_2" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E083_Required-Therm-AIN" />
+        </Item>
+        <Item Version="0" TempKey="RS_0_D_3" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E083_Critical-Therm-AIN" />
+        </Item>
+        <Item Version="0" TempKey="RS_0_D_4" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E083_Antifreeze-Therm-AIN" />
+        </Item>
+        <Item Version="0" TempKey="RS_0_D_5" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E083_Interrupt-DIN" />
+        </Item>
+        <Item Version="0" TempKey="RS_0_D_6" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+          <Available KEY="0x0000E083_Required-Heat-Control-DOUT" />
+        </Item>
+        <Item Version="0" TempKey="RS_0_D_7" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+          <Available KEY="0x0000E083_Required-Heat-Source-DOUT" />
+        </Item>
+      </RightSide>
+      <RightSide Version="0" TempKey="RS_1" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Unit" SubType="3" Value="" IsHEX="false" BitSet="0x00000080" />
+        <Item Version="0" TempKey="RS_1_D_0" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E084_Enable-DIN" />
+        </Item>
+        <Item Version="0" TempKey="RS_1_D_1" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E084_Actual-Therm-AIN" />
+        </Item>
+        <Item Version="0" TempKey="RS_1_D_2" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E084_Required-Therm-AIN" />
+        </Item>
+        <Item Version="0" TempKey="RS_1_D_3" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E084_Maximal-Therm-AIN" />
+        </Item>
+        <Item Version="0" TempKey="RS_1_D_4" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E084_Interrupt-DIN" />
+        </Item>
+        <Item Version="0" TempKey="RS_1_D_5" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+          <Available KEY="0x0000E084_Required-Cool-Control-DOUT" />
+        </Item>
+        <Item Version="0" TempKey="RS_1_D_6" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+          <Available KEY="0x0000E084_Required-Cool-Source-DOUT" />
+        </Item>
+      </RightSide>
+      <RightSide Version="0" TempKey="RS_2" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Device" SubType="5" Value="" IsHEX="false" BitSet="0x00000001" />
+      </RightSide>
+      <RightSide Version="0" TempKey="RS_3" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Device" SubType="5" Value="" IsHEX="false" BitSet="0x00000001" />
+      </RightSide>
+      <RightSide Version="0" TempKey="RS_4" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000002" />
+      </RightSide>
+      <RightSide Version="0" TempKey="RS_5" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000002" />
+      </RightSide>
+      <RightSide Version="0" TempKey="RS_6" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000002" />
+      </RightSide>
+      <RightSide Version="0" TempKey="RS_7" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000002" />
+      </RightSide>
+      <RightSide Version="0" TempKey="RS_8" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Unit" SubType="3" Value="" IsHEX="false" BitSet="0x00000080" />
+        <Item Version="0" TempKey="RS_8_D_0" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E0D1_Actual-Therm-AOUT" />
+        </Item>
+        <Item Version="0" TempKey="RS_8_D_1" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E0D1_Required-Heat-Therm-AOUT" />
+        </Item>
+        <Item Version="0" TempKey="RS_8_D_2" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000002" />
+          <Available KEY="0x0000E0D1_Required-Cool-Therm-AOUT" />
+        </Item>
+        <Item Version="0" TempKey="RS_8_D_3" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000001" />
+          <Available KEY="0x0000E0D1_Set-Therm-AIN" />
+        </Item>
+        <Item Version="0" TempKey="RS_8_D_4" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="18" Value="" IsHEX="false" BitSet="0x00000003" />
+          <Available KEY="0x0000E0D1_Correction" />
+        </Item>
+        <Item Version="0" TempKey="RS_8_D_5" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="17" Value="" IsHEX="false" BitSet="0x00000003" />
+          <Available KEY="0x0000E0D1_Control-IN" />
+        </Item>
+        <Item Version="0" TempKey="RS_8_D_6" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="17" Value="" IsHEX="false" BitSet="0x00000003" />
+          <Available KEY="0x0000E0D1_Control-Mode-IN" />
+        </Item>
+        <Item Version="0" TempKey="RS_8_D_7" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="17" Value="" IsHEX="false" BitSet="0x00000003" />
+          <Available KEY="0x0000E0D1_Control-Plan-IN" />
+        </Item>
+        <Item Version="0" TempKey="RS_8_D_8" BitSetArray="0">
+          <Description />
+          <Selector Source="1" Path="1" Type="Device" SubType="17" Value="" IsHEX="false" BitSet="0x00000003" />
+          <Available KEY="0x0000E0D1_Control-Fan-Speed-IN" />
+        </Item>
+      </RightSide>
+      <Connect ActorKey="LS_0_D_0" ConsumerKey="RS_0_D_0">
+        <Function Action="0x16">
+          <Guid Version="1" ID="43b98912-b7fe-4766-ad37-454d401b65ad" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="2f4dc1c3-bfbc-4fa8-8911-6447e083c54c" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x17">
+          <Guid Version="1" ID="43b98912-b7fe-4766-ad37-454d401b65ad" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="2f4dc1c3-bfbc-4fa8-8911-6447e083c54c" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_1" ConsumerKey="RS_0_D_1">
+        <Function Action="0x38">
+          <Guid Version="1" ID="a2b0cea2-056c-4365-b8a5-b53a3c5b37f5" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="a6b1cf93-8315-42d5-8563-e1cb5f8ce947" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_2" ConsumerKey="RS_0_D_2">
+        <Function Action="0x38">
+          <Guid Version="1" ID="598bf418-66a0-4d7d-8495-853cc0c6a252" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="9d54211b-f5d5-4092-893d-77a005c715d7" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_3" ConsumerKey="RS_0_D_3">
+        <Function Action="0x38">
+          <Guid Version="1" ID="8bf2f2e0-cd17-4a19-928a-dd1d3b485404" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="f3b94ca1-4d1d-4290-8c48-59431223efd2" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_5" ConsumerKey="RS_0_D_4">
+        <Function Action="0x38">
+          <Guid Version="1" ID="e60fb417-aaae-408a-8088-6754b950ccf7" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="14a86351-34f7-473f-b8ae-9a197f74c58f" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_7" ConsumerKey="RS_0_D_5">
+        <Function Action="0x16">
+          <Guid Version="1" ID="3d3e8299-05e4-4344-acd8-6816e523a998" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="4cc57834-9f93-462b-b1bb-91b220efd7da" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x17">
+          <Guid Version="1" ID="3d3e8299-05e4-4344-acd8-6816e523a998" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="4cc57834-9f93-462b-b1bb-91b220efd7da" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_6" ConsumerKey="RS_1_D_0">
+        <Function Action="0x16">
+          <Guid Version="1" ID="4fb1000c-4740-49bb-b4f6-2072477a4063" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="8206635f-c96d-413b-b3fb-0c3bdf38a676" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x17">
+          <Guid Version="1" ID="4fb1000c-4740-49bb-b4f6-2072477a4063" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="8206635f-c96d-413b-b3fb-0c3bdf38a676" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_1" ConsumerKey="RS_1_D_1">
+        <Function Action="0x38">
+          <Guid Version="1" ID="2dda9855-3741-46b8-b5ff-2adc2370fb51" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="b4998d68-6c02-49cb-a6e3-34f0cc633069" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_10" ConsumerKey="RS_1_D_2">
+        <Function Action="0x38">
+          <Guid Version="1" ID="949d2325-4f35-4033-8dcf-79f32df029fc" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="3d1fe42d-5266-42a9-a0bc-488f572e7373" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_4" ConsumerKey="RS_1_D_3">
+        <Function Action="0x38">
+          <Guid Version="1" ID="c780659a-5cec-431e-a90d-3cac04bdae96" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="cf4bf5fb-5a14-440a-b456-774f3f764fe9" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_7" ConsumerKey="RS_1_D_4">
+        <Function Action="0x16">
+          <Guid Version="1" ID="bc975893-b675-40b4-971f-961d234f9055" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="bb3373ec-644f-41da-9b2a-888940d3e768" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x17">
+          <Guid Version="1" ID="bc975893-b675-40b4-971f-961d234f9055" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="bb3373ec-644f-41da-9b2a-888940d3e768" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_2" ConsumerKey="LS_0_D_8">
+        <Function Action="0x38">
+          <Guid Version="1" ID="53673de2-8f53-4e93-9bb9-49493c2cd128" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="9dd91b9d-5e13-4201-bb11-e6325bde908f" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_3" ConsumerKey="LS_0_D_9">
+        <Function Action="0x38">
+          <Guid Version="1" ID="2f8b88a0-953b-493c-91e7-bd7b4287969f" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="d116b10d-b5e6-4845-a8a8-ae114aa6efd4" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_0_D_6" ConsumerKey="RS_4">
+        <Function Action="0xF7">
+          <Guid Version="1" ID="d0e50f00-7025-48eb-b7e7-10949f6c9d35" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="0dfbb199-5f9c-4b75-b329-01fac7a65bf6" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_0_D_7" ConsumerKey="RS_5">
+        <Function Action="0xF7">
+          <Guid Version="1" ID="c1dd3bfb-0f59-499d-b44c-bb51278b8db1" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="ACTOR" Type="Equal" TargetObjectKey="0" Value="1" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOn">
+            <Name />
+            <Description />
+            <Guid Version="4" ID="122528bc-303c-4a40-9a2d-778b820bf5ae" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x17">
+          <Guid Version="1" ID="972f73eb-adef-425d-9be7-7ae8f44d3cf3" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_DelaySwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="fbc2e683-207b-4a47-949e-0e3fef84da3d" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Digital_Delay_Second" Type="TimeSpan">
+                <ParamValue>00:00:05</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_1_D_5" ConsumerKey="RS_6">
+        <Function Action="0xF7">
+          <Guid Version="1" ID="6938afa2-8894-4d11-a57e-677e4eb57ef7" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="c2c5ea64-cb0c-43d2-b94a-1c75e0aba505" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_1_D_6" ConsumerKey="RS_7">
+        <Function Action="0xF7">
+          <Guid Version="1" ID="e0961a7f-2d19-4955-b6f4-0cfae07ae023" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="ACTOR" Type="Equal" TargetObjectKey="0" Value="1" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOn">
+            <Name />
+            <Description />
+            <Guid Version="5" ID="2a14bfa4-b55e-4e81-bb6a-f614d0ebfa8b" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x17">
+          <Guid Version="1" ID="9437c28b-7709-4015-949f-0c48866be536" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_DelaySwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="9e2e5680-20be-4bb9-9a9e-3aef100bb157" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Digital_Delay_Second" Type="TimeSpan">
+                <ParamValue>00:00:05</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_1" ConsumerKey="RS_8_D_0">
+        <Function Action="0x38">
+          <Guid Version="1" ID="0af2eb98-3b03-4d35-baf8-c555dde4daa8" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="d75e2700-1817-4be7-8df1-ac7ed64264e5" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_2" ConsumerKey="RS_8_D_1">
+        <Function Action="0x38">
+          <Guid Version="1" ID="687a6c8e-a148-4730-b645-e9911a0d0118" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="e15feefa-52dd-42c0-94d3-94bd3a0c11c7" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_10" ConsumerKey="RS_8_D_2">
+        <Function Action="0x38">
+          <Guid Version="1" ID="b1a2a6a2-8053-4977-a520-26b83367e576" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="582f595d-1726-4aed-bb2f-7e40e3c94abd" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_8_D_3" ConsumerKey="LS_0_D_17">
+        <Function Action="0x38">
+          <Guid Version="1" ID="5ee41226-32c1-4988-b0d7-0568a76b4dac" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="a4eba64b-4af4-456d-b3b4-90743a169fe1" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_8_D_3" ConsumerKey="LS_0_D_16">
+        <Function Action="0x38">
+          <Guid Version="1" ID="7400ae25-1592-4645-ba24-b8ff06b14868" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="528afb55-e682-469f-bee1-18827628de7e" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_15" ConsumerKey="RS_8_D_4">
+        <Function Action="0x38">
+          <Guid Version="1" ID="0aece43e-97a5-4141-bc44-2821cd86985a" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="63e95de8-7f63-4b9e-a505-59c2f0cb2533" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_8_D_4" ConsumerKey="LS_0_D_15">
+        <Function Action="0x38">
+          <Guid Version="1" ID="a7a6e84b-9766-4231-9e0d-30c27c53a29a" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="ca4c34ad-19cf-426c-942d-c145086e5020" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_14" ConsumerKey="RS_8_D_6">
+        <Function Action="0x38">
+          <Guid Version="1" ID="7d727669-7603-4d5d-8521-f34fa4c24b05" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="HeatCool_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="092a6986-834f-4d0f-98cc-8f8c2dc81526" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_8_D_6" ConsumerKey="LS_0_D_14">
+        <Function Action="0x38">
+          <Guid Version="1" ID="0b2f77bc-5845-4f04-8af9-3b355aab6561" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="HeatCool_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="c5a95c66-f5d1-4dfa-8939-01684fb584df" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_13" ConsumerKey="RS_8_D_7">
+        <Function Action="0x38">
+          <Guid Version="1" ID="68d80890-bc0f-4db2-b7e5-62114b697aa2" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="HeatCool_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="b3635d22-3a24-488d-9ea8-914fca920090" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_8_D_7" ConsumerKey="LS_0_D_13">
+        <Function Action="0x38">
+          <Guid Version="1" ID="3c9f4d12-7a2b-4e58-8c3d-5f1a9b0e4d77" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="HeatCool_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="f8e1b907-6d4c-47b0-9a2f-317c8e56b98a" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_18" ConsumerKey="RS_8_D_5">
+        <Function Action="0x17">
+          <Guid Version="1" ID="3c9f4d12-7a2b-4e58-8c3d-5f1a9b0e4d78" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="HeatCool_StopTimeProgram">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="f8e1b907-6d4c-47b0-9a2f-317c8e56b98b" />
+             <ActionParams />
+           </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_0" ConsumerKey="RS_8_D_5">
+        <Function Action="0x16">
+          <Guid Version="1" ID="3c9f4d12-7a2b-4e58-8c3d-5f1a9b0e4d79" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="HeatCool_SetHeatWithManual">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="f8e1b907-6d4c-47b0-9a2f-317c8e56b98c" />
+             <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0_D_6" ConsumerKey="RS_8_D_5">
+        <Function Action="0x16">
+          <Guid Version="1" ID="3c9f4d12-7a2b-4e58-8c3d-5f1a9b0e4d80" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="HeatCool_SetCoolWithManual">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="f8e1b907-6d4c-47b0-9a2f-317c8e56b98d" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_8_D_5" ConsumerKey="LS_0_D_11">
+        <Function Action="0x38">
+          <Guid Version="1" ID="ae6a8a3d-1649-4b7a-9d85-3edb9c7a6eb2" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="ACTOR" Type="Lower" Template_TargetObjKey="RS_8_D_5" TargetObjectKey="0" Value="2" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="HeatCool_StartTimeProgram">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="75799129-e3dd-4eaf-b860-3f066df331e4" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="855c210d-8b79-43d0-9a57-cc146cd069f4" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="ACTOR" Type="EqualAndHigher" Template_TargetObjKey="RS_8_D_5" TargetObjectKey="0" Value="2" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="HeatCool_StopTimeProgram">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="4918abaa-f4c0-49e1-8970-d2c896645001" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_8_D_5" ConsumerKey="LS_0_D_12">
+        <Function Action="0x38">
+          <Guid Version="1" ID="eab25cff-876f-4562-9e4e-c21e71d8e3fb" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="ACTOR" Type="Equal" Template_TargetObjKey="RS_8_D_5" TargetObjectKey="0" Value="1" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="HeatCool_SetHeatWithManual">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="71c570a7-b044-461e-876a-1665af4cd09e" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="855c210d-8b79-43d0-9a57-cc146cd069f4" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="ACTOR" Type="Equal" Template_TargetObjKey="RS_8_D_5" TargetObjectKey="0" Value="0" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="HeatCool_SetCoolWithManual">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="f6bf611c-d7b6-402f-a3d7-1411d407298b" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+    </FuncBlock>
+    <FuncBlock ObjectType="BuildInMacros" SubType="2" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Height="90" Width="90">
+      <Name>fbDoubleClick</Name>
+      <Description>fbDoubleClick</Description>
+      <Key KEY="FB_0x00000002" />
+      <Guid Version="8" ID="c9c7a4f3-8fcc-453c-981f-d065d13c351b" />
+      <ImagePath>FunBlocks/funBlockDoubleClick.png</ImagePath>
+      <LeftSide Version="0" TempKey="LS_0" BitSetArray="0">
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <Logic Version="0" TempKey="LG_0" BitSetArray="2">
+        <GenerateTemplate>TimerDoubleClick</GenerateTemplate>
+        <TDevice xsi:type="Timer" ObjectType="SystemDevice" SubType="5" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="a7570878-314e-4672-9fcf-5b98c645eba6" DeviceType="System" ExportForVisualization="false" ReadOnly="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#Timer_0</Name>
+          <Description>Timer double click</Description>
+          <Params>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="32768" ParamType="SystemDevice" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+              <Name>SysReset</Name>
+              <Description>Reset:</Description>
+              <Value xsi:type="xsd:boolean">true</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="32769" ParamType="SystemDevice" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+              <Name>SysStop</Name>
+              <Description>Stop:</Description>
+              <Value xsi:type="xsd:boolean">true</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="45058" ParamType="SystemDevice" MinValue="0" MaxValue="1200" Type="UInt32" RealAddress="0" DynamicEnumName="">
+              <Name>SysTimerBase</Name>
+              <Description>Timer base:</Description>
+              <Value xsi:type="xsd:unsignedInt">200</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="45062" ParamType="SystemDevice" MinValue="0" MaxValue="1200" Type="UInt32" RealAddress="0" DynamicEnumName="">
+              <Name>SysTimerCountValue</Name>
+              <Description>Timer count value:</Description>
+              <Value xsi:type="xsd:int">2</Value>
+            </Param>
+          </Params>
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="5" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <Logic Version="0" TempKey="LG_1" BitSetArray="2">
+        <GenerateTemplate>CounterDoubleClick</GenerateTemplate>
+        <TDevice xsi:type="Counter" ObjectType="SystemDevice" SubType="6" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="f17efcfe-288f-4684-9feb-2a5405d01730" DeviceType="System" ExportForVisualization="false" ReadOnly="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#Counter_0</Name>
+          <Description>Counter double click</Description>
+          <Params>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="32768" ParamType="SystemDevice" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+              <Name>SysReset</Name>
+              <Description>Reset:</Description>
+              <Value xsi:type="xsd:boolean">true</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="45057" ParamType="SystemDevice" MinValue="0" MaxValue="1200" Type="UInt32" RealAddress="0" DynamicEnumName="">
+              <Name>SysCounterCountValue</Name>
+              <Description>Counter count value:</Description>
+              <Value xsi:type="xsd:int">2</Value>
+            </Param>
+          </Params>
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="6" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <RightSide Version="0" TempKey="RS_0" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000002" />
+      </RightSide>
+      <Connect ActorKey="LS_0" ConsumerKey="LG_0">
+        <Function Action="0x10">
+          <Guid Version="1" ID="4555c0b9-92b1-492a-8080-ddd7ea52396d" />
+          <TFunction ObjectType="TemplateFunction" SubType="8" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Timer_Start">
+            <Name />
+            <Description />
+            <Guid Version="1" ID="c7fc6b14-f5f8-4068-b1a5-644acac3e57f" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0" ConsumerKey="LG_1">
+        <Function Action="0x10">
+          <Guid Version="1" ID="d076b52f-21bf-43ef-90fd-d09a4abf383d" />
+          <TFunction ObjectType="TemplateFunction" SubType="3" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Counter_Increment">
+            <Name />
+            <Description />
+            <Guid Version="3" ID="6d8f1e0e-5d6e-47d7-ab85-f82ab164018f" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_1" ConsumerKey="RS_0">
+        <Function Action="0x72">
+          <Guid Version="1" ID="8e544224-199a-4aca-98ca-a74201423c00" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchValue">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="125edbba-413e-4f70-b0fd-6dfa640d9f73" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_0" ConsumerKey="LG_1">
+        <Function Action="0x61">
+          <Guid Version="1" ID="9e7d049d-7425-49a1-b5d9-c030a8102010" />
+          <TFunction ObjectType="TemplateFunction" SubType="3" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Counter_Reset">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="2f2a610d-1430-4b6b-a3c0-0619fb1ceb22" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+    </FuncBlock>
+    <FuncBlock ObjectType="BuildInMacros" SubType="2" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Height="90" Width="90">
+      <Name>fbDimMem</Name>
+      <Description>fbDimMem</Description>
+      <Key KEY="FB_0x00000003" />
+      <Guid Version="10" ID="b89be004-26e0-4b71-896f-79cf5523bf0f" />
+      <ImagePath>FunBlocks/funBlockDim.png</ImagePath>
+      <LeftSide Version="0" TempKey="LS_0" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <Logic Version="0" TempKey="LG_0" BitSetArray="2">
+        <GenerateTemplate>SysBitLong</GenerateTemplate>
+        <TDevice xsi:type="SystemBit" ObjectType="SystemDevice" SubType="3" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="84e2f298-998d-443c-8f0d-f2dca73ec223" DeviceType="System" ExportForVisualization="false" ReadOnly="false" Volatile="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#SystemBit_0</Name>
+          <Description>Bit long</Description>
+          <Params />
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="3" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <Logic Version="0" TempKey="LG_1" BitSetArray="2">
+        <GenerateTemplate>SysBitInpulse</GenerateTemplate>
+        <TDevice xsi:type="SystemBit" ObjectType="SystemDevice" SubType="3" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="712ef5f0-e79a-4fc8-a6ba-dbc3601953b5" DeviceType="System" ExportForVisualization="false" ReadOnly="false" Volatile="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#SystemBit_0</Name>
+          <Description>Bit Inpulse</Description>
+          <Params />
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="3" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <Logic Version="0" TempKey="LG_2" BitSetArray="2">
+        <GenerateTemplate>SysBitMove</GenerateTemplate>
+        <TDevice xsi:type="SystemBit" ObjectType="SystemDevice" SubType="3" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="875955fd-b281-4314-a630-dd727a0f339f" DeviceType="System" ExportForVisualization="false" ReadOnly="false" Volatile="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#SystemBit_0</Name>
+          <Description>Bit Move</Description>
+          <Params />
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="3" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <Logic Version="0" TempKey="LG_3" BitSetArray="2">
+        <GenerateTemplate>SysIntOutMem</GenerateTemplate>
+        <TDevice xsi:type="SystemInt" ObjectType="SystemDevice" SubType="2" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="7aff36ed-1e4b-436d-946e-9d689427aa9c" DeviceType="System" ExportForVisualization="false" ReadOnly="false" Volatile="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#SystemInteger_0</Name>
+          <Description>Int out memory</Description>
+          <Params />
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="2" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <Logic Version="0" TempKey="LG_4" BitSetArray="2">
+        <GenerateTemplate>SysBitDirection</GenerateTemplate>
+        <TDevice xsi:type="SystemBit" ObjectType="SystemDevice" SubType="3" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="be007208-0e9b-4a85-befc-74f7cbce4d9d" DeviceType="System" ExportForVisualization="false" ReadOnly="false" Volatile="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#SystemBit_0</Name>
+          <Description>Bit direction</Description>
+          <Params />
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="3" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <RightSide Version="0" TempKey="RS_0" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Device" SubType="4" Value="" IsHEX="false" BitSet="0x00000003" />
+      </RightSide>
+      <Connect ActorKey="LS_0" ConsumerKey="RS_0">
+        <Function Action="0x10">
+          <Guid Version="1" ID="352ab53b-d6f1-4f91-b5b8-bf1479faa161" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="LG_3" TargetObjectKey="0" Value="0" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="LG_2" TargetObjectKey="0" Value="0" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SwitchOn">
+            <Name />
+            <Description />
+            <Guid Version="1" ID="5445f8f9-d004-40ec-b2e7-79af743da982" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x12">
+          <Guid Version="1" ID="273595c1-494d-42a9-895e-1edecb9917c2" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="LG_4" TargetObjectKey="0" Value="0" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SwitchOnWRamp">
+            <Name />
+            <Description />
+            <Guid Version="3" ID="5c7be77f-6711-45b9-8af3-f1af7de0a4a3" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Delay" Type="TimeSpan">
+                <ParamValue>00:00:00</ParamValue>
+              </ActionParam>
+              <ActionParam ParamIdentificator="Analog_RampDelay_Second" Type="TimeSpan" ObjectType="InelsTime">
+                <ParamValue>00:00:05</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x13">
+          <Guid Version="1" ID="5509086e-db87-45cb-9589-51dc01fd4d9a" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_StopChangingLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="136aa3ce-3258-4cbc-94d7-46fb7691d4dc" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x10">
+          <Guid Version="1" ID="9b44d30e-0736-4090-b69f-8fff1770c21c" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="LG_2" TargetObjectKey="0" Value="1" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="b3da00aa-a772-4620-b54f-d10cea0be662" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x12">
+          <Guid Version="1" ID="d3608356-2992-4948-9b6b-7314578e0c58" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="LG_4" TargetObjectKey="0" Value="1" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SwitchOffWRamp">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="7cdafaaa-0a97-4881-8e26-00b354e4a1cb" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Delay" Type="TimeSpan">
+                <ParamValue>00:00:00</ParamValue>
+              </ActionParam>
+              <ActionParam ParamIdentificator="Analog_RampDelay_Second" Type="TimeSpan" ObjectType="InelsTime">
+                <ParamValue>00:00:05</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_0" ConsumerKey="LG_3">
+        <Function Action="0x22">
+          <Guid Version="1" ID="a85df26c-0a86-4899-8a80-76a6d103dd03" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="LG_0" TargetObjectKey="0" Value="1" />
+          <TFunction ObjectType="TemplateFunction" SubType="7" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="SysInt_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="544c10e8-92f4-42ca-9f22-b4cd8167bb3c" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0" ConsumerKey="LG_0">
+        <Function Action="0x12">
+          <Guid Version="1" ID="3a34e8e7-c7d8-44e4-8d64-bf105349313a" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOn">
+            <Name />
+            <Description />
+            <Guid Version="1" ID="6b8fb1c3-1cd3-44f3-82b6-33b7179d0b17" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x13">
+          <Guid Version="1" ID="d13c82dc-f8ad-428d-ad6c-6c72cabf9e46" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="d7bebcdd-07b0-43b8-930e-825c0ad80c87" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0" ConsumerKey="LG_1">
+        <Function Action="0x10">
+          <Guid Version="1" ID="e6534d29-9e74-4468-a2c2-dd8c8ddb396e" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Type="EqualAndHigher" Template_TargetObjKey="LG_3" TargetObjectKey="0" Value="1" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="LG_2" TargetObjectKey="0" Value="0" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Impulse_ON">
+            <Name />
+            <Description />
+            <Guid Version="3" ID="a704ec65-257c-42bd-9125-a3ddd833f13b" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Digital_Delay_Second" Type="TimeSpan">
+                <ParamValue>00:00:00</ParamValue>
+              </ActionParam>
+              <ActionParam ParamIdentificator="Digital_ImpulseTime_Second" Type="TimeSpan">
+                <ParamValue>00:00:01</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_3" ConsumerKey="RS_0">
+        <Function Action="0xA0">
+          <Guid Version="1" ID="b95739ba-fc6b-4e5d-a9ea-25bba59b93de" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="LG_1" TargetObjectKey="0" Value="1" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_Copy">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="37e6feb9-868b-4a8e-9c46-d2e4373eecfd" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_1" ConsumerKey="LG_3">
+        <Function Action="0x16">
+          <Guid Version="1" ID="492fbb9c-5318-4c13-97e7-844262bc93fd" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Lower" Template_TargetObjKey="LG_3" TargetObjectKey="0" Value="100" />
+          <TFunction ObjectType="TemplateFunction" SubType="7" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="SysInt_Increment">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="3d79fade-89c0-4736-aeb9-7afa72210da4" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_IncDecStep" Type="Int32">
+                <ParamValue>1</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x17">
+          <Guid Version="1" ID="f4dab781-d0d9-4ff0-84cf-5917ffbcaeea" />
+          <TFunction ObjectType="TemplateFunction" SubType="7" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="SysInt_Decrement">
+            <Name />
+            <Description />
+            <Guid Version="3" ID="e203c40c-30f3-4f13-bdea-b4ba78fd9e8b" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_IncDecStep" Type="Int32">
+                <ParamValue>1</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x16">
+          <Guid Version="1" ID="3da18670-4506-4923-9d18-6906bee3879f" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Higher" Template_TargetObjKey="LG_3" TargetObjectKey="0" Value="99" />
+          <TFunction ObjectType="TemplateFunction" SubType="7" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="SysInt_Decrement">
+            <Name />
+            <Description />
+            <Guid Version="3" ID="724df051-5330-4042-99f2-7157fd99fa33" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_IncDecStep" Type="Int32">
+                <ParamValue>1</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_0" ConsumerKey="LG_2">
+        <Function Action="0x23">
+          <Guid Version="1" ID="5723cb58-f831-4de8-ae63-6c7ebe7145cb" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOn">
+            <Name />
+            <Description />
+            <Guid Version="1" ID="bdbe0cac-852e-4a15-90c5-2cf03eee9d2f" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x24">
+          <Guid Version="1" ID="3161c573-3fd1-405c-a35d-a818e4a218ba" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="fbb00926-21e3-4978-b543-53c5987c79ef" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0" ConsumerKey="LG_4">
+        <Function Action="0x12">
+          <Guid Version="1" ID="cd0e9b97-9083-4b5e-ae3d-e0a66fea9c78" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchValue">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="496b3898-0f73-4707-a15d-a3ce76f761c4" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+    </FuncBlock>
+    <FuncBlock ObjectType="BuildInMacros" SubType="2" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Height="90" Width="90">
+      <Name>fbDoubleClickBits</Name>
+      <Description>fbDoubleClickBits</Description>
+      <Key KEY="FB_0x0000000B" />
+      <Guid Version="5" ID="00000000-0000-0000-0000-000000000000" />
+      <ImagePath>FunBlocks/funBlockDoubleClick.png</ImagePath>
+      <LeftSide Version="0" TempKey="LS_0" BitSetArray="0">
+        <Selector Source="0" Path="0" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <Logic Version="0" TempKey="LG_0" BitSetArray="2">
+        <GenerateTemplate>TimerDoubleClick</GenerateTemplate>
+        <TDevice xsi:type="Timer" ObjectType="SystemDevice" SubType="5" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="12f52cac-4763-41e1-aa94-ec0a723fcbf5" DeviceType="System" ExportForVisualization="false" ReadOnly="false">
+          <Value xsi:nil="true" />
+          <Name>#Timer_0</Name>
+          <Description>Timer double click (0)</Description>
+          <Params>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="32768" ParamType="SystemDevice" MinValue="0" MaxValue="1" Type="Boolean" DynamicEnumName="">
+              <Name>SysReset</Name>
+              <Description>Reset:</Description>
+              <Value xsi:type="xsd:boolean">true</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="32769" ParamType="SystemDevice" MinValue="0" MaxValue="1" Type="Boolean" DynamicEnumName="">
+              <Name>SysStop</Name>
+              <Description>Stop:</Description>
+              <Value xsi:type="xsd:boolean">true</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="45058" ParamType="SystemDevice" MinValue="0" MaxValue="1200" Type="UInt32" DynamicEnumName="">
+              <Name>SysTimerBase</Name>
+              <Description>Timer base:</Description>
+              <Value xsi:type="xsd:unsignedInt">200</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="45062" ParamType="SystemDevice" MinValue="0" MaxValue="1200" Type="UInt32" DynamicEnumName="">
+              <Name>SysTimerCountValue</Name>
+              <Description>Timer count value:</Description>
+              <Value xsi:type="xsd:int">2</Value>
+            </Param>
+          </Params>
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="5" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <Logic Version="0" TempKey="LG_1" BitSetArray="2">
+        <GenerateTemplate>SysIntDoubleOn</GenerateTemplate>
+        <TDevice xsi:type="SystemInt" ObjectType="SystemDevice" SubType="2" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="496d043f-b6bf-4fc3-b8de-2d68910fcb5f" DeviceType="System" ExportForVisualization="false" ReadOnly="false" Volatile="false">
+          <Value xsi:nil="true" />
+          <Name>#SystemInteger_0</Name>
+          <Description>Integer double click ON (0)</Description>
+          <Params />
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="2" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <RightSide Version="0" TempKey="RS_0" BitSetArray="0">
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="3" Value="" IsHEX="false" BitSet="0x00000000" />
+      </RightSide>
+      <RightSide Version="0" TempKey="RS_1" BitSetArray="0">
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="3" Value="" IsHEX="false" BitSet="0x00000000" />
+      </RightSide>
+      <Connect ActorKey="LS_0" ConsumerKey="LG_0">
+        <Function Action="0x10">
+          <Guid Version="1" ID="d6b1a49d-b6c8-4778-a6e4-e32eccef17bf" />
+          <TFunction ObjectType="TemplateFunction" SubType="8" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Timer_Start">
+            <Name />
+            <Description />
+            <Guid Version="1" ID="067bb718-7ac3-47bf-ab64-ff53b691077e" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0" ConsumerKey="LG_1">
+        <Function Action="0x10">
+          <Guid Version="1" ID="77de2f7d-fb3c-409a-82df-5090f72e681b" />
+          <TFunction ObjectType="TemplateFunction" SubType="7" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="SysInt_Increment">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="f36ca93e-d894-40f1-a5f0-b4ecbb39761b" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_IncDecStep" Type="Int32">
+                <ParamValue>1</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_0" ConsumerKey="RS_0">
+        <Function Action="0x61">
+          <Guid Version="1" ID="5b61d955-f01a-4f53-8022-3b1382fef670" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="LG_1" TargetObjectKey="0" Value="1" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Impulse_ON">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="52494243-df7b-4296-a9c8-1ab4dfd2b3ad" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Digital_Delay_Second" Type="TimeSpan">
+                <ParamValue>00:00:00</ParamValue>
+              </ActionParam>
+              <ActionParam ParamIdentificator="Digital_ImpulseTime_Second" Type="TimeSpan">
+                <ParamValue>00:00:02</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_0" ConsumerKey="RS_1">
+        <Function Action="0x61">
+          <Guid Version="1" ID="7e72bcd2-f248-4443-ab3c-9482ef279c8f" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="EqualAndHigher" Template_TargetObjKey="LG_1" TargetObjectKey="0" Value="2" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Impulse_ON">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="c8db7c07-ea5c-4f20-8623-884ee0a144c6" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Digital_Delay_Second" Type="TimeSpan">
+                <ParamValue>00:00:00</ParamValue>
+              </ActionParam>
+              <ActionParam ParamIdentificator="Digital_ImpulseTime_Second" Type="TimeSpan">
+                <ParamValue>00:00:02</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+    </FuncBlock>
+    <FuncBlock ObjectType="BuildInMacros" SubType="2" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Height="90" Width="90">
+      <Name>fbDoubleClickShCl</Name>
+      <Description>fbDoubleClickShCl</Description>
+      <Key KEY="FB_0x00000004" />
+      <Guid Version="8" ID="5300e32e-099b-489e-aae4-129491fee140" />
+      <ImagePath>FunBlocks/funBlockDoubleClickTwoButton.png</ImagePath>
+      <LeftSide Version="0" TempKey="LS_0" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <LeftSide Version="0" TempKey="LS_1" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <Logic Version="0" TempKey="LG_0" BitSetArray="2">
+        <GenerateTemplate>TimerDoubleClickShCl</GenerateTemplate>
+        <TDevice xsi:type="Timer" ObjectType="SystemDevice" SubType="5" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="75f08c5f-f5a6-4b46-8388-1e4c3650fa28" DeviceType="System" ExportForVisualization="false" ReadOnly="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#Timer_0</Name>
+          <Description>Timer double click short click</Description>
+          <Params>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="32768" ParamType="SystemDevice" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+              <Name>SysReset</Name>
+              <Description>Reset:</Description>
+              <Value xsi:type="xsd:boolean">true</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="32769" ParamType="SystemDevice" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+              <Name>SysStop</Name>
+              <Description>Stop:</Description>
+              <Value xsi:type="xsd:boolean">true</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="45058" ParamType="SystemDevice" MinValue="0" MaxValue="1200" Type="UInt32" RealAddress="0" DynamicEnumName="">
+              <Name>SysTimerBase</Name>
+              <Description>Timer base:</Description>
+              <Value xsi:type="xsd:unsignedInt">400</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="45062" ParamType="SystemDevice" MinValue="0" MaxValue="1200" Type="UInt32" RealAddress="0" DynamicEnumName="">
+              <Name>SysTimerCountValue</Name>
+              <Description>Timer count value:</Description>
+              <Value xsi:type="xsd:int">1</Value>
+            </Param>
+          </Params>
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="5" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <Logic Version="0" TempKey="LG_1" BitSetArray="2">
+        <GenerateTemplate>TimerDoubleClickShCl</GenerateTemplate>
+        <TDevice xsi:type="Timer" ObjectType="SystemDevice" SubType="5" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="f49f70dc-e6b1-4fbe-8a82-8d28e8266d53" DeviceType="System" ExportForVisualization="false" ReadOnly="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#Timer_0</Name>
+          <Description>Timer double click short click</Description>
+          <Params>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="32768" ParamType="SystemDevice" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+              <Name>SysReset</Name>
+              <Description>Reset:</Description>
+              <Value xsi:type="xsd:boolean">true</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="32769" ParamType="SystemDevice" MinValue="0" MaxValue="1" Type="Boolean" RealAddress="0" DynamicEnumName="">
+              <Name>SysStop</Name>
+              <Description>Stop:</Description>
+              <Value xsi:type="xsd:boolean">true</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="45058" ParamType="SystemDevice" MinValue="0" MaxValue="1200" Type="UInt32" RealAddress="0" DynamicEnumName="">
+              <Name>SysTimerBase</Name>
+              <Description>Timer base:</Description>
+              <Value xsi:type="xsd:unsignedInt">400</Value>
+            </Param>
+            <Param ObjectType="Param" SubType="0" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Address="45062" ParamType="SystemDevice" MinValue="0" MaxValue="1200" Type="UInt32" RealAddress="0" DynamicEnumName="">
+              <Name>SysTimerCountValue</Name>
+              <Description>Timer count value:</Description>
+              <Value xsi:type="xsd:int">1</Value>
+            </Param>
+          </Params>
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="5" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <Logic Version="0" TempKey="LG_2" BitSetArray="2">
+        <GenerateTemplate>SysIntDoubleOn</GenerateTemplate>
+        <TDevice xsi:type="SystemInt" ObjectType="SystemDevice" SubType="2" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="c3505419-472a-4b97-85d2-84a3d5032db4" DeviceType="System" ExportForVisualization="false" ReadOnly="false" Volatile="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#SystemInteger_0</Name>
+          <Description>Integer double click ON</Description>
+          <Params />
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="2" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <Logic Version="0" TempKey="LG_3" BitSetArray="2">
+        <GenerateTemplate>SysIntDoubleOff</GenerateTemplate>
+        <TDevice xsi:type="SystemInt" ObjectType="SystemDevice" SubType="2" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="74830bd2-169a-45e5-b183-4f92969e8f5e" DeviceType="System" ExportForVisualization="false" ReadOnly="false" Volatile="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#SystemInteger_0</Name>
+          <Description>Integer double click OFF</Description>
+          <Params />
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="2" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <RightSide Version="0" TempKey="RS_0" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000002" />
+      </RightSide>
+      <RightSide Version="0" TempKey="RS_1" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000002" />
+      </RightSide>
+      <Connect ActorKey="LS_0" ConsumerKey="LG_0">
+        <Function Action="0x10">
+          <Guid Version="1" ID="ab48bdf0-8d5d-43d7-87e2-35217f47f606" />
+          <TFunction ObjectType="TemplateFunction" SubType="8" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Timer_Start">
+            <Name />
+            <Description />
+            <Guid Version="1" ID="bf61c06f-110e-41d7-a25a-93f3b1b788d5" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0" ConsumerKey="LG_2">
+        <Function Action="0x10">
+          <Guid Version="1" ID="fe07e397-975d-438b-b6a8-753e6903a2fb" />
+          <TFunction ObjectType="TemplateFunction" SubType="7" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="SysInt_Increment">
+            <Name />
+            <Description />
+            <Guid Version="5" ID="34c8cb85-aaac-4a16-9b7c-6832e9cecc2c" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_IncDecStep" Type="Int32">
+                <ParamValue>1</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_2" ConsumerKey="RS_0">
+        <Function Action="0xA0">
+          <Guid Version="1" ID="670b4787-cd9f-4736-a6ce-81878952fb51" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="LG_2" TargetObjectKey="0" Value="2" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOn">
+            <Name />
+            <Description />
+            <Guid Version="1" ID="88dd9b83-5c8d-4b72-b846-fb29d7ad3cda" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_3" ConsumerKey="RS_0">
+        <Function Action="0xA0">
+          <Guid Version="1" ID="671a9b4f-bffb-43dd-b586-7d557bb640eb" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="LG_3" TargetObjectKey="0" Value="2" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="3e36e58f-abbc-49ba-986b-d58fab008b81" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_1" ConsumerKey="LG_1">
+        <Function Action="0x10">
+          <Guid Version="1" ID="7a6e3e8d-2c2f-4daa-9c6c-9dc5601007c8" />
+          <TFunction ObjectType="TemplateFunction" SubType="8" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Timer_Start">
+            <Name />
+            <Description />
+            <Guid Version="1" ID="050a4e08-5efc-46f8-8174-b3e37e7600a6" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_1" ConsumerKey="LG_3">
+        <Function Action="0x10">
+          <Guid Version="1" ID="f961c41f-c6a6-40cc-bd5b-1ff9003bb4fa" />
+          <TFunction ObjectType="TemplateFunction" SubType="7" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="SysInt_Increment">
+            <Name />
+            <Description />
+            <Guid Version="5" ID="3d7aec5f-cf30-4596-a3f8-55ab55f377cc" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_IncDecStep" Type="Int32">
+                <ParamValue>1</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_0" ConsumerKey="LG_2">
+        <Function Action="0x61">
+          <Guid Version="1" ID="b8946ae6-7eff-4f89-b795-d4d4ea4fa199" />
+          <TFunction ObjectType="TemplateFunction" SubType="7" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="SysInt_Reset">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="1e799814-8df7-4683-8907-b083c3ef2239" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_1" ConsumerKey="LG_3">
+        <Function Action="0x61">
+          <Guid Version="1" ID="9e4dbf72-e770-40d9-aa64-e5e8ce93a181" />
+          <TFunction ObjectType="TemplateFunction" SubType="7" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="SysInt_Reset">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="af09c7a3-4427-4fc1-adb2-02b11cf2d29a" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_0" ConsumerKey="RS_1">
+        <Function Action="0x60">
+          <Guid Version="1" ID="43aaad18-2b37-4c54-9d96-783e74a5ebb6" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="LG_2" TargetObjectKey="0" Value="1" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOn">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="b52edfb7-ab75-49c1-8c9a-ab6aed31d4e2" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_1" ConsumerKey="RS_1">
+        <Function Action="0x60">
+          <Guid Version="1" ID="563ece6b-b8a1-47d2-8942-fbeb9bc39f72" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="LG_3" TargetObjectKey="0" Value="1" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="6e2abc1c-2157-4773-b625-35511eea71f2" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+    </FuncBlock>
+    <FuncBlock ObjectType="BuildInMacros" SubType="2" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Height="90" Width="90">
+      <Name>fbBlindDriver</Name>
+      <Description>fbBlindDriver</Description>
+      <Key KEY="FB_0x00000005" />
+      <Guid Version="13" ID="019d75c7-9f6f-4521-98fc-c36f6bd7f488" />
+      <ImagePath>FunBlocks/funBlockBlind.png</ImagePath>
+      <LeftSide Version="0" TempKey="LS_0" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <LeftSide Version="0" TempKey="LS_1" BitSetArray="0">
+        <Description />
+        <Selector Source="0" Path="0" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <Logic Version="0" TempKey="LG_0" BitSetArray="2">
+        <GenerateTemplate>SysBitBlindUpMove</GenerateTemplate>
+        <TDevice xsi:type="SystemBit" ObjectType="SystemDevice" SubType="3" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="46e3aeae-6a3a-4305-8d56-caab1c854ec0" DeviceType="System" ExportForVisualization="false" ReadOnly="false" Volatile="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#SystemBit_0</Name>
+          <Description>Bit blind up move</Description>
+          <Params />
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="3" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <Logic Version="0" TempKey="LG_1" BitSetArray="2">
+        <GenerateTemplate>SysBitBlindDownMove</GenerateTemplate>
+        <TDevice xsi:type="SystemBit" ObjectType="SystemDevice" SubType="3" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="3f1097df-7eff-45a5-9425-eefb2f2ff583" DeviceType="System" ExportForVisualization="false" ReadOnly="false" Volatile="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#SystemBit_0</Name>
+          <Description>Bit blind down move</Description>
+          <Params />
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="3" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <Logic Version="0" TempKey="LG_2" BitSetArray="2">
+        <GenerateTemplate>SysBitBlindUpTilt</GenerateTemplate>
+        <TDevice xsi:type="SystemBit" ObjectType="SystemDevice" SubType="3" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="5a533fe3-c173-407f-bc5e-999345fb8bed" DeviceType="System" ExportForVisualization="false" ReadOnly="false" Volatile="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#SystemBit_0</Name>
+          <Description>Bit blind up tilt</Description>
+          <Params />
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="3" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <Logic Version="0" TempKey="LG_3" BitSetArray="2">
+        <GenerateTemplate>SysBitBlindDownTilt</GenerateTemplate>
+        <TDevice xsi:type="SystemBit" ObjectType="SystemDevice" SubType="3" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="27e6b544-892a-400d-bb98-1cf9cc21af31" DeviceType="System" ExportForVisualization="false" ReadOnly="false" Volatile="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#SystemBit_0</Name>
+          <Description>Bit blind down tilt</Description>
+          <Params />
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="3" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <Logic Version="0" TempKey="LG_4" BitSetArray="2">
+        <GenerateTemplate>SysBitBlindTear</GenerateTemplate>
+        <TDevice xsi:type="SystemBit" ObjectType="SystemDevice" SubType="3" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="0b961b5b-a096-4c05-8e9c-1d94583b2ab2" DeviceType="System" ExportForVisualization="false" ReadOnly="false" Volatile="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#SystemBit_0</Name>
+          <Description>Bit blind tear</Description>
+          <Params />
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="3" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <Logic Version="0" TempKey="LG_5" BitSetArray="2">
+        <GenerateTemplate>SysBitBlindTmpTear</GenerateTemplate>
+        <TDevice xsi:type="SystemBit" ObjectType="SystemDevice" SubType="3" UnicateObjectKey="0" BitSetArray="3" Access="Editable" Type="cf156607-b805-4a29-a699-a4673305f095" DeviceType="System" ExportForVisualization="false" ReadOnly="false" Volatile="false">
+          <Value xsi:nil="true" />
+          <RealAddress>0</RealAddress>
+          <Name>#SystemBit_0</Name>
+          <Description>Bit blind template tear</Description>
+          <Params />
+          <AvailableActions />
+          <AvailableFunctions />
+        </TDevice>
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="3" Value="" IsHEX="false" BitSet="0x00000000" />
+      </Logic>
+      <RightSide Version="0" TempKey="RS_0" BitSetArray="0">
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000003" />
+      </RightSide>
+      <RightSide Version="0" TempKey="RS_1" BitSetArray="0">
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000003" />
+      </RightSide>
+      <Connect ActorKey="LG_0" ConsumerKey="RS_1">
+        <Function Action="0x16">
+          <Guid Version="1" ID="4a6e615a-8ec3-4b1e-bb99-3231eb0abca6" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="23deeb25-42de-42f7-8116-d0330910c528" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_2" ConsumerKey="RS_1">
+        <Function Action="0x16">
+          <Guid Version="1" ID="85190abd-48ae-4020-98bc-f1185f51a54e" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="55984b06-96aa-4f06-acae-7bf384557190" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_4" ConsumerKey="RS_0">
+        <Function Action="0x16">
+          <Guid Version="1" ID="e7ee1c6d-c53f-4a36-9d6c-d9ef89913eb1" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="RS_0" TargetObjectKey="0" Value="1" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="46d7f318-f479-4c9a-a002-75686b42e384" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_4" ConsumerKey="RS_1">
+        <Function Action="0x16">
+          <Guid Version="1" ID="ed91087f-42e1-41cf-994b-05c6f68d00fa" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="RS_1" TargetObjectKey="0" Value="1" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="f30cc3be-cb83-445f-a680-11ffba589191" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x16">
+          <Guid Version="1" ID="ce3201b4-cf0c-49a8-a783-e64ba0e30688" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="RS_0" TargetObjectKey="0" Value="0" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="RS_1" TargetObjectKey="0" Value="0" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Impulse_ON">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="4dd5c9c2-213d-4185-90d9-96aaa596ca0d" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Digital_Delay_Second" Type="TimeSpan">
+                <ParamValue>00:00:00</ParamValue>
+              </ActionParam>
+              <ActionParam ParamIdentificator="Digital_ImpulseTime_Second" Type="TimeSpan">
+                <ParamValue>00:00:05</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_1" ConsumerKey="RS_0">
+        <Function Action="0x16">
+          <Guid Version="1" ID="5b383f0a-d0fe-428b-b2ed-aa8af3857fce" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="47cc5d80-6d00-4440-94c3-7942abac3894" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_3" ConsumerKey="RS_0">
+        <Function Action="0x16">
+          <Guid Version="1" ID="b5c611c9-9885-480b-b79e-ee31efe191ac" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="b49cda2a-89fe-4895-8903-0a09c8eabda1" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_0" ConsumerKey="RS_0">
+        <Function Action="0x16">
+          <Guid Version="1" ID="eedd9640-540c-46aa-81b0-4b6bc99aaec5" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="RS_0" TargetObjectKey="0" Value="1" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="0a1e683b-cd58-437b-8fcd-f2ed940593e9" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x16">
+          <Guid Version="1" ID="31571597-5f0c-4546-959f-9d5e54998c34" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="RS_0" TargetObjectKey="0" Value="0" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="RS_1" TargetObjectKey="0" Value="0" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Impulse_ON">
+            <Name />
+            <Description />
+            <Guid Version="3" ID="dc959abe-df87-48e6-942d-a53c29cc10e5" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Digital_Delay_Second" Type="TimeSpan">
+                <ParamValue>00:00:00</ParamValue>
+              </ActionParam>
+              <ActionParam ParamIdentificator="Digital_ImpulseTime_Second" Type="TimeSpan">
+                <ParamValue>00:00:05</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x17">
+          <Guid Version="1" ID="eedd9640-540c-46aa-81b0-4b6bc99aaec5" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="0a1e683b-cd58-437b-8fcd-f2ed940593e9" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_1" ConsumerKey="RS_1">
+        <Function Action="0x16">
+          <Guid Version="1" ID="82a28e56-13ea-4559-bf3d-f8818df171aa" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="RS_1" TargetObjectKey="0" Value="1" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="84c24f6d-4738-450f-831f-e5c7ba1a7754" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x16">
+          <Guid Version="1" ID="810840fc-d593-41df-a8c8-3224ab1477d5" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="RS_0" TargetObjectKey="0" Value="0" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="RS_1" TargetObjectKey="0" Value="0" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Impulse_ON">
+            <Name />
+            <Description />
+            <Guid Version="3" ID="f74ce380-51d6-4d07-9c0d-807c575f065f" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Digital_Delay_Second" Type="TimeSpan">
+                <ParamValue>00:00:00</ParamValue>
+              </ActionParam>
+              <ActionParam ParamIdentificator="Digital_ImpulseTime_Second" Type="TimeSpan">
+                <ParamValue>00:00:05</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x17">
+          <Guid Version="1" ID="eedd9640-540c-46aa-81b0-4b6bc99aaec5" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="0a1e683b-cd58-437b-8fcd-f2ed940593e9" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_2" ConsumerKey="RS_0">
+        <Function Action="0x16">
+          <Guid Version="1" ID="09fd2ad9-96e2-476f-94a0-ebfc9cbe239f" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="RS_0" TargetObjectKey="0" Value="1" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="3571d61c-8dd4-4ea4-9aa3-7d90cadbcaf5" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x16">
+          <Guid Version="1" ID="f66caa02-3d49-4cbb-8dfa-8b629c61c903" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="RS_0" TargetObjectKey="0" Value="0" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="RS_1" TargetObjectKey="0" Value="0" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Impulse_ON">
+            <Name />
+            <Description />
+            <Guid Version="3" ID="47ae7c3b-77e7-4c24-9631-286b4cfaf410" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Digital_Delay_Second" Type="TimeSpan">
+                <ParamValue>00:00:00</ParamValue>
+              </ActionParam>
+              <ActionParam ParamIdentificator="Digital_ImpulseTime_Second" Type="TimeSpan">
+                <ParamValue>00:00:00.5000000</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_3" ConsumerKey="RS_1">
+        <Function Action="0x16">
+          <Guid Version="1" ID="412355d8-5f2b-4386-8ecb-f2d346a89420" />
+          <Restriction xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="RS_1" TargetObjectKey="0" Value="1" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="234b54af-7c1c-4122-9053-b3a5663942b6" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x16">
+          <Guid Version="1" ID="e6a3645c-56c8-4491-91a1-2d2015f51bb6" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="RS_0" TargetObjectKey="0" Value="0" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Type="Equal" Template_TargetObjKey="RS_1" TargetObjectKey="0" Value="0" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Impulse_ON">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="b2f7fb90-21a5-4878-94c8-b2096fc5ec26" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Digital_Delay_Second" Type="TimeSpan">
+                <ParamValue>00:00:00</ParamValue>
+              </ActionParam>
+              <ActionParam ParamIdentificator="Digital_ImpulseTime_Second" Type="TimeSpan">
+                <ParamValue>00:00:00.5000000</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_1" ConsumerKey="LG_4">
+        <Function Action="0x17">
+          <Guid Version="1" ID="284c1274-adef-4735-a649-5b6fb1098ea9" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="bd673c31-c43c-4387-8016-a0d0d06c7dbf" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_1" ConsumerKey="LG_5">
+        <Function Action="0x17">
+          <Guid Version="1" ID="0bf85938-8c1b-4eae-a72f-b7694c1f3c82" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="324ea7db-3f3b-4da2-a2fb-8903e0f68b3d" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_4" ConsumerKey="LG_5">
+        <Function Action="0x16">
+          <Guid Version="1" ID="4234d4be-2ccf-406f-a955-db1b2e9a3eb8" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOn">
+            <Name />
+            <Description />
+            <Guid Version="1" ID="b67aa954-a1b0-42f9-af7a-52a73b6fa8aa" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LG_5" ConsumerKey="RS_0">
+        <Function Action="0x17">
+          <Guid Version="1" ID="dfc5aab9-4530-4778-98ac-df0807e1f1fb" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_Impulse_ON">
+            <Name />
+            <Description />
+            <Guid Version="3" ID="8f092ed0-e1de-4a60-8831-db495d3a90a5" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Digital_Delay_Second" Type="TimeSpan">
+                <ParamValue>00:00:02</ParamValue>
+              </ActionParam>
+              <ActionParam ParamIdentificator="Digital_ImpulseTime_Second" Type="TimeSpan">
+                <ParamValue>00:00:00.5000000</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0" ConsumerKey="LG_0">
+        <Function Action="0x12">
+          <Guid Version="1" ID="5dc5e892-3add-4770-9395-14fe7f28cb2c" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchValue">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="750ec05d-7084-46c9-97c8-3184e6763af6" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0" ConsumerKey="LG_2">
+        <Function Action="0x10">
+          <Guid Version="1" ID="1a3e31cd-9ccf-4f96-92fb-975e369b8dc9" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchValue">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="5b35549b-9d57-423c-9aed-54c560ba6aa2" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_1" ConsumerKey="LG_1">
+        <Function Action="0x12">
+          <Guid Version="1" ID="0251fb71-d6ef-48e7-b73b-2d087879bd08" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchValue">
+            <Name />
+            <Description />
+            <Guid Version="4" ID="3612b78d-7600-4d29-ba6f-20eb3013e33e" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_1" ConsumerKey="LG_3">
+        <Function Action="0x10">
+          <Guid Version="1" ID="e638905d-4847-4c7e-91dd-27b493b99bc8" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchValue">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="9a3b4ad4-42b0-402d-aa51-5ec10f6f74b9" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_0" ConsumerKey="LG_1">
+        <Function Action="0x17">
+          <Guid Version="1" ID="2542285d-fb18-45f2-9fad-809480cafb0e" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="4a2273ea-c42a-44b9-b208-b42ed6c48122" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_0" ConsumerKey="LG_3">
+        <Function Action="0x17">
+          <Guid Version="1" ID="bde96039-ac5f-4497-b2ae-53476d9764bb" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="8ca3d8d2-b643-4846-aee0-c684dfe0988e" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_1" ConsumerKey="LG_0">
+        <Function Action="0x17">
+          <Guid Version="1" ID="330c18d8-43c1-48a7-a354-9e563f16b65a" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="115d968c-7243-41d2-b124-8f35c6b48962" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_1" ConsumerKey="LG_2">
+        <Function Action="0x17">
+          <Guid Version="1" ID="4802602f-119c-4700-9640-caea56c276f9" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="3787ef6f-1b45-46b4-9ad6-fe8d85049143" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_0" ConsumerKey="LG_0">
+        <Function Action="0x17">
+          <Guid Version="1" ID="63dcbb09-c437-4755-8e0d-4ab3831c0ed5" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="21f2a088-c81b-4433-bff0-67e534dd9f01" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_0" ConsumerKey="LG_2">
+        <Function Action="0x17">
+          <Guid Version="1" ID="6ac9e5e0-4a80-4bc2-a165-f4091bc52804" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="463d436f-d8ad-4760-acf3-a9f0744c85c7" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_1" ConsumerKey="LG_1">
+        <Function Action="0x17">
+          <Guid Version="1" ID="d6266f5f-9e06-4a23-adf7-294ef9f48668" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="ea703e1c-afdf-40ed-a6bf-ba32185bbb86" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="RS_1" ConsumerKey="LG_3">
+        <Function Action="0x17">
+          <Guid Version="1" ID="44dbe985-15e0-44fc-9722-f471beab5a45" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="90e65e89-4b18-4755-ad7d-4d15d8527f91" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+    </FuncBlock>
+    <FuncBlock ObjectType="BuildInMacros" SubType="2" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Height="90" Width="90">
+      <Name>fbLightControlRE</Name>
+      <Description>fbLightControlRE</Description>
+      <Key KEY="FB_0x00000006" />
+      <Guid Version="7" ID="dbd56beb-acfc-42d3-8a60-bc00f4f20669" />
+      <ImagePath>FunBlocks/funBlockLightControlRE.png</ImagePath>
+      <LeftSide Version="0" TempKey="LS_0" BitSetArray="0">
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="Device" SubType="8" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <LeftSide Version="0" TempKey="LS_1" BitSetArray="0">
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="3" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <RightSide Version="0" TempKey="RS_0" BitSetArray="0">
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000002" />
+      </RightSide>
+      <Connect ActorKey="LS_0" ConsumerKey="RS_0">
+        <Function Action="0x38">
+          <Guid Version="1" ID="c4590d35-4813-4043-82da-9cdef6af3f4b" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="EqualAndLower" Value="85000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOn">
+            <Name />
+            <Description />
+            <Guid Version="1" ID="c0f757b6-42f3-42c3-86fa-391fd7263e77" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="337dd965-2ddf-4908-af01-06170fdfc018" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="Higher" Value="85000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="7cc00156-9351-4ab5-b551-84ebeba4b7a6" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_1" ConsumerKey="RS_0">
+        <Function Action="0x17">
+          <Guid Version="1" ID="ee86928e-5c38-4b15-a674-c4df53c2feff" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="0d6793a9-16af-4065-a81f-a35bdde38040" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+    </FuncBlock>
+    <FuncBlock ObjectType="BuildInMacros" SubType="2" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Height="90" Width="90">
+      <Name>fbLightControlOUTLevel3</Name>
+      <Description>fbLightControlOUTLevel3</Description>
+      <Key KEY="FB_0x00000007" />
+      <Guid Version="8" ID="c65203be-1264-4772-a86b-1407c036838e" />
+      <ImagePath>FunBlocks/funBlockLightControlOUT.png</ImagePath>
+      <LeftSide Version="0" TempKey="LS_0" BitSetArray="0">
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="Device" SubType="8" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <LeftSide Version="0" TempKey="LS_1" BitSetArray="0">
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="3" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <RightSide Version="0" TempKey="RS_0" BitSetArray="0">
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="Device" SubType="4" Value="" IsHEX="false" BitSet="0x00000002" />
+      </RightSide>
+      <Connect ActorKey="LS_0" ConsumerKey="RS_0">
+        <Function Action="0x38">
+          <Guid Version="1" ID="d8477775-d0ab-4e17-bc96-e3f674e00aa5" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="EqualAndLower" Value="25000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="2c0148bf-1388-4f45-91be-c990d80d1878" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>100</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="d3e91956-0671-48d4-b445-1c0cf1fe623e" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="Higher" Value="25000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="EqualAndLower" Value="85000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="e1989662-fcf6-433c-aa15-9da82af00704" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>50</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="aa689fa1-617a-421c-891a-3689220bdf45" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="Higher" Value="85000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="6aed509d-c408-4c53-b597-625e76176b1e" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>0</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_1" ConsumerKey="RS_0">
+        <Function Action="0x17">
+          <Guid Version="1" ID="22d58392-ae26-4e65-9af9-91c8d1327670" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="6dd78091-804c-46cb-894d-20a007a7e76a" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+    </FuncBlock>
+    <FuncBlock ObjectType="BuildInMacros" SubType="2" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Height="90" Width="90">
+      <Name>fbLightControlOUTLevel5</Name>
+      <Description>fbLightControlOUTLevel5</Description>
+      <Key KEY="FB_0x00000008" />
+      <Guid Version="9" ID="04db4f25-94f2-4359-bbe6-93326506bf64" />
+      <ImagePath>FunBlocks/funBlockLightControlOUT.png</ImagePath>
+      <LeftSide Version="0" TempKey="LS_0" BitSetArray="0">
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="Device" SubType="8" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <LeftSide Version="0" TempKey="LS_1" BitSetArray="0">
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="3" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <RightSide Version="0" TempKey="RS_0" BitSetArray="0">
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="Device" SubType="4" Value="" IsHEX="false" BitSet="0x00000002" />
+      </RightSide>
+      <Connect ActorKey="LS_0" ConsumerKey="RS_0">
+        <Function Action="0x38">
+          <Guid Version="1" ID="91c0a661-64ba-4713-8667-2b1dd30ff99b" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="EqualAndLower" Value="25000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="d7a445d4-12f2-4ff6-af24-a4d48a1da854" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>100</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="0a952ef3-e77a-4b7f-a757-c19f911569d2" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="Higher" Value="25000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="EqualAndLower" Value="85000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="47c762dd-1302-4344-ba1c-1b2e739d88b3" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>75</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="1ab99cef-8cd4-40a3-84e7-573ab4a04d26" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="Higher" Value="85000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="EqualAndLower" Value="100000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="894a79f8-7c1b-4fa7-89e1-ec3e9650850c" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>50</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="2ca698e2-d39e-4948-a87e-8d19afe35026" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="Higher" Value="100000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="EqualAndLower" Value="120000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="f48f3ad0-e9a1-496a-94b3-3f0295d82ead" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>25</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="f6ccab40-0e88-4180-ac89-bc8a2066c465" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="Higher" Value="120000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="99311908-2b4f-4e68-8b75-a2fc69af66ef" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>0</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_1" ConsumerKey="RS_0">
+        <Function Action="0x17">
+          <Guid Version="1" ID="5d2782a3-9e56-4a67-b5aa-a51290e0324f" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="5c599fdb-72c9-41df-a387-30cf21c6bea8" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+    </FuncBlock>
+    <FuncBlock ObjectType="BuildInMacros" SubType="2" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Height="90" Width="90">
+      <Name>fbLightControlOUTLevel10</Name>
+      <Description>fbLightControlOUTLevel10</Description>
+      <Key KEY="FB_0x00000009" />
+      <Guid Version="9" ID="1d0511ae-70d8-47b6-b038-4c7d05cb683e" />
+      <ImagePath>FunBlocks/funBlockLightControlOUT.png</ImagePath>
+      <LeftSide Version="0" TempKey="LS_0" BitSetArray="0">
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="Device" SubType="8" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <LeftSide Version="0" TempKey="LS_1" BitSetArray="0">
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="SystemDevice" SubType="3" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <RightSide Version="0" TempKey="RS_0" BitSetArray="0">
+        <Description xsi:nil="true" />
+        <Selector Source="0" Path="0" Type="Device" SubType="4" Value="" IsHEX="false" BitSet="0x00000002" />
+      </RightSide>
+      <Connect ActorKey="LS_0" ConsumerKey="RS_0">
+        <Function Action="0x38">
+          <Guid Version="1" ID="a476a831-0844-4c72-b74f-e42424dd0dea" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="EqualAndLower" Value="5000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="3" ID="33d59e0e-5292-406d-baf9-0a3c0aa3c0fa" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>100</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="016cbbe3-a0e5-48d0-9cc4-fd3f7f2b67fd" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="Higher" Value="5000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="EqualAndLower" Value="10000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="66d580a9-a779-412f-b664-132c8a88ea1a" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>90</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="fc762036-d87c-4350-b01c-0ad15da0078d" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="Higher" Value="10000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="EqualAndLower" Value="25000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="e656888f-1abe-4fce-a9ba-df21ce34f438" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>80</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="0766669d-e112-495d-8305-93c82d6e4519" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="Higher" Value="25000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="EqualAndLower" Value="50000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="500ac543-018f-4473-9402-f64cc7f972b6" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>70</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="98dd4b9c-4c2b-4808-9abd-7d28c0bd6c49" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="Higher" Value="50000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="EqualAndLower" Value="60000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="f14ab0c4-a4e8-46ba-8d8e-67cb4778cade" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>60</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="b13ebdfb-085e-4958-8fa0-993ebf1083e4" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="Higher" Value="60000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="EqualAndLower" Value="85000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="09366f9e-de65-4081-83db-07a166bc9658" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>50</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="0b85bf13-7d2c-4f42-8af9-3f847f48db8c" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="Higher" Value="85000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="EqualAndLower" Value="92500" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="48536186-9f39-4d9f-98b5-d8944a0c4d97" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>40</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="01edc311-2b18-4110-a899-9955bc32e56e" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="Higher" Value="92500" />
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="EqualAndLower" Value="100000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="954bb89a-0fcd-4203-9aa3-e3cd245a1e95" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>30</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="8e8921df-dbc3-4c8e-9a5b-5f616a5e2659" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="Higher" Value="100000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="EqualAndLower" Value="120000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="805fe02f-6128-4e07-b02f-982eb1c53828" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>20</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+        <Function Action="0x38">
+          <Guid Version="1" ID="a55793ae-6e87-4a49-8ab4-46c59bd1c008" />
+          <Restriction xsi:type="Combination" Operator="AND">
+            <Items>
+              <RestX xsi:type="ConditionValue" TargetSelector="ACTOR" TargetObjectKey="0" Type="Higher" Value="120000" />
+              <RestX xsi:type="ConditionValue" TargetSelector="BYKEY" Template_TargetObjKey="LS_1" TargetObjectKey="0" Type="Equal" Value="1" />
+            </Items>
+          </Restriction>
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SetLevel">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="24629fb6-2667-4691-82cb-8706626fbbd7" />
+            <ActionParams>
+              <ActionParam ParamIdentificator="Analog_Level" Type="Int32">
+                <ParamValue>0</ParamValue>
+              </ActionParam>
+            </ActionParams>
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_1" ConsumerKey="RS_0">
+        <Function Action="0x17">
+          <Guid Version="1" ID="49e77aad-fd5e-4b25-926b-a402a66519e3" />
+          <TFunction ObjectType="TemplateFunction" SubType="2" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Analog_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="1304c12c-5e42-4c93-889c-32bfe3266955" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+    </FuncBlock>
+    <FuncBlock ObjectType="BuildInMacros" SubType="2" UnicateObjectKey="0" BitSetArray="0" Access="Editable" Height="90" Width="90">
+      <Name>fbMurDndMaster</Name>
+      <Description>fbMurDndMaster</Description>
+      <Key KEY="FB_0x0000000B" />
+      <Guid Version="2" ID="00000000-0000-0000-0000-000000000000" />
+      <ImagePath>FunBlocks/funBlockMurDnd.png</ImagePath>
+      <LeftSide Version="0" TempKey="LS_0" BitSetArray="0">
+        <Selector Source="0" Path="0" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <LeftSide Version="0" TempKey="LS_1" BitSetArray="0">
+        <Selector Source="0" Path="0" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <LeftSide Version="0" TempKey="LS_2" BitSetArray="0">
+        <Selector Source="0" Path="0" Type="Device" SubType="1" Value="" IsHEX="false" BitSet="0x00000001" />
+      </LeftSide>
+      <RightSide Version="0" TempKey="RS_0" BitSetArray="0">
+        <Selector Source="0" Path="0" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000002" />
+      </RightSide>
+      <RightSide Version="0" TempKey="RS_1" BitSetArray="0">
+        <Selector Source="0" Path="0" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000002" />
+      </RightSide>
+      <RightSide Version="0" TempKey="RS_2" BitSetArray="0">
+        <Selector Source="0" Path="0" Type="Device" SubType="2" Value="" IsHEX="false" BitSet="0x00000002" />
+      </RightSide>
+      <Connect ActorKey="LS_0" ConsumerKey="RS_0">
+        <Function Action="0x10">
+          <Guid Version="1" ID="ff84830f-3f91-4015-94fe-3b53628f3b93" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchValue">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="f6a8fed7-e04b-4400-8161-9cfbb1db3075" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_0" ConsumerKey="RS_1">
+        <Function Action="0x10">
+          <Guid Version="1" ID="1fc71e85-d2fc-409d-a90d-bbf64390d49a" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="09c6fd22-9d00-427a-8ae1-9f1c08357269" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_1" ConsumerKey="RS_1">
+        <Function Action="0x10">
+          <Guid Version="1" ID="27b6c339-6790-44e3-90da-f018614c0af4" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchValue">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="1878ad09-884a-4f28-8c9a-bfe71e6ce40b" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_1" ConsumerKey="RS_0">
+        <Function Action="0x10">
+          <Guid Version="1" ID="ea973782-f08d-4db1-b8d4-171732af2922" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="8377773b-ca4e-4500-81f5-c72851255bb9" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+      <Connect ActorKey="LS_2" ConsumerKey="RS_2">
+        <Function Action="0x10">
+          <Guid Version="1" ID="1115363b-80f2-4b14-8473-8cb69384197b" />
+          <TFunction ObjectType="TemplateFunction" SubType="4" UnicateObjectKey="0" BitSetArray="256" Access="Editable" Function="Digital_SwitchOff">
+            <Name />
+            <Description />
+            <Guid Version="2" ID="fa80c28f-746d-4689-9110-937a5cada19b" />
+            <ActionParams />
+          </TFunction>
+        </Function>
+      </Connect>
+    </FuncBlock>
+  </FBlocks>
+</FuncBlockConfiguration>

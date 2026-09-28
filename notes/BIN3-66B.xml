@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="BIN3-66B" Source="BIN3-66B - Firmware history.txt">
+  <Release Version="01.00.00">
+    <Note Lang="en">First release</Note>
+  </Release>
+</ReleaseNotes>

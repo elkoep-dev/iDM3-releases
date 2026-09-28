@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="GDB3-10" Source="GDB3-10 - Firmware history.txt">
+  <Release Version="02.9C.00">
+    <Note Lang="en">optimization of touch detection</Note>
+    <Note Lang="en">increased bus interference immunity</Note>
+  </Release>
+  <Release Version="01.40.00">
+    <Note Lang="en">optimisation of the sensitivity of the buttons.</Note>
+    <Note Lang="en">added colour correction</Note>
+  </Release>
+  <Release Version="01.38.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

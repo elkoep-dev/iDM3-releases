@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="MCD3-1" Source="MCD3-1 - Firmware history.txt">
+  <Release Version="01.08.00">
+    <Note Lang="en">add automatic Reset every day</Note>
+  </Release>
+  <Release Version="01.04.00">
+    <Note Lang="en">add True state and Long state filters</Note>
+  </Release>
+  <Release Version="01.00.02">
+    <Note Lang="en">repaired inversion input</Note>
+  </Release>
+  <Release Version="01.00.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

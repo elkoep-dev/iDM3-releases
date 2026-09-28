@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="FA3-612M" Source="FA3-612M - Firmware history.txt">
+  <Release Version="02.86.00">
+    <Note Lang="en">Optimized bus communication</Note>
+  </Release>
+  <Release Version="02.83.00">
+    <Note Lang="en">First release</Note>
+  </Release>
+</ReleaseNotes>

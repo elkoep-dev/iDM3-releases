@@ -1,0 +1,15 @@
+# Binary, never touch line endings.
+*.zip     binary
+*.sig     binary
+*.bundle  binary
+*.if3   binary
+*.nf3   binary
+
+# LF everywhere, so hashes are the same on every machine.
+*.xml   text eol=lf
+*.ps1   text eol=lf
+*.yml   text eol=lf
+*.md    text eol=lf
+
+# content/ is hashed in the catalogue, so git must not change it. Keep this rule last.
+content/** -text

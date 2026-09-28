@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="GHR3-11" Source="GHR3-11 - Firmware history.txt">
+  <Release Version="01.3A.00">
+    <Note Lang="en">Added support entrance system in central unit</Note>
+  </Release>
+  <Release Version="01.38.00">
+    <Note Lang="en">Added support card type "Mifare Desfire 2k", "Mifare Desfire 4k"</Note>
+  </Release>
+  <Release Version="01.32.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

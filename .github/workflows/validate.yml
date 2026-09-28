@@ -1,0 +1,99 @@
+﻿name: Validate
+
+# Checks firmware names, the catalogue and that no keys were committed.
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  firmware:
+    name: Firmware archives
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Validate naming, duplicates and archive contents
+        shell: pwsh
+        run: .\tools\Test-FirmwareNames.ps1
+
+  catalogue:
+    name: Catalogue and digests
+    runs-on: windows-latest
+    steps:
+      # Two commits, to compare Sequence with the previous catalogue.
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
+
+      - name: Read the currently published Sequence
+        id: published
+        shell: pwsh
+        run: |
+          # git reports "no such ref" and "no difference" through the exit code.
+          $PSNativeCommandUseErrorActionPreference = $false
+
+          $previous = 0
+
+          if ($env:GITHUB_EVENT_NAME -eq 'pull_request') {
+            git fetch --no-tags --depth=1 origin $env:GITHUB_BASE_REF 2>&1 | Out-Null
+            $ref = 'FETCH_HEAD'
+          }
+          else {
+            $ref = 'HEAD^'
+          }
+
+          $resolved = git rev-parse --verify --quiet "${ref}^{commit}"
+
+          if ([string]::IsNullOrWhiteSpace($resolved)) {
+            Write-Output "::warning::$ref is unavailable, so the rollback check is skipped."
+          }
+          elseif ([string]::IsNullOrWhiteSpace((git diff --name-only $resolved HEAD -- catalog.xml))) {
+            Write-Output "catalog.xml is unchanged; Sequence is expected to hold at its current value."
+          }
+          else {
+            $raw = git show "${resolved}:catalog.xml" 2>$null
+            if ($LASTEXITCODE -eq 0 -and -not [string]::IsNullOrWhiteSpace($raw)) {
+              try {
+                $doc = New-Object System.Xml.XmlDocument
+                $doc.LoadXml(($raw -join "`n"))
+                $previous = [int]$doc.FirmwareCatalog.Sequence
+              }
+              catch {
+                Write-Output "::warning::The published catalogue could not be parsed; the rollback check is skipped."
+              }
+            }
+            else {
+              Write-Output "::warning::catalog.xml is new in this change; there is no previous Sequence to compare."
+            }
+          }
+
+          Write-Output "Published sequence: $previous"
+          "sequence=$previous" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+
+      - name: Verify the catalogue and every digest
+        shell: pwsh
+        run: .\tools\Test-Catalog.ps1 -PreviousSequence ${{ steps.published.outputs.sequence }}
+
+  secrets:
+    # The repository is public.
+    name: No private key material
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Fail if a private key was committed
+        run: |
+          if git ls-files | grep -Ei '\.(private\.xml|key|pem|pfx|p12)$'; then
+            echo "::error::Private key material is present in the repository."
+            exit 1
+          fi
+          if git grep -lE 'BEGIN (RSA |EC )?PRIVATE KEY' -- . ; then
+            echo "::error::A PEM private key block is present in the repository."
+            exit 1
+          fi
+          echo "No private key material found."

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="IDRT3-1" Source="IDRT3-1 - Firmware history.txt">
+  <Release Version="04.02.00">
+    <Note Lang="en">Repaired searching unit.</Note>
+  </Release>
+  <Release Version="04.00.00">
+    <Note Lang="en">Optimized for CU3-07M, CU3-08M.</Note>
+    <Note Lang="en">change digital device for LED control to analog device.</Note>
+  </Release>
+  <Release Version="02.46.00">
+    <Note Lang="en">Optimized control HC4.</Note>
+  </Release>
+  <Release Version="01.3A.00">
+    <Note Lang="en">Support new heat/cool circle optimized</Note>
+  </Release>
+  <Release Version="01.38.00">
+    <Note Lang="en">Backlight of the display has been optimized</Note>
+  </Release>
+  <Release Version="01.36.00">
+    <Note Lang="en">Starting of the unit has been optimized</Note>
+  </Release>
+  <Release Version="01.34.00">
+    <Note Lang="en">Range of temperature sensors has been optimized</Note>
+  </Release>
+  <Release Version="01.32.00">
+    <Note Lang="en">First release</Note>
+  </Release>
+</ReleaseNotes>

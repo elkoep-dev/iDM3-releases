@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="DAC3-04B" Source="DAC3-04B - Firmware history.txt">
+  <Release Version="01.34.00">
+    <Note Lang="en">optimized temperature input range by sensor types</Note>
+  </Release>
+  <Release Version="01.32.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

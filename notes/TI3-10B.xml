@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="TI3-10B" Source="TI3-10B - Firmware history.txt">
+  <Release Version="01.38.00">
+    <Note Lang="en">optimized averaging temperatures after restrart unit</Note>
+  </Release>
+  <Release Version="01.36.00">
+    <Note Lang="en">first version</Note>
+  </Release>
+</ReleaseNotes>

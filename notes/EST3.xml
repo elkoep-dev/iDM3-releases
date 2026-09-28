@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseNotes Model="EST3" Source="EST3 - Firmware history.txt">
+  <Release Version="02.16.00">
+    <Note Lang="en">Optimized control HC4.</Note>
+  </Release>
+  <Release Version="02.14.00">
+    <Note Lang="en">Support for wiev under zerro number in required temperature</Note>
+    <Note Lang="en">Support for view errors code in temperature</Note>
+  </Release>
+  <Release Version="02.12.00">
+    <Note Lang="en">Support new heat/cool circle optimized</Note>
+  </Release>
+  <Release Version="02.08.00">
+    <Note Lang="en">Support new heat/cool circle optimized</Note>
+  </Release>
+  <Release Version="02.06.00">
+    <Note Lang="en">!!! Warning !!! Before updating EST3 to firmware version 02.00.00, it is nececery setup EST3 to factory default.</Note>
+    <Note Lang="en">Configuration of the screen with the buttons has been moved to the iDM3</Note>
+    <Note Lang="en">Setting of the home screen has been moved to the iDM3</Note>
+    <Note Lang="en">Now in the iDM3 it's possible to choose desired screens to display</Note>
+    <Note Lang="en">Support of the RGBY mode has been implemented</Note>
+    <Note Lang="en">Now it's possible to use more letters in the buttons</Note>
+    <Note Lang="en">Rewriting of texts in the buttons has been optimized</Note>
+  </Release>
+  <Release Version="01.38.00">
+    <Note Lang="en">Support of the new hardware</Note>
+  </Release>
+  <Release Version="01.36.00">
+    <Note Lang="en">Layout has been optimized</Note>
+    <Note Lang="en">Now it's possible to update the layout just using the new firmware package</Note>
+  </Release>
+  <Release Version="01.34.00">
+    <Note Lang="en">New version of the graphical layout</Note>
+  </Release>
+  <Release Version="01.20.00">
+    <Note Lang="en">First release</Note>
+  </Release>
+</ReleaseNotes>
