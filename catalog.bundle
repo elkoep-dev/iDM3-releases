@@ -1,6 +1,6 @@
-Lio0i/F4F8t6b63iUN1dL/u1toDjf9vsTzYONNFggkZKwG0J7CAiiIpc7xr+SRXrdITaZJy0zEy9YS70WNaE+j0dPDvdtXHqFSlrRBZ1JNcyLScLgSC4jAu2M+TI49JZ1gXlkr61KDBXODlvXWlnmr80LGPpLipT6jHqeX2GWkdQPSXas8Uetr3FTUuo1CD8UMUnqhLUvR21/ujyTJl50YYg3zhOikZEbqpJ9jj/XzmrbZ26o4J8I7ex8du9gC4faRPW6BNupAhSlVEHPPuFyJ8gfUVnPbUvCDIu6YJ0YoPpD6cWUxjQZAxGFR4yqVXXftXF0xc0gXl6x0+dcCRXj324LPNW93G4jyQzP9wIFZLc2qrx0oCXcjmrc2KYVpSIp2LmFKlVe3YmCO/Yc8PR0iYYD/8UdcolpHyVPmf2c8/p2wqly3dTGptnj1auPasY3tblJFM8H2xjePlUzkki0q9/N4FtYd6asYXALqA3BkGh6rdKUKDkAvxgHcuBQNnT
+TEajJT3lnPP0JKe9qrgrXEOlbTrK/h+mHSLbK/+9/tZqrAn+UhHepO2ldpm6eQsQxmc18tfTLj2G+3/aCgXuZlwOSYXwfcHw5RlfJlv8im6u+nF0BM9xd2lWwzroGgxT+R0RA6lPSHn8YUjL+EbGMu5zhjMPgPfcfkwiYh8xZYQCLGm6/FydC9graGMteLZoFYPXwD0mFQb9ltQJqgXFKY33zJ8WTfEeR/yBafzWkTF0Nd9JdxwRw0b1yATl6AHukCoqwX6ZylAwRMboTmm3fUajLL0McRZa5Od0kSMPHrdAe/XP+EVIlZBaftMtsttLoIp+PUoFTYRKdOLUFd+IPIBHaTDanE80lOzvJMLtqOLOb2L4fdufkwv8mjiSkYlUZrjSTUaUr19SQ6uHLlhAJrroNr+JnomWUyuiy27FaexEPqVJhP/9Awj3e6mtlzzkTBbpRGaYewrbyP4AWnrg4Lf4z33M0P+jKhiqY6iGK4koOSahxfjbDzjDsb5Hst4e
 <?xml version="1.0" encoding="utf-8"?>
-<FirmwareCatalog Schema="2" Sequence="23" Generated="2026-09-29T11:58:09Z" ValidUntil="2027-03-28T11:58:09Z">
+<FirmwareCatalog Schema="2" Sequence="24" Generated="2026-09-29T12:02:01Z" ValidUntil="2027-03-28T12:02:01Z">
   <Item Component="Firmwares" Kind="Firmware" Model="A-IBUS-SLAVE" Version="02.08.00" Target="Firmwares\A-IBUS-SLAVE_02.08.00.zip" Source="firmwares/A-IBUS-SLAVE_02.08.00.zip" Size="23017" Sha256="67e27e62eaa67f26bd9e84bfd5935e34f0b708a50915f5e8ccaf5c49706928b6" Channel="Stable">
     <Note Lang="en">Bug fixes and improvements.</Note>
   </Item>
@@ -514,7 +514,7 @@ Lio0i/F4F8t6b63iUN1dL/u1toDjf9vsTzYONNFggkZKwG0J7CAiiIpc7xr+SRXrdITaZJy0zEy9YS70
   <Item Component="Firmwares" Kind="Firmware" Model="WSB3-40-HUM" Version="04.02.00" Target="Firmwares\WSB3-40-HUM_04.02.00.zip" Source="firmwares/WSB3-40-HUM_04.02.00.zip" Size="22118" Sha256="0a958fe4f34eeb07b51da3e8b5468c71b4f6cc100cefa3d62600f2f7e2582da1" Channel="Stable">
     <Note Lang="en">Bug fixes and improvements.</Note>
   </Item>
-  <Item Component="Root" Kind="Content" Model="announcements.xml" Version="3.7.0" Target="announcements.xml" Source="content/announcements.xml" Size="3984" Sha256="9431da447896eefef356000a2b49d60ee1af589269e987ded473e194708bafe5" Channel="Stable" />
+  <Item Component="Root" Kind="Content" Model="announcements.xml" Version="3.7.0" Target="announcements.xml" Source="content/announcements.xml" Size="3301" Sha256="ad1bd7576dd1ff0c6b35194d90b665ac4b7530af1ae070c5e9787c122cda6889" Channel="Stable" />
   <Item Component="release-notes" Kind="Content" Model="release-notes/idm3.xml" Version="3.7.0" Target="release-notes\idm3.xml" Source="content/release-notes/idm3.xml" Size="3272" Sha256="150c57cc6398c756b8574b95b87285d31f5e15b447c68ce578e1928e7001e167" Channel="Stable" />
   <Release Version="3.7.0" Rev="0" Channel="Stable" Published="2026-09-28" Installer="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.0-rev0/IDM3_3.7.0_Rev0_Setup.exe" Size="18485794" Sha256="7aef00e6fe0e7f18b9c444e62a3f2e38b689561e3b376274d9af732773676c90">
     <Note>iDM3 now updates itself. The Overview page shows when a new version is available and what changed in every version since yours, and installs it with one click in a few seconds. Projects and settings are kept.</Note>
@@ -574,15 +574,5 @@ Lio0i/F4F8t6b63iUN1dL/u1toDjf9vsTzYONNFggkZKwG0J7CAiiIpc7xr+SRXrdITaZJy0zEy9YS70
     <Title>iDM3 checks for firmware updates</Title>
     <Content>iDM3 checks for published device firmware on every launch and offers newer versions on the unit that needs them. Downloading before going on site is still worth doing – connectivity in plant rooms is unreliable.</Content>
     <Link>https://wiki.inels.com/inels-bus/inels-design-manager-idm3/idm3-user-manual-contents</Link>
-  </Announcement>
-  <Announcement Published="2026-09-11">
-    <Title>RFPM-2M Energy gateway with an improved app</Title>
-    <Content>The web interface of the RFPM-2M Energy gateway has a new and cleaner visualisation, which makes reading and evaluating energy consumption more comfortable.</Content>
-    <Link>https://www.elkoep.cz/</Link>
-  </Announcement>
-  <Announcement Published="2026-09-04">
-    <Title>RFAF/USB service key</Title>
-    <Content>The RFAF/USB service key is a support tool for system partners and installation firms. It simplifies configuration and can analyse problems in wireless communication.</Content>
-    <Link>https://www.elkoep.cz/</Link>
   </Announcement>
 </FirmwareCatalog>

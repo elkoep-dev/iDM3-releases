@@ -43,16 +43,4 @@
     <Link>https://wiki.inels.com/inels-bus/inels-design-manager-idm3/idm3-user-manual-contents</Link>
   </Announcement>
 
-  <Announcement Published="2026-09-11">
-    <Title>RFPM-2M Energy gateway with an improved app</Title>
-    <Content>The web interface of the RFPM-2M Energy gateway has a new and cleaner visualisation, which makes reading and evaluating energy consumption more comfortable.</Content>
-    <Link>https://www.elkoep.cz/</Link>
-  </Announcement>
-
-  <Announcement Published="2026-09-04">
-    <Title>RFAF/USB service key</Title>
-    <Content>The RFAF/USB service key is a support tool for system partners and installation firms. It simplifies configuration and can analyse problems in wireless communication.</Content>
-    <Link>https://www.elkoep.cz/</Link>
-  </Announcement>
-
 </Announcements>
