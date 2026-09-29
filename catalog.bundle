@@ -1,6 +1,6 @@
-jAJO/d9SeswGguHo1Lor8Ee6wy+QHh8219dvgeMXB3a+ntA4bjHj3gsZmYcyqaLLsKQxsNRVs88tLxkC+htcYeCnysrZFsHHVIlHGw4WMwXNGmOzMeOyxZNHIaIHIuuH7cp+iUj8hlDeRzWrcGb0smydYQa9N9PKqy2HDS+l4OCanp44YdbTUDP06JsSswvpk93Gk/NpRz44RnElopopAXbDqr6ULWTOYNR7MYhqhztp04wwNScx/+sMH/mCLu6+vLOhW29hwv7A4cXoghu9dBh0k/EfRy5WmfcWwpNn1lSRAwJbQusWsNAaSEjL3nu3Jl3GvyxzB8RU/2z65N6d/hPzxiuTSBqI5JFLduYLPe9IyWIT02YeW3R9zQKL9CI/54tO5Il/Uk7QQ4p8bW8yow4KzVUk4Syye9fVvSFkmZ2HTpB/ictK2pj1HusZmBCrsblAcVXjgKltoEoHYYP2X3+6+dfBE+s0KESNdp/x1xXkK/UNOB5C4iW9ISPRLtpY
+Lio0i/F4F8t6b63iUN1dL/u1toDjf9vsTzYONNFggkZKwG0J7CAiiIpc7xr+SRXrdITaZJy0zEy9YS70WNaE+j0dPDvdtXHqFSlrRBZ1JNcyLScLgSC4jAu2M+TI49JZ1gXlkr61KDBXODlvXWlnmr80LGPpLipT6jHqeX2GWkdQPSXas8Uetr3FTUuo1CD8UMUnqhLUvR21/ujyTJl50YYg3zhOikZEbqpJ9jj/XzmrbZ26o4J8I7ex8du9gC4faRPW6BNupAhSlVEHPPuFyJ8gfUVnPbUvCDIu6YJ0YoPpD6cWUxjQZAxGFR4yqVXXftXF0xc0gXl6x0+dcCRXj324LPNW93G4jyQzP9wIFZLc2qrx0oCXcjmrc2KYVpSIp2LmFKlVe3YmCO/Yc8PR0iYYD/8UdcolpHyVPmf2c8/p2wqly3dTGptnj1auPasY3tblJFM8H2xjePlUzkki0q9/N4FtYd6asYXALqA3BkGh6rdKUKDkAvxgHcuBQNnT
 <?xml version="1.0" encoding="utf-8"?>
-<FirmwareCatalog Schema="2" Sequence="22" Generated="2026-09-28T18:36:44Z" ValidUntil="2027-03-27T18:36:44Z">
+<FirmwareCatalog Schema="2" Sequence="23" Generated="2026-09-29T11:58:09Z" ValidUntil="2027-03-28T11:58:09Z">
   <Item Component="Firmwares" Kind="Firmware" Model="A-IBUS-SLAVE" Version="02.08.00" Target="Firmwares\A-IBUS-SLAVE_02.08.00.zip" Source="firmwares/A-IBUS-SLAVE_02.08.00.zip" Size="23017" Sha256="67e27e62eaa67f26bd9e84bfd5935e34f0b708a50915f5e8ccaf5c49706928b6" Channel="Stable">
     <Note Lang="en">Bug fixes and improvements.</Note>
   </Item>
@@ -514,7 +514,7 @@ jAJO/d9SeswGguHo1Lor8Ee6wy+QHh8219dvgeMXB3a+ntA4bjHj3gsZmYcyqaLLsKQxsNRVs88tLxkC
   <Item Component="Firmwares" Kind="Firmware" Model="WSB3-40-HUM" Version="04.02.00" Target="Firmwares\WSB3-40-HUM_04.02.00.zip" Source="firmwares/WSB3-40-HUM_04.02.00.zip" Size="22118" Sha256="0a958fe4f34eeb07b51da3e8b5468c71b4f6cc100cefa3d62600f2f7e2582da1" Channel="Stable">
     <Note Lang="en">Bug fixes and improvements.</Note>
   </Item>
-  <Item Component="Root" Kind="Content" Model="announcements.xml" Version="3.7.0" Target="announcements.xml" Source="content/announcements.xml" Size="1476" Sha256="f40c66546b48bebb7640e4ff8265b0e70120026359d99834c329678ad55b6a20" Channel="Stable" />
+  <Item Component="Root" Kind="Content" Model="announcements.xml" Version="3.7.0" Target="announcements.xml" Source="content/announcements.xml" Size="3984" Sha256="9431da447896eefef356000a2b49d60ee1af589269e987ded473e194708bafe5" Channel="Stable" />
   <Item Component="release-notes" Kind="Content" Model="release-notes/idm3.xml" Version="3.7.0" Target="release-notes\idm3.xml" Source="content/release-notes/idm3.xml" Size="3272" Sha256="150c57cc6398c756b8574b95b87285d31f5e15b447c68ce578e1928e7001e167" Channel="Stable" />
   <Release Version="3.7.0" Rev="0" Channel="Stable" Published="2026-09-28" Installer="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.0-rev0/IDM3_3.7.0_Rev0_Setup.exe" Size="18485794" Sha256="7aef00e6fe0e7f18b9c444e62a3f2e38b689561e3b376274d9af732773676c90">
     <Note>iDM3 now updates itself. The Overview page shows when a new version is available and what changed in every version since yours, and installs it with one click in a few seconds. Projects and settings are kept.</Note>
@@ -545,18 +545,43 @@ jAJO/d9SeswGguHo1Lor8Ee6wy+QHh8219dvgeMXB3a+ntA4bjHj3gsZmYcyqaLLsKQxsNRVs88tLxkC
       <Note>add parameter for deactivation zerocross</Note>
     </Firmware>
   </Release>
+  <Announcement Published="2026-09-29">
+    <Title>The new iNELS website is live</Title>
+    <Content>The new iNELS website brings solutions, industries, products, downloads and support for homes, hotels and commercial buildings together in one place. It also covers open integrations such as KNX, BACnet, Modbus, MQTT and the major voice assistants, along with reference projects and an installer finder.</Content>
+    <Link>https://inels.com/</Link>
+  </Announcement>
+  <Announcement Published="2026-09-28">
+    <Title>iNELS Harmony manual on the wiki</Title>
+    <Content>The iNELS Harmony user manual is now available on the wiki. Harmony combines room control with hotel operations such as reservations, check-in, keys and housekeeping, in three web apps running on one on-site server. The guide is organised by role, so installers, reception staff and housekeepers each start from their own section.</Content>
+    <Link>https://wiki.inels.com/inels-harmony</Link>
+  </Announcement>
+  <Announcement Published="2026-09-27">
+    <Title>All iNELS newsletters in one place</Title>
+    <Content>Every iNELS newsletter is now collected on a single wiki page, newest first. Product launches, iDM releases and application notes sent out since 2024 are easy to find again and share with customers.</Content>
+    <Link>https://wiki.inels.com/inels-news-and-updates</Link>
+  </Announcement>
+  <Announcement Published="2026-09-26">
+    <Title>Linking central units over Modbus IP</Title>
+    <Content>A new iDM3 tutorial shows how to link iNELS central units over Modbus IP, so a button on one CU can switch an output on another. It walks through planning the register map, setting up the master and slave sides, and a step-by-step test sequence for tracking down faults.</Content>
+    <Link>https://wiki.inels.com/inels-bus/inels-design-manager-idm3/linking-two-inels-central-units-over-modbus-ip</Link>
+  </Announcement>
+  <Announcement Published="2026-09-25">
+    <Title>Hotel-Room Object documented</Title>
+    <Content>The Hotel-Room Object now has a full step-by-step guide on the wiki. It gathers occupancy, DND, MUR, climate, HVAC and scenes for a guest room into one virtual device with a single MQTT topic for PMS and BMS integration. Rooms only appear in iNELS Harmony once this object is added, so include it from the start on hospitality projects.</Content>
+    <Link>https://wiki.inels.com/inels-bus/inels-design-manager-idm3/hotel-room-object</Link>
+  </Announcement>
   <Announcement Published="2026-09-18">
-    <Title>New space for documents itself</Title>
-    <Content>iDM3 checks for published device firmware on every launch and offers newer versions on the unit that needs them. Downloading before going on site is still worth doing - connectivity in plant rooms is unreliable.</Content>
+    <Title>iDM3 checks for firmware updates</Title>
+    <Content>iDM3 checks for published device firmware on every launch and offers newer versions on the unit that needs them. Downloading before going on site is still worth doing – connectivity in plant rooms is unreliable.</Content>
     <Link>https://wiki.inels.com/inels-bus/inels-design-manager-idm3/idm3-user-manual-contents</Link>
   </Announcement>
   <Announcement Published="2026-09-11">
-    <Title>RFPM-2M Energy brána s vylepšenou aplikací</Title>
+    <Title>RFPM-2M Energy gateway with an improved app</Title>
     <Content>The web interface of the RFPM-2M Energy gateway has a new and cleaner visualisation, which makes reading and evaluating energy consumption more comfortable.</Content>
     <Link>https://www.elkoep.cz/</Link>
   </Announcement>
   <Announcement Published="2026-09-04">
-    <Title>Servisní klíč RFAF/USB</Title>
+    <Title>RFAF/USB service key</Title>
     <Content>The RFAF/USB service key is a support tool for system partners and installation firms. It simplifies configuration and can analyse problems in wireless communication.</Content>
     <Link>https://www.elkoep.cz/</Link>
   </Announcement>
