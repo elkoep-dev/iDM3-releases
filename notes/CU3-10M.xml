@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Model="CU3-10M" Source="CU3-10M - Firmware history.txt">
+  <Release Version="02.97.66">
+    <Note Lang="en">Fixed time plans not loading after a project upload, and time-plan values being 0 after CU Start.</Note>
+  </Release>
   <Release Version="02.97.65">
     <Note Lang="en">stability improvements</Note>
     <Note Lang="en">repaired the MQTT password being cleared when MQTT settings are saved in the web configuration</Note>

@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Product="iDM3">
-  <Release Version="3.7.0" Published="2026-09-28" Url="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.0-rev0/IDM3_3.7.0_Rev0_Setup.exe">
+  <Release Version="3.7.0" Published="2026-10-01" Url="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.0-rev2/IDM3_3.7.0_Rev2_Setup.exe">
+    <Note>The installer can always install iDM3 separately, also a version that is already installed.</Note>
+    <Note>Saving a project to the CU is faster.</Note>
+    <Note>Add to iNELS 3 export in Heating/Cooling areas now applies to the controller and both regulators.</Note>
+    <Note>Firmware CU3-07M 02.97.66: Fixed time plans not loading after a project upload, and time-plan values being 0 after CU Start.</Note>
+    <Note>Firmware CU3-08M 02.97.66: Fixed time plans not loading after a project upload, and time-plan values being 0 after CU Start.</Note>
+    <Note>Firmware CU3-09M 02.97.66: Fixed time plans not loading after a project upload, and time-plan values being 0 after CU Start.</Note>
+    <Note>Firmware CU3-10M 02.97.66: Fixed time plans not loading after a project upload, and time-plan values being 0 after CU Start.</Note>
     <Note>iDM3 now updates itself. The Overview page shows when a new version is available and what changed in every version since yours, and installs it with one click in a few seconds. Projects and settings are kept.</Note>
     <Note>Updates can also be installed automatically whenever iDM3 is closed. The option is on the Overview page and is off by default.</Note>
     <Note>An update keeps the functions and preferences the user created or changed; everything else comes from the new release.</Note>
