@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Product="iDM3">
-  <Release Version="3.7.0" Published="2026-10-01" Url="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.0-rev2/IDM3_3.7.0_Rev2_Setup.exe">
+  <Release Version="3.7.0" Published="2026-10-05" Url="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.0-rev4/IDM3_3.7.0_Rev4_Setup.exe">
+    <Note>Release notes on the Overview open per version in their own window, and each firmware shows its version history.</Note>
+    <Note>Firmware CU3-07M 02.97.67: Web server password protection</Note>
+    <Note>Firmware CU3-07M 02.97.67: Cloud connection stability fixes</Note>
+    <Note>Firmware CU3-08M 02.97.67: Web server password protection</Note>
+    <Note>Firmware CU3-08M 02.97.67: Cloud connection stability fixes</Note>
+    <Note>Firmware CU3-09M 02.97.67: Web server password protection</Note>
+    <Note>Firmware CU3-09M 02.97.67: Cloud connection stability fixes</Note>
+    <Note>Firmware CU3-10M 02.97.67: Web server password protection</Note>
+    <Note>Firmware CU3-10M 02.97.67: Cloud connection stability fixes</Note>
     <Note>The installer can always install iDM3 separately, also a version that is already installed.</Note>
     <Note>Saving a project to the CU is faster.</Note>
     <Note>Add to iNELS 3 export in Heating/Cooling areas now applies to the controller and both regulators.</Note>

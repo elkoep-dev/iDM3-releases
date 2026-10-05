@@ -1,6 +1,6 @@
-LZEQ0ioOrx7GKSyjwheOv8VzBjTHr523jTIgjqU00cghPr0fL8dOYnHNPd+jCnefZled7dHkVCq5aGSBhAVizyFZH1DjfJs7q3bYDAqYWb+NUQbUKLL15NiNC/4A3+n52RTv5m+g91zLnBXjTTZyAKctLr2juH86rO3/5xaxq3J3dHHZTj6ZRrHzC0dxldv3PQ8wYSrYG0942mdmt6eiGtsPi+SmnRBB/zaOpBDFGQS4xls14Dlvkf1DfAagwvWBthrmF+263EUHVKZYw4c0AjP48aqtOwpVUZZziDkpmeLS8ayP13mifjKI1uEz1M489sBF1zswc6+dhjBF/wDQI4wO+fkCdddzgFn45UT4MHrrRLW3gTxbP7lc95+u6AhlFUVUFH1haQGoEkIEuo0jrVUdUhk/sRwevdFGr+uNmcv8Dwb1Srs9ErOeIa7uv4ugdIgOanDFmD0Md4edYiTpv9j6EhYZZeUras23KvnRFdYS56Bz0wm7Zc9BdMylFuH3
+V6Eb7ONraga8g2QwzlwFMRg3Ngie2/wTu0MtZilpwUJ9caHazd9joW8KMkQscyuAbRSbN/t5vKTlZ+GddB/REIC8uKNxR2PJALxzxd9d16jje07GWOTZUI65TSGwnYfFUEnXnb6LusxTUrtYkOkk3tLqMSOHQxtYt+Jhrdq+KGch7rK9kM2ej0eO/rhxdAmmCxpSDXAL5FvwRynimK3AZLoxIV1wv3dSKEXUWJGZQn+9+oBwKweK50FCSey85lFv/6/hRrvlRjs3pJh/sC10MeGpnF9Wps9zI3Puk4DQj+pFp4kmG14tDqOcEh5B5U0Elr9gX4b4/uuVyYShT5dJgkgOV7EOyJHXkdL6n/j9RwyiOp7N5arm7Lkes5UfEJmRGmz7Q2sn37u5KwEeqd8obDSypzelcyFpJTkmVsull7eJksukH20YZf8Hd7BiVHVcarXU/xrYnJeBmUJDm6qyiyKgUTyeyE5inGyuXbSFLmxZednzUo/YbHSB6c4UM9J2
 <?xml version="1.0" encoding="utf-8"?>
-<FirmwareCatalog Schema="2" Sequence="25" Generated="2026-10-01T09:17:42Z" ValidUntil="2027-03-30T09:17:42Z">
+<FirmwareCatalog Schema="2" Sequence="26" Generated="2026-10-05T13:12:09Z" ValidUntil="2027-04-03T13:12:09Z">
   <Item Component="Firmwares" Kind="Firmware" Model="A-IBUS-SLAVE" Version="02.08.00" Target="Firmwares\A-IBUS-SLAVE_02.08.00.zip" Source="firmwares/A-IBUS-SLAVE_02.08.00.zip" Size="23017" Sha256="67e27e62eaa67f26bd9e84bfd5935e34f0b708a50915f5e8ccaf5c49706928b6" Channel="Stable">
     <Note Lang="en">Bug fixes and improvements.</Note>
   </Item>
@@ -37,6 +37,10 @@ LZEQ0ioOrx7GKSyjwheOv8VzBjTHr523jTIgjqU00cghPr0fL8dOYnHNPd+jCnefZled7dHkVCq5aGSB
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-07M" Version="02.97.66" Target="Firmwares\CU3-07M_02.97.66.zip" Source="firmwares/CU3-07M_02.97.66.zip" Size="172941" Sha256="13b9f2c558d95d023fb73d7a0f7214603ac29709166172877d7e070b67726bba" Channel="Stable" MinAppVersion="3.7.0" MinRev="2">
     <Note Lang="en">Fixed time plans not loading after a project upload, and time-plan values being 0 after CU Start.</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-07M" Version="02.97.67" Target="Firmwares\CU3-07M_02.97.67.zip" Source="firmwares/CU3-07M_02.97.67.zip" Size="174429" Sha256="c8d1923a239665037b2ed7d9f00c540980c52a3618f8e5d984aea664e4395963" Channel="Stable" MinAppVersion="3.7.0" MinRev="4">
+    <Note Lang="en">Web server password protection</Note>
+    <Note Lang="en">Cloud connection stability fixes</Note>
+  </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-08M" Version="02.97.56" Target="Firmwares\CU3-08M_02.97.56.zip" Source="firmwares/CU3-08M_02.97.56.zip" Size="189933" Sha256="4592ec63a604b3d3b8eb3bf512412f9d3103ee1dfe7804d20f3e65d82c602c0f" Channel="Stable">
     <Note Lang="en">add status page to web configuration</Note>
   </Item>
@@ -55,6 +59,10 @@ LZEQ0ioOrx7GKSyjwheOv8VzBjTHr523jTIgjqU00cghPr0fL8dOYnHNPd+jCnefZled7dHkVCq5aGSB
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-08M" Version="02.97.66" Target="Firmwares\CU3-08M_02.97.66.zip" Source="firmwares/CU3-08M_02.97.66.zip" Size="172942" Sha256="41492555f7ee2222ce7e7156e9614a7da2e54192704fde2a5a340276ad9786b1" Channel="Stable" MinAppVersion="3.7.0" MinRev="2">
     <Note Lang="en">Fixed time plans not loading after a project upload, and time-plan values being 0 after CU Start.</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-08M" Version="02.97.67" Target="Firmwares\CU3-08M_02.97.67.zip" Source="firmwares/CU3-08M_02.97.67.zip" Size="174430" Sha256="c7b8a887764b35574c5964ed54c8dac7cfdda6a040b4904858030c0e6cc379b7" Channel="Stable" MinAppVersion="3.7.0" MinRev="4">
+    <Note Lang="en">Web server password protection</Note>
+    <Note Lang="en">Cloud connection stability fixes</Note>
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-09M" Version="02.97.56" Target="Firmwares\CU3-09M_02.97.56.zip" Source="firmwares/CU3-09M_02.97.56.zip" Size="165294" Sha256="724c0f8acd6530588269e1dee0a9abf7ea5d1e67c4f8c1c486816a8e439e2c54" Channel="Stable">
     <Note Lang="en">add status page to web configuration</Note>
@@ -84,6 +92,10 @@ LZEQ0ioOrx7GKSyjwheOv8VzBjTHr523jTIgjqU00cghPr0fL8dOYnHNPd+jCnefZled7dHkVCq5aGSB
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-09M" Version="02.97.66" Target="Firmwares\CU3-09M_02.97.66.zip" Source="firmwares/CU3-09M_02.97.66.zip" Size="172941" Sha256="733b615c43bb9d15859e2d2a2f6f8e5ada5ed4e43086019ab725b7e4b648a1b9" Channel="Stable" MinAppVersion="3.7.0" MinRev="2">
     <Note Lang="en">Fixed time plans not loading after a project upload, and time-plan values being 0 after CU Start.</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-09M" Version="02.97.67" Target="Firmwares\CU3-09M_02.97.67.zip" Source="firmwares/CU3-09M_02.97.67.zip" Size="174429" Sha256="76473531787f7171ae84ed3f12fac9c3e3be3fed4dcc523a3afea6654e7681cc" Channel="Stable" MinAppVersion="3.7.0" MinRev="4">
+    <Note Lang="en">Web server password protection</Note>
+    <Note Lang="en">Cloud connection stability fixes</Note>
+  </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-10M" Version="02.97.56" Target="Firmwares\CU3-10M_02.97.56.zip" Source="firmwares/CU3-10M_02.97.56.zip" Size="165297" Sha256="192928c39d8349ecde7e5dbd258cdf94881a3e33402be99acc0fbe43352f9e17" Channel="Stable">
     <Note Lang="en">add status page to web configuration</Note>
   </Item>
@@ -93,6 +105,10 @@ LZEQ0ioOrx7GKSyjwheOv8VzBjTHr523jTIgjqU00cghPr0fL8dOYnHNPd+jCnefZled7dHkVCq5aGSB
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-10M" Version="02.97.66" Target="Firmwares\CU3-10M_02.97.66.zip" Source="firmwares/CU3-10M_02.97.66.zip" Size="172950" Sha256="823aab2eba5f547c9172d139319e4d505e7d738ca8f0cdc283279ca47471f63e" Channel="Stable" MinAppVersion="3.7.0" MinRev="2">
     <Note Lang="en">Fixed time plans not loading after a project upload, and time-plan values being 0 after CU Start.</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-10M" Version="02.97.67" Target="Firmwares\CU3-10M_02.97.67.zip" Source="firmwares/CU3-10M_02.97.67.zip" Size="174438" Sha256="a62175ebefe5b5dc2ffb076215fe4028a171ec21afabdc56d5b497bc74181021" Channel="Stable" MinAppVersion="3.7.0" MinRev="4">
+    <Note Lang="en">Web server password protection</Note>
+    <Note Lang="en">Cloud connection stability fixes</Note>
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="DA3-03M-RGBW" Version="02.00.00" Target="Firmwares\DA3-03M-RGBW_02.00.00.zip" Source="firmwares/DA3-03M-RGBW_02.00.00.zip" Size="22451" Sha256="9a0f3c387f84e318309927d777377ce12064545eedf1636d920cd55554925a24" Channel="Stable">
     <Note Lang="en">Bug fixes and improvements.</Note>
@@ -527,7 +543,26 @@ LZEQ0ioOrx7GKSyjwheOv8VzBjTHr523jTIgjqU00cghPr0fL8dOYnHNPd+jCnefZled7dHkVCq5aGSB
     <Note Lang="en">Bug fixes and improvements.</Note>
   </Item>
   <Item Component="Root" Kind="Content" Model="announcements.xml" Version="3.7.0" Target="announcements.xml" Source="content/announcements.xml" Size="3301" Sha256="ad1bd7576dd1ff0c6b35194d90b665ac4b7530af1ae070c5e9787c122cda6889" Channel="Stable" />
-  <Item Component="release-notes" Kind="Content" Model="release-notes/idm3.xml" Version="3.7.0" Target="release-notes\idm3.xml" Source="content/release-notes/idm3.xml" Size="4119" Sha256="eadcb6895ab8c48c8b59d91fc2e6325ba8a5ba423ba526b4913827d227e6807a" Channel="Stable" />
+  <Item Component="release-notes" Kind="Content" Model="release-notes/idm3.xml" Version="3.7.0" Target="release-notes\idm3.xml" Source="content/release-notes/idm3.xml" Size="4857" Sha256="e51f4a0fe2ce6e50960519aff4a770862ec29f51e4f66ab119a772b96cb420ac" Channel="Stable" />
+  <Release Version="3.7.0" Rev="4" Channel="Stable" Published="2026-10-05" Installer="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.0-rev4/IDM3_3.7.0_Rev4_Setup.exe" Size="18791299" Sha256="9abb62ceb03f358e6ab01245b642a98bb0395563d1c069f662540191951318e9">
+    <Note>Release notes on the Overview open per version in their own window, and each firmware shows its version history.</Note>
+    <Firmware Model="CU3-07M" Version="02.97.67">
+      <Note>Web server password protection</Note>
+      <Note>Cloud connection stability fixes</Note>
+    </Firmware>
+    <Firmware Model="CU3-08M" Version="02.97.67">
+      <Note>Web server password protection</Note>
+      <Note>Cloud connection stability fixes</Note>
+    </Firmware>
+    <Firmware Model="CU3-09M" Version="02.97.67">
+      <Note>Web server password protection</Note>
+      <Note>Cloud connection stability fixes</Note>
+    </Firmware>
+    <Firmware Model="CU3-10M" Version="02.97.67">
+      <Note>Web server password protection</Note>
+      <Note>Cloud connection stability fixes</Note>
+    </Firmware>
+  </Release>
   <Release Version="3.7.0" Rev="2" Channel="Stable" Published="2026-10-01" Installer="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.0-rev2/IDM3_3.7.0_Rev2_Setup.exe" Size="18633908" Sha256="32e338c8cb259e5c01bf17416aad98d75170adace2a16762763ceae83e5ba01f">
     <Note>The installer can always install iDM3 separately, also a version that is already installed.</Note>
     <Note>Saving a project to the CU is faster.</Note>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Model="CU3-07M" Source="CU3-07M - Firmware history.txt">
+  <Release Version="02.97.67">
+    <Note Lang="en">Web server password protection</Note>
+    <Note Lang="en">Cloud connection stability fixes</Note>
+  </Release>
   <Release Version="02.97.66">
     <Note Lang="en">Fixed time plans not loading after a project upload, and time-plan values being 0 after CU Start.</Note>
   </Release>
