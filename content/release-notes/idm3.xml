@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Product="iDM3">
-  <Release Version="3.7.0" Published="2026-10-05" Url="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.0-rev4/IDM3_3.7.0_Rev4_Setup.exe">
+  <Release Version="3.7.0" Published="2026-10-07" Url="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.0-rev5/IDM3_3.7.0_Rev5_Setup.exe">
+    <Note>Firmware MSB3-40 02.9E.0A: fix trouble with configuration for Use Buttons</Note>
+    <Note>Firmware MSB3-60 02.9E.0A: fix trouble with configuration for Use Buttons</Note>
+    <Note>Firmware MSB3-90 02.9E.0A: fix trouble with configuration for Use Buttons</Note>
+    <Note>Firmware SA3-014M 01.02.02: repaired zerocross</Note>
+    <Note>Firmware SA3-014M 01.02.02: add parameter for deactivation zerocross</Note>
     <Note>Release notes on the Overview open per version in their own window, and each firmware shows its version history.</Note>
     <Note>Firmware CU3-07M 02.97.67: Web server password protection</Note>
     <Note>Firmware CU3-07M 02.97.67: Cloud connection stability fixes</Note>

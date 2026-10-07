@@ -1,6 +1,6 @@
-V6Eb7ONraga8g2QwzlwFMRg3Ngie2/wTu0MtZilpwUJ9caHazd9joW8KMkQscyuAbRSbN/t5vKTlZ+GddB/REIC8uKNxR2PJALxzxd9d16jje07GWOTZUI65TSGwnYfFUEnXnb6LusxTUrtYkOkk3tLqMSOHQxtYt+Jhrdq+KGch7rK9kM2ej0eO/rhxdAmmCxpSDXAL5FvwRynimK3AZLoxIV1wv3dSKEXUWJGZQn+9+oBwKweK50FCSey85lFv/6/hRrvlRjs3pJh/sC10MeGpnF9Wps9zI3Puk4DQj+pFp4kmG14tDqOcEh5B5U0Elr9gX4b4/uuVyYShT5dJgkgOV7EOyJHXkdL6n/j9RwyiOp7N5arm7Lkes5UfEJmRGmz7Q2sn37u5KwEeqd8obDSypzelcyFpJTkmVsull7eJksukH20YZf8Hd7BiVHVcarXU/xrYnJeBmUJDm6qyiyKgUTyeyE5inGyuXbSFLmxZednzUo/YbHSB6c4UM9J2
+Sp+wpTP0LuCJYXFcNqq//fST6K+CrU8NtY/bFH/uvHNOwfts/MBK+MvNsuaoIhiSo7gHk5k5x7IWTzCgpQEmeFaFAbiF+yURqUNppzRa3iViEhdbkCPgAgsK15M9XD0d5cYms5ib+7RjlTQgAg7V8giN5tTKs9NM1bkZZjSEoQhLmjtXi90JJqG7MGSyfsq9oPxovAzOL3nPAQVhAD1fGfJ1uNvSxNDuKIOvX7eD/fijAdSx7o66dytWQqvktgsb8zdIk5MbV9j7stT8SHMUQOr6g23wESbaQzFXJbf/mrlLYCUj1CrG5oWV1TvM0WL0TTAg1mM4C98Vr15GKHXJJ20A28/Tn3adMrgq62MCj0fFUZKRBGsyzOnOTj4TWxpQYqVxCdo2Yq0+IpGh6Ha/rD9a6P/Hp4AX3kQLwOWUm8eCIqNVq6DLhfZJY+gkXdKnh//J7pAqS7spveXV13vzuhtv1uNPhtpFmyIa5xS8c6sohjCkTdf4BacoUuRKJlDH
 <?xml version="1.0" encoding="utf-8"?>
-<FirmwareCatalog Schema="2" Sequence="26" Generated="2026-10-05T13:12:09Z" ValidUntil="2027-04-03T13:12:09Z">
+<FirmwareCatalog Schema="2" Sequence="27" Generated="2026-10-07T11:05:43Z" ValidUntil="2027-04-05T11:05:43Z">
   <Item Component="Firmwares" Kind="Firmware" Model="A-IBUS-SLAVE" Version="02.08.00" Target="Firmwares\A-IBUS-SLAVE_02.08.00.zip" Source="firmwares/A-IBUS-SLAVE_02.08.00.zip" Size="23017" Sha256="67e27e62eaa67f26bd9e84bfd5935e34f0b708a50915f5e8ccaf5c49706928b6" Channel="Stable">
     <Note Lang="en">Bug fixes and improvements.</Note>
   </Item>
@@ -445,17 +445,26 @@ V6Eb7ONraga8g2QwzlwFMRg3Ngie2/wTu0MtZilpwUJ9caHazd9joW8KMkQscyuAbRSbN/t5vKTlZ+Gd
   <Item Component="Firmwares" Kind="Firmware" Model="MSB3-40" Version="02.9C.00" Target="Firmwares\MSB3-40_02.9C.00.zip" Source="firmwares/MSB3-40_02.9C.00.zip" Size="43049" Sha256="a1e4a68d1548c4c2bd5962bbc5a8e64f2805c3ae9ee63085948f9cdd1ac5c2a5" Channel="Stable">
     <Note Lang="en">first version</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="MSB3-40" Version="02.9E.0A" Target="Firmwares\MSB3-40_02.9E.0A.zip" Source="firmwares/MSB3-40_02.9E.0A.zip" Size="42930" Sha256="d81a32ea2bddcea4354af26161efcd0f924295d58a23c48b1bef2b407fb0a96c" Channel="Stable" MinAppVersion="3.7.0" MinRev="5">
+    <Note Lang="en">fix trouble with configuration for Use Buttons</Note>
+  </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="MSB3-60" Version="02.9C.00" Target="Firmwares\MSB3-60_02.9C.00.zip" Source="firmwares/MSB3-60_02.9C.00.zip" Size="43185" Sha256="07c8caa870f02ec45bf97a526508c0ee960921fc6ededf81ab850a150861643f" Channel="Stable">
     <Note Lang="en">first version</Note>
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="MSB3-60" Version="02.9E.00" Target="Firmwares\MSB3-60_02.9E.00.zip" Source="firmwares/MSB3-60_02.9E.00.zip" Size="43187" Sha256="e00f3c97e17423bdf112f75c03cc06b2999606d8af91fafca34415df31bebb2b" Channel="Stable">
     <Note Lang="en">repaired DIN function</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="MSB3-60" Version="02.9E.0A" Target="Firmwares\MSB3-60_02.9E.0A.zip" Source="firmwares/MSB3-60_02.9E.0A.zip" Size="43062" Sha256="78622f9d02a032ed2ae6229287fd77746ddd36f6533f208d526fcbbffd3a1547" Channel="Stable" MinAppVersion="3.7.0" MinRev="5">
+    <Note Lang="en">fix trouble with configuration for Use Buttons</Note>
+  </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="MSB3-90" Version="02.9C.00" Target="Firmwares\MSB3-90_02.9C.00.zip" Source="firmwares/MSB3-90_02.9C.00.zip" Size="43354" Sha256="ce56b4e89952f5189da234ca27c85ca6b40bddcaeed418d72f8d7cedb097c103" Channel="Stable">
     <Note Lang="en">first version</Note>
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="MSB3-90" Version="02.9E.00" Target="Firmwares\MSB3-90_02.9E.00.zip" Source="firmwares/MSB3-90_02.9E.00.zip" Size="43358" Sha256="28a56ef7d56bf2e44e63ca035259b7db6fcedad24d73760d8f8a4c976398c33d" Channel="Stable">
     <Note Lang="en">repaired DIN function</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="MSB3-90" Version="02.9E.0A" Target="Firmwares\MSB3-90_02.9E.0A.zip" Source="firmwares/MSB3-90_02.9E.0A.zip" Size="43237" Sha256="28c174c590706e71dd3f15261873d75b81c1be608e5e3072f4b33006a9352edc" Channel="Stable" MinAppVersion="3.7.0" MinRev="5">
+    <Note Lang="en">fix trouble with configuration for Use Buttons</Note>
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="PMS3-01" Version="01.00.00" Target="Firmwares\PMS3-01_01.00.00.zip" Source="firmwares/PMS3-01_01.00.00.zip" Size="21026" Sha256="c10c13ea7096a8c4f397e21ca5277edf0019ef0f8b2260e7f1da4afd7fb212ab" Channel="Stable">
     <Note Lang="en">first version</Note>
@@ -486,7 +495,7 @@ V6Eb7ONraga8g2QwzlwFMRg3Ngie2/wTu0MtZilpwUJ9caHazd9joW8KMkQscyuAbRSbN/t5vKTlZ+Gd
   <Item Component="Firmwares" Kind="Firmware" Model="SA3-014M" Version="01.02.00" Target="Firmwares\SA3-014M_01.02.00.zip" Source="firmwares/SA3-014M_01.02.00.zip" Size="23408" Sha256="8db3be13ad57dc51dc9b55c0e8656904f1c1ac241dd12110b5dac678b7451fae" Channel="Stable">
     <Note Lang="en">first version</Note>
   </Item>
-  <Item Component="Firmwares" Kind="Firmware" Model="SA3-014M" Version="01.02.02" Target="Firmwares\SA3-014M_01.02.02.zip" Source="firmwares/SA3-014M_01.02.02.zip" Size="23292" Sha256="1d271357aaf261c80c4d256acb6367acc50e2ae734c8f62b8dd7b97ce4c723b4" Channel="Stable" MinAppVersion="3.7.0" MinRev="0">
+  <Item Component="Firmwares" Kind="Firmware" Model="SA3-014M" Version="01.02.02" Target="Firmwares\SA3-014M_01.02.02.zip" Source="firmwares/SA3-014M_01.02.02.zip" Size="23292" Sha256="f3e1026b9e41dc192163e09a8d9412fb6cbf6b4d0e09325c4210e55c4e867e7c" Channel="Stable" MinAppVersion="3.7.0" MinRev="5">
     <Note Lang="en">repaired zerocross</Note>
     <Note Lang="en">add parameter for deactivation zerocross</Note>
   </Item>
@@ -543,7 +552,22 @@ V6Eb7ONraga8g2QwzlwFMRg3Ngie2/wTu0MtZilpwUJ9caHazd9joW8KMkQscyuAbRSbN/t5vKTlZ+Gd
     <Note Lang="en">Bug fixes and improvements.</Note>
   </Item>
   <Item Component="Root" Kind="Content" Model="announcements.xml" Version="3.7.0" Target="announcements.xml" Source="content/announcements.xml" Size="3301" Sha256="ad1bd7576dd1ff0c6b35194d90b665ac4b7530af1ae070c5e9787c122cda6889" Channel="Stable" />
-  <Item Component="release-notes" Kind="Content" Model="release-notes/idm3.xml" Version="3.7.0" Target="release-notes\idm3.xml" Source="content/release-notes/idm3.xml" Size="4857" Sha256="e51f4a0fe2ce6e50960519aff4a770862ec29f51e4f66ab119a772b96cb420ac" Channel="Stable" />
+  <Item Component="release-notes" Kind="Content" Model="release-notes/idm3.xml" Version="3.7.0" Target="release-notes\idm3.xml" Source="content/release-notes/idm3.xml" Size="5280" Sha256="4a242b3e438e8f07863377e3a6f0345b3f77bd94c39e96290f22348f00d5336b" Channel="Stable" />
+  <Release Version="3.7.0" Rev="5" Channel="Stable" Published="2026-10-07" Installer="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.0-rev5/IDM3_3.7.0_Rev5_Setup.exe" Size="18850852" Sha256="e3adfbc9f3352ebdf34757c393c3d47661b05acdc9add09c9b31eebff24a8d9f">
+    <Firmware Model="MSB3-40" Version="02.9E.0A">
+      <Note>fix trouble with configuration for Use Buttons</Note>
+    </Firmware>
+    <Firmware Model="MSB3-60" Version="02.9E.0A">
+      <Note>fix trouble with configuration for Use Buttons</Note>
+    </Firmware>
+    <Firmware Model="MSB3-90" Version="02.9E.0A">
+      <Note>fix trouble with configuration for Use Buttons</Note>
+    </Firmware>
+    <Firmware Model="SA3-014M" Version="01.02.02">
+      <Note>repaired zerocross</Note>
+      <Note>add parameter for deactivation zerocross</Note>
+    </Firmware>
+  </Release>
   <Release Version="3.7.0" Rev="4" Channel="Stable" Published="2026-10-05" Installer="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.0-rev4/IDM3_3.7.0_Rev4_Setup.exe" Size="18791299" Sha256="9abb62ceb03f358e6ab01245b642a98bb0395563d1c069f662540191951318e9">
     <Note>Release notes on the Overview open per version in their own window, and each firmware shows its version history.</Note>
     <Firmware Model="CU3-07M" Version="02.97.67">

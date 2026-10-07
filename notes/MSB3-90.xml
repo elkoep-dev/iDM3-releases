@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Model="MSB3-90" Source="MSB3-90 - Firmware history.txt">
+  <Release Version="02.9E.0A">
+    <Note Lang="en">fix trouble with configuration for Use Buttons</Note>
+  </Release>
   <Release Version="02.9E.00">
     <Note Lang="en">repaired DIN function</Note>
   </Release>
