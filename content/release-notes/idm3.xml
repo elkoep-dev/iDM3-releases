@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Product="iDM3">
+  <Release Version="3.7.1" Published="2026-10-14" Url="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.1-rev0/IDM3_3.7.1_Rev0_Setup.exe">
+    <Note>Added a search for central units on the network, next to the Connect button.</Note>
+    <Note>The live status of each unit stays correct after units are reordered in the project.</Note>
+    <Note>A macro can now be easily created from an existing wire.</Note>
+    <Note>Firmware CU3-07M 02.97.68: Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
+    <Note>Firmware CU3-07M 02.97.68: Added a new communication packet to map units to their live status bits</Note>
+    <Note>Firmware CU3-08M 02.97.68: Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
+    <Note>Firmware CU3-08M 02.97.68: Added a new communication packet to map units to their live status bits</Note>
+    <Note>Firmware CU3-09M 02.97.68: Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
+    <Note>Firmware CU3-09M 02.97.68: Added a new communication packet to map units to their live status bits</Note>
+    <Note>Firmware CU3-10M 02.97.68: Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
+    <Note>Firmware CU3-10M 02.97.68: Added a new communication packet to map units to their live status bits</Note>
+  </Release>
   <Release Version="3.7.0" Published="2026-10-07" Url="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.0-rev5/IDM3_3.7.0_Rev5_Setup.exe">
     <Note>Firmware MSB3-40 02.9E.0A: fix trouble with configuration for Use Buttons</Note>
     <Note>Firmware MSB3-60 02.9E.0A: fix trouble with configuration for Use Buttons</Note>

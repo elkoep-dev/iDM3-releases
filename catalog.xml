@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FirmwareCatalog Schema="2" Sequence="27" Generated="2026-10-07T11:05:43Z" ValidUntil="2027-04-05T11:05:43Z">
+<FirmwareCatalog Schema="2" Sequence="28" Generated="2026-10-14T12:38:31Z" ValidUntil="2027-04-12T12:38:31Z">
   <Item Component="Firmwares" Kind="Firmware" Model="A-IBUS-SLAVE" Version="02.08.00" Target="Firmwares\A-IBUS-SLAVE_02.08.00.zip" Source="firmwares/A-IBUS-SLAVE_02.08.00.zip" Size="23017" Sha256="67e27e62eaa67f26bd9e84bfd5935e34f0b708a50915f5e8ccaf5c49706928b6" Channel="Stable">
     <Note Lang="en">Bug fixes and improvements.</Note>
   </Item>
@@ -40,6 +40,10 @@
     <Note Lang="en">Web server password protection</Note>
     <Note Lang="en">Cloud connection stability fixes</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-07M" Version="02.97.68" Target="Firmwares\CU3-07M_02.97.68.zip" Source="firmwares/CU3-07M_02.97.68.zip" Size="181281" Sha256="5e80be7a027aa87c7bd2b796b38e41c8456663585b5dd2b90f0a4d648f958897" Channel="Stable" MinAppVersion="3.7.1" MinRev="0">
+    <Note Lang="en">Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
+    <Note Lang="en">Added a new communication packet to map units to their live status bits</Note>
+  </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-08M" Version="02.97.56" Target="Firmwares\CU3-08M_02.97.56.zip" Source="firmwares/CU3-08M_02.97.56.zip" Size="189933" Sha256="4592ec63a604b3d3b8eb3bf512412f9d3103ee1dfe7804d20f3e65d82c602c0f" Channel="Stable">
     <Note Lang="en">add status page to web configuration</Note>
   </Item>
@@ -62,6 +66,10 @@
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-08M" Version="02.97.67" Target="Firmwares\CU3-08M_02.97.67.zip" Source="firmwares/CU3-08M_02.97.67.zip" Size="174430" Sha256="c7b8a887764b35574c5964ed54c8dac7cfdda6a040b4904858030c0e6cc379b7" Channel="Stable" MinAppVersion="3.7.0" MinRev="4">
     <Note Lang="en">Web server password protection</Note>
     <Note Lang="en">Cloud connection stability fixes</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-08M" Version="02.97.68" Target="Firmwares\CU3-08M_02.97.68.zip" Source="firmwares/CU3-08M_02.97.68.zip" Size="181282" Sha256="ee9a16995be974928e89c612eabf704f330139ee2460d6c231c23d666db783c7" Channel="Stable" MinAppVersion="3.7.1" MinRev="0">
+    <Note Lang="en">Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
+    <Note Lang="en">Added a new communication packet to map units to their live status bits</Note>
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-09M" Version="02.97.56" Target="Firmwares\CU3-09M_02.97.56.zip" Source="firmwares/CU3-09M_02.97.56.zip" Size="165294" Sha256="724c0f8acd6530588269e1dee0a9abf7ea5d1e67c4f8c1c486816a8e439e2c54" Channel="Stable">
     <Note Lang="en">add status page to web configuration</Note>
@@ -95,6 +103,10 @@
     <Note Lang="en">Web server password protection</Note>
     <Note Lang="en">Cloud connection stability fixes</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-09M" Version="02.97.68" Target="Firmwares\CU3-09M_02.97.68.zip" Source="firmwares/CU3-09M_02.97.68.zip" Size="181282" Sha256="010b9d8487d17933599e93901e60d425fd725685428888a69d39b56eda5eb51b" Channel="Stable" MinAppVersion="3.7.1" MinRev="0">
+    <Note Lang="en">Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
+    <Note Lang="en">Added a new communication packet to map units to their live status bits</Note>
+  </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-10M" Version="02.97.56" Target="Firmwares\CU3-10M_02.97.56.zip" Source="firmwares/CU3-10M_02.97.56.zip" Size="165297" Sha256="192928c39d8349ecde7e5dbd258cdf94881a3e33402be99acc0fbe43352f9e17" Channel="Stable">
     <Note Lang="en">add status page to web configuration</Note>
   </Item>
@@ -108,6 +120,10 @@
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-10M" Version="02.97.67" Target="Firmwares\CU3-10M_02.97.67.zip" Source="firmwares/CU3-10M_02.97.67.zip" Size="174438" Sha256="a62175ebefe5b5dc2ffb076215fe4028a171ec21afabdc56d5b497bc74181021" Channel="Stable" MinAppVersion="3.7.0" MinRev="4">
     <Note Lang="en">Web server password protection</Note>
     <Note Lang="en">Cloud connection stability fixes</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-10M" Version="02.97.68" Target="Firmwares\CU3-10M_02.97.68.zip" Source="firmwares/CU3-10M_02.97.68.zip" Size="181287" Sha256="ef72e349c96572796eb40f2a0d35db9fef0dfda78e3d869881536a29a07e6904" Channel="Stable" MinAppVersion="3.7.1" MinRev="0">
+    <Note Lang="en">Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
+    <Note Lang="en">Added a new communication packet to map units to their live status bits</Note>
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="DA3-03M-RGBW" Version="02.00.00" Target="Firmwares\DA3-03M-RGBW_02.00.00.zip" Source="firmwares/DA3-03M-RGBW_02.00.00.zip" Size="22451" Sha256="9a0f3c387f84e318309927d777377ce12064545eedf1636d920cd55554925a24" Channel="Stable">
     <Note Lang="en">Bug fixes and improvements.</Note>
@@ -550,8 +566,29 @@
   <Item Component="Firmwares" Kind="Firmware" Model="WSB3-40-HUM" Version="04.02.00" Target="Firmwares\WSB3-40-HUM_04.02.00.zip" Source="firmwares/WSB3-40-HUM_04.02.00.zip" Size="22118" Sha256="0a958fe4f34eeb07b51da3e8b5468c71b4f6cc100cefa3d62600f2f7e2582da1" Channel="Stable">
     <Note Lang="en">Bug fixes and improvements.</Note>
   </Item>
-  <Item Component="Root" Kind="Content" Model="announcements.xml" Version="3.7.0" Target="announcements.xml" Source="content/announcements.xml" Size="3301" Sha256="ad1bd7576dd1ff0c6b35194d90b665ac4b7530af1ae070c5e9787c122cda6889" Channel="Stable" />
-  <Item Component="release-notes" Kind="Content" Model="release-notes/idm3.xml" Version="3.7.0" Target="release-notes\idm3.xml" Source="content/release-notes/idm3.xml" Size="5280" Sha256="4a242b3e438e8f07863377e3a6f0345b3f77bd94c39e96290f22348f00d5336b" Channel="Stable" />
+  <Item Component="Root" Kind="Content" Model="announcements.xml" Version="3.7.1" Target="announcements.xml" Source="content/announcements.xml" Size="3301" Sha256="ad1bd7576dd1ff0c6b35194d90b665ac4b7530af1ae070c5e9787c122cda6889" Channel="Stable" />
+  <Item Component="release-notes" Kind="Content" Model="release-notes/idm3.xml" Version="3.7.1" Target="release-notes\idm3.xml" Source="content/release-notes/idm3.xml" Size="6728" Sha256="728e397673291cf7c11c57030eb66cbaa8ee14bbf617e4c8fbcd5a030e43d5d1" Channel="Stable" />
+  <Release Version="3.7.1" Rev="0" Channel="Stable" Published="2026-10-14" Installer="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.1-rev0/IDM3_3.7.1_Rev0_Setup.exe" Size="19019183" Sha256="3bf82c812f2a3be5b1d35021d8315ea917de459928e0f126c9962b6f62a0ceaf">
+    <Note>Added a search for central units on the network, next to the Connect button.</Note>
+    <Note>The live status of each unit stays correct after units are reordered in the project.</Note>
+    <Note>A macro can now be easily created from an existing wire.</Note>
+    <Firmware Model="CU3-07M" Version="02.97.68">
+      <Note>Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
+      <Note>Added a new communication packet to map units to their live status bits</Note>
+    </Firmware>
+    <Firmware Model="CU3-08M" Version="02.97.68">
+      <Note>Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
+      <Note>Added a new communication packet to map units to their live status bits</Note>
+    </Firmware>
+    <Firmware Model="CU3-09M" Version="02.97.68">
+      <Note>Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
+      <Note>Added a new communication packet to map units to their live status bits</Note>
+    </Firmware>
+    <Firmware Model="CU3-10M" Version="02.97.68">
+      <Note>Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
+      <Note>Added a new communication packet to map units to their live status bits</Note>
+    </Firmware>
+  </Release>
   <Release Version="3.7.0" Rev="5" Channel="Stable" Published="2026-10-07" Installer="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.0-rev5/IDM3_3.7.0_Rev5_Setup.exe" Size="18850852" Sha256="e3adfbc9f3352ebdf34757c393c3d47661b05acdc9add09c9b31eebff24a8d9f">
     <Firmware Model="MSB3-40" Version="02.9E.0A">
       <Note>fix trouble with configuration for Use Buttons</Note>
