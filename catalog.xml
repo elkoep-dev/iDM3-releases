@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FirmwareCatalog Schema="2" Sequence="28" Generated="2026-10-14T12:38:31Z" ValidUntil="2027-04-12T12:38:31Z">
+<FirmwareCatalog Schema="2" Sequence="29" Generated="2026-10-30T09:36:42Z" ValidUntil="2027-04-28T09:36:42Z">
   <Item Component="Firmwares" Kind="Firmware" Model="A-IBUS-SLAVE" Version="02.08.00" Target="Firmwares\A-IBUS-SLAVE_02.08.00.zip" Source="firmwares/A-IBUS-SLAVE_02.08.00.zip" Size="23017" Sha256="67e27e62eaa67f26bd9e84bfd5935e34f0b708a50915f5e8ccaf5c49706928b6" Channel="Stable">
     <Note Lang="en">Bug fixes and improvements.</Note>
   </Item>
@@ -44,6 +44,9 @@
     <Note Lang="en">Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
     <Note Lang="en">Added a new communication packet to map units to their live status bits</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-07M" Version="02.97.69" Target="Firmwares\CU3-07M_02.97.69.zip" Source="firmwares/CU3-07M_02.97.69.zip" Size="181290" Sha256="38b519e63dba3611f5e6d95ebd35dd51149fe065a1fe508a46b83b50388beb79" Channel="Stable" MinAppVersion="3.7.1" MinRev="3">
+    <Note Lang="en">Added the iNELS address to broadcast discovery responses</Note>
+  </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-08M" Version="02.97.56" Target="Firmwares\CU3-08M_02.97.56.zip" Source="firmwares/CU3-08M_02.97.56.zip" Size="189933" Sha256="4592ec63a604b3d3b8eb3bf512412f9d3103ee1dfe7804d20f3e65d82c602c0f" Channel="Stable">
     <Note Lang="en">add status page to web configuration</Note>
   </Item>
@@ -70,6 +73,9 @@
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-08M" Version="02.97.68" Target="Firmwares\CU3-08M_02.97.68.zip" Source="firmwares/CU3-08M_02.97.68.zip" Size="181282" Sha256="ee9a16995be974928e89c612eabf704f330139ee2460d6c231c23d666db783c7" Channel="Stable" MinAppVersion="3.7.1" MinRev="0">
     <Note Lang="en">Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
     <Note Lang="en">Added a new communication packet to map units to their live status bits</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-08M" Version="02.97.69" Target="Firmwares\CU3-08M_02.97.69.zip" Source="firmwares/CU3-08M_02.97.69.zip" Size="181291" Sha256="8332502b47f60839f438fca99c49c58d26c5bbd511084e4cba41d9e60296d8c5" Channel="Stable" MinAppVersion="3.7.1" MinRev="3">
+    <Note Lang="en">Added the iNELS address to broadcast discovery responses</Note>
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-09M" Version="02.97.56" Target="Firmwares\CU3-09M_02.97.56.zip" Source="firmwares/CU3-09M_02.97.56.zip" Size="165294" Sha256="724c0f8acd6530588269e1dee0a9abf7ea5d1e67c4f8c1c486816a8e439e2c54" Channel="Stable">
     <Note Lang="en">add status page to web configuration</Note>
@@ -107,6 +113,12 @@
     <Note Lang="en">Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
     <Note Lang="en">Added a new communication packet to map units to their live status bits</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-09M" Version="02.97.69" Target="Firmwares\CU3-09M_02.97.69.zip" Source="firmwares/CU3-09M_02.97.69.zip" Size="181290" Sha256="a5a68e9d89b547647c23d6e0ea4c6ef616ba999818d54dd16eabeff6fc76af18" Channel="Stable" MinAppVersion="3.7.1" MinRev="3">
+    <Note Lang="en">Added the iNELS address to broadcast discovery responses</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-09M" Version="02.97.70" Target="Firmwares\CU3-09M_02.97.70.zip" Source="firmwares/CU3-09M_02.97.70.zip" Size="181072" Sha256="c1087daafd2747a264903533e12bf1615852cbc614fc69a00e9937304141a09e" Channel="Stable" MinAppVersion="3.7.1" MinRev="3">
+    <Note Lang="en">Fixed DALI group control sometimes leaving lamps off while iDM showed them on</Note>
+  </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-10M" Version="02.97.56" Target="Firmwares\CU3-10M_02.97.56.zip" Source="firmwares/CU3-10M_02.97.56.zip" Size="165297" Sha256="192928c39d8349ecde7e5dbd258cdf94881a3e33402be99acc0fbe43352f9e17" Channel="Stable">
     <Note Lang="en">add status page to web configuration</Note>
   </Item>
@@ -124,6 +136,9 @@
   <Item Component="Firmwares" Kind="Firmware" Model="CU3-10M" Version="02.97.68" Target="Firmwares\CU3-10M_02.97.68.zip" Source="firmwares/CU3-10M_02.97.68.zip" Size="181287" Sha256="ef72e349c96572796eb40f2a0d35db9fef0dfda78e3d869881536a29a07e6904" Channel="Stable" MinAppVersion="3.7.1" MinRev="0">
     <Note Lang="en">Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
     <Note Lang="en">Added a new communication packet to map units to their live status bits</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="CU3-10M" Version="02.97.69" Target="Firmwares\CU3-10M_02.97.69.zip" Source="firmwares/CU3-10M_02.97.69.zip" Size="181296" Sha256="b1c8d046a9f1ae60f16bd5c9b9a9e5a939fbd09c0f4b1cfd74e72a121afe1cd6" Channel="Stable" MinAppVersion="3.7.1" MinRev="3">
+    <Note Lang="en">Added the iNELS address to broadcast discovery responses</Note>
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="DA3-03M-RGBW" Version="02.00.00" Target="Firmwares\DA3-03M-RGBW_02.00.00.zip" Source="firmwares/DA3-03M-RGBW_02.00.00.zip" Size="22451" Sha256="9a0f3c387f84e318309927d777377ce12064545eedf1636d920cd55554925a24" Channel="Stable">
     <Note Lang="en">Bug fixes and improvements.</Note>
@@ -238,6 +253,9 @@
     <Note Lang="en">add read and write card data</Note>
     <Note Lang="en">add RGB control for all backlights</Note>
   </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GCR3-30" Version="01.06.00" Target="Firmwares\GCR3-30_01.06.00.zip" Source="firmwares/GCR3-30_01.06.00.zip" Size="42893" Sha256="11bf16bb7365e7d2981c128c41820e1316d9b6fc09bd7a5a4fe15c6d58703046" Channel="Stable" MinAppVersion="3.7.1" MinRev="3">
+    <Note Lang="en">Fixed LED behaviour when switching the backlight.</Note>
+  </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="GDB3-10" Version="01.40.00" Target="Firmwares\GDB3-10_01.40.00.zip" Source="firmwares/GDB3-10_01.40.00.zip" Size="59150" Sha256="99aadadf5253a9a7c6e1f157c1de2d64feb15056c47ed1a98674c0b61e19d61b" Channel="Stable">
     <Note Lang="en">optimisation of the sensitivity of the buttons.</Note>
     <Note Lang="en">added colour correction</Note>
@@ -248,6 +266,9 @@
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="GDB3-30" Version="01.00.00" Target="Firmwares\GDB3-30_01.00.00.zip" Source="firmwares/GDB3-30_01.00.00.zip" Size="42403" Sha256="3611be2708f43e551ce607d97ac964fe39e735d2d8c09fac8b90206501cd05e0" Channel="Stable">
     <Note Lang="en">Bug fixes and improvements.</Note>
+  </Item>
+  <Item Component="Firmwares" Kind="Firmware" Model="GDB3-30" Version="01.02.00" Target="Firmwares\GDB3-30_01.02.00.zip" Source="firmwares/GDB3-30_01.02.00.zip" Size="42417" Sha256="c0208d488f753fa293508283dd4016c4dc1baab293181589891bd77b77328a02" Channel="Stable" MinAppVersion="3.7.1" MinRev="3">
+    <Note Lang="en">Fixed LEDs sometimes switching on incorrectly.</Note>
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="GMR3-61" Version="01.38.00" Target="Firmwares\GMR3-61_01.38.00.zip" Source="firmwares/GMR3-61_01.38.00.zip" Size="59406" Sha256="b5c7bd24e7bc8e9de4bc5c64d8f35b0a00f0832228445e144e6d61f1a2b09254" Channel="Stable">
     <Note Lang="en">Added support entrance system in central unit</Note>
@@ -383,8 +404,9 @@
   <Item Component="Firmwares" Kind="Firmware" Model="IDRT3-1" Version="04.02.00" Target="Firmwares\IDRT3-1_04.02.00.zip" Source="firmwares/IDRT3-1_04.02.00.zip" Size="22423" Sha256="0fc628f14a38133565d322713101b5e5897b2fb54e701f71d0bbc4a3ed542416" Channel="Stable">
     <Note Lang="en">Repaired searching unit.</Note>
   </Item>
-  <Item Component="Firmwares" Kind="Firmware" Model="IDRT3-1" Version="04.04.00" Target="Firmwares\IDRT3-1_04.04.00.zip" Source="firmwares/IDRT3-1_04.04.00.zip" Size="22424" Sha256="969d152a2bbd1b681a8c8346a22e91da910a4cb46bc66962928476a27d7c5679" Channel="Stable">
+  <Item Component="Firmwares" Kind="Firmware" Model="IDRT3-1" Version="04.04.00" Target="Firmwares\IDRT3-1_04.04.00.zip" Source="firmwares/IDRT3-1_04.04.00.zip" Size="22424" Sha256="ed010ff76fd1d3c05bb7139326f6a4b0aef640ed7c042d9576d70f88fe9cdc1f" Channel="Stable" MinAppVersion="3.7.1" MinRev="3">
     <Note Lang="en">Bug fixes and improvements.</Note>
+    <Note Lang="en">Corrected the firmware version reported by the unit.</Note>
   </Item>
   <Item Component="Firmwares" Kind="Firmware" Model="IM3-140M" Version="02.00.00" Target="Firmwares\IM3-140M_02.00.00.zip" Source="firmwares/IM3-140M_02.00.00.zip" Size="21607" Sha256="f6f670c1cc55ebcc88ddf1ebbd27e51cf210a007a2fa76705350313e6f992566" Channel="Stable">
     <Note Lang="en">optimized for noise immunity</Note>
@@ -567,7 +589,36 @@
     <Note Lang="en">Bug fixes and improvements.</Note>
   </Item>
   <Item Component="Root" Kind="Content" Model="announcements.xml" Version="3.7.1" Target="announcements.xml" Source="content/announcements.xml" Size="3301" Sha256="ad1bd7576dd1ff0c6b35194d90b665ac4b7530af1ae070c5e9787c122cda6889" Channel="Stable" />
-  <Item Component="release-notes" Kind="Content" Model="release-notes/idm3.xml" Version="3.7.1" Target="release-notes\idm3.xml" Source="content/release-notes/idm3.xml" Size="6728" Sha256="728e397673291cf7c11c57030eb66cbaa8ee14bbf617e4c8fbcd5a030e43d5d1" Channel="Stable" />
+  <Item Component="release-notes" Kind="Content" Model="release-notes/idm3.xml" Version="3.7.1" Target="release-notes\idm3.xml" Source="content/release-notes/idm3.xml" Size="7855" Sha256="79d11de2a42cbaf895654fc29e29eaed234a00a122c3925c8038ac549fc0f9fa" Channel="Stable" />
+  <Release Version="3.7.1" Rev="3" Channel="Stable" Published="2026-10-30" Installer="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.1-rev3/IDM3_3.7.1_Rev3_Setup.exe" Size="19382839" Sha256="4fcda67cc53ee6926fac7d0e1978cade0de8bb8ba50c07915ad5118557848fde">
+    <Note>Network CU search shows the iNELS address and can add the selected CU to a project, connect and optionally read its project.</Note>
+    <Note>Switching central units keeps the current project open if saving fails or is cancelled.</Note>
+    <Firmware Model="CU3-07M" Version="02.97.69">
+      <Note>Added the iNELS address to broadcast discovery responses</Note>
+    </Firmware>
+    <Firmware Model="CU3-08M" Version="02.97.69">
+      <Note>Added the iNELS address to broadcast discovery responses</Note>
+    </Firmware>
+    <Firmware Model="CU3-09M" Version="02.97.69">
+      <Note>Added the iNELS address to broadcast discovery responses</Note>
+    </Firmware>
+    <Firmware Model="CU3-09M" Version="02.97.70">
+      <Note>Fixed DALI group control sometimes leaving lamps off while iDM showed them on</Note>
+    </Firmware>
+    <Firmware Model="CU3-10M" Version="02.97.69">
+      <Note>Added the iNELS address to broadcast discovery responses</Note>
+    </Firmware>
+    <Firmware Model="GCR3-30" Version="01.06.00">
+      <Note>Fixed LED behaviour when switching the backlight.</Note>
+    </Firmware>
+    <Firmware Model="GDB3-30" Version="01.02.00">
+      <Note>Fixed LEDs sometimes switching on incorrectly.</Note>
+    </Firmware>
+    <Firmware Model="IDRT3-1" Version="04.04.00">
+      <Note>Bug fixes and improvements.</Note>
+      <Note>Corrected the firmware version reported by the unit.</Note>
+    </Firmware>
+  </Release>
   <Release Version="3.7.1" Rev="0" Channel="Stable" Published="2026-10-14" Installer="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.1-rev0/IDM3_3.7.1_Rev0_Setup.exe" Size="19019183" Sha256="3bf82c812f2a3be5b1d35021d8315ea917de459928e0f126c9962b6f62a0ceaf">
     <Note>Added a search for central units on the network, next to the Connect button.</Note>
     <Note>The live status of each unit stays correct after units are reordered in the project.</Note>

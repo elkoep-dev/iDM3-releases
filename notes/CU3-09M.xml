@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Model="CU3-09M" Source="CU3-09M - Firmware history.txt">
+  <Release Version="02.97.70">
+    <Note Lang="en">Fixed DALI group control sometimes leaving lamps off while iDM showed them on</Note>
+  </Release>
+  <Release Version="02.97.69">
+    <Note Lang="en">Added the iNELS address to broadcast discovery responses</Note>
+  </Release>
   <Release Version="02.97.68">
     <Note Lang="en">Fixed CU restarts when running projects with multiple heating/cooling areas and hotel rooms</Note>
     <Note Lang="en">Added a new communication packet to map units to their live status bits</Note>

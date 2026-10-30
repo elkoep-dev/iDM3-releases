@@ -2,6 +2,7 @@
 <ReleaseNotes Model="IDRT3-1" Source="IDRT3-1 - Firmware history.txt">
   <Release Version="04.04.00">
     <Note Lang="en">Bug fixes and improvements.</Note>
+    <Note Lang="en">Corrected the firmware version reported by the unit.</Note>
   </Release>
   <Release Version="04.02.00">
     <Note Lang="en">Repaired searching unit.</Note>

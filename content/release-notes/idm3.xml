@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Product="iDM3">
-  <Release Version="3.7.1" Published="2026-10-14" Url="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.1-rev0/IDM3_3.7.1_Rev0_Setup.exe">
+  <Release Version="3.7.1" Published="2026-10-30" Url="https://github.com/elkoep-dev/iDM3-releases/releases/download/v3.7.1-rev3/IDM3_3.7.1_Rev3_Setup.exe">
+    <Note>Network CU search shows the iNELS address and can add the selected CU to a project, connect and optionally read its project.</Note>
+    <Note>Switching central units keeps the current project open if saving fails or is cancelled.</Note>
+    <Note>Firmware CU3-07M 02.97.69: Added the iNELS address to broadcast discovery responses</Note>
+    <Note>Firmware CU3-08M 02.97.69: Added the iNELS address to broadcast discovery responses</Note>
+    <Note>Firmware CU3-09M 02.97.69: Added the iNELS address to broadcast discovery responses</Note>
+    <Note>Firmware CU3-09M 02.97.70: Fixed DALI group control sometimes leaving lamps off while iDM showed them on</Note>
+    <Note>Firmware CU3-10M 02.97.69: Added the iNELS address to broadcast discovery responses</Note>
+    <Note>Firmware GCR3-30 01.06.00: Fixed LED behaviour when switching the backlight.</Note>
+    <Note>Firmware GDB3-30 01.02.00: Fixed LEDs sometimes switching on incorrectly.</Note>
+    <Note>Firmware IDRT3-1 04.04.00: Bug fixes and improvements.</Note>
+    <Note>Firmware IDRT3-1 04.04.00: Corrected the firmware version reported by the unit.</Note>
     <Note>Added a search for central units on the network, next to the Connect button.</Note>
     <Note>The live status of each unit stays correct after units are reordered in the project.</Note>
     <Note>A macro can now be easily created from an existing wire.</Note>

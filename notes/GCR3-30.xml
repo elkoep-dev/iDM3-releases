@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Model="GCR3-30" Source="GCR3-30 - Firmware history.txt">
+  <Release Version="01.06.00">
+    <Note Lang="en">Fixed LED behaviour when switching the backlight.</Note>
+  </Release>
   <Release Version="01.04.00">
     <Note Lang="en">add read and write card data</Note>
     <Note Lang="en">add RGB control for all backlights</Note>
