@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Model="GDB3-30" Source="GDB3-30 - Firmware history.txt">
+  <Release Version="01.02.00">
+    <Note Lang="en">Fixed LEDs sometimes switching on incorrectly.</Note>
+  </Release>
   <Release Version="01.00.00">
     <Note Lang="en">Bug fixes and improvements.</Note>
   </Release>
