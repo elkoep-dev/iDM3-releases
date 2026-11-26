@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReleaseNotes Model="RPD3-01" Source="RPD3-01 - Firmware history.txt">
+  <Release Version="01.02.02">
+    <Note Lang="en">Repaired LIght sensor configuration and sensitivity configuration.</Note>
+  </Release>
   <Release Version="01.02.00">
     <Note Lang="en">Bug fixes and improvements.</Note>
   </Release>
